@@ -1,0 +1,607 @@
+{
+  "title": "Chess Fundamentals",
+  "author": "José Raúl Capablanca",
+  "year": 1921,
+  "sourceUrl": "https://archive.org/details/chessfundamental00capa",
+  "chapters": [
+    {
+      "label": "Chapter I",
+      "title": "First Principles: Endings, Middle-game and Openings",
+      "sections": [
+        {
+          "number": "1",
+          "title": "Some Simple Mates",
+          "lessons": [
+            "001-rook-mate",
+            "002-rook-mate-centre",
+            "003-two-bishops",
+            "004-queen-mate"
+          ]
+        },
+        {
+          "number": "2",
+          "title": "Pawn Promotion",
+          "lessons": [
+            "005-pawn-draw",
+            "006-pawn-win"
+          ]
+        },
+        {
+          "number": "3",
+          "title": "Pawn Endings",
+          "lessons": [
+            "007-two-pawns-v-one",
+            "008-connected-pawns",
+            "009-three-v-two",
+            "010-both-wings"
+          ]
+        },
+        {
+          "number": "4",
+          "title": "Some Winning Positions in the Middle-game",
+          "lessons": [
+            "011-hidden-threat",
+            "012-win-back-piece",
+            "013-knight-check-f6",
+            "014-knight-f6-again",
+            "015-bishop-sacrifice-h7",
+            "016-long-attack"
+          ]
+        },
+        {
+          "number": "5",
+          "title": "Relative Value of the Pieces",
+          "lessons": [
+            "017-relative-value"
+          ]
+        },
+        {
+          "number": "6",
+          "title": "General Strategy of the Opening",
+          "lessons": [
+            "018-develop-quickly"
+          ]
+        },
+        {
+          "number": "7",
+          "title": "Control of the Centre",
+          "lessons": [
+            "019-control-centre",
+            "020-early-bishop"
+          ]
+        },
+        {
+          "number": "8",
+          "title": "Traps",
+          "lessons": [
+            "021-trap-queen-sac",
+            "022-trap-f7"
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Chapter II",
+      "title": "Further Principles in End-game Play",
+      "sections": [
+        {
+          "number": "9",
+          "title": "A Cardinal Principle",
+          "lessons": [
+            "023-unit-holds-two"
+          ]
+        },
+        {
+          "number": "10",
+          "title": "A Classical Ending",
+          "lessons": [
+            "024-classical-ending"
+          ]
+        },
+        {
+          "number": "11",
+          "title": "Obtaining a Passed Pawn",
+          "lessons": [
+            "025-passed-pawn"
+          ]
+        },
+        {
+          "number": "12",
+          "title": "How to Find Out Which Pawn Will Be the First to Queen",
+          "lessons": [
+            "026-counting"
+          ]
+        },
+        {
+          "number": "13",
+          "title": "The Opposition",
+          "lessons": [
+            "027-the-opposition",
+            "028-opposition-wins",
+            "029-opposition-defence"
+          ]
+        },
+        {
+          "number": "14",
+          "title": "The Relative Value of Knight and Bishop",
+          "lessons": [
+            "030-two-knights",
+            "031-exceptions",
+            "032-bishop-or-knight",
+            "033-minor-piece-endings"
+          ]
+        },
+        {
+          "number": "15",
+          "title": "How to Mate with Knight and Bishop",
+          "lessons": [
+            "034-knight-bishop-mate"
+          ]
+        },
+        {
+          "number": "16",
+          "title": "Queen against Rook",
+          "lessons": [
+            "035-queen-v-rook",
+            "036-queen-v-rook-hard"
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Chapter III",
+      "title": "Planning a Win in Middle-game Play",
+      "sections": [
+        {
+          "number": "17",
+          "title": "Attacking without the Aid of Knights",
+          "lessons": [
+            "037-rooks-on-g-file",
+            "038-mate-in-three",
+            "039-gain-material-first"
+          ]
+        },
+        {
+          "number": "18",
+          "title": "Attacking with Knights as a Prominent Force",
+          "lessons": [
+            "040-knights-attack",
+            "041-bishop-sac-typical"
+          ]
+        },
+        {
+          "number": "19",
+          "title": "Winning by Indirect Attack",
+          "lessons": [
+            "042-coordination",
+            "043-indirect-attack"
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Chapter IV",
+      "title": "General Theory",
+      "sections": [
+        {
+          "number": "20",
+          "title": "The Initiative",
+          "lessons": []
+        },
+        {
+          "number": "21",
+          "title": "Direct Attacks en Masse",
+          "lessons": []
+        },
+        {
+          "number": "22",
+          "title": "The Force of the Threatened Attack",
+          "lessons": []
+        },
+        {
+          "number": "23",
+          "title": "Relinquishing the Initiative",
+          "lessons": []
+        },
+        {
+          "number": "24",
+          "title": "Cutting off Pieces from the Scene of Action",
+          "lessons": []
+        },
+        {
+          "number": "25",
+          "title": "A Player's Motives Criticised in a Specimen Game",
+          "lessons": []
+        }
+      ]
+    },
+    {
+      "label": "Chapter V",
+      "title": "End-game Strategy",
+      "sections": [
+        {
+          "number": "26",
+          "title": "The Sudden Attack from a Different Side",
+          "lessons": []
+        },
+        {
+          "number": "27",
+          "title": "The Danger of a Safe Position",
+          "lessons": []
+        },
+        {
+          "number": "28",
+          "title": "Endings with One Rook and Pawns",
+          "lessons": []
+        },
+        {
+          "number": "29",
+          "title": "A Difficult Ending: Two Rooks and Pawns",
+          "lessons": []
+        },
+        {
+          "number": "30",
+          "title": "Rook, Bishop and Pawns v. Rook, Knight and Pawns",
+          "lessons": []
+        }
+      ]
+    },
+    {
+      "label": "Chapter VI",
+      "title": "Further Openings and Middle-games",
+      "sections": [
+        {
+          "number": "31",
+          "title": "Some Salient Points about Pawns",
+          "lessons": []
+        },
+        {
+          "number": "32",
+          "title": "Some Possible Developments from a Ruy Lopez",
+          "lessons": []
+        },
+        {
+          "number": "33",
+          "title": "The Influence of a \"Hole\"",
+          "lessons": []
+        }
+      ]
+    },
+    {
+      "label": "Part II",
+      "title": "Illustrative Games",
+      "sections": [
+        {
+          "number": "G1",
+          "title": "Queen's Gambit Declined — Marshall v. Capablanca, match 1909",
+          "lessons": []
+        },
+        {
+          "number": "G2",
+          "title": "Queen's Gambit Declined — Rubinstein v. Capablanca, San Sebastián 1911",
+          "lessons": []
+        },
+        {
+          "number": "G3",
+          "title": "Irregular Defence — Janowski v. Capablanca, Havana 1913",
+          "lessons": []
+        },
+        {
+          "number": "G4",
+          "title": "French Defence — Capablanca v. Snosko-Borovsky, St Petersburg 1913",
+          "lessons": []
+        },
+        {
+          "number": "G5",
+          "title": "Ruy Lopez — Lasker v. Capablanca, St Petersburg 1914",
+          "lessons": []
+        },
+        {
+          "number": "G6",
+          "title": "French Defence — Chajes v. Capablanca, New York 1916",
+          "lessons": []
+        },
+        {
+          "number": "G7",
+          "title": "Ruy Lopez — Capablanca v. Burn, San Sebastián 1911",
+          "lessons": []
+        },
+        {
+          "number": "G8",
+          "title": "Centre Game — Mieses v. Capablanca, Berlin 1913",
+          "lessons": []
+        },
+        {
+          "number": "G9",
+          "title": "Queen's Gambit Declined — Capablanca v. Teichmann, Berlin 1913",
+          "lessons": []
+        },
+        {
+          "number": "G10",
+          "title": "Petroff Defence — Capablanca v. Marshall, St Petersburg 1914",
+          "lessons": []
+        },
+        {
+          "number": "G11",
+          "title": "Ruy Lopez — Capablanca v. Janowski, St Petersburg 1914",
+          "lessons": []
+        },
+        {
+          "number": "G12",
+          "title": "French Defence — Capablanca v. Chajes, New York 1918",
+          "lessons": []
+        },
+        {
+          "number": "G13",
+          "title": "Ruy Lopez — Morrison v. Capablanca, New York 1918",
+          "lessons": []
+        },
+        {
+          "number": "G14",
+          "title": "Queen's Gambit Declined — Marshall v. Capablanca, New York 1918",
+          "lessons": []
+        }
+      ]
+    }
+  ],
+  "lessons": {
+    "001-rook-mate": {
+      "title": "The Rook Mate",
+      "subtitle": "Rook and King against King",
+      "steps": 8,
+      "examples": "1"
+    },
+    "002-rook-mate-centre": {
+      "title": "The Rook Mate from the Centre",
+      "subtitle": "Rook and King against King, part 2",
+      "steps": 8,
+      "examples": "2"
+    },
+    "003-two-bishops": {
+      "title": "Mate with Two Bishops",
+      "subtitle": "Two Bishops and King against King",
+      "steps": 8,
+      "examples": "3"
+    },
+    "004-queen-mate": {
+      "title": "The Queen Mate",
+      "subtitle": "Queen and King against King",
+      "steps": 7,
+      "examples": "4"
+    },
+    "005-pawn-draw": {
+      "title": "Defending against a Pawn",
+      "subtitle": "Pawn promotion: the drawn position",
+      "steps": 5,
+      "examples": "5"
+    },
+    "006-pawn-win": {
+      "title": "Winning with a Pawn",
+      "subtitle": "Pawn promotion: the winning method",
+      "steps": 9,
+      "examples": "6"
+    },
+    "007-two-pawns-v-one": {
+      "title": "Two Pawns against One",
+      "subtitle": "Pawn endings: the king leads",
+      "steps": 7,
+      "examples": "7"
+    },
+    "008-connected-pawns": {
+      "title": "A Harder Pawn Ending",
+      "subtitle": "Two connected pawns against one",
+      "steps": 8,
+      "examples": "8"
+    },
+    "009-three-v-two": {
+      "title": "Three Pawns against Two",
+      "subtitle": "Push the free pawn",
+      "steps": 4,
+      "examples": "9"
+    },
+    "010-both-wings": {
+      "title": "Pawns on Both Wings",
+      "subtitle": "Act where you are stronger",
+      "steps": 5,
+      "examples": "10"
+    },
+    "011-hidden-threat": {
+      "title": "The Hidden Threat",
+      "subtitle": "A queen sacrifice on h7",
+      "steps": 5,
+      "examples": "11"
+    },
+    "012-win-back-piece": {
+      "title": "Winning the Piece Back",
+      "subtitle": "The same idea in a harder position",
+      "steps": 5,
+      "examples": "12"
+    },
+    "013-knight-check-f6": {
+      "title": "The Knight Check on f6",
+      "subtitle": "Opening the king with a sacrifice",
+      "steps": 5,
+      "examples": "13"
+    },
+    "014-knight-f6-again": {
+      "title": "The Knight Check, Again",
+      "subtitle": "Removing a defender first",
+      "steps": 6,
+      "examples": "14"
+    },
+    "015-bishop-sacrifice-h7": {
+      "title": "The Bishop Sacrifice on h7",
+      "subtitle": "A very frequent combination",
+      "steps": 7,
+      "examples": "15"
+    },
+    "016-long-attack": {
+      "title": "A Long Attack",
+      "subtitle": "The bishop sacrifice, more complicated",
+      "steps": 7,
+      "examples": "16"
+    },
+    "017-relative-value": {
+      "title": "The Value of the Pieces",
+      "subtitle": "Comparing the pieces",
+      "steps": 5,
+      "examples": null
+    },
+    "018-develop-quickly": {
+      "title": "Develop Quickly",
+      "subtitle": "General strategy of the opening",
+      "steps": 7,
+      "examples": "17"
+    },
+    "019-control-centre": {
+      "title": "Control of the Centre",
+      "subtitle": "Pieces before pawns",
+      "steps": 6,
+      "examples": "18"
+    },
+    "020-early-bishop": {
+      "title": "An Early Bishop Move",
+      "subtitle": "Knights before bishops",
+      "steps": 4,
+      "examples": "19"
+    },
+    "021-trap-queen-sac": {
+      "title": "A Classic Trap",
+      "subtitle": "The pinned knight that is not pinned",
+      "steps": 5,
+      "examples": "20"
+    },
+    "022-trap-f7": {
+      "title": "The Weak Point f7",
+      "subtitle": "Take the material",
+      "steps": 4,
+      "examples": "21"
+    },
+    "023-unit-holds-two": {
+      "title": "A Unit that Holds Two",
+      "subtitle": "A cardinal principle",
+      "steps": 3,
+      "examples": "22"
+    },
+    "024-classical-ending": {
+      "title": "A Classical Ending",
+      "subtitle": "Winning in three parts",
+      "steps": 5,
+      "examples": "23"
+    },
+    "025-passed-pawn": {
+      "title": "Obtaining a Passed Pawn",
+      "subtitle": "The centre pawn breaks through",
+      "steps": 4,
+      "examples": "24"
+    },
+    "026-counting": {
+      "title": "Which Pawn Queens First?",
+      "subtitle": "Learn to count",
+      "steps": 3,
+      "examples": "25"
+    },
+    "027-the-opposition": {
+      "title": "The Opposition",
+      "subtitle": "Kings face to face",
+      "steps": 4,
+      "examples": "26"
+    },
+    "028-opposition-wins": {
+      "title": "The Value of the Opposition",
+      "subtitle": "Whoever has the move wins",
+      "steps": 6,
+      "examples": "27"
+    },
+    "029-opposition-defence": {
+      "title": "The Opposition in Defence",
+      "subtitle": "Drawing a pawn down",
+      "steps": 4,
+      "examples": "28"
+    },
+    "030-two-knights": {
+      "title": "Two Knights",
+      "subtitle": "They cannot mate alone",
+      "steps": 2,
+      "examples": "29"
+    },
+    "031-exceptions": {
+      "title": "Two Exceptions",
+      "subtitle": "Bishop with the wrong pawn, knight against pawns",
+      "steps": 2,
+      "examples": "30–31"
+    },
+    "032-bishop-or-knight": {
+      "title": "Bishop or Knight?",
+      "subtitle": "The bishop is usually better",
+      "steps": 3,
+      "examples": "32–33"
+    },
+    "033-minor-piece-endings": {
+      "title": "Knight against Bishop with Pawns",
+      "subtitle": "Where the pawns stand decides",
+      "steps": 5,
+      "examples": "34–38"
+    },
+    "034-knight-bishop-mate": {
+      "title": "Mate with Knight and Bishop",
+      "subtitle": "The laborious mate",
+      "steps": 5,
+      "examples": "39"
+    },
+    "035-queen-v-rook": {
+      "title": "Queen against Rook",
+      "subtitle": "Separate the rook from the king",
+      "steps": 4,
+      "examples": "40–41"
+    },
+    "036-queen-v-rook-hard": {
+      "title": "Queen against Rook, Harder",
+      "subtitle": "The obvious move is not the best",
+      "steps": 5,
+      "examples": "42"
+    },
+    "037-rooks-on-g-file": {
+      "title": "Doubled Rooks on the g-file",
+      "subtitle": "Attacking without knights",
+      "steps": 4,
+      "examples": "43"
+    },
+    "038-mate-in-three": {
+      "title": "The Stronger Threat",
+      "subtitle": "Mate in three",
+      "steps": 3,
+      "examples": "44"
+    },
+    "039-gain-material-first": {
+      "title": "Gain Material First",
+      "subtitle": "Before Black consolidates",
+      "steps": 4,
+      "examples": "45"
+    },
+    "040-knights-attack": {
+      "title": "Knights in the Attack",
+      "subtitle": "Two pawns down, press on",
+      "steps": 3,
+      "examples": "46"
+    },
+    "041-bishop-sac-typical": {
+      "title": "The Typical Bishop Sacrifice",
+      "subtitle": "Bxh7 in a real game",
+      "steps": 4,
+      "examples": "47"
+    },
+    "042-coordination": {
+      "title": "Co-ordination of the Pieces",
+      "subtitle": "Winning back a pawn, and more",
+      "steps": 3,
+      "examples": "48"
+    },
+    "043-indirect-attack": {
+      "title": "The Indirect Attack",
+      "subtitle": "A move that upsets everything",
+      "steps": 4,
+      "examples": "49"
+    }
+  }
+}

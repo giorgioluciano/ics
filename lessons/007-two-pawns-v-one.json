@@ -1,0 +1,204 @@
+{
+  "id": "007-two-pawns-v-one",
+  "title": "Two Pawns against One",
+  "subtitle": "Pawn endings: the king leads",
+  "source": {
+    "work": "Chess Fundamentals",
+    "author": "José Raúl Capablanca",
+    "year": 1921,
+    "section": "Chapter I, §3 Pawn Endings, Example 7",
+    "examples": "7",
+    "url": "https://archive.org/details/chessfundamental00capa"
+  },
+  "startFen": "5k2/6p1/4K1P1/5P2/8/8/8/8 w - - 0 1",
+  "steps": [
+    {
+      "id": "intro",
+      "title": "Two pawns against one",
+      "source": "I shall now give a couple of simple endings of two Pawns against one, or three against two, that the reader may see how they can be won. […] It is up to the student to work things out for himself.",
+      "narration": [
+        {
+          "say": "White has two pawns, Black has one. It looks easy.",
+          "highlights": [
+            "f5",
+            "g6",
+            "g7"
+          ]
+        },
+        {
+          "say": "But the obvious move does not win. Let us see why first."
+        }
+      ]
+    },
+    {
+      "id": "trap",
+      "title": "The tempting push",
+      "source": "In this position White cannot win by playing 1 P - B 6, because Black plays, not P x P, which would lose, but 1…K - Kt 1, and if then 2 P x P, K x P, and draws.",
+      "narration": [
+        {
+          "say": "Pawn to f6 looks natural.",
+          "move": "f6",
+          "arrows": [
+            {
+              "from": "f5",
+              "to": "f6",
+              "color": "muted"
+            }
+          ]
+        },
+        {
+          "say": "But Black does not take. He plays king to g8.",
+          "move": "Kg8",
+          "highlights": [
+            "g8"
+          ]
+        },
+        {
+          "say": "If White now takes on g7, the black king takes back, and it is a draw.",
+          "moves": [
+            "fxg7",
+            "Kxg7"
+          ],
+          "highlights": [
+            "g7"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "king-first",
+      "title": "Your turn: the winning idea",
+      "fen": "5k2/6p1/4K1P1/5P2/8/8/8/8 w - - 0 1",
+      "narration": [
+        {
+          "say": "Back to the start. White wins, but with the king first. Your move.",
+          "highlights": [
+            "e6"
+          ]
+        }
+      ],
+      "exercise": {
+        "prompt": "White to move and win. Start with the king.",
+        "accept": [
+          "Kd7"
+        ],
+        "feedback": {
+          "f6": "That is the tempting push: Black answers Kg8 and draws.",
+          "Ke5": "Backwards. The king should go forward, towards e7.",
+          "*": "The king heads for e7, next to the pawns and the black king."
+        },
+        "hint": "The king goes round, via d7.",
+        "hintSquares": [
+          "d7"
+        ],
+        "success": "1. Kd7. Black goes to g8.",
+        "reply": "Kg8"
+      }
+    },
+    {
+      "id": "now-f6",
+      "title": "Now the push works",
+      "narration": [
+        {
+          "say": "King to e7. Black to h8.",
+          "moves": [
+            "Ke7",
+            "Kh8"
+          ],
+          "highlights": [
+            "e7"
+          ]
+        },
+        {
+          "say": "Now f6 works, because the white king protects f7 and f8.",
+          "move": "f6",
+          "highlights": [
+            "f7",
+            "f8"
+          ]
+        },
+        {
+          "say": "If Black does not take, f7 and the pawn queens with mate. So Black takes.",
+          "move": "gxf6"
+        }
+      ]
+    },
+    {
+      "id": "kf7",
+      "title": "Your turn: shut the door",
+      "narration": [
+        {
+          "say": "The black king is in the corner. Your king can lock him in."
+        }
+      ],
+      "exercise": {
+        "prompt": "White to move. Keep the black king in the corner.",
+        "accept": [
+          "Kf7"
+        ],
+        "feedback": {
+          "g7": "Check, but after Kxg7 White has nothing left. First lock the king in.",
+          "Kxf6": "Kxf6 takes a pawn, but then the black king gets out of the corner.",
+          "*": "The king steps next to the g-pawn and takes g7 and g8 away."
+        },
+        "hint": "The king goes to f7.",
+        "hintSquares": [
+          "f7"
+        ],
+        "success": "4. Kf7. Black can only move his pawn: f5.",
+        "reply": "f5"
+      }
+    },
+    {
+      "id": "queen",
+      "title": "Promote and mate",
+      "source": "4 K - B 7, P - B 4; 5 P - Kt 7 ch, K - R 2; 6 P - Kt 8 (Q) ch, K - R 3; 7 Q - Kt 6 mate.",
+      "narration": [
+        {
+          "say": "Pawn to g7, check. Black to h7.",
+          "moves": [
+            "g7+",
+            "Kh7"
+          ]
+        },
+        {
+          "say": "The pawn becomes a queen, with check. Black to h6.",
+          "moves": [
+            "g8=Q+",
+            "Kh6"
+          ],
+          "highlights": [
+            "g8"
+          ]
+        }
+      ],
+      "exercise": {
+        "prompt": "White to move and give checkmate in one.",
+        "accept": [
+          "Qg6#"
+        ],
+        "feedback": {
+          "*": "Not mate. The queen can land next to the black king, protected by your own king."
+        },
+        "hint": "The queen goes to g6.",
+        "hintSquares": [
+          "g6"
+        ],
+        "success": "Checkmate. The king did the work; the pawns only moved when it was safe.",
+        "reply": null
+      }
+    },
+    {
+      "id": "summary",
+      "title": "What we learned",
+      "narration": [
+        {
+          "say": "The obvious pawn push can throw away the win."
+        },
+        {
+          "say": "Bring the king up first, so that the pawns can advance under its protection."
+        }
+      ]
+    }
+  ]
+}

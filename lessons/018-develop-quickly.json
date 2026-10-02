@@ -1,0 +1,208 @@
+{
+  "id": "018-develop-quickly",
+  "title": "Develop Quickly",
+  "subtitle": "General strategy of the opening",
+  "source": {
+    "work": "Chess Fundamentals",
+    "author": "José Raúl Capablanca",
+    "year": 1921,
+    "section": "Chapter I, §6 General Strategy of the Opening, Example 17",
+    "examples": "17",
+    "url": "https://archive.org/details/chessfundamental00capa"
+  },
+  "startFen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+  "steps": [
+    {
+      "id": "intro",
+      "title": "The main thing",
+      "source": "The main thing is to develop the pieces quickly. Get them into play as fast as you can. From the outset two moves, 1 P - K 4 or 1 P - Q 4, open up lines for the Queen and a Bishop.",
+      "narration": [
+        {
+          "say": "The main thing in the opening is to develop the pieces quickly."
+        },
+        {
+          "say": "Two first moves, e4 and d4, open lines for the queen and a bishop at once.",
+          "highlights": [
+            "e2",
+            "d2"
+          ]
+        },
+        {
+          "say": "Your move. Play e4."
+        }
+      ],
+      "exercise": {
+        "prompt": "White to move. Open lines for the queen and the king's bishop.",
+        "accept": [
+          "e4"
+        ],
+        "feedback": {
+          "d4": "Just as good in principle, but this example follows e4.",
+          "e3": "That opens lines too, but e4 also takes the centre.",
+          "*": "Push the king's pawn two squares."
+        },
+        "hint": "The pawn in front of the king goes two squares.",
+        "hintSquares": [
+          "e4"
+        ],
+        "success": "1. e4. Black answers e5.",
+        "reply": "e5"
+      }
+    },
+    {
+      "id": "knights",
+      "title": "Knights out",
+      "narration": [
+        {
+          "say": "Knight to f3: both an attacking and a developing move. It attacks e5.",
+          "move": "Nf3",
+          "arrows": [
+            {
+              "from": "f3",
+              "to": "e5",
+              "color": "danger"
+            }
+          ]
+        },
+        {
+          "say": "Knight to c6 develops, and at the same time defends the pawn.",
+          "move": "Nc6",
+          "arrows": [
+            {
+              "from": "c6",
+              "to": "e5",
+              "color": "primary"
+            }
+          ]
+        },
+        {
+          "say": "Knight to c3, knight to f6: purely developing moves.",
+          "moves": [
+            "Nc3",
+            "Nf6"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "bishop",
+      "title": "Your turn: develop and attack",
+      "source": "It is generally advisable not to bring this Bishop out until one Knight is out, preferably the King's Knight. The Bishop could also have been played to B 4, but it is advisable whenever possible to combine development and attack.",
+      "narration": [
+        {
+          "say": "Now a bishop. Whenever possible, combine development with attack."
+        }
+      ],
+      "exercise": {
+        "prompt": "White to move. Develop the king's bishop with an attack.",
+        "accept": [
+          "Bb5"
+        ],
+        "feedback": {
+          "Bc4": "A good developing move, but b5 also attacks the knight that defends e5.",
+          "*": "Develop the bishop so that it attacks something."
+        },
+        "hint": "The bishop attacks the knight on c6.",
+        "hintSquares": [
+          "b5"
+        ],
+        "success": "4. Bb5. Black does the same: Bb4.",
+        "reply": "Bb4"
+      }
+    },
+    {
+      "id": "castle",
+      "title": "Castling brings the rook in",
+      "source": "5 O - O, an indirect way of preventing 5…B x Kt. […] At the same time the Rook is brought into action in the centre, a very important point.",
+      "narration": [
+        {
+          "say": "White castles. This indirectly prevents Bxc3, and brings the rook into the centre.",
+          "move": "O-O",
+          "highlights": [
+            "f1",
+            "g1"
+          ]
+        },
+        {
+          "say": "Black follows the same reasoning.",
+          "move": "O-O"
+        },
+        {
+          "say": "Pawn to d3, pawn to d6: they protect the e-pawns and open the diagonals for the queen's bishops.",
+          "moves": [
+            "d3",
+            "d6"
+          ],
+          "arrows": [
+            {
+              "from": "c1",
+              "to": "g5",
+              "color": "primary"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "bg5",
+      "title": "Your turn: a very powerful move",
+      "narration": [
+        {
+          "say": "Develop the last minor piece, with a pin."
+        }
+      ],
+      "exercise": {
+        "prompt": "White to move. Develop the queen's bishop with a pin.",
+        "accept": [
+          "Bg5"
+        ],
+        "feedback": {
+          "*": "The bishop on c1 can pin the knight on f6."
+        },
+        "hint": "The bishop goes to g5.",
+        "hintSquares": [
+          "g5"
+        ],
+        "success": "7. Bg5. A very powerful move: White already threatens Nd5. Black is forced to take on c3.",
+        "reply": "Bxc3"
+      }
+    },
+    {
+      "id": "result",
+      "title": "Seven moves of development",
+      "source": "First, the complete development of the opening has taken only seven moves. […] Third, White by the exchange brings up a Pawn to control the square Q 4, puts Black on the defensive, and thus keeps the initiative.",
+      "narration": [
+        {
+          "say": "The complete development has taken only seven moves."
+        },
+        {
+          "say": "White takes back towards the centre. The doubled pawn is no problem this early.",
+          "move": "bxc3",
+          "highlights": [
+            "c3",
+            "d4"
+          ]
+        },
+        {
+          "say": "The new pawn controls d4, Black is on the defensive, and White keeps the initiative."
+        }
+      ]
+    },
+    {
+      "id": "summary",
+      "title": "Principles of the opening",
+      "source": "Before development has been completed no piece should be moved more than once, unless it is essential in order to obtain either material advantage or to secure freedom of action.",
+      "narration": [
+        {
+          "say": "Develop the pieces quickly."
+        },
+        {
+          "say": "Bring out the knights before the bishops."
+        },
+        {
+          "say": "And before development is complete, do not move a piece twice, unless you win material or need freedom of action."
+        }
+      ]
+    }
+  ]
+}

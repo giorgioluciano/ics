@@ -1,0 +1,94 @@
+{
+  "id": "031-exceptions",
+  "title": "Two Exceptions",
+  "subtitle": "Bishop with the wrong pawn, knight against pawns",
+  "source": {
+    "work": "Chess Fundamentals",
+    "author": "José Raúl Capablanca",
+    "year": 1921,
+    "section": "Chapter II, §14 The Relative Value of Knight and Bishop, Examples 30–31",
+    "examples": "30–31",
+    "url": "https://archive.org/details/chessfundamental00capa"
+  },
+  "startFen": "7k/8/8/6K1/8/3B4/7P/8 w - - 0 1",
+  "steps": [
+    {
+      "id": "wrong-colour",
+      "title": "The wrong bishop",
+      "source": "It is the greatest weakness of the Bishop, that when the Rook's Pawn Queens on a square of opposite colour and the opposing King is in front of the Pawn, the Bishop is absolutely worthless.",
+      "narration": [
+        {
+          "say": "White is a bishop and a pawn ahead, and cannot win."
+        },
+        {
+          "say": "The pawn queens on h8, a dark square. The bishop moves on light squares.",
+          "highlights": [
+            "h8",
+            "d3"
+          ]
+        },
+        {
+          "say": "All Black has to do is keep his king near the corner.",
+          "moves": [
+            "h4",
+            "Kg8",
+            "h5",
+            "Kh8"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "knight",
+      "title": "Knight against two pawns",
+      "fen": "8/8/5Np1/8/8/7p/5K2/7k b - - 0 1",
+      "narration": [
+        {
+          "say": "Here White wins, with or without the move. The most difficult line:"
+        },
+        {
+          "say": "King to h2. Knight to g4, check. King back to h1.",
+          "moves": [
+            "Kh2",
+            "Ng4+",
+            "Kh1"
+          ]
+        },
+        {
+          "say": "King to f1, g5. King to f2, h2.",
+          "moves": [
+            "Kf1",
+            "g5",
+            "Kf2",
+            "h2"
+          ]
+        },
+        {
+          "say": "Knight to e3, g4. Knight to f1, and g3 check.",
+          "moves": [
+            "Ne3",
+            "g4",
+            "Nf1",
+            "g3+"
+          ]
+        }
+      ],
+      "exercise": {
+        "feedback": {
+          "*": "The knight can take with mate."
+        },
+        "prompt": "White to move and give checkmate in one.",
+        "accept": [
+          "Nxg3#"
+        ],
+        "wrong": "The knight can take with mate.",
+        "hint": "The knight takes on g3.",
+        "hintSquares": [
+          "g3"
+        ],
+        "success": "Checkmate. The black pawn on h2 blocks his own king.",
+        "reply": null
+      }
+    }
+  ]
+}

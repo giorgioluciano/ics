@@ -1,0 +1,140 @@
+{
+  "id": "017-relative-value",
+  "title": "The Value of the Pieces",
+  "subtitle": "Comparing the pieces",
+  "source": {
+    "work": "Chess Fundamentals",
+    "author": "José Raúl Capablanca",
+    "year": 1921,
+    "section": "Chapter I, §5 Relative Value of the Pieces",
+    "examples": null,
+    "url": "https://archive.org/details/chessfundamental00capa"
+  },
+  "startFen": "7k/8/8/3n4/8/2B5/8/K7 w - - 0 1",
+  "steps": [
+    {
+      "id": "bn",
+      "title": "Bishop and knight",
+      "source": "For all general theoretical purposes the Bishop and the Knight have to be considered as of the same value, though it is my opinion that the Bishop will prove the more valuable piece in most cases.",
+      "narration": [
+        {
+          "say": "In theory, the bishop and the knight are worth the same."
+        },
+        {
+          "say": "The bishop sweeps long diagonals.",
+          "highlights": [
+            "b4",
+            "a5",
+            "d4",
+            "e5",
+            "f6",
+            "g7",
+            "h8",
+            "d2",
+            "e1",
+            "b2"
+          ]
+        },
+        {
+          "say": "The knight jumps to a few nearby squares.",
+          "highlights": [
+            "f6",
+            "c3"
+          ]
+        },
+        {
+          "say": "Capablanca's opinion: in most cases the bishop proves more valuable."
+        }
+      ]
+    },
+    {
+      "id": "two-bishops",
+      "title": "Two bishops",
+      "fen": "1n4nk/8/8/8/8/8/8/K1B2B2 w - - 0 1",
+      "source": "It is well known that two Bishops are almost always better than two Knights.",
+      "narration": [
+        {
+          "say": "Two bishops are almost always better than two knights.",
+          "highlights": [
+            "c1",
+            "f1",
+            "b8",
+            "g8"
+          ]
+        },
+        {
+          "say": "Together they cover both colours, from far away."
+        }
+      ]
+    },
+    {
+      "id": "pawns",
+      "title": "Against pawns",
+      "fen": "7k/8/8/1pp5/8/5B2/8/K7 w - - 0 1",
+      "source": "The Bishop will be stronger against Pawns than the Knight. […] A Bishop will often be worth more than three Pawns, but a Knight very seldom so.",
+      "narration": [
+        {
+          "say": "Against pawns, the bishop is stronger than the knight: it can stop them from a distance.",
+          "arrows": [
+            {
+              "from": "f3",
+              "to": "c6",
+              "color": "primary"
+            }
+          ],
+          "highlights": [
+            "b5",
+            "c5"
+          ]
+        },
+        {
+          "say": "A bishop is often worth more than three pawns. A knight very seldom."
+        }
+      ]
+    },
+    {
+      "id": "rook",
+      "title": "The rook",
+      "fen": "7k/8/8/8/8/8/1ppn4/K6R w - - 0 1",
+      "source": "A Rook will be worth a Knight and two Pawns, or a Bishop and two Pawns.",
+      "narration": [
+        {
+          "say": "A rook is worth a knight and two pawns, or a bishop and two pawns.",
+          "highlights": [
+            "h1",
+            "b2",
+            "c2",
+            "d2"
+          ]
+        },
+        {
+          "say": "Two rooks are slightly stronger than a queen."
+        },
+        {
+          "say": "And the rook grows stronger as pieces are exchanged, while the knight grows weaker."
+        }
+      ]
+    },
+    {
+      "id": "king",
+      "title": "The king changes role",
+      "fen": "8/8/3k4/8/4K3/8/8/8 w - - 0 1",
+      "source": "The King, a purely defensive piece throughout the middle-game, becomes an offensive piece once all the pieces are off the board. […] The handling of the King becomes of paramount importance once the end-game stage is reached.",
+      "narration": [
+        {
+          "say": "In the middle-game, the king is a purely defensive piece."
+        },
+        {
+          "say": "In the ending, it becomes an attacking piece. You saw it in every pawn ending so far.",
+          "highlights": [
+            "e4",
+            "d6"
+          ]
+        },
+        {
+          "say": "Its handling becomes of paramount importance once the ending is reached."
+        }
+      ]
+    }
+  ]
+}

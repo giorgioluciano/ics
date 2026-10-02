@@ -1,0 +1,124 @@
+{
+  "id": "043-indirect-attack",
+  "title": "The Indirect Attack",
+  "subtitle": "A move that upsets everything",
+  "source": {
+    "work": "Chess Fundamentals",
+    "author": "José Raúl Capablanca",
+    "year": 1921,
+    "section": "Chapter III, §19 Winning by Indirect Attack, Example 49",
+    "examples": "49",
+    "url": "https://archive.org/details/chessfundamental00capa"
+  },
+  "startFen": "r4rk1/p3q1pp/1pb5/2pn1p2/8/3BPN2/PP2QPPP/2RR2K1 w - - 0 1",
+  "steps": [
+    {
+      "id": "intro",
+      "title": "Two courses",
+      "source": "An examination of this position will show that Black's main weakness lies in the exposed position of his King, and in the fact that his Q R has not yet come into the game.",
+      "narration": [
+        {
+          "say": "Black's weaknesses: the exposed king, and the rook on a8 not yet in play.",
+          "highlights": [
+            "g8",
+            "a8"
+          ]
+        },
+        {
+          "say": "If it were Black's move, he might even be better: three pawns to two on the queen side, and the bishop on the long diagonal.",
+          "arrows": [
+            {
+              "from": "c6",
+              "to": "g2",
+              "color": "muted"
+            }
+          ]
+        },
+        {
+          "say": "The obvious move, Bc4, might be good enough. But another move upsets Black's position completely."
+        }
+      ],
+      "exercise": {
+        "feedback": {
+          "Bc4": "The obvious move: good enough, after Rad8 and b4. But there is a stronger one.",
+          "*": "A knight move, into the centre."
+        },
+        "prompt": "White to move. Find the move that wins a pawn.",
+        "accept": [
+          "Nd4"
+        ],
+        "hint": "Knight to d4.",
+        "hintSquares": [
+          "d4"
+        ],
+        "success": "1. Nd4! Black takes.",
+        "reply": "cxd4"
+      }
+    },
+    {
+      "id": "rxc6",
+      "title": "Your turn: take the bishop",
+      "narration": [
+        {
+          "say": "The bishop on c6 is now undefended."
+        }
+      ],
+      "exercise": {
+        "feedback": {
+          "*": "The rook on c1 takes on c6."
+        },
+        "prompt": "White to move. Take the bishop.",
+        "accept": [
+          "Rxc6"
+        ],
+        "wrong": "The rook on c1 takes on c6.",
+        "hint": "Rook takes c6.",
+        "hintSquares": [
+          "c6"
+        ],
+        "success": "2. Rxc6. Black plays Nb4: nothing better, because White threatened Bc4.",
+        "reply": "Nb4"
+      }
+    },
+    {
+      "id": "finish",
+      "title": "A pawn ahead",
+      "narration": [
+        {
+          "say": "Bishop to c4, check. King to h8.",
+          "moves": [
+            "Bc4+",
+            "Kh8"
+          ]
+        },
+        {
+          "say": "Rook to e6, attacking the queen. Pawn to d3.",
+          "moves": [
+            "Re6",
+            "d3"
+          ]
+        },
+        {
+          "say": "Rook takes d3. White is a pawn ahead, with the better position.",
+          "move": "Rxd3"
+        }
+      ]
+    },
+    {
+      "id": "summary",
+      "title": "All the pieces together",
+      "source": "Once the opportunity is offered, all the pieces are thrown into action \"en masse\" when necessary; and all the pieces smoothly co-ordinate their action with machine-like precision.",
+      "narration": [
+        {
+          "say": "These positions show different types of combination, and train the imagination."
+        },
+        {
+          "say": "Once the opportunity is offered, all the pieces are thrown into action, en masse."
+        },
+        {
+          "say": "And they co-ordinate with machine-like precision."
+        }
+      ]
+    }
+  ]
+}

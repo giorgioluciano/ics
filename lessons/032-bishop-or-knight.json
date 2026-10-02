@@ -1,0 +1,105 @@
+{
+  "id": "032-bishop-or-knight",
+  "title": "Bishop or Knight?",
+  "subtitle": "The bishop is usually better",
+  "source": {
+    "work": "Chess Fundamentals",
+    "author": "José Raúl Capablanca",
+    "year": 1921,
+    "section": "Chapter II, §14 The Relative Value of Knight and Bishop, Examples 32–33",
+    "examples": "32–33",
+    "url": "https://archive.org/details/chessfundamental00capa"
+  },
+  "startFen": "7k/8/8/N2b4/8/8/7K/8 w - - 0 1",
+  "steps": [
+    {
+      "id": "colours",
+      "title": "One colour at a time",
+      "source": "It is generally thought by amateurs that the Knight is the more valuable piece of the two, the chief reason being that, unlike the Bishop, the Knight can command both White and Black squares. However, the fact is generally overlooked that the Knight, at any one time, has the choice of one colour only.",
+      "narration": [
+        {
+          "say": "Amateurs usually think the knight is more valuable: it reaches both colours."
+        },
+        {
+          "say": "But at any one time, a knight can only choose squares of one colour.",
+          "highlights": [
+            "b7",
+            "c6",
+            "c4",
+            "b3"
+          ]
+        },
+        {
+          "say": "It is slow to cross the board. And a bishop can stalemate a knight."
+        },
+        {
+          "say": "Every square the knight could go to is covered by the bishop.",
+          "zone": {
+            "squares": [
+              "b7",
+              "c6",
+              "c4",
+              "b3"
+            ],
+            "color": "danger"
+          },
+          "arrows": [
+            {
+              "from": "d5",
+              "to": "b7",
+              "color": "danger"
+            },
+            {
+              "from": "d5",
+              "to": "b3",
+              "color": "danger"
+            }
+          ]
+        },
+        {
+          "say": "A compliment the knight is unable to return."
+        }
+      ]
+    },
+    {
+      "id": "block",
+      "title": "When the knight is better",
+      "fen": "4k3/3n4/2p5/1pPp4/pP1P4/P7/8/2B1K3 w - - 0 1",
+      "source": "This is about the only case when the Knight is more valuable than the Bishop. It is what is called a \"block position,\" and all the Pawns are on one side of the board.",
+      "narration": [
+        {
+          "say": "About the only case where the knight is better: a block position, all pawns on one side."
+        },
+        {
+          "say": "The white pawns stand on dark squares, the same colour as White's bishop. The bishop has nothing to attack.",
+          "highlights": [
+            "a3",
+            "b4",
+            "c5",
+            "d4",
+            "c1"
+          ]
+        },
+        {
+          "say": "Black has excellent chances of winning."
+        }
+      ]
+    },
+    {
+      "id": "rules",
+      "title": "Two rules about pawns",
+      "source": "When the opponent has a Bishop, keep your Pawns on squares of the same colour as your opponent's Bishop. Whenever you have a Bishop, whether the opponent has also one or not, keep your Pawns on squares of the opposite colour to that of your own Bishop.",
+      "narration": [
+        {
+          "say": "Whenever you have a bishop, keep your pawns on squares of the opposite colour."
+        },
+        {
+          "say": "When the opponent has a bishop, keep your pawns on squares of the same colour as his bishop."
+        },
+        {
+          "say": "Naturally, these rules sometimes have to be modified to suit the position."
+        }
+      ]
+    }
+  ]
+}

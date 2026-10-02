@@ -1,0 +1,135 @@
+{
+  "id": "021-trap-queen-sac",
+  "title": "A Classic Trap",
+  "subtitle": "The pinned knight that is not pinned",
+  "source": {
+    "work": "Chess Fundamentals",
+    "author": "José Raúl Capablanca",
+    "year": 1921,
+    "section": "Chapter I, §8 Traps, Example 20",
+    "examples": "20",
+    "url": "https://archive.org/details/chessfundamental00capa"
+  },
+  "startFen": "r2qkbnr/ppp2pp1/2np3p/4p3/2BPP1b1/2N2N2/PPP2PPP/R1BQK2R w KQkq - 0 1",
+  "steps": [
+    {
+      "id": "intro",
+      "title": "Traps in the opening",
+      "source": "I shall now give a few positions or traps to be avoided in the openings, and in which (practice has shown) beginners are often caught.",
+      "narration": [
+        {
+          "say": "Now some traps that beginners often fall into."
+        },
+        {
+          "say": "The black bishop on g4 pins the knight on f3 to the white queen. Or does it?",
+          "arrows": [
+            {
+              "from": "g4",
+              "to": "d1",
+              "color": "danger"
+            }
+          ]
+        }
+      ],
+      "exercise": {
+        "prompt": "White to move. Start by taking in the centre.",
+        "accept": [
+          "dxe5"
+        ],
+        "feedback": {
+          "*": "Take the pawn on e5."
+        },
+        "hint": "The d-pawn takes.",
+        "hintSquares": [
+          "e5"
+        ],
+        "success": "1. dxe5. Black takes back with the knight. He should have taken with the pawn.",
+        "reply": "Nxe5"
+      }
+    },
+    {
+      "id": "sac",
+      "title": "Your turn: give up the queen",
+      "narration": [
+        {
+          "say": "The knight on f3 is pinned to the queen. Move it anyway."
+        }
+      ],
+      "exercise": {
+        "prompt": "White to move. Ignore the pin.",
+        "accept": [
+          "Nxe5"
+        ],
+        "feedback": {
+          "*": "The \"pinned\" knight can take on e5."
+        },
+        "hint": "The f3 knight takes the knight on e5.",
+        "hintSquares": [
+          "e5"
+        ],
+        "success": "2. Nxe5! Black takes the queen.",
+        "reply": "Bxd1"
+      }
+    },
+    {
+      "id": "check",
+      "title": "Your turn: check",
+      "narration": [
+        {
+          "say": "Now punish Black."
+        }
+      ],
+      "exercise": {
+        "prompt": "White to move. Check with the bishop.",
+        "accept": [
+          "Bxf7+"
+        ],
+        "feedback": {
+          "*": "The bishop on c4 can take on f7 with check."
+        },
+        "hint": "The bishop takes on f7.",
+        "hintSquares": [
+          "f7"
+        ],
+        "success": "3. Bxf7, check. Black must go to e7.",
+        "reply": "Ke7"
+      }
+    },
+    {
+      "id": "mate",
+      "title": "Find the checkmate",
+      "narration": [
+        {
+          "say": "The last knight finishes it."
+        }
+      ],
+      "exercise": {
+        "prompt": "White to move and give checkmate in one.",
+        "accept": [
+          "Nd5#"
+        ],
+        "feedback": {
+          "*": "The knight on c3 can give mate."
+        },
+        "hint": "The knight jumps to d5.",
+        "hintSquares": [
+          "d5"
+        ],
+        "success": "Checkmate, with three minor pieces against the whole black army.",
+        "reply": null
+      }
+    },
+    {
+      "id": "summary",
+      "title": "What we learned",
+      "narration": [
+        {
+          "say": "A pin to the queen is not absolute: the pinned piece can still move."
+        },
+        {
+          "say": "Black should have recaptured with the pawn."
+        }
+      ]
+    }
+  ]
+}

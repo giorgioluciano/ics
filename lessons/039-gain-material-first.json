@@ -1,0 +1,137 @@
+{
+  "id": "039-gain-material-first",
+  "title": "Gain Material First",
+  "subtitle": "Before Black consolidates",
+  "source": {
+    "work": "Chess Fundamentals",
+    "author": "José Raúl Capablanca",
+    "year": 1921,
+    "section": "Chapter III, §17 Attacking without the Aid of Knights, Example 45",
+    "examples": "45",
+    "url": "https://archive.org/details/chessfundamental00capa"
+  },
+  "startFen": "3q1kn1/r5p1/1ppr1pQn/p2ppP2/P3P2R/1BPPB3/1P3PK1/7R w - - 0 1",
+  "steps": [
+    {
+      "id": "intro",
+      "title": "A beautiful position",
+      "source": "White has a beautiful position, but still he had better gain some material, if he can, before Black consolidates his defensive position.",
+      "narration": [
+        {
+          "say": "White has a beautiful position, with both rooks on the h-file.",
+          "highlights": [
+            "h4",
+            "h1"
+          ]
+        },
+        {
+          "say": "Still, he had better gain some material before Black consolidates."
+        }
+      ],
+      "exercise": {
+        "feedback": {
+          "*": "A rook takes the knight on h6."
+        },
+        "prompt": "White to move. Sacrifice the exchange.",
+        "accept": [
+          "Rxh6"
+        ],
+        "wrong": "A rook takes the knight on h6.",
+        "hint": "Rook takes h6.",
+        "hintSquares": [
+          "h6"
+        ],
+        "success": "1. Rxh6! Black takes.",
+        "reply": "gxh6"
+      }
+    },
+    {
+      "id": "bishop",
+      "title": "Your turn: the bishop joins",
+      "narration": [
+        {
+          "say": "The g-pawn has gone. Check."
+        }
+      ],
+      "exercise": {
+        "feedback": {
+          "*": "The bishop on e3 takes on h6 with check."
+        },
+        "prompt": "White to move. Check with the bishop.",
+        "accept": [
+          "Bxh6+"
+        ],
+        "wrong": "The bishop on e3 takes on h6 with check.",
+        "hint": "Bishop takes h6, check.",
+        "hintSquares": [
+          "h6"
+        ],
+        "success": "2. Bxh6, check. If Nxh6, Rxh6 and Black is helpless. The king goes to e7.",
+        "reply": "Ke7"
+      }
+    },
+    {
+      "id": "chase",
+      "title": "Winning material",
+      "narration": [
+        {
+          "say": "Queen to h7, check. King to e8.",
+          "moves": [
+            "Qh7+",
+            "Ke8"
+          ]
+        },
+        {
+          "say": "Queen takes the knight on g8, check. King to d7.",
+          "moves": [
+            "Qxg8+",
+            "Kd7"
+          ]
+        },
+        {
+          "say": "Queen to h7, check, and the black queen blocks on e7.",
+          "moves": [
+            "Qh7+",
+            "Qe7"
+          ]
+        }
+      ],
+      "exercise": {
+        "feedback": {
+          "*": "The bishop can attack the queen on e7."
+        },
+        "prompt": "White to move. Attack the black queen with the bishop.",
+        "accept": [
+          "Bf8"
+        ],
+        "wrong": "The bishop can attack the queen on e7.",
+        "hint": "Bishop to f8.",
+        "hintSquares": [
+          "f8"
+        ],
+        "success": "6. Bf8. The queens come off.",
+        "reply": "Qxh7"
+      }
+    },
+    {
+      "id": "finish",
+      "title": "Resigns",
+      "narration": [
+        {
+          "say": "Rook takes back, check. King to e8.",
+          "moves": [
+            "Rxh7+",
+            "Ke8"
+          ]
+        },
+        {
+          "say": "And rook takes the rook on a7. Black resigned.",
+          "move": "Rxa7"
+        },
+        {
+          "say": "Rooks and bishops attacked together with the queen. No knights took part."
+        }
+      ]
+    }
+  ]
+}

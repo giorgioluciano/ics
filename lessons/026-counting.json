@@ -1,0 +1,118 @@
+{
+  "id": "026-counting",
+  "title": "Which Pawn Queens First?",
+  "subtitle": "Learn to count",
+  "source": {
+    "work": "Chess Fundamentals",
+    "author": "José Raúl Capablanca",
+    "year": 1921,
+    "section": "Chapter II, §12 How to Find Out Which Pawn Will Be the First to Queen, Example 25",
+    "examples": "25",
+    "url": "https://archive.org/details/chessfundamental00capa"
+  },
+  "startFen": "8/p5kp/8/1P6/8/1K6/P7/8 w - - 0 1",
+  "steps": [
+    {
+      "id": "intro",
+      "title": "Count",
+      "source": "When two Pawns are free, or will be free, to advance to Queen, you can find out, by counting, which Pawn will be the first to succeed. In this position whoever moves first wins.",
+      "narration": [
+        {
+          "say": "Here, whoever moves first wins."
+        },
+        {
+          "say": "First, count: can either king catch the other side's passed pawn? No.",
+          "highlights": [
+            "g7",
+            "b3"
+          ]
+        },
+        {
+          "say": "Then count which pawn queens first. Your move."
+        }
+      ],
+      "exercise": {
+        "feedback": {
+          "*": "Your passed pawn will be the a-pawn, after b6."
+        },
+        "prompt": "White to move. Start the race.",
+        "accept": [
+          "a4"
+        ],
+        "wrong": "Your passed pawn will be the a-pawn, after b6.",
+        "hint": "The a-pawn goes two squares.",
+        "hintSquares": [
+          "a4"
+        ],
+        "success": "1. a4. Black runs too: h5.",
+        "reply": "h5"
+      }
+    },
+    {
+      "id": "race",
+      "title": "The race",
+      "narration": [
+        {
+          "say": "Pawn to a5, pawn to h4.",
+          "moves": [
+            "a5",
+            "h4"
+          ]
+        },
+        {
+          "say": "Pawn to b6, and Black takes.",
+          "moves": [
+            "b6",
+            "axb6"
+          ]
+        },
+        {
+          "say": "Now a little calculation. White could take back, but should he?"
+        }
+      ],
+      "exercise": {
+        "feedback": {
+          "axb6": "Then the new white queen appears on b8, which does not watch h1 where Black will queen.",
+          "*": "Look at your a-pawn."
+        },
+        "prompt": "White to move. Take, or push?",
+        "accept": [
+          "a6"
+        ],
+        "hint": "Push the a-pawn: it will queen on a8, on the long diagonal to h1.",
+        "hintSquares": [
+          "a6"
+        ],
+        "success": "4. a6. The queen will appear on a8, watching h1. Black runs: h3.",
+        "reply": "h3"
+      }
+    },
+    {
+      "id": "queen",
+      "title": "The queen controls h1",
+      "narration": [
+        {
+          "say": "Pawn to a7, pawn to h2.",
+          "moves": [
+            "a7",
+            "h2"
+          ]
+        },
+        {
+          "say": "And a8 queen. When Black queens on h1, the new queen takes it.",
+          "move": "a8=Q",
+          "arrows": [
+            {
+              "from": "a8",
+              "to": "h1",
+              "color": "primary"
+            }
+          ]
+        },
+        {
+          "say": "A book cannot teach how to play by itself. It can only guide: acquire the habit of counting."
+        }
+      ]
+    }
+  ]
+}

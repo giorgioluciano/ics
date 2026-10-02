@@ -1,0 +1,156 @@
+{
+  "id": "035-queen-v-rook",
+  "title": "Queen against Rook",
+  "subtitle": "Separate the rook from the king",
+  "source": {
+    "work": "Chess Fundamentals",
+    "author": "José Raúl Capablanca",
+    "year": 1921,
+    "section": "Chapter II, §16 Queen against Rook, Examples 40–41",
+    "examples": "40–41",
+    "url": "https://archive.org/details/chessfundamental00capa"
+  },
+  "startFen": "1k6/1r6/2K5/Q7/8/8/8/8 w - - 0 1",
+  "steps": [
+    {
+      "id": "intro",
+      "title": "A standard position",
+      "source": "If it were Black's move it would be simple, as he would have to move his Rook away from the King, and then the Rook would be comparatively easy to win. […] We must bring about the position in the diagram with Black to move.",
+      "narration": [
+        {
+          "say": "One of the most difficult endings without pawns. This is a standard defensive position."
+        },
+        {
+          "say": "If it were Black to move, the rook would have to leave the king, and would soon be lost.",
+          "highlights": [
+            "b7",
+            "b8"
+          ]
+        },
+        {
+          "say": "So the plan: reach this same position, with Black to move. Your move."
+        }
+      ],
+      "exercise": {
+        "feedback": {
+          "Qa6": "The trap every beginner falls into: Rc7 check, Kb6, Rc6 check, and Kxc6 is stalemate.",
+          "*": "Check from the long diagonal."
+        },
+        "prompt": "White to move. Start with a check.",
+        "accept": [
+          "Qe5+"
+        ],
+        "hint": "Queen to e5, check.",
+        "hintSquares": [
+          "e5"
+        ],
+        "success": "1. Qe5, check. Black goes to a7.",
+        "reply": "Ka7"
+      }
+    },
+    {
+      "id": "triangle",
+      "title": "Losing a move",
+      "narration": [
+        {
+          "say": "Queen to a1, check. Black returns to b8.",
+          "moves": [
+            "Qa1+",
+            "Kb8"
+          ]
+        }
+      ],
+      "exercise": {
+        "feedback": {
+          "*": "Put the queen back where it was at the start."
+        },
+        "prompt": "White to move. Return to the starting position.",
+        "accept": [
+          "Qa5"
+        ],
+        "wrong": "Put the queen back where it was at the start.",
+        "hint": "Queen to a5.",
+        "hintSquares": [
+          "a5"
+        ],
+        "success": "3. Qa5. The same position, with Black to move. The rook must leave. It can only go to a light square, or a check wins it.",
+        "reply": "Rb3"
+      }
+    },
+    {
+      "id": "mate",
+      "title": "Part two: the mate",
+      "narration": [
+        {
+          "say": "Queen to e5, check. Black goes to a8, best.",
+          "moves": [
+            "Qe5+",
+            "Ka8"
+          ]
+        },
+        {
+          "say": "Queen to h8, check; and g7, check.",
+          "moves": [
+            "Qh8+",
+            "Ka7",
+            "Qg7+",
+            "Ka8"
+          ]
+        },
+        {
+          "say": "Queen to g8, check. The rook must block on b8.",
+          "moves": [
+            "Qg8+",
+            "Rb8"
+          ]
+        }
+      ],
+      "exercise": {
+        "feedback": {
+          "*": "The rook has left the b3 square. Use the diagonal."
+        },
+        "prompt": "White to move and give checkmate in one.",
+        "accept": [
+          "Qa2#"
+        ],
+        "wrong": "The rook has left the b3 square. Use the diagonal.",
+        "hint": "Queen to a2.",
+        "hintSquares": [
+          "a2"
+        ],
+        "success": "Checkmate. The long-range diagonal checks did the work.",
+        "reply": null
+      }
+    },
+    {
+      "id": "ex41",
+      "title": "A similar position",
+      "fen": "8/k7/2K5/4Q3/8/8/8/1r6 w - - 0 1",
+      "source": "The procedure here is very similar. The things to bear in mind are that the Rook must be prevented from interposing at Kt 1 because of an immediate mate, and in the same way the King must be prevented from going either to R 3 or B 1.",
+      "narration": [
+        {
+          "say": "Here the procedure is very similar."
+        },
+        {
+          "say": "Keep the rook from blocking on b8, because of an immediate mate.",
+          "highlights": [
+            "b8"
+          ]
+        },
+        {
+          "say": "And keep the black king away from a6 and c8.",
+          "zone": {
+            "squares": [
+              "a6",
+              "c8"
+            ],
+            "color": "danger"
+          }
+        },
+        {
+          "say": "Try it yourself on a board."
+        }
+      ]
+    }
+  ]
+}

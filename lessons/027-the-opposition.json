@@ -1,0 +1,134 @@
+{
+  "id": "027-the-opposition",
+  "title": "The Opposition",
+  "subtitle": "Kings face to face",
+  "source": {
+    "work": "Chess Fundamentals",
+    "author": "José Raúl Capablanca",
+    "year": 1921,
+    "section": "Chapter II, §13 The Opposition, Example 26",
+    "examples": "26",
+    "url": "https://archive.org/details/chessfundamental00capa"
+  },
+  "startFen": "8/8/4k3/1p5p/1P2K2P/8/8/8 w - - 0 1",
+  "steps": [
+    {
+      "id": "intro",
+      "title": "Kings face to face",
+      "source": "When Kings have to be moved, and one player can, by force, bring his King into a position similar to the one shown in the following diagram, so that his adversary is forced to move and make way, the player obtaining that advantage is said to have the opposition.",
+      "narration": [
+        {
+          "say": "The two kings face each other, with one square between them.",
+          "highlights": [
+            "e4",
+            "e6"
+          ],
+          "zone": {
+            "squares": [
+              "e5"
+            ],
+            "color": "warning"
+          }
+        },
+        {
+          "say": "Whoever must move has to make way. The other player has the opposition."
+        },
+        {
+          "say": "Suppose White plays king to d4.",
+          "move": "Kd4"
+        },
+        {
+          "say": "Black can oppose the white king with Kd6, or pass with his own king to f5.",
+          "arrows": [
+            {
+              "from": "e6",
+              "to": "d6",
+              "color": "primary"
+            },
+            {
+              "from": "e6",
+              "to": "f5",
+              "color": "muted"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "diagonal",
+      "title": "Diagonal opposition",
+      "fen": "8/8/2k5/8/4K3/8/8/8 w - - 0 1",
+      "narration": [
+        {
+          "say": "The same idea on a diagonal: the diagonal opposition.",
+          "highlights": [
+            "e4",
+            "c6"
+          ],
+          "zone": {
+            "squares": [
+              "d5"
+            ],
+            "color": "warning"
+          }
+        }
+      ]
+    },
+    {
+      "id": "lateral",
+      "title": "Lateral opposition",
+      "fen": "8/8/8/8/2k1K3/8/8/8 w - - 0 1",
+      "source": "In practice they are all one and the same. The Kings are always on squares of the same colour, there is only one intervening square between the Kings, and the player who has moved last \"has the opposition.\"",
+      "narration": [
+        {
+          "say": "And the lateral opposition.",
+          "highlights": [
+            "e4",
+            "c4"
+          ],
+          "zone": {
+            "squares": [
+              "d4"
+            ],
+            "color": "warning"
+          }
+        },
+        {
+          "say": "In practice they are all the same: kings on squares of the same colour, one square between them."
+        },
+        {
+          "say": "And the player who moved last has the opposition."
+        }
+      ]
+    },
+    {
+      "id": "distant",
+      "title": "Distant opposition",
+      "fen": "4k3/8/8/8/8/8/8/4K3 w - - 0 1",
+      "source": "In all simple forms of opposition, when the Kings are on the same line and the number of intervening squares between them is even, the player who has the move has the opposition.",
+      "narration": [
+        {
+          "say": "Move the kings back along the same line, and you have the distant opposition.",
+          "highlights": [
+            "e1",
+            "e8"
+          ]
+        },
+        {
+          "say": "The rule: when the kings are on the same line, and the number of squares between them is even, the player who has the move has the opposition.",
+          "zone": {
+            "squares": [
+              "e2",
+              "e3",
+              "e4",
+              "e5",
+              "e6",
+              "e7"
+            ],
+            "color": "warning"
+          }
+        }
+      ]
+    }
+  ]
+}

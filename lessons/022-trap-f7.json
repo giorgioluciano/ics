@@ -1,0 +1,111 @@
+{
+  "id": "022-trap-f7",
+  "title": "The Weak Point f7",
+  "subtitle": "Take the material",
+  "source": {
+    "work": "Chess Fundamentals",
+    "author": "José Raúl Capablanca",
+    "year": 1921,
+    "section": "Chapter I, §8 Traps, Example 21",
+    "examples": "21",
+    "url": "https://archive.org/details/chessfundamental00capa"
+  },
+  "startFen": "rn1qkbnr/ppp1pppp/8/8/2B3b1/2N2N2/PPPP1PPP/R1BQK2R b KQkq - 0 1",
+  "steps": [
+    {
+      "id": "intro",
+      "title": "Black should play e6",
+      "source": "Black, having the move, should play P - K 3. But suppose he plays Kt - K B 3 instead.",
+      "narration": [
+        {
+          "say": "Black to move. He should play e6, protecting f7 and freeing his bishop.",
+          "highlights": [
+            "e7",
+            "f7"
+          ]
+        },
+        {
+          "say": "Suppose he plays knight to f6 instead.",
+          "move": "Nf6"
+        }
+      ],
+      "exercise": {
+        "prompt": "White to move. Win material at once.",
+        "accept": [
+          "Bxf7+"
+        ],
+        "feedback": {
+          "Ne5": "Ne5 also gives White the advantage, but Bxf7 wins material immediately.",
+          "*": "f7 is only defended by the king."
+        },
+        "hint": "The bishop takes on f7.",
+        "hintSquares": [
+          "f7"
+        ],
+        "success": "1. Bxf7, check. Black takes.",
+        "reply": "Kxf7"
+      }
+    },
+    {
+      "id": "fork",
+      "title": "Your turn: the knight check",
+      "narration": [
+        {
+          "say": "Now a knight check that also attacks the bishop on g4."
+        }
+      ],
+      "exercise": {
+        "prompt": "White to move. Check, and attack the bishop.",
+        "accept": [
+          "Ne5+"
+        ],
+        "feedback": {
+          "*": "The knight on f3 can give check."
+        },
+        "hint": "The knight jumps to e5.",
+        "hintSquares": [
+          "e5"
+        ],
+        "success": "2. Ne5, check. The king moves.",
+        "reply": "Ke8"
+      }
+    },
+    {
+      "id": "take",
+      "title": "Your turn: collect",
+      "narration": [
+        {
+          "say": "Take what you attacked."
+        }
+      ],
+      "exercise": {
+        "prompt": "White to move. Win the bishop back.",
+        "accept": [
+          "Nxg4"
+        ],
+        "feedback": {
+          "*": "The knight takes the bishop on g4."
+        },
+        "hint": "The knight takes on g4.",
+        "hintSquares": [
+          "g4"
+        ],
+        "success": "3. Nxg4. White has won a pawn, and has the better position.",
+        "reply": null
+      }
+    },
+    {
+      "id": "summary",
+      "title": "What we learned",
+      "source": "The beginner at any rate should never miss such an opportunity for the sake of a speculative advantage in position.",
+      "narration": [
+        {
+          "say": "f7 is the weakest point in the black camp at the start of the game."
+        },
+        {
+          "say": "A beginner should never miss a sure material gain for the sake of a speculative advantage."
+        }
+      ]
+    }
+  ]
+}

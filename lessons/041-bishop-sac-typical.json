@@ -1,0 +1,135 @@
+{
+  "id": "041-bishop-sac-typical",
+  "title": "The Typical Bishop Sacrifice",
+  "subtitle": "Bxh7 in a real game",
+  "source": {
+    "work": "Chess Fundamentals",
+    "author": "José Raúl Capablanca",
+    "year": 1921,
+    "section": "Chapter III, §18 Attacking with Knights as a Prominent Force, Example 47",
+    "examples": "47",
+    "url": "https://archive.org/details/chessfundamental00capa"
+  },
+  "startFen": "r1bq1rk1/pp2nppp/4p3/2n5/8/2NBPN2/PP3PPP/R2Q1RK1 w - - 0 1",
+  "steps": [
+    {
+      "id": "intro",
+      "title": "A typical sacrifice",
+      "source": "The student should carefully examine the position, as the sacrifice of the Bishop in similar situations is typical, and the chance for it is of frequent occurrence in actual play.",
+      "narration": [
+        {
+          "say": "The sacrifice of the bishop in positions like this is typical, and the chance occurs often."
+        },
+        {
+          "say": "You met it in Chapter One. Your move.",
+          "arrows": [
+            {
+              "from": "d3",
+              "to": "h7",
+              "color": "primary"
+            }
+          ]
+        }
+      ],
+      "exercise": {
+        "feedback": {
+          "*": "The bishop takes on h7."
+        },
+        "prompt": "White to move. The typical sacrifice.",
+        "accept": [
+          "Bxh7+"
+        ],
+        "wrong": "The bishop takes on h7.",
+        "hint": "Bishop takes h7, check.",
+        "hintSquares": [
+          "h7"
+        ],
+        "success": "1. Bxh7, check. Black takes.",
+        "reply": "Kxh7"
+      }
+    },
+    {
+      "id": "ng5",
+      "title": "Your turn: the knight check",
+      "narration": [
+        {
+          "say": "Now the knight, with check."
+        }
+      ],
+      "exercise": {
+        "feedback": {
+          "*": "The knight on f3 checks from g5."
+        },
+        "prompt": "White to move. Check with the knight.",
+        "accept": [
+          "Ng5+"
+        ],
+        "wrong": "The knight on f3 checks from g5.",
+        "hint": "Knight to g5, check.",
+        "hintSquares": [
+          "g5"
+        ],
+        "success": "2. Ng5, check. Kg6 is best.",
+        "reply": "Kg6"
+      }
+    },
+    {
+      "id": "others",
+      "title": "The other king moves",
+      "narration": [
+        {
+          "say": "If Kh6, knight takes f7 with check, and wins the queen.",
+          "arrows": [
+            {
+              "from": "g5",
+              "to": "f7",
+              "color": "danger"
+            }
+          ]
+        },
+        {
+          "say": "If Kg8, queen to h5, with an irresistible attack.",
+          "arrows": [
+            {
+              "from": "d1",
+              "to": "h5",
+              "color": "danger"
+            }
+          ]
+        }
+      ],
+      "exercise": {
+        "feedback": {
+          "*": "The queen joins the attack on the g-file."
+        },
+        "prompt": "White to move. Bring the queen with a threat.",
+        "accept": [
+          "Qg4"
+        ],
+        "wrong": "The queen joins the attack on the g-file.",
+        "hint": "Queen to g4.",
+        "hintSquares": [
+          "g4"
+        ],
+        "success": "3. Qg4. Black plays f5.",
+        "reply": "f5"
+      }
+    },
+    {
+      "id": "end",
+      "title": "White won in the end",
+      "narration": [
+        {
+          "say": "Queen to g3, and the king goes to h6.",
+          "moves": [
+            "Qg3",
+            "Kh6"
+          ]
+        },
+        {
+          "say": "White ultimately won the game. We will look at this attack again in the next chapter."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,159 @@
+{
+  "id": "014-knight-f6-again",
+  "title": "The Knight Check, Again",
+  "subtitle": "Removing a defender first",
+  "source": {
+    "work": "Chess Fundamentals",
+    "author": "José Raúl Capablanca",
+    "year": 1921,
+    "section": "Chapter I, §4 Some Winning Positions in the Middle-game, Example 14",
+    "examples": "14",
+    "url": "https://archive.org/details/chessfundamental00capa"
+  },
+  "startFen": "2q1rrk1/1bpn1ppp/pp1p4/1B6/4N3/1P1QR3/PBP2PPP/6K1 w - - 0 1",
+  "steps": [
+    {
+      "id": "intro",
+      "title": "The same idea, better hidden",
+      "narration": [
+        {
+          "say": "The same type of combination, in a more complicated form."
+        },
+        {
+          "say": "The knight wants to go to f6, but the black knight on d7 guards that square.",
+          "highlights": [
+            "f6",
+            "d7"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "remove",
+      "title": "Your turn: remove the guard",
+      "source": "1. B x Kt, Q x B. If …B x Kt; Q - B 3 threatens mate, and therefore wins the Q, which is already attacked.",
+      "narration": [
+        {
+          "say": "Your move. Get rid of the defender of f6."
+        }
+      ],
+      "exercise": {
+        "prompt": "White to move. Remove the knight that guards f6.",
+        "accept": [
+          "Bxd7"
+        ],
+        "feedback": {
+          "*": "The bishop on b5 can take the knight on d7."
+        },
+        "hint": "The bishop takes on d7.",
+        "hintSquares": [
+          "d7"
+        ],
+        "success": "1. Bxd7. Black takes back with the queen.",
+        "reply": "Qxd7"
+      }
+    },
+    {
+      "id": "why",
+      "title": "Why not the other capture?",
+      "narration": [
+        {
+          "say": "If Black had taken the knight on e4 instead, queen to c3 would threaten mate on g7.",
+          "arrows": [
+            {
+              "from": "d3",
+              "to": "c3",
+              "color": "muted"
+            },
+            {
+              "from": "c3",
+              "to": "g7",
+              "color": "danger"
+            }
+          ]
+        },
+        {
+          "say": "And the black queen was already attacked, so Black would lose it."
+        },
+        {
+          "say": "Now, the knight check."
+        }
+      ],
+      "exercise": {
+        "prompt": "White to move. Give the knight check.",
+        "accept": [
+          "Nf6+"
+        ],
+        "feedback": {
+          "*": "Now nothing guards f6."
+        },
+        "hint": "The knight goes to f6.",
+        "hintSquares": [
+          "f6"
+        ],
+        "success": "2. Nf6, check. Black must take.",
+        "reply": "gxf6"
+      }
+    },
+    {
+      "id": "rook",
+      "title": "Your turn: the rook check",
+      "narration": [
+        {
+          "say": "This time it is the rook that uses the open g-file."
+        }
+      ],
+      "exercise": {
+        "prompt": "White to move. Check along the g-file.",
+        "accept": [
+          "Rg3+"
+        ],
+        "feedback": {
+          "*": "The rook swings to the g-file with check."
+        },
+        "hint": "The rook goes to g3.",
+        "hintSquares": [
+          "g3"
+        ],
+        "success": "3. Rg3, check. Black goes to h8.",
+        "reply": "Kh8"
+      }
+    },
+    {
+      "id": "mate",
+      "title": "Find the checkmate",
+      "narration": [
+        {
+          "say": "And the bishop mates."
+        }
+      ],
+      "exercise": {
+        "prompt": "White to move and give checkmate in one.",
+        "accept": [
+          "Bxf6#"
+        ],
+        "feedback": {
+          "*": "The bishop on b2 takes with check."
+        },
+        "hint": "The bishop takes on f6.",
+        "hintSquares": [
+          "f6"
+        ],
+        "success": "Checkmate.",
+        "reply": null
+      }
+    },
+    {
+      "id": "summary",
+      "title": "What we learned",
+      "narration": [
+        {
+          "say": "When a key square is guarded, first remove the guard."
+        },
+        {
+          "say": "Recognising a pattern lets you find combinations in more complicated positions."
+        }
+      ]
+    }
+  ]
+}

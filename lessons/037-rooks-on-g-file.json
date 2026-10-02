@@ -1,0 +1,142 @@
+{
+  "id": "037-rooks-on-g-file",
+  "title": "Doubled Rooks on the g-file",
+  "subtitle": "Attacking without knights",
+  "source": {
+    "work": "Chess Fundamentals",
+    "author": "José Raúl Capablanca",
+    "year": 1921,
+    "section": "Chapter III, §17 Attacking without the Aid of Knights, Example 43",
+    "examples": "43",
+    "url": "https://archive.org/details/chessfundamental00capa"
+  },
+  "startFen": "2kr4/ppp1qp2/4bQ2/8/3P2r1/N1P5/PP4P1/R1B2RK1 b - - 0 1",
+  "steps": [
+    {
+      "id": "intro",
+      "title": "Win quickly, if at all",
+      "source": "I shall now give a few winning positions taken from my own games. I have selected those that I believe can be considered as types, i.e., positions that may easily occur again in a somewhat similar form. […] It is Black's move, and as he is a Kt and P behind he must win quickly, if at all.",
+      "narration": [
+        {
+          "say": "Now some winning positions from Capablanca's own games: types that can easily occur again."
+        },
+        {
+          "say": "It is Black's move. He is a knight and a pawn behind, so he must win quickly, if at all."
+        },
+        {
+          "say": "The rook on g4 already aims at g2. Bring the other rook.",
+          "highlights": [
+            "g4",
+            "g2"
+          ]
+        }
+      ],
+      "exercise": {
+        "feedback": {
+          "*": "Bring the rook from d8 to the g-file."
+        },
+        "prompt": "Black to move. Double on the open file.",
+        "accept": [
+          "Rdg8"
+        ],
+        "wrong": "Bring the rook from d8 to the g-file.",
+        "hint": "The d8 rook goes to g8.",
+        "hintSquares": [
+          "g8"
+        ],
+        "success": "1...Rdg8! White defends g2 with Rf2.",
+        "reply": "Rf2"
+      }
+    },
+    {
+      "id": "why",
+      "title": "If White takes the queen",
+      "narration": [
+        {
+          "say": "If White had taken the queen, Rxg2 check, Kh1, and Bd5 would soon mate.",
+          "arrows": [
+            {
+              "from": "g4",
+              "to": "g2",
+              "color": "danger"
+            },
+            {
+              "from": "e6",
+              "to": "d5",
+              "color": "danger"
+            }
+          ]
+        },
+        {
+          "say": "Now, the attack."
+        }
+      ],
+      "exercise": {
+        "feedback": {
+          "*": "Take on g2, with check."
+        },
+        "prompt": "Black to move. Break in with check.",
+        "accept": [
+          "Rxg2+"
+        ],
+        "wrong": "Take on g2, with check.",
+        "hint": "The rook takes on g2.",
+        "hintSquares": [
+          "g2"
+        ],
+        "success": "2...Rxg2, check. The king goes to f1.",
+        "reply": "Kf1"
+      }
+    },
+    {
+      "id": "deflect",
+      "title": "Your turn: deflect the knight",
+      "narration": [
+        {
+          "say": "The knight on a3 is the only piece that could help. Lure it away."
+        }
+      ],
+      "exercise": {
+        "feedback": {
+          "*": "The bishop gives check on the diagonal to f1."
+        },
+        "prompt": "Black to move. Check with the bishop.",
+        "accept": [
+          "Bc4+"
+        ],
+        "wrong": "The bishop gives check on the diagonal to f1.",
+        "hint": "Bishop to c4, check.",
+        "hintSquares": [
+          "c4"
+        ],
+        "success": "3...Bc4, check. The knight must take.",
+        "reply": "Nxc4"
+      }
+    },
+    {
+      "id": "mate",
+      "title": "Find the checkmate",
+      "narration": [
+        {
+          "say": "Now finish."
+        }
+      ],
+      "exercise": {
+        "feedback": {
+          "*": "The rook on g2 can mate, protected by the other rook."
+        },
+        "prompt": "Black to move and give checkmate in one.",
+        "accept": [
+          "Rg1#"
+        ],
+        "wrong": "The rook on g2 can mate, protected by the other rook.",
+        "hint": "Rook to g1.",
+        "hintSquares": [
+          "g1"
+        ],
+        "success": "Checkmate. The queen on e7 covers e2, and the rook on g8 protects g1.",
+        "reply": null
+      }
+    }
+  ]
+}

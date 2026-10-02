@@ -1,0 +1,183 @@
+{
+  "id": "024-classical-ending",
+  "title": "A Classical Ending",
+  "subtitle": "Winning in three parts",
+  "source": {
+    "work": "Chess Fundamentals",
+    "author": "José Raúl Capablanca",
+    "year": 1921,
+    "section": "Chapter II, §10 A Classical Ending, Example 23",
+    "examples": "23",
+    "url": "https://archive.org/details/chessfundamental00capa"
+  },
+  "startFen": "8/6p1/7p/8/4k3/8/6KP/8 w - - 0 1",
+  "steps": [
+    {
+      "id": "intro",
+      "title": "A plan in three parts",
+      "source": "In this position White's best line of defence consists in keeping his Pawn where it stands. As soon as the Pawn is advanced it becomes easier for Black to win. On the other hand, Black's plan to win may be divided into three parts.",
+      "narration": [
+        {
+          "say": "White's best defence is to leave his pawn on h2.",
+          "highlights": [
+            "h2"
+          ]
+        },
+        {
+          "say": "Black wins with a plan in three parts. Part one: bring the king to h3, keeping the pawns where they are.",
+          "arrows": [
+            {
+              "from": "e4",
+              "to": "h3",
+              "color": "primary"
+            }
+          ]
+        },
+        {
+          "say": "This is all important: at the end, Black must be able to move his rear pawn one or two squares, as needed.",
+          "highlights": [
+            "g7"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "part1",
+      "title": "Part one: the king",
+      "narration": [
+        {
+          "say": "King to g3, king to e3. King back to g2.",
+          "moves": [
+            "Kg3",
+            "Ke3",
+            "Kg2"
+          ]
+        },
+        {
+          "say": "Black goes round: f4, then g5.",
+          "moves": [
+            "Kf4",
+            "Kf2",
+            "Kg5"
+          ]
+        },
+        {
+          "say": "Then h4, and h3.",
+          "moves": [
+            "Kg2",
+            "Kh4",
+            "Kg1",
+            "Kh3"
+          ],
+          "highlights": [
+            "h3"
+          ]
+        },
+        {
+          "say": "The first part is completed."
+        }
+      ]
+    },
+    {
+      "id": "part2",
+      "title": "Part two: the h-pawn",
+      "narration": [
+        {
+          "say": "Part two is short: the h-pawn advances.",
+          "moves": [
+            "Kh1",
+            "h5",
+            "Kg1",
+            "h4"
+          ],
+          "highlights": [
+            "h4"
+          ]
+        },
+        {
+          "say": "Now the third part: timing the g-pawn, so that it reaches g3 when the white king is on h1."
+        },
+        {
+          "say": "White plays king to h1.",
+          "move": "Kh1"
+        }
+      ],
+      "exercise": {
+        "feedback": {
+          "g6": "Count: after g6 the pawn reaches g3 with the white king on g1, not h1.",
+          "*": "Move the g-pawn."
+        },
+        "prompt": "Black to move. One square or two?",
+        "accept": [
+          "g5"
+        ],
+        "hint": "Two squares: the pawn must arrive on g3 when the king is on h1.",
+        "hintSquares": [
+          "g5"
+        ],
+        "success": "8...g5. Now the timing is right.",
+        "reply": "Kg1"
+      }
+    },
+    {
+      "id": "part3",
+      "title": "Part three: the timing",
+      "narration": [
+        {
+          "say": "Pawn to g4. King to h1.",
+          "moves": [
+            "g4",
+            "Kh1"
+          ]
+        }
+      ],
+      "exercise": {
+        "feedback": {
+          "*": "Not the move Capablanca shows here. Try again."
+        },
+        "prompt": "Black to move. The white king is on h1: strike.",
+        "accept": [
+          "g3"
+        ],
+        "hint": "The g-pawn moves forward.",
+        "hintSquares": [
+          "g3"
+        ],
+        "success": "10...g3. White takes.",
+        "reply": "hxg3"
+      }
+    },
+    {
+      "id": "finish",
+      "title": "And wins",
+      "source": "It is in this analytical way that the student should try to learn. He will thus train his mind to follow a logical sequence in reasoning out any position.",
+      "narration": [
+        {
+          "say": "Black takes back. King to g1, pawn to g2.",
+          "moves": [
+            "hxg3",
+            "Kg1",
+            "g2"
+          ]
+        },
+        {
+          "say": "King to f2, king to h2, and the pawn queens.",
+          "moves": [
+            "Kf2",
+            "Kh2"
+          ],
+          "arrows": [
+            {
+              "from": "g2",
+              "to": "g1",
+              "color": "primary"
+            }
+          ]
+        },
+        {
+          "say": "Divide the ending into stages, and find the main point of each one. That is how to learn."
+        }
+      ]
+    }
+  ]
+}

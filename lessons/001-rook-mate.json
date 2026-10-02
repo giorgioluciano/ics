@@ -1,0 +1,365 @@
+{
+  "id": "001-rook-mate",
+  "title": "The Rook Mate",
+  "subtitle": "Rook and King against King",
+  "source": {
+    "work": "Chess Fundamentals",
+    "author": "José Raúl Capablanca",
+    "year": 1921,
+    "section": "Chapter I, §1 Some Simple Mates, Example 1",
+    "url": "https://archive.org/details/chessfundamental00capa",
+    "examples": "1"
+  },
+  "startFen": "7k/8/8/8/8/8/8/R6K w - - 0 1",
+  "steps": [
+    {
+      "id": "intro",
+      "title": "Learn the power of the pieces",
+      "source": "The first thing a student should do, is to familiarise himself with the power of the pieces. This can best be done by learning how to accomplish quickly some of the simple mates.",
+      "narration": [
+        {
+          "say": "Capablanca opens his book not with openings, but with the simplest checkmates.",
+          "highlights": []
+        },
+        {
+          "say": "Here White has only a king and a rook. Black has a lone king in the corner.",
+          "highlights": [
+            "h1",
+            "a1",
+            "h8"
+          ]
+        },
+        {
+          "say": "Our goal: checkmate the black king, using both white pieces together.",
+          "arrows": [
+            {
+              "from": "h1",
+              "to": "h8",
+              "color": "muted"
+            },
+            {
+              "from": "a1",
+              "to": "h8",
+              "color": "muted"
+            }
+          ],
+          "highlights": [
+            "h8"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "rook-barrier",
+      "title": "Build a wall with the rook",
+      "source": "The principle is to drive the opposing King to the last line on any side of the board. […] R - R 7, which immediately confines the Black King to the last rank.",
+      "narration": [
+        {
+          "say": "The first principle: drive the enemy king to the edge of the board.",
+          "highlights": [
+            "h8"
+          ]
+        },
+        {
+          "say": "Watch the rook. It slides from a1 all the way up to a7.",
+          "move": "Ra7",
+          "arrows": [
+            {
+              "from": "a1",
+              "to": "a7",
+              "color": "primary"
+            }
+          ]
+        },
+        {
+          "say": "Now the whole seventh rank is a wall. The black king can never cross it.",
+          "zone": {
+            "squares": [
+              "a7",
+              "b7",
+              "c7",
+              "d7",
+              "e7",
+              "f7",
+              "g7",
+              "h7"
+            ],
+            "color": "danger"
+          },
+          "arrows": []
+        },
+        {
+          "say": "Black can only shuffle along the last rank. He steps to g8.",
+          "move": "Kg8",
+          "zone": {
+            "squares": [
+              "a7",
+              "b7",
+              "c7",
+              "d7",
+              "e7",
+              "f7",
+              "g7",
+              "h7"
+            ],
+            "color": "danger"
+          },
+          "highlights": [
+            "g8"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "king-comes",
+      "title": "Your turn: bring the king",
+      "source": "The combined action of King and Rook is needed to arrive at a position in which mate can be forced.",
+      "narration": [
+        {
+          "say": "The rook alone cannot give mate. The white king has to come and help.",
+          "highlights": [
+            "h1"
+          ]
+        },
+        {
+          "say": "Your turn. Move the white king one step towards the black king."
+        }
+      ],
+      "exercise": {
+        "prompt": "Move the white king one square towards the black king.",
+        "accept": [
+          "Kg2"
+        ],
+        "feedback": {
+          "Kh2": "Close, but Kg2 is better: it heads towards the centre as well as upwards.",
+          "Kg1": "That moves sideways, not towards the black king. Go up the board.",
+          "*": "Try moving the king, not the rook. Which square brings it closer?"
+        },
+        "hint": "The king is on h1. Go diagonally up and to the left.",
+        "hintSquares": [
+          "g2"
+        ],
+        "success": "Exactly. 2. Kg2. The king starts its march. Black answers Kf8.",
+        "reply": "Kf8"
+      }
+    },
+    {
+      "id": "king-march",
+      "title": "March side by side",
+      "source": "The general principle for a beginner to follow is to keep his King as much as possible on the same rank, or, as in this case, file, as the opposing King.",
+      "narration": [
+        {
+          "say": "Capablanca's rule: keep your king on the same file as the enemy king, as much as possible."
+        },
+        {
+          "say": "King to f3. Black goes to e8.",
+          "moves": [
+            "Kf3",
+            "Ke8"
+          ],
+          "highlights": [
+            "f3",
+            "e8"
+          ]
+        },
+        {
+          "say": "King to e4. Black goes to d8.",
+          "moves": [
+            "Ke4",
+            "Kd8"
+          ],
+          "highlights": [
+            "e4",
+            "d8"
+          ]
+        },
+        {
+          "say": "King to d5. Black goes to c8.",
+          "moves": [
+            "Kd5",
+            "Kc8"
+          ],
+          "highlights": [
+            "d5",
+            "c8"
+          ]
+        },
+        {
+          "say": "Notice how the two kings walk together, and the rook's wall never moves.",
+          "zone": {
+            "squares": [
+              "a7",
+              "b7",
+              "c7",
+              "d7",
+              "e7",
+              "f7",
+              "g7",
+              "h7"
+            ],
+            "color": "danger"
+          }
+        }
+      ]
+    },
+    {
+      "id": "key-moment",
+      "title": "The key moment: which square?",
+      "source": "When, in this case, the King has been brought to the sixth rank, it is better to place it, not on the same file, but on the one next to it towards the centre. […] 6 K - Q 6. Not K - B 6, because then the Black King will go back to Q 1 and it will take much longer to mate.",
+      "narration": [
+        {
+          "say": "Now a subtle point. The white king is ready to step onto the sixth rank."
+        },
+        {
+          "say": "It could go to c6, right in front of the black king. Or to d6, one file closer to the centre.",
+          "highlights": [
+            "c6",
+            "d6"
+          ]
+        },
+        {
+          "say": "Capablanca says: choose the file next to the enemy king, towards the centre. Your move."
+        }
+      ],
+      "exercise": {
+        "prompt": "Put the white king on the sixth rank. Which square does Capablanca prefer?",
+        "accept": [
+          "Kd6"
+        ],
+        "feedback": {
+          "Kc6": "Capablanca warns against this: after Kc6, Black runs back to d8 and the mate takes much longer.",
+          "Kc5": "That goes backwards. Step forward onto the sixth rank.",
+          "Ke6": "Too far from the black king. Stay close to it.",
+          "*": "Move the king onto the sixth rank: c6, d6 or e6?"
+        },
+        "hint": "Not directly in front of the black king, but one file towards the centre.",
+        "hintSquares": [
+          "d6"
+        ],
+        "success": "Right: 6. Kd6. If Black now went back to d8, the rook would mate at once on a8. So Black runs to b8.",
+        "reply": "Kb8"
+      }
+    },
+    {
+      "id": "rook-tightens",
+      "title": "Tighten the box",
+      "source": "6…K - Kt 1; 7 R - Q B 7, K - R 1; 8 K - B 6, K - Kt 1; 9 K - Kt 6, K - R 1.",
+      "narration": [
+        {
+          "say": "The rook moves to c7, and the black king's box gets smaller.",
+          "move": "Rc7",
+          "arrows": [
+            {
+              "from": "a7",
+              "to": "c7",
+              "color": "primary"
+            }
+          ]
+        },
+        {
+          "say": "Now Black has only two squares left: a8 and b8.",
+          "zone": {
+            "squares": [
+              "a8",
+              "b8"
+            ],
+            "color": "warning"
+          },
+          "arrows": []
+        },
+        {
+          "say": "Black goes to the corner.",
+          "move": "Ka8",
+          "zone": {
+            "squares": [
+              "a8",
+              "b8"
+            ],
+            "color": "warning"
+          }
+        },
+        {
+          "say": "The white king follows: c6, and Black steps back to b8.",
+          "moves": [
+            "Kc6",
+            "Kb8"
+          ],
+          "highlights": [
+            "c6",
+            "b8"
+          ]
+        },
+        {
+          "say": "King to b6. Now the kings face each other, and Black must return to a8.",
+          "moves": [
+            "Kb6",
+            "Ka8"
+          ],
+          "highlights": [
+            "b6",
+            "a8"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "find-mate",
+      "title": "Find the checkmate",
+      "narration": [
+        {
+          "say": "Everything is ready. The white king takes away a7, b7 and b8 from the black king.",
+          "zone": {
+            "squares": [
+              "a7",
+              "b7",
+              "b8"
+            ],
+            "color": "warning"
+          }
+        },
+        {
+          "say": "One rook move finishes the game. Can you find it?"
+        }
+      ],
+      "exercise": {
+        "prompt": "White to move and give checkmate in one.",
+        "accept": [
+          "Rc8#"
+        ],
+        "feedback": {
+          "Rc8": "Checkmate!",
+          "*": "Not mate yet. The rook needs to attack the whole last rank."
+        },
+        "hint": "The rook can attack the entire eighth rank from c8.",
+        "hintSquares": [
+          "c8"
+        ],
+        "success": "Checkmate! 10. Rc8. Exactly as in Capablanca's book, in ten moves.",
+        "reply": null
+      }
+    },
+    {
+      "id": "summary",
+      "title": "What we learned",
+      "source": "While it may be monotonous, it is worth while for the beginner to practice such things, as it will teach him the proper handling of his pieces.",
+      "narration": [
+        {
+          "say": "Let's sum up. One: the rook builds a wall and pushes the king to the edge."
+        },
+        {
+          "say": "Two: the rook alone is not enough. The king must come and help."
+        },
+        {
+          "say": "Three: walk your king alongside the enemy king, one file towards the centre."
+        },
+        {
+          "say": "And four: when the enemy king is trapped on the edge, the rook delivers mate.",
+          "highlights": [
+            "a8",
+            "c8"
+          ]
+        }
+      ]
+    }
+  ]
+}

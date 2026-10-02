@@ -1,0 +1,213 @@
+{
+  "id": "036-queen-v-rook-hard",
+  "title": "Queen against Rook, Harder",
+  "subtitle": "The obvious move is not the best",
+  "source": {
+    "work": "Chess Fundamentals",
+    "author": "José Raúl Capablanca",
+    "year": 1921,
+    "section": "Chapter II, §16 Queen against Rook, Example 42",
+    "examples": "42",
+    "url": "https://archive.org/details/chessfundamental00capa"
+  },
+  "startFen": "8/5rk1/8/5Q1K/8/8/8/8 w - - 0 1",
+  "steps": [
+    {
+      "id": "deceptive",
+      "title": "The obvious check",
+      "source": "Many players would be deceived by this position. The most likely looking move is not the best.",
+      "narration": [
+        {
+          "say": "Many players would be deceived here. The most likely looking move is not the best."
+        },
+        {
+          "say": "Suppose queen to e5, check, and king to g6.",
+          "moves": [
+            "Qe5+",
+            "Kf8",
+            "Kg6"
+          ]
+        },
+        {
+          "say": "The only defence, but a very effective one: rook to d7.",
+          "move": "Rd7"
+        },
+        {
+          "say": "Now Qe6 fails to Rg7 check, Kf6, Rg6 check: a draw. White has made no progress."
+        }
+      ]
+    },
+    {
+      "id": "best",
+      "title": "Your turn: the best move",
+      "fen": "8/5rk1/8/5Q1K/8/8/8/8 w - - 0 1",
+      "narration": [
+        {
+          "say": "Back to the start. Find a better check."
+        }
+      ],
+      "exercise": {
+        "feedback": {
+          "Qe5+": "That is the deceptive move: after Kf8, Kg6, Rd7, White makes slow progress.",
+          "*": "Check on the g-file."
+        },
+        "prompt": "White to move. The best check.",
+        "accept": [
+          "Qg5+"
+        ],
+        "hint": "Queen to g5, check.",
+        "hintSquares": [
+          "g5"
+        ],
+        "success": "1. Qg5! If Kh7, then Qg6 check, Kh8, and Kh6 wins. Black plays Kh8.",
+        "reply": "Kh8"
+      }
+    },
+    {
+      "id": "line1",
+      "title": "Back to Example 40",
+      "narration": [
+        {
+          "say": "Queen to e5, check. King to h7, best.",
+          "moves": [
+            "Qe5+",
+            "Kh7"
+          ]
+        },
+        {
+          "say": "King to g5. Black plays rook to a7, best.",
+          "moves": [
+            "Kg5",
+            "Ra7"
+          ]
+        },
+        {
+          "say": "Queen to e4, check, and c4, check.",
+          "moves": [
+            "Qe4+",
+            "Kg8",
+            "Qc4+",
+            "Kh7"
+          ]
+        },
+        {
+          "say": "King to f6. The rook comes back to g7.",
+          "moves": [
+            "Kf6",
+            "Rg7"
+          ]
+        },
+        {
+          "say": "Queen to h4, check, and queen to h5.",
+          "moves": [
+            "Qh4+",
+            "Kg8",
+            "Qh5"
+          ]
+        },
+        {
+          "say": "This is the position of Example 40, with Black to move.",
+          "highlights": [
+            "g7",
+            "g8"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "line2",
+      "title": "Another defence",
+      "fen": "8/5rk1/8/5Q1K/8/8/8/8 w - - 0 1",
+      "narration": [
+        {
+          "say": "Once more from the start. Queen to g5, check, and king to f8.",
+          "moves": [
+            "Qg5+",
+            "Kf8"
+          ]
+        },
+        {
+          "say": "Queen to d8, check. King to g7.",
+          "moves": [
+            "Qd8+",
+            "Kg7"
+          ]
+        },
+        {
+          "say": "King to g5. The best square for the rook, away from the king: f3.",
+          "moves": [
+            "Kg5",
+            "Rf3"
+          ]
+        },
+        {
+          "say": "Queen to d4, check, and king to g6. White threatens mate on d8.",
+          "moves": [
+            "Qd4+",
+            "Kf8",
+            "Kg6"
+          ],
+          "arrows": [
+            {
+              "from": "d4",
+              "to": "d8",
+              "color": "danger"
+            }
+          ]
+        },
+        {
+          "say": "Rook checks: g3, then f3. The king steps to e6.",
+          "moves": [
+            "Rg3+",
+            "Kf6",
+            "Rf3+",
+            "Ke6"
+          ]
+        },
+        {
+          "say": "Black must stop mate on h8 with rook to h3.",
+          "move": "Rh3",
+          "arrows": [
+            {
+              "from": "d4",
+              "to": "h8",
+              "color": "danger"
+            }
+          ]
+        }
+      ],
+      "exercise": {
+        "feedback": {
+          "*": "Check on the f-file."
+        },
+        "prompt": "White to move. Check, and the rook is lost.",
+        "accept": [
+          "Qf4+"
+        ],
+        "wrong": "Check on the f-file.",
+        "hint": "Queen to f4, check.",
+        "hintSquares": [
+          "f4"
+        ],
+        "success": "8. Qf4, check, and the rook is lost.",
+        "reply": null
+      }
+    },
+    {
+      "id": "summary",
+      "title": "What we learned",
+      "source": "Note, in these examples, that the checks at long range along the diagonals have often been the key to all the winning manoeuvres. Also that the Queen and King are often kept on different lines.",
+      "narration": [
+        {
+          "say": "Long-range checks along the diagonals are the key to the winning manoeuvres."
+        },
+        {
+          "say": "And the queen and the king are often kept on different lines."
+        },
+        {
+          "say": "Before going further, go through everything once more."
+        }
+      ]
+    }
+  ]
+}

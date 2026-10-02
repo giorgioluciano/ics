@@ -1,0 +1,168 @@
+{
+  "id": "015-bishop-sacrifice-h7",
+  "title": "The Bishop Sacrifice on h7",
+  "subtitle": "A very frequent combination",
+  "source": {
+    "work": "Chess Fundamentals",
+    "author": "José Raúl Capablanca",
+    "year": 1921,
+    "section": "Chapter I, §4 Some Winning Positions in the Middle-game, Example 15",
+    "examples": "15",
+    "url": "https://archive.org/details/chessfundamental00capa"
+  },
+  "startFen": "r3qrk1/1pp2ppp/p1np4/3Q4/8/P2B1N2/1PP2PPP/3R2K1 w - - 0 1",
+  "steps": [
+    {
+      "id": "intro",
+      "title": "A very frequent combination",
+      "source": "A very frequent type of combination is shown in the following position. Here White is the exchange and a Pawn behind, but he can win quickly.",
+      "narration": [
+        {
+          "say": "A very frequent type of combination."
+        },
+        {
+          "say": "White is the exchange and a pawn behind. But look at the bishop on d3, aiming at h7.",
+          "arrows": [
+            {
+              "from": "d3",
+              "to": "h7",
+              "color": "primary"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sac",
+      "title": "Your turn: the sacrifice",
+      "narration": [
+        {
+          "say": "Your move. Sacrifice the bishop."
+        }
+      ],
+      "exercise": {
+        "prompt": "White to move. Sacrifice the bishop with check.",
+        "accept": [
+          "Bxh7+"
+        ],
+        "feedback": {
+          "*": "The bishop takes the pawn in front of the king."
+        },
+        "hint": "The bishop takes on h7.",
+        "hintSquares": [
+          "h7"
+        ],
+        "success": "1. Bxh7, check. Black takes.",
+        "reply": "Kxh7"
+      }
+    },
+    {
+      "id": "qh5",
+      "title": "Your turn: the queen check",
+      "narration": [
+        {
+          "say": "Now bring the queen with check."
+        }
+      ],
+      "exercise": {
+        "prompt": "White to move. Check with the queen.",
+        "accept": [
+          "Qh5+"
+        ],
+        "feedback": {
+          "*": "The queen checks on the h-file."
+        },
+        "hint": "The queen goes to h5.",
+        "hintSquares": [
+          "h5"
+        ],
+        "success": "2. Qh5, check. Black goes back to g8.",
+        "reply": "Kg8"
+      }
+    },
+    {
+      "id": "ng5",
+      "title": "Your turn: the knight joins",
+      "source": "3 Kt - Kt 5, and Black cannot stop mate at K R 7 except by sacrificing the Queen by Q - K 5, which would leave White with a Q for a R.",
+      "narration": [
+        {
+          "say": "Queen on h5. One more piece, and h7 falls."
+        }
+      ],
+      "exercise": {
+        "prompt": "White to move. Bring the knight to support the queen.",
+        "accept": [
+          "Ng5"
+        ],
+        "feedback": {
+          "*": "The knight goes where it supports h7."
+        },
+        "hint": "The knight jumps to g5.",
+        "hintSquares": [
+          "g5"
+        ],
+        "success": "3. Ng5. Black cannot stop mate on h7, except by giving up his queen with Qe4.",
+        "reply": "Qe4"
+      }
+    },
+    {
+      "id": "result",
+      "title": "A queen for a rook",
+      "narration": [
+        {
+          "say": "The knight takes the queen.",
+          "move": "Nxe4",
+          "highlights": [
+            "e4"
+          ]
+        },
+        {
+          "say": "White now has a queen against a rook, and should win easily."
+        }
+      ]
+    },
+    {
+      "id": "variation",
+      "title": "If Black does not take",
+      "fen": "r3qrk1/1pp2ppp/p1np4/3Q4/8/P2B1N2/1PP2PPP/3R2K1 w - - 0 1",
+      "source": "(If 1…K - R 1; 2 Q - K R 5, P - K Kt 3; 3 Q - R 6, and wins.)",
+      "narration": [
+        {
+          "say": "And if Black does not take the bishop?",
+          "move": "Bxh7+"
+        },
+        {
+          "say": "King to h8. Then queen to h5.",
+          "moves": [
+            "Kh8",
+            "Qh5"
+          ]
+        },
+        {
+          "say": "Black blocks with g6, and queen to h6 wins.",
+          "moves": [
+            "g6",
+            "Qh6"
+          ],
+          "highlights": [
+            "h6",
+            "h7",
+            "g6"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "summary",
+      "title": "What we learned",
+      "narration": [
+        {
+          "say": "Bishop takes h7 check, queen to h5 check, knight to g5: remember this pattern."
+        },
+        {
+          "say": "It works when the bishop, queen and knight can all reach the king's side quickly."
+        }
+      ]
+    }
+  ]
+}

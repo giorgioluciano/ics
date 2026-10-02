@@ -1,0 +1,278 @@
+{
+  "id": "004-queen-mate",
+  "title": "The Queen Mate",
+  "subtitle": "Queen and King against King",
+  "source": {
+    "work": "Chess Fundamentals",
+    "author": "José Raúl Capablanca",
+    "year": 1921,
+    "section": "Chapter I, §1 Some Simple Mates, Example 4",
+    "examples": "4",
+    "url": "https://archive.org/details/chessfundamental00capa"
+  },
+  "startFen": "8/8/8/4k3/8/8/8/4K2Q w - - 0 1",
+  "steps": [
+    {
+      "id": "intro",
+      "title": "The easiest mate of all",
+      "source": "As the Queen combines the power of the Rook and the Bishop, it is the easiest mate of all and should always be accomplished in under ten moves.",
+      "narration": [
+        {
+          "say": "The queen combines the power of the rook and the bishop.",
+          "highlights": [
+            "h1"
+          ]
+        },
+        {
+          "say": "That makes this the easiest mate of all. It should always take fewer than ten moves.",
+          "highlights": [
+            "e5"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "queen-first",
+      "title": "Start with the queen",
+      "source": "A good way to begin is to make the first move with the Queen, trying to limit the Black King's mobility as much as possible.",
+      "narration": [
+        {
+          "say": "A good start is a queen move that limits the black king as much as possible."
+        },
+        {
+          "say": "Queen to c6.",
+          "move": "Qc6",
+          "arrows": [
+            {
+              "from": "h1",
+              "to": "c6",
+              "color": "primary"
+            }
+          ]
+        },
+        {
+          "say": "Black goes to d4.",
+          "move": "Kd4",
+          "zone": {
+            "squares": [
+              "d4",
+              "d3",
+              "e3",
+              "e5",
+              "f4",
+              "f5",
+              "g3",
+              "g4",
+              "g5",
+              "h2",
+              "h3",
+              "h4",
+              "h5",
+              "g1"
+            ],
+            "color": "warning"
+          }
+        },
+        {
+          "say": "King to d2. Look: the black king has only one square left.",
+          "move": "Kd2",
+          "zone": {
+            "squares": [
+              "d4",
+              "e5",
+              "f4",
+              "f5",
+              "g3",
+              "g4",
+              "g5",
+              "f2",
+              "h2",
+              "h3",
+              "h4",
+              "h5",
+              "f1",
+              "g1"
+            ],
+            "color": "warning"
+          }
+        },
+        {
+          "say": "He goes to e5.",
+          "move": "Ke5"
+        }
+      ]
+    },
+    {
+      "id": "squeeze",
+      "title": "Squeeze towards the edge",
+      "narration": [
+        {
+          "say": "King to e3. Black to f5.",
+          "moves": [
+            "Ke3",
+            "Kf5"
+          ]
+        },
+        {
+          "say": "Queen to d6. Black to g5.",
+          "moves": [
+            "Qd6",
+            "Kg5"
+          ],
+          "arrows": [
+            {
+              "from": "c6",
+              "to": "d6",
+              "color": "primary"
+            }
+          ]
+        },
+        {
+          "say": "Queen to e6. Black runs to the edge, on h4.",
+          "moves": [
+            "Qe6",
+            "Kh4"
+          ],
+          "arrows": [
+            {
+              "from": "d6",
+              "to": "e6",
+              "color": "primary"
+            }
+          ],
+          "zone": {
+            "squares": [
+              "h4",
+              "g3",
+              "g5",
+              "h5",
+              "g2",
+              "h2",
+              "f1",
+              "g1",
+              "h1",
+              "e1",
+              "d1",
+              "c1",
+              "c2",
+              "b1",
+              "b2",
+              "c3",
+              "a1",
+              "a3",
+              "b4",
+              "a4",
+              "a5",
+              "b5",
+              "c5"
+            ],
+            "color": "warning"
+          }
+        }
+      ]
+    },
+    {
+      "id": "cage",
+      "title": "Your turn: close the cage",
+      "narration": [
+        {
+          "say": "The black king is on the h-file. Find a quiet queen move that keeps him trapped there.",
+          "zone": {
+            "squares": [
+              "h1",
+              "h2",
+              "h3",
+              "h4",
+              "h5",
+              "h6",
+              "h7",
+              "h8"
+            ],
+            "color": "warning"
+          }
+        }
+      ],
+      "exercise": {
+        "prompt": "A quiet queen move that locks the king on the edge.",
+        "accept": [
+          "Qg6"
+        ],
+        "feedback": {
+          "Qh6": "Check, but the king escapes to g4. No hurry: take squares away instead.",
+          "*": "Put the queen on the g-file, a knight's jump away from the king."
+        },
+        "hint": "The queen goes one file away from the king, on the g-file.",
+        "hintSquares": [
+          "g6"
+        ],
+        "success": "Right: 6. Qg6. The black king can only go to h3.",
+        "reply": "Kh3"
+      }
+    },
+    {
+      "id": "king-helps",
+      "title": "Your turn: bring the king",
+      "source": "In each case the co-operation of the King is needed.",
+      "narration": [
+        {
+          "say": "The queen alone cannot mate. The white king must come closer. Your move."
+        }
+      ],
+      "exercise": {
+        "prompt": "Bring the white king closer. Watch out for stalemate.",
+        "accept": [
+          "Kf3"
+        ],
+        "feedback": {
+          "*": "Step the king towards the black king, to f3."
+        },
+        "hint": "The king goes diagonally towards the black king.",
+        "hintSquares": [
+          "f3"
+        ],
+        "success": "7. Kf3. Black has to move, and goes to h2.",
+        "reply": "Kh2"
+      }
+    },
+    {
+      "id": "mate",
+      "title": "Find the checkmate",
+      "narration": [
+        {
+          "say": "The queen mates next move. Find it."
+        }
+      ],
+      "exercise": {
+        "prompt": "White to move and give checkmate in one.",
+        "accept": [
+          "Qg2#"
+        ],
+        "feedback": {
+          "*": "Not mate. The queen should go right next to the black king, protected by your king."
+        },
+        "hint": "The queen lands next to the black king, defended by the white king.",
+        "hintSquares": [
+          "g2"
+        ],
+        "success": "Checkmate in eight moves.",
+        "reply": null
+      }
+    },
+    {
+      "id": "summary",
+      "title": "The three elementary endings",
+      "source": "These are the three elementary endings and in all of these the principle is the same. In each case the co-operation of the King is needed. In order to force a mate without the aid of the King, at least two Rooks are required.",
+      "narration": [
+        {
+          "say": "Rook, two bishops, queen: these are the three elementary endings."
+        },
+        {
+          "say": "The principle is always the same: drive the enemy king to the edge of the board."
+        },
+        {
+          "say": "And in each case the king must help. Without the king, you need at least two rooks to force mate."
+        }
+      ]
+    }
+  ]
+}

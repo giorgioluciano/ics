@@ -1,0 +1,273 @@
+{
+  "id": "008-connected-pawns",
+  "title": "A Harder Pawn Ending",
+  "subtitle": "Two connected pawns against one",
+  "source": {
+    "work": "Chess Fundamentals",
+    "author": "José Raúl Capablanca",
+    "year": 1921,
+    "section": "Chapter I, §3 Pawn Endings, Example 8",
+    "examples": "8",
+    "url": "https://archive.org/details/chessfundamental00capa"
+  },
+  "startFen": "8/6p1/3k4/8/3K1PP1/8/8/8 w - - 0 1",
+  "steps": [
+    {
+      "id": "intro",
+      "title": "Why the pawns cannot just run",
+      "source": "In the above position White can't win by 1 P - B 5. Black's best answer would be P - Kt 3 draws. […] He cannot win by 1 P - Kt 5, because P - Kt 3 draws. (This, because of the principle of the \"opposition\" which governs this ending.)",
+      "narration": [
+        {
+          "say": "Two connected pawns against one. But neither pawn can simply run.",
+          "highlights": [
+            "f4",
+            "g4"
+          ]
+        },
+        {
+          "say": "After f5 or g5, Black answers g6 and draws.",
+          "arrows": [
+            {
+              "from": "g7",
+              "to": "g6",
+              "color": "danger"
+            }
+          ]
+        },
+        {
+          "say": "The reason is the opposition, which Capablanca explains later. For now: the king leads."
+        }
+      ]
+    },
+    {
+      "id": "king-first",
+      "title": "Your turn: king first",
+      "narration": [
+        {
+          "say": "Your move. Remember the lesson of the previous example."
+        }
+      ],
+      "exercise": {
+        "prompt": "White to move. How does White start?",
+        "accept": [
+          "Ke4"
+        ],
+        "feedback": {
+          "f5": "Black answers g6, and the game is drawn.",
+          "g5": "Black answers g6, and the game is drawn.",
+          "*": "Bring the king forward, next to the pawns."
+        },
+        "hint": "The king steps diagonally forward, towards the pawns.",
+        "hintSquares": [
+          "e4"
+        ],
+        "success": "1. Ke4. Black stays in front with Ke6.",
+        "reply": "Ke6"
+      }
+    },
+    {
+      "id": "advance",
+      "title": "The pawns advance, protected",
+      "source": "2 P - B 5 ch, K - B 3; 3 K - B 4, P - Kt 3. (If this Pawn is kept back we arrive at the ending shown in Example 7.)",
+      "narration": [
+        {
+          "say": "Pawn to f5, check. Black to f6.",
+          "moves": [
+            "f5+",
+            "Kf6"
+          ]
+        },
+        {
+          "say": "King to f4. Black plays g6. If he kept the pawn back, we would be in the previous example.",
+          "moves": [
+            "Kf4",
+            "g6"
+          ]
+        },
+        {
+          "say": "Pawn to g5, check. Black to f7.",
+          "moves": [
+            "g5+",
+            "Kf7"
+          ]
+        },
+        {
+          "say": "Pawn to f6. Black to e6.",
+          "moves": [
+            "f6",
+            "Ke6"
+          ]
+        },
+        {
+          "say": "King to e4, and Black returns to f7.",
+          "moves": [
+            "Ke4",
+            "Kf7"
+          ]
+        },
+        {
+          "say": "King to e5. Black to f8.",
+          "moves": [
+            "Ke5",
+            "Kf8"
+          ],
+          "highlights": [
+            "e5",
+            "f6",
+            "g5"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "give-up",
+      "title": "Your turn: give one to take one",
+      "source": "White cannot force his Bishop's Pawn into Q (find out why), but by giving his Pawn up he can win the other Pawn and the game.",
+      "narration": [
+        {
+          "say": "White cannot force the f-pawn to queen. But by giving it up, he can win the other pawn, and the game."
+        }
+      ],
+      "exercise": {
+        "prompt": "White to move. Give up the f-pawn in the right way.",
+        "accept": [
+          "f7"
+        ],
+        "feedback": {
+          "*": "Push the f-pawn: Black must spend time taking it."
+        },
+        "hint": "The f-pawn goes forward one more square.",
+        "hintSquares": [
+          "f7"
+        ],
+        "success": "8. f7. Black takes it.",
+        "reply": "Kxf7"
+      }
+    },
+    {
+      "id": "hunt",
+      "title": "The king hunts the g-pawn",
+      "narration": [
+        {
+          "say": "King to d6. Black to f8.",
+          "moves": [
+            "Kd6",
+            "Kf8"
+          ]
+        },
+        {
+          "say": "King to e6. Black to g7.",
+          "moves": [
+            "Ke6",
+            "Kg7"
+          ]
+        },
+        {
+          "say": "King to e7. Black to g8.",
+          "moves": [
+            "Ke7",
+            "Kg8"
+          ]
+        },
+        {
+          "say": "King to f6. Black to h7.",
+          "moves": [
+            "Kf6",
+            "Kh7"
+          ]
+        },
+        {
+          "say": "King to f7. Black to h8.",
+          "moves": [
+            "Kf7",
+            "Kh8"
+          ]
+        },
+        {
+          "say": "And the king takes the pawn on g6. Black to g8.",
+          "moves": [
+            "Kxg6",
+            "Kg8"
+          ],
+          "highlights": [
+            "g6"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "kh6",
+      "title": "Your turn: the only way",
+      "source": "There is still some resistance in Black's position. In fact, the only way to win is the one given here. 15 K - R 6 (if K - B 6, K - R 2; and in order to win White must get back to the actual position, as against 16 P - Kt 6 ch, K - R 1 draws).",
+      "narration": [
+        {
+          "say": "There is still some resistance. Only one move wins cleanly here."
+        }
+      ],
+      "exercise": {
+        "prompt": "White to move. Find the only clean win.",
+        "accept": [
+          "Kh6"
+        ],
+        "feedback": {
+          "Kf6": "After Kf6, Black plays Kh7, and g6 check, Kh8 would be a draw. White would have to come back.",
+          "Kf5": "Too far away. Stay close to the black king.",
+          "*": "Put your king where the pawn can advance with the king protecting it, and the black king cannot get in front."
+        },
+        "hint": "The king goes to the edge, next to the pawn.",
+        "hintSquares": [
+          "h6"
+        ],
+        "success": "15. Kh6. Black to h8.",
+        "reply": "Kh8"
+      }
+    },
+    {
+      "id": "queen",
+      "title": "The pawn gets through",
+      "narration": [
+        {
+          "say": "Pawn to g6. Black to g8.",
+          "moves": [
+            "g6",
+            "Kg8"
+          ]
+        },
+        {
+          "say": "Pawn to g7. Black to f7.",
+          "moves": [
+            "g7",
+            "Kf7"
+          ]
+        },
+        {
+          "say": "King to h7, and the pawn queens.",
+          "move": "Kh7",
+          "arrows": [
+            {
+              "from": "g7",
+              "to": "g8",
+              "color": "primary"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "summary",
+      "title": "What we learned",
+      "source": "This ending, apparently so simple, should show the student the enormous difficulties to be surmounted, even when there are hardly any pieces left.",
+      "narration": [
+        {
+          "say": "Even with very few pieces, the ending can be hard."
+        },
+        {
+          "say": "Sometimes you give up one pawn to win the other."
+        },
+        {
+          "say": "And these elementary things are the basis of true mastership in chess."
+        }
+      ]
+    }
+  ]
+}

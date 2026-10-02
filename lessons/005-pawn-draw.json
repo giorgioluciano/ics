@@ -1,0 +1,234 @@
+{
+  "id": "005-pawn-draw",
+  "title": "Defending against a Pawn",
+  "subtitle": "Pawn promotion: the drawn position",
+  "source": {
+    "work": "Chess Fundamentals",
+    "author": "José Raúl Capablanca",
+    "year": 1921,
+    "section": "Chapter I, §2 Pawn Promotion, Example 5",
+    "examples": "5",
+    "url": "https://archive.org/details/chessfundamental00capa"
+  },
+  "startFen": "8/8/8/8/4k3/8/3KP3/8 w - - 0 1",
+  "steps": [
+    {
+      "id": "intro",
+      "title": "One pawn can be enough",
+      "source": "The gain of a Pawn is the smallest material advantage that can be obtained in a game; and it often is sufficient to win, even when the Pawn is the only remaining unit, apart from the Kings.",
+      "narration": [
+        {
+          "say": "A single extra pawn is the smallest advantage in chess. Yet it is often enough to win.",
+          "highlights": [
+            "e2"
+          ]
+        },
+        {
+          "say": "The rule: the king should be in front of its pawn, with at least one square in between."
+        },
+        {
+          "say": "But if the enemy king stands directly in front of the pawn, the game cannot be won."
+        },
+        {
+          "say": "In this lesson you defend with Black.",
+          "highlights": [
+            "e4"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "in-front",
+      "title": "Stay in front",
+      "source": "The way to proceed is for Black to keep the King always directly in front of the Pawn, and when it cannot be done […] then the Black King must be kept in front of the White King.",
+      "narration": [
+        {
+          "say": "Pawn to e3. The black king goes straight in front of it, to e5.",
+          "moves": [
+            "e3",
+            "Ke5"
+          ],
+          "highlights": [
+            "e3",
+            "e5"
+          ]
+        },
+        {
+          "say": "King to d3. Now Black cannot stay close to the pawn.",
+          "move": "Kd3",
+          "highlights": [
+            "d3"
+          ]
+        },
+        {
+          "say": "So the black king must stand in front of the white king instead. You are Black. Your move."
+        }
+      ],
+      "exercise": {
+        "prompt": "Black to move. Where must the black king go?",
+        "accept": [
+          "Kd5"
+        ],
+        "feedback": {
+          "Ke6": "Too far back. Capablanca: any other move but Kd5 loses.",
+          "Kf5": "That is not in front of the white king. Now White's king goes ahead.",
+          "Kf6": "Too far back. Bring the king as far forward as possible.",
+          "Kd6": "Too far back. Bring the king as far forward as possible, in front of the white king.",
+          "*": "Stand as far forward as possible, and directly in front of the white king."
+        },
+        "hint": "The white king is on d3. Stand in front of it.",
+        "hintSquares": [
+          "d5"
+        ],
+        "success": "Yes: 2... Kd5. A very important move. Any other move would lose. White pushes the pawn with check.",
+        "reply": "e4+"
+      }
+    },
+    {
+      "id": "dance",
+      "title": "The dance of the kings",
+      "source": "As the White King comes up, the Black King must be kept in front of it, since it cannot be brought up to the Pawn.",
+      "narration": [
+        {
+          "say": "Black returns in front of the pawn, to e5.",
+          "move": "Ke5",
+          "highlights": [
+            "e5"
+          ]
+        },
+        {
+          "say": "King to e3. Black to e6.",
+          "moves": [
+            "Ke3",
+            "Ke6"
+          ]
+        },
+        {
+          "say": "King to f4. Black to f6, again in front of the white king.",
+          "moves": [
+            "Kf4",
+            "Kf6"
+          ],
+          "highlights": [
+            "f4",
+            "f6"
+          ]
+        },
+        {
+          "say": "Pawn to e5, check. Black to e6.",
+          "moves": [
+            "e5+",
+            "Ke6"
+          ]
+        },
+        {
+          "say": "King to e4. Black to e7.",
+          "moves": [
+            "Ke4",
+            "Ke7"
+          ]
+        },
+        {
+          "say": "King to d5. Black to d7.",
+          "moves": [
+            "Kd5",
+            "Kd7"
+          ],
+          "highlights": [
+            "d5",
+            "d7"
+          ]
+        },
+        {
+          "say": "Pawn to e6, check. Black to e7.",
+          "moves": [
+            "e6+",
+            "Ke7"
+          ]
+        },
+        {
+          "say": "King to e5. Black to e8.",
+          "moves": [
+            "Ke5",
+            "Ke8"
+          ]
+        },
+        {
+          "say": "King to d6. Your move again.",
+          "move": "Kd6",
+          "highlights": [
+            "d6"
+          ]
+        }
+      ],
+      "exercise": {
+        "prompt": "Black to move. Keep the draw.",
+        "accept": [
+          "Kd8"
+        ],
+        "feedback": {
+          "Kf8": "After Kf8, White plays Kd7 and the pawn runs to e8. Stand in front of the white king.",
+          "*": "Stand directly in front of the white king."
+        },
+        "hint": "The white king is on d6.",
+        "hintSquares": [
+          "d8"
+        ],
+        "success": "Correct: 11... Kd8. Black is in front of the white king. The draw is safe.",
+        "reply": null
+      }
+    },
+    {
+      "id": "stalemate",
+      "title": "Why it is a draw",
+      "source": "If now White advances the Pawn, the Black King gets in front of it and White must either give up the Pawn or play K - K 6, and a stale mate results.",
+      "narration": [
+        {
+          "say": "If White pushes the pawn to e7, check, the black king steps in front of it.",
+          "moves": [
+            "e7+",
+            "Ke8"
+          ],
+          "highlights": [
+            "e8"
+          ]
+        },
+        {
+          "say": "Now White must either give up the pawn, or play king to e6.",
+          "highlights": [
+            "e6"
+          ]
+        },
+        {
+          "say": "King to e6: Black has no legal move, but is not in check. Stalemate. A draw.",
+          "move": "Ke6",
+          "zone": {
+            "squares": [
+              "d7",
+              "d8",
+              "f7",
+              "f8"
+            ],
+            "color": "danger"
+          }
+        }
+      ]
+    },
+    {
+      "id": "summary",
+      "title": "What we learned",
+      "source": "The whole mode of procedure is very important and the student should become thoroughly conversant with its details.",
+      "narration": [
+        {
+          "say": "The defender keeps his king directly in front of the pawn."
+        },
+        {
+          "say": "When that is not possible, he keeps it in front of the enemy king, as far forward as possible."
+        },
+        {
+          "say": "Capablanca could not stress it enough: many beginners have lost identical positions."
+        }
+      ]
+    }
+  ]
+}

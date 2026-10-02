@@ -1,0 +1,268 @@
+{
+  "id": "006-pawn-win",
+  "title": "Winning with a Pawn",
+  "subtitle": "Pawn promotion: the winning method",
+  "source": {
+    "work": "Chess Fundamentals",
+    "author": "José Raúl Capablanca",
+    "year": 1921,
+    "section": "Chapter I, §2 Pawn Promotion, Example 6",
+    "examples": "6",
+    "url": "https://archive.org/details/chessfundamental00capa"
+  },
+  "startFen": "8/8/5k2/8/5K2/8/4P3/8 w - - 0 1",
+  "steps": [
+    {
+      "id": "intro",
+      "title": "King in front of the pawn",
+      "source": "In this position White wins, as the King is in front of his Pawn and there is one intervening square.",
+      "narration": [
+        {
+          "say": "Here White wins: the king is in front of its pawn, with a square in between.",
+          "highlights": [
+            "f4",
+            "e2"
+          ]
+        },
+        {
+          "say": "The method: advance the king as far as the safety of the pawn allows."
+        },
+        {
+          "say": "And never push the pawn until its own safety requires it."
+        }
+      ]
+    },
+    {
+      "id": "king-first",
+      "title": "Your turn: king first",
+      "source": "The method to follow is to advance the King as far as is compatible with the safety of the Pawn and never to advance the Pawn until it is essential to its own safety.",
+      "narration": [
+        {
+          "say": "Your move. Remember the method."
+        }
+      ],
+      "exercise": {
+        "prompt": "White to move. King or pawn?",
+        "accept": [
+          "Ke4"
+        ],
+        "feedback": {
+          "e4": "Not yet. Never push the pawn until it is essential to its safety. King first.",
+          "e3": "Not yet. Never push the pawn until it is essential to its safety. King first.",
+          "*": "Advance the king, as far forward as you can."
+        },
+        "hint": "The king goes forward, in front of the pawn.",
+        "hintSquares": [
+          "e4"
+        ],
+        "success": "1. Ke4. Black blocks the way with Ke6.",
+        "reply": "Ke6"
+      }
+    },
+    {
+      "id": "forced-pawn",
+      "title": "Now the pawn must move",
+      "source": "Black does not allow the White King to advance, therefore White is now compelled to advance his Pawn so as to force Black to move away. He is then able to advance his own King.",
+      "narration": [
+        {
+          "say": "Black does not let the white king advance.",
+          "highlights": [
+            "e4",
+            "e6"
+          ]
+        },
+        {
+          "say": "So now White is compelled to push the pawn, to force Black to move away.",
+          "move": "e3"
+        },
+        {
+          "say": "Black steps aside, to f6.",
+          "move": "Kf6"
+        },
+        {
+          "say": "Now the white king can go forward, to d5. Black goes to e7.",
+          "moves": [
+            "Kd5",
+            "Ke7"
+          ],
+          "highlights": [
+            "d5"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "still-king",
+      "title": "Your turn: pawn or king?",
+      "source": "It is better for White not to advance the Pawn yet, since its own safety does not require it, but to try to bring the King still further forward.",
+      "narration": [
+        {
+          "say": "The pawn is safe. So what does the method say?"
+        }
+      ],
+      "exercise": {
+        "prompt": "White to move. Bring the king further forward.",
+        "accept": [
+          "Ke5"
+        ],
+        "feedback": {
+          "e4": "The pawn is not in danger, so its safety does not require this. Bring the king further forward.",
+          "*": "Move the king forward, staying close to the pawn."
+        },
+        "hint": "The king steps diagonally forward.",
+        "hintSquares": [
+          "e5"
+        ],
+        "success": "4. Ke5. Black goes to d7.",
+        "reply": "Kd7"
+      }
+    },
+    {
+      "id": "bring-pawn",
+      "title": "Bring the pawn up",
+      "source": "Now the White Pawn is too far back and it may be brought up within protection of the King.",
+      "narration": [
+        {
+          "say": "King to f6. Black goes to e8.",
+          "moves": [
+            "Kf6",
+            "Ke8"
+          ],
+          "highlights": [
+            "f6"
+          ]
+        },
+        {
+          "say": "Now the pawn is too far back. Bring it up, within protection of the king.",
+          "move": "e4",
+          "arrows": [
+            {
+              "from": "e3",
+              "to": "e4",
+              "color": "primary"
+            }
+          ]
+        },
+        {
+          "say": "Black to d7.",
+          "move": "Kd7"
+        },
+        {
+          "say": "Not king to f7, because Black would attack the pawn from d6. So the pawn goes on, to e5.",
+          "move": "e5",
+          "highlights": [
+            "e5",
+            "f6"
+          ]
+        },
+        {
+          "say": "Black goes back to e8, in front.",
+          "move": "Ke8"
+        }
+      ]
+    },
+    {
+      "id": "key-move",
+      "title": "Your turn: the key move",
+      "source": "P - K 6 would make it a draw, as Black would then play K - B, and we would have a position similar to the one explained in connection with Example 5.",
+      "narration": [
+        {
+          "say": "White must force the black king away, while keeping his own king in front of the pawn. Careful: one pawn push here throws away the win."
+        }
+      ],
+      "exercise": {
+        "prompt": "White to move and keep the win.",
+        "accept": [
+          "Ke6"
+        ],
+        "feedback": {
+          "e6": "That is the draw from the previous lesson: Black answers Kf8 and holds.",
+          "Kf5": "Backwards. Keep your king in front of the pawn.",
+          "*": "Keep your king in front of the pawn, and take the opposition."
+        },
+        "hint": "The king steps in front of the pawn, facing the black king.",
+        "hintSquares": [
+          "e6"
+        ],
+        "success": "8. Ke6. Black must give way: Kf8.",
+        "reply": "Kf8"
+      }
+    },
+    {
+      "id": "last-step",
+      "title": "Your turn: control the path",
+      "narration": [
+        {
+          "say": "One more king move controls every square the pawn needs."
+        }
+      ],
+      "exercise": {
+        "prompt": "White to move. Control e7 and e8.",
+        "accept": [
+          "Kd7"
+        ],
+        "feedback": {
+          "Kf6": "Now Black comes back with Ke8.",
+          "*": "Put the king next to the pawn's path, where it controls e7 and e8."
+        },
+        "hint": "The king goes beside the e-file.",
+        "hintSquares": [
+          "d7"
+        ],
+        "success": "9. Kd7. Nothing can stop the pawn now.",
+        "reply": "Kg7"
+      }
+    },
+    {
+      "id": "queen",
+      "title": "A new queen",
+      "source": "King moves and the White Pawn advances to K 8, becomes a Queen, and it is all over.",
+      "narration": [
+        {
+          "say": "The pawn marches to e6.",
+          "moves": [
+            "e6",
+            "Kf6"
+          ],
+          "arrows": [
+            {
+              "from": "e5",
+              "to": "e8",
+              "color": "primary"
+            }
+          ]
+        },
+        {
+          "say": "To e7, protected by the king.",
+          "moves": [
+            "e7",
+            "Kf7"
+          ]
+        },
+        {
+          "say": "And to e8, where it becomes a queen. It is all over.",
+          "move": "e8=Q+",
+          "highlights": [
+            "e8"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "summary",
+      "title": "What we learned",
+      "source": "This ending is like the previous one, and for the same reasons should be thoroughly understood before proceeding any further.",
+      "narration": [
+        {
+          "say": "The king goes in front of the pawn, as far as the pawn's safety allows."
+        },
+        {
+          "say": "The pawn moves only when it must: to stay safe, or to force the enemy king to give way."
+        },
+        {
+          "say": "And in the critical moment, a king move, not a pawn move, wins the game."
+        }
+      ]
+    }
+  ]
+}

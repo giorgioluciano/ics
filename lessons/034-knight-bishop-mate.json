@@ -1,0 +1,230 @@
+{
+  "id": "034-knight-bishop-mate",
+  "title": "Mate with Knight and Bishop",
+  "subtitle": "The laborious mate",
+  "source": {
+    "work": "Chess Fundamentals",
+    "author": "José Raúl Capablanca",
+    "year": 1921,
+    "section": "Chapter II, §15 How to Mate with Knight and Bishop, Example 39",
+    "examples": "39",
+    "url": "https://archive.org/details/chessfundamental00capa"
+  },
+  "startFen": "4k3/8/8/8/8/8/8/2B1K1N1 w - - 0 1",
+  "steps": [
+    {
+      "id": "intro",
+      "title": "The right corner",
+      "source": "With a Knight and a Bishop the mate can only be given in the corners of the same colour as the Bishop.",
+      "narration": [
+        {
+          "say": "With knight and bishop, mate can only be given in a corner of the bishop's colour."
+        },
+        {
+          "say": "This bishop runs on dark squares, so the mate must be on a1 or h8.",
+          "highlights": [
+            "a1",
+            "h8"
+          ]
+        },
+        {
+          "say": "Part one: drive the black king to the edge. First, the king to the centre."
+        }
+      ]
+    },
+    {
+      "id": "part1",
+      "title": "Part one: to the edge",
+      "narration": [
+        {
+          "say": "King to e2. Black heads for the light corner, to make it harder.",
+          "moves": [
+            "Ke2",
+            "Kd7",
+            "Kd3",
+            "Kc6"
+          ]
+        },
+        {
+          "say": "Bishop to f4, knight to e2, knight to c3.",
+          "moves": [
+            "Bf4",
+            "Kd5",
+            "Ne2",
+            "Kc5",
+            "Nc3",
+            "Kb4"
+          ]
+        },
+        {
+          "say": "The king follows closely.",
+          "moves": [
+            "Kd4",
+            "Ka5",
+            "Kc5",
+            "Ka6",
+            "Kc6",
+            "Ka7"
+          ]
+        },
+        {
+          "say": "Knight to d5, and Black is in the light corner.",
+          "moves": [
+            "Nd5",
+            "Ka8"
+          ],
+          "highlights": [
+            "a8"
+          ]
+        },
+        {
+          "say": "Part two: drive him from a8 towards a1.",
+          "arrows": [
+            {
+              "from": "a8",
+              "to": "a1",
+              "color": "primary"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "part2",
+      "title": "Part two: along the edge",
+      "source": "White has two ways to prevent that, one by 14 B - K 5, and the other which I give as the text, and which I consider better for the student to learn, because it is more methodical and more in accord with the spirit of all these endings, by using the King as much as possible.",
+      "narration": [
+        {
+          "say": "Knight to b6, check. Bishop to c7, then b8.",
+          "moves": [
+            "Nb6+",
+            "Ka7",
+            "Bc7",
+            "Ka6",
+            "Bb8",
+            "Ka5"
+          ]
+        },
+        {
+          "say": "Knight to d5. Black tries to escape along the edge.",
+          "moves": [
+            "Nd5",
+            "Ka4"
+          ]
+        }
+      ],
+      "exercise": {
+        "feedback": {
+          "Be5": "Also possible, with Kb3 and Ne3, but the king move is more methodical: use the king as much as possible.",
+          "*": "Bring the king closer."
+        },
+        "prompt": "White to move. Use the king to cut off the escape.",
+        "accept": [
+          "Kc5"
+        ],
+        "hint": "King to c5.",
+        "hintSquares": [
+          "c5"
+        ],
+        "success": "14. Kc5! Black goes to b3.",
+        "reply": "Kb3"
+      }
+    },
+    {
+      "id": "net",
+      "title": "Closing the net",
+      "narration": [
+        {
+          "say": "Knight to b4. Bishop to f4, then e5.",
+          "moves": [
+            "Nb4",
+            "Kc3",
+            "Bf4",
+            "Kb3",
+            "Be5",
+            "Ka4"
+          ]
+        },
+        {
+          "say": "King to c4. Bishop to c7, check.",
+          "moves": [
+            "Kc4",
+            "Ka5",
+            "Bc7+",
+            "Ka4"
+          ]
+        },
+        {
+          "say": "Knight to d3. Bishop to b6. Knight to b2, check.",
+          "moves": [
+            "Nd3",
+            "Ka3",
+            "Bb6",
+            "Ka4",
+            "Nb2+",
+            "Ka3"
+          ]
+        },
+        {
+          "say": "The king follows: c3, c2.",
+          "moves": [
+            "Kc3",
+            "Ka2",
+            "Kc2",
+            "Ka3"
+          ]
+        },
+        {
+          "say": "Bishop to c5, check. Knight to d3. Bishop to b4.",
+          "moves": [
+            "Bc5+",
+            "Ka2",
+            "Nd3",
+            "Ka1",
+            "Bb4",
+            "Ka2"
+          ]
+        },
+        {
+          "say": "Knight to c1, check.",
+          "moves": [
+            "Nc1+",
+            "Ka1"
+          ]
+        }
+      ],
+      "exercise": {
+        "feedback": {
+          "*": "The bishop gives mate on the long diagonal."
+        },
+        "prompt": "White to move and give checkmate in one.",
+        "accept": [
+          "Bc3#"
+        ],
+        "wrong": "The bishop gives mate on the long diagonal.",
+        "hint": "Bishop to c3.",
+        "hintSquares": [
+          "c3"
+        ],
+        "success": "Checkmate, on move 29.",
+        "reply": null
+      }
+    },
+    {
+      "id": "summary",
+      "title": "What we learned",
+      "source": "There are two outstanding features: the close following by the King, and the controlling of the squares of opposite colour to the Bishop by the combined action of the Knight and King.",
+      "narration": [
+        {
+          "say": "Two outstanding features: the king follows closely."
+        },
+        {
+          "say": "And knight and king together control the squares the bishop cannot reach."
+        },
+        {
+          "say": "Practise it: the mate must come within the fifty moves allowed by the rules."
+        }
+      ]
+    }
+  ]
+}

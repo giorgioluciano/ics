@@ -1,0 +1,129 @@
+{
+  "id": "009-three-v-two",
+  "title": "Three Pawns against Two",
+  "subtitle": "Push the free pawn",
+  "source": {
+    "work": "Chess Fundamentals",
+    "author": "José Raúl Capablanca",
+    "year": 1921,
+    "section": "Chapter I, §3 Pawn Endings, Example 9",
+    "examples": "9",
+    "url": "https://archive.org/details/chessfundamental00capa"
+  },
+  "startFen": "8/6pp/3k4/8/3K1PPP/8/8/8 w - - 0 1",
+  "steps": [
+    {
+      "id": "intro",
+      "title": "Three pawns against two",
+      "source": "White can win by advancing any of the three Pawns on the first move, but it is convenient to follow the general rule, whenever there is no good reason against it, of advancing the Pawn that has no Pawn opposing it.",
+      "narration": [
+        {
+          "say": "Three pawns against two, all on the same side.",
+          "highlights": [
+            "f4",
+            "g4",
+            "h4",
+            "g7",
+            "h7"
+          ]
+        },
+        {
+          "say": "The general rule: advance the pawn that has no pawn opposing it."
+        }
+      ]
+    },
+    {
+      "id": "free-pawn",
+      "title": "Your turn: the free pawn",
+      "narration": [
+        {
+          "say": "Which pawn has no black pawn in front of it? Push it."
+        }
+      ],
+      "exercise": {
+        "prompt": "White to move. Push the pawn that has no opponent.",
+        "accept": [
+          "f5"
+        ],
+        "feedback": {
+          "g5": "That also wins here, but the rule says: push the pawn with no pawn opposing it.",
+          "h5": "That also wins here, but the rule says: push the pawn with no pawn opposing it.",
+          "*": "Push a pawn. Which one has no black pawn on its file?"
+        },
+        "hint": "There is no black pawn on the f-file.",
+        "hintSquares": [
+          "f5"
+        ],
+        "success": "1. f5. Black to e7.",
+        "reply": "Ke7"
+      }
+    },
+    {
+      "id": "advance",
+      "title": "King and pawns together",
+      "narration": [
+        {
+          "say": "King to e5. Black to f7.",
+          "moves": [
+            "Ke5",
+            "Kf7"
+          ]
+        },
+        {
+          "say": "Pawn to g5. Black to e7.",
+          "moves": [
+            "g5",
+            "Ke7"
+          ]
+        },
+        {
+          "say": "Pawn to h5. White is ready for g6.",
+          "move": "h5",
+          "highlights": [
+            "f5",
+            "g5",
+            "h5"
+          ]
+        },
+        {
+          "say": "Black goes to f8. Now g6.",
+          "moves": [
+            "Kf8",
+            "g6"
+          ],
+          "arrows": [
+            {
+              "from": "g5",
+              "to": "g6",
+              "color": "primary"
+            }
+          ]
+        },
+        {
+          "say": "After the exchange on g6, we have the same ending as two lessons ago.",
+          "moves": [
+            "hxg6",
+            "hxg6"
+          ],
+          "highlights": [
+            "f5",
+            "g6",
+            "g7"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "summary",
+      "title": "What we learned",
+      "narration": [
+        {
+          "say": "When there is no good reason against it, advance the pawn that has no pawn opposing it."
+        },
+        {
+          "say": "Then simplify into an ending you already know how to win."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,215 @@
+{
+  "id": "016-long-attack",
+  "title": "A Long Attack",
+  "subtitle": "The bishop sacrifice, more complicated",
+  "source": {
+    "work": "Chess Fundamentals",
+    "author": "José Raúl Capablanca",
+    "year": 1921,
+    "section": "Chapter I, §4 Some Winning Positions in the Middle-game, Example 16",
+    "examples": "16",
+    "url": "https://archive.org/details/chessfundamental00capa"
+  },
+  "startFen": "2nb1rk1/1pqrnppp/p2p4/2pQ1N2/6P1/1P1B1N1P/P3RP2/3R2K1 w - - 0 1",
+  "steps": [
+    {
+      "id": "intro",
+      "title": "The same pattern, well hidden",
+      "narration": [
+        {
+          "say": "The same type of combination, in a more complicated form."
+        },
+        {
+          "say": "The bishop on d3 aims at h7, but the knight on f5 is in the way.",
+          "arrows": [
+            {
+              "from": "d3",
+              "to": "h7",
+              "color": "muted"
+            }
+          ],
+          "highlights": [
+            "f5"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "clear",
+      "title": "Clearing the line",
+      "source": "1 Kt x Kt ch (this clears the line for the B); B x Kt (to stop the Kt from moving to Kt 5 after the sacrifice of the B).",
+      "narration": [
+        {
+          "say": "Knight takes on e7, check. This clears the line for the bishop.",
+          "move": "Nxe7+",
+          "arrows": [
+            {
+              "from": "d3",
+              "to": "h7",
+              "color": "primary"
+            }
+          ]
+        },
+        {
+          "say": "Bishop takes back. It will stop the other knight from going to g5 later.",
+          "move": "Bxe7",
+          "highlights": [
+            "g5"
+          ]
+        }
+      ],
+      "exercise": {
+        "prompt": "White to move. Remove the bishop that guards g5.",
+        "accept": [
+          "Rxe7"
+        ],
+        "feedback": {
+          "*": "The rook on e2 can take the bishop."
+        },
+        "hint": "The rook takes on e7.",
+        "hintSquares": [
+          "e7"
+        ],
+        "success": "2. Rxe7. Black's best is to take with the knight.",
+        "reply": "Nxe7"
+      }
+    },
+    {
+      "id": "sac",
+      "title": "Your turn: the sacrifice",
+      "narration": [
+        {
+          "say": "Now the familiar sacrifice."
+        }
+      ],
+      "exercise": {
+        "prompt": "White to move. Sacrifice the bishop.",
+        "accept": [
+          "Bxh7+"
+        ],
+        "feedback": {
+          "*": "The bishop takes on h7 with check."
+        },
+        "hint": "The bishop takes on h7.",
+        "hintSquares": [
+          "h7"
+        ],
+        "success": "3. Bxh7, check. Black takes.",
+        "reply": "Kxh7"
+      }
+    },
+    {
+      "id": "qh5",
+      "title": "Your turn: queen check",
+      "narration": [
+        {
+          "say": "The queen comes in, with check."
+        }
+      ],
+      "exercise": {
+        "prompt": "White to move. Check with the queen.",
+        "accept": [
+          "Qh5+"
+        ],
+        "feedback": {
+          "*": "The queen checks on the h-file."
+        },
+        "hint": "The queen goes to h5.",
+        "hintSquares": [
+          "h5"
+        ],
+        "success": "4. Qh5, check. Black goes to g8.",
+        "reply": "Kg8"
+      }
+    },
+    {
+      "id": "ng5",
+      "title": "Your turn: the knight",
+      "narration": [
+        {
+          "say": "And the knight joins, threatening mate on h7."
+        }
+      ],
+      "exercise": {
+        "prompt": "White to move. Threaten mate on h7.",
+        "accept": [
+          "Ng5"
+        ],
+        "feedback": {
+          "*": "The knight supports the queen on h7."
+        },
+        "hint": "The knight jumps to g5.",
+        "hintSquares": [
+          "g5"
+        ],
+        "success": "5. Ng5. Black moves his rook to c8, to make room for the king on f8.",
+        "reply": "Rc8"
+      }
+    },
+    {
+      "id": "chase",
+      "title": "The king hunt",
+      "narration": [
+        {
+          "say": "Queen to h7, check. The king runs to f8.",
+          "moves": [
+            "Qh7+",
+            "Kf8"
+          ]
+        },
+        {
+          "say": "Queen to h8, check. The knight blocks on g8.",
+          "moves": [
+            "Qh8+",
+            "Ng8"
+          ]
+        },
+        {
+          "say": "Knight to h7, check. The king goes to e7.",
+          "moves": [
+            "Nh7+",
+            "Ke7"
+          ]
+        },
+        {
+          "say": "Rook to e1, check. The king goes to d8.",
+          "moves": [
+            "Re1+",
+            "Kd8"
+          ]
+        }
+      ],
+      "exercise": {
+        "prompt": "White to move and give checkmate in one.",
+        "accept": [
+          "Qxg8#"
+        ],
+        "feedback": {
+          "*": "The queen can take a piece with mate."
+        },
+        "hint": "The queen takes the knight on g8.",
+        "hintSquares": [
+          "g8"
+        ],
+        "success": "Checkmate, in ten moves.",
+        "reply": null
+      }
+    },
+    {
+      "id": "summary",
+      "title": "What we learned",
+      "source": "It will be seen that all the combinations shown have for a foundation the proper co-ordination of the pieces, which have all been brought to bear against a weak point.",
+      "narration": [
+        {
+          "say": "This combination is long, and a beginner could hardly calculate it all."
+        },
+        {
+          "say": "But knowing the type of combination, you might find a brilliant attack you would otherwise never think of."
+        },
+        {
+          "say": "All these combinations rest on the co-ordination of the pieces against a weak point."
+        }
+      ]
+    }
+  ]
+}

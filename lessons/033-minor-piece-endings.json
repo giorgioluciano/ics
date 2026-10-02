@@ -1,0 +1,126 @@
+{
+  "id": "033-minor-piece-endings",
+  "title": "Knight against Bishop with Pawns",
+  "subtitle": "Where the pawns stand decides",
+  "source": {
+    "work": "Chess Fundamentals",
+    "author": "José Raúl Capablanca",
+    "year": 1921,
+    "section": "Chapter II, §14 The Relative Value of Knight and Bishop, Examples 34–38",
+    "examples": "34–38",
+    "url": "https://archive.org/details/chessfundamental00capa"
+  },
+  "startFen": "4k3/3n1ppp/8/8/8/8/5PPP/2B1K3 w - - 0 1",
+  "steps": [
+    {
+      "id": "one-side",
+      "title": "Pawns on one side",
+      "narration": [
+        {
+          "say": "Pawns on one side only: there is no advantage in having either piece. A draw.",
+          "highlights": [
+            "f2",
+            "g2",
+            "h2",
+            "f7",
+            "g7",
+            "h7"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "both-sides",
+      "title": "Pawns on both sides",
+      "fen": "4k3/pppn1ppp/8/8/8/8/PPP2PPP/2B1K3 w - - 0 1",
+      "source": "The advantage of having the Bishop lies as much in its ability to command, at long range, both sides of the board from a central position as in its ability to move quickly from one side of the board to the other.",
+      "narration": [
+        {
+          "say": "Add three pawns each on the other wing. Now the bishop is preferable, though it should still be a draw."
+        },
+        {
+          "say": "From the centre, the bishop commands both sides of the board at long range, and it moves quickly from one side to the other.",
+          "highlights": [
+            "e3",
+            "b6",
+            "g5"
+          ],
+          "arrows": [
+            {
+              "from": "c1",
+              "to": "h6",
+              "color": "primary"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "unbalanced",
+      "title": "Unbalanced pawns",
+      "fen": "4k3/pppn1pp1/8/8/8/8/1PP2PPP/2B1K3 w - - 0 1",
+      "narration": [
+        {
+          "say": "Same number of pawns, but not balanced: three to two for White on the king side, three to two for Black on the queen side.",
+          "highlights": [
+            "f2",
+            "g2",
+            "h2",
+            "a7",
+            "b7",
+            "c7"
+          ]
+        },
+        {
+          "say": "The bishop is unquestionably an advantage. With proper play still a draw, but White has better chances."
+        }
+      ]
+    },
+    {
+      "id": "passed",
+      "title": "Passed pawns",
+      "fen": "4k3/pppn1p2/8/8/8/8/2P2PPP/2B1K3 w - - 0 1",
+      "narration": [
+        {
+          "say": "Now each side has passed pawns: g and h for White, a and b for Black.",
+          "highlights": [
+            "g2",
+            "h2",
+            "a7",
+            "b7"
+          ]
+        },
+        {
+          "say": "The bishop is a decided advantage. Black would have extreme difficulty drawing."
+        }
+      ]
+    },
+    {
+      "id": "again",
+      "title": "Again",
+      "fen": "4k3/p1pn1p2/8/8/8/8/2P2P1P/2B1K3 w - - 0 1",
+      "source": "The proper course in these endings, as in all similar endings, is: Advance of the King to the centre of the board or towards the passed Pawns, or Pawns that are susceptible of being attacked, and rapid advance of the passed Pawn or Pawns as far as is consistent with their safety.",
+      "narration": [
+        {
+          "say": "Again, Black would have great difficulty drawing."
+        },
+        {
+          "say": "The method: bring the king to the centre, or towards the passed pawns or the weak ones.",
+          "arrows": [
+            {
+              "from": "e1",
+              "to": "e4",
+              "color": "primary"
+            }
+          ]
+        },
+        {
+          "say": "And advance your passed pawns rapidly, as far as is safe."
+        },
+        {
+          "say": "No fixed line of play: calculation, visualising the future positions, is what counts."
+        }
+      ]
+    }
+  ]
+}

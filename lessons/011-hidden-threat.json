@@ -1,0 +1,144 @@
+{
+  "id": "011-hidden-threat",
+  "title": "The Hidden Threat",
+  "subtitle": "A queen sacrifice on h7",
+  "source": {
+    "work": "Chess Fundamentals",
+    "author": "José Raúl Capablanca",
+    "year": 1921,
+    "section": "Chapter I, §4 Some Winning Positions in the Middle-game, Example 11",
+    "examples": "11",
+    "url": "https://archive.org/details/chessfundamental00capa"
+  },
+  "startFen": "5rk1/1b3p1p/ppq3p1/2p5/8/1P1P1R1Q/PBP3PP/7K b - - 0 1",
+  "steps": [
+    {
+      "id": "intro",
+      "title": "Now with all the pieces",
+      "source": "Before considering the openings, we shall devote a little time to some combinations that often arise during the game, and which will give the reader some idea of the beauty of the game.",
+      "narration": [
+        {
+          "say": "Now a real middle-game position. It is Black's move."
+        },
+        {
+          "say": "White seems to threaten queen to h6, and mate on g7 with the help of the bishop.",
+          "arrows": [
+            {
+              "from": "h3",
+              "to": "h6",
+              "color": "danger"
+            },
+            {
+              "from": "b2",
+              "to": "g7",
+              "color": "danger"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "counter",
+      "title": "Black counterattacks",
+      "narration": [
+        {
+          "say": "Black thinks that is the only threat, and plays rook to e8, threatening mate on e1.",
+          "move": "Re8",
+          "arrows": [
+            {
+              "from": "e8",
+              "to": "e1",
+              "color": "danger"
+            }
+          ]
+        },
+        {
+          "say": "But White has a much stronger threat. Can you find it?"
+        }
+      ],
+      "exercise": {
+        "prompt": "White to move. Find the hidden threat.",
+        "accept": [
+          "Qxh7+"
+        ],
+        "feedback": {
+          "Qh6": "Too slow: Black mates first with Re1 check.",
+          "*": "Look for a sacrifice that opens the h-file for the rook."
+        },
+        "hint": "The queen takes a pawn, with check.",
+        "hintSquares": [
+          "h7"
+        ],
+        "success": "2. Qxh7, check! The black king must take.",
+        "reply": "Kxh7"
+      }
+    },
+    {
+      "id": "rook-check",
+      "title": "Your turn: the rook joins",
+      "narration": [
+        {
+          "say": "The h-file is open. Bring the rook."
+        }
+      ],
+      "exercise": {
+        "prompt": "White to move. Check with the rook.",
+        "accept": [
+          "Rh3+"
+        ],
+        "feedback": {
+          "*": "The rook swings to the h-file with check."
+        },
+        "hint": "The rook moves along the third rank.",
+        "hintSquares": [
+          "h3"
+        ],
+        "success": "3. Rh3, check. Black goes back to g8.",
+        "reply": "Kg8"
+      }
+    },
+    {
+      "id": "mate",
+      "title": "Find the checkmate",
+      "narration": [
+        {
+          "say": "One more rook move."
+        }
+      ],
+      "exercise": {
+        "prompt": "White to move and give checkmate in one.",
+        "accept": [
+          "Rh8#"
+        ],
+        "feedback": {
+          "*": "The rook goes all the way up the h-file."
+        },
+        "hint": "The rook reaches the eighth rank.",
+        "hintSquares": [
+          "h8"
+        ],
+        "success": "Checkmate. The bishop on b2 controls g7, so the king has no escape.",
+        "reply": null
+      }
+    },
+    {
+      "id": "summary",
+      "title": "What we learned",
+      "narration": [
+        {
+          "say": "Before answering a threat, look for the opponent's real, most effective threat."
+        },
+        {
+          "say": "Here the bishop on the long diagonal and the rook on the h-file worked together against the king.",
+          "arrows": [
+            {
+              "from": "b2",
+              "to": "g7",
+              "color": "primary"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

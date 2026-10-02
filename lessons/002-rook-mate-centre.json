@@ -1,0 +1,385 @@
+{
+  "id": "002-rook-mate-centre",
+  "title": "The Rook Mate from the Centre",
+  "subtitle": "Rook and King against King, part 2",
+  "source": {
+    "work": "Chess Fundamentals",
+    "author": "José Raúl Capablanca",
+    "year": 1921,
+    "section": "Chapter I, §1 Some Simple Mates, Example 2",
+    "examples": "2",
+    "url": "https://archive.org/details/chessfundamental00capa"
+  },
+  "startFen": "8/8/8/4k3/8/8/8/4K2R w - - 0 1",
+  "steps": [
+    {
+      "id": "intro",
+      "title": "The king is in the centre",
+      "source": "Since the Black King is in the centre of the board, the best way to proceed is to advance your own King.",
+      "narration": [
+        {
+          "say": "Same pieces as before, but now the black king stands in the middle of the board, on e5.",
+          "highlights": [
+            "e5"
+          ]
+        },
+        {
+          "say": "The rook cannot build a useful wall yet. The king is too free.",
+          "zone": {
+            "squares": [
+              "e5",
+              "d4",
+              "d5",
+              "d6",
+              "e4",
+              "e6",
+              "f4",
+              "f5",
+              "f6",
+              "c3",
+              "c4",
+              "c5",
+              "d3",
+              "e3",
+              "c6",
+              "c7",
+              "d7",
+              "e7",
+              "f3",
+              "f7",
+              "g3",
+              "g4",
+              "g5",
+              "g6",
+              "g7",
+              "b2",
+              "b3",
+              "b4",
+              "c2",
+              "b5",
+              "b6",
+              "b7",
+              "b8",
+              "c8",
+              "d8",
+              "e8",
+              "f8",
+              "g2",
+              "g8",
+              "a1",
+              "a2",
+              "a3",
+              "b1",
+              "c1",
+              "a4",
+              "a5",
+              "a6",
+              "a7",
+              "a8",
+              "h1"
+            ],
+            "color": "warning"
+          }
+        },
+        {
+          "say": "So this time the white king goes first.",
+          "highlights": [
+            "e1"
+          ],
+          "arrows": [
+            {
+              "from": "e1",
+              "to": "e3",
+              "color": "muted"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "king-first",
+      "title": "King to the centre, to one side",
+      "source": "As the Rook has not yet come into play, it is better to advance the King straight into the centre of the board, not in front, but to one side of the other King.",
+      "narration": [
+        {
+          "say": "King to e2. Black comes to d5.",
+          "moves": [
+            "Ke2",
+            "Kd5"
+          ],
+          "highlights": [
+            "e2",
+            "d5"
+          ]
+        },
+        {
+          "say": "King to e3. Straight into the centre.",
+          "move": "Ke3",
+          "highlights": [
+            "e3"
+          ]
+        },
+        {
+          "say": "Capablanca's advice: not directly in front of the other king, but to one side of it.",
+          "highlights": [
+            "e3",
+            "d5"
+          ]
+        },
+        {
+          "say": "Black steps to c4.",
+          "move": "Kc4",
+          "highlights": [
+            "c4"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "rook-joins",
+      "title": "The rook joins in",
+      "narration": [
+        {
+          "say": "Now the rook comes into play. Rook to h5.",
+          "move": "Rh5",
+          "arrows": [
+            {
+              "from": "h1",
+              "to": "h5",
+              "color": "primary"
+            }
+          ]
+        },
+        {
+          "say": "The fifth rank is closed. The black king cannot go back up.",
+          "zone": {
+            "squares": [
+              "a5",
+              "b5",
+              "c5",
+              "d5",
+              "e5",
+              "f5",
+              "g5",
+              "h5"
+            ],
+            "color": "danger"
+          }
+        },
+        {
+          "say": "Black goes down to c3.",
+          "move": "Kc3",
+          "zone": {
+            "squares": [
+              "a5",
+              "b5",
+              "c5",
+              "d5",
+              "e5",
+              "f5",
+              "g5",
+              "h5"
+            ],
+            "color": "danger"
+          }
+        }
+      ]
+    },
+    {
+      "id": "shrink",
+      "title": "Your turn: shrink the box",
+      "source": "…then 4 R - R 4, keeping the King confined to as few squares as possible.",
+      "narration": [
+        {
+          "say": "Now it is your move. Find a quiet rook move that keeps the black king confined to as few squares as possible."
+        }
+      ],
+      "exercise": {
+        "prompt": "Move the rook to shrink the black king's box.",
+        "accept": [
+          "Rh4"
+        ],
+        "feedback": {
+          "Rc5": "A check, but the black king simply walks away. Checks are not always the best moves.",
+          "*": "Look for a rook move that closes one more rank, without giving check."
+        },
+        "hint": "Move the rook one square down the h-file.",
+        "hintSquares": [
+          "h4"
+        ],
+        "success": "Exactly: 4. Rh4. Now the black king is locked into the first three ranks. Black goes to c2.",
+        "reply": "Kc2"
+      }
+    },
+    {
+      "id": "teamwork",
+      "title": "King and rook work together",
+      "source": "It should be noticed how often the White King has moved next to the Rook, not only to defend it, but also to reduce the mobility of the opposing King.",
+      "narration": [
+        {
+          "say": "Rook to c4, check. Black goes to b3.",
+          "moves": [
+            "Rc4+",
+            "Kb3"
+          ],
+          "arrows": [
+            {
+              "from": "h4",
+              "to": "c4",
+              "color": "primary"
+            }
+          ]
+        },
+        {
+          "say": "The king comes next to its rook, on d3. Black goes to b2.",
+          "moves": [
+            "Kd3",
+            "Kb2"
+          ],
+          "highlights": [
+            "d3",
+            "c4"
+          ]
+        },
+        {
+          "say": "Rook check on b4. Black goes to a3.",
+          "moves": [
+            "Rb4+",
+            "Ka3"
+          ],
+          "arrows": [
+            {
+              "from": "c4",
+              "to": "b4",
+              "color": "primary"
+            }
+          ]
+        },
+        {
+          "say": "King to c3, again right next to the rook. Black goes to a2.",
+          "moves": [
+            "Kc3",
+            "Ka2"
+          ],
+          "highlights": [
+            "c3",
+            "b4"
+          ]
+        },
+        {
+          "say": "Notice how often the white king stands beside its rook: it defends it, and it takes squares away.",
+          "zone": {
+            "squares": [
+              "a2",
+              "a1",
+              "a3"
+            ],
+            "color": "warning"
+          }
+        }
+      ]
+    },
+    {
+      "id": "waiting",
+      "title": "The waiting move",
+      "source": "9 R - R 4 ch, K - Kt 8; 10 R - any square on the Rook's file, forcing the Black King in front of the White, K - B 8; 11 R - R 1 mate.",
+      "narration": [
+        {
+          "say": "Rook to a4, check. The black king has to go to b1.",
+          "moves": [
+            "Ra4+",
+            "Kb1"
+          ],
+          "arrows": [
+            {
+              "from": "b4",
+              "to": "a4",
+              "color": "primary"
+            }
+          ]
+        },
+        {
+          "say": "Now a lovely idea. White does nothing, but stays on the a-file."
+        },
+        {
+          "say": "The black king will be forced in front of the white king. Make a waiting rook move."
+        }
+      ],
+      "exercise": {
+        "prompt": "Move the rook along the a-file, keeping it safe.",
+        "accept": [
+          "Ra5",
+          "Ra6",
+          "Ra7",
+          "Ra8",
+          "Ra3"
+        ],
+        "feedback": {
+          "Ra2": "Careful: on a2 the rook is next to the black king, who simply takes it.",
+          "Ra1": "Check, but the rook is undefended on a1: the king takes it.",
+          "*": "Stay on the a-file, so that the black king can never escape to a1 or a2."
+        },
+        "hint": "Any safe square on the a-file will do.",
+        "hintSquares": [
+          "a5",
+          "a6",
+          "a7",
+          "a8"
+        ],
+        "success": "Well done. The black king has only one square: c1, right in front of the white king.",
+        "reply": "Kc1"
+      }
+    },
+    {
+      "id": "mate",
+      "title": "Find the checkmate",
+      "narration": [
+        {
+          "say": "The black king is on c1, facing your king. Finish it.",
+          "highlights": [
+            "c1",
+            "c3"
+          ]
+        }
+      ],
+      "exercise": {
+        "prompt": "White to move and give checkmate in one.",
+        "accept": [
+          "Ra1#"
+        ],
+        "feedback": {
+          "*": "Not mate yet. The rook should attack the whole first rank."
+        },
+        "hint": "The rook goes to the corner.",
+        "hintSquares": [
+          "a1"
+        ],
+        "success": "Checkmate, in eleven moves. Capablanca says it should always be done in under twenty.",
+        "reply": null
+      }
+    },
+    {
+      "id": "summary",
+      "title": "What we learned",
+      "source": "While it may be monotonous, it is worth while for the beginner to practice such things, as it will teach him the proper handling of his pieces.",
+      "narration": [
+        {
+          "say": "When the enemy king is in the centre, bring your own king first."
+        },
+        {
+          "say": "Put it to one side of the enemy king, not directly in front."
+        },
+        {
+          "say": "Use quiet rook moves to shrink the box, and keep the king next to the rook."
+        },
+        {
+          "say": "And when the king is on the edge, a waiting move can force it into the mating square.",
+          "highlights": [
+            "a1",
+            "c1"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,88 @@
+{
+  "id": "030-two-knights",
+  "title": "Two Knights",
+  "subtitle": "They cannot mate alone",
+  "source": {
+    "work": "Chess Fundamentals",
+    "author": "José Raúl Capablanca",
+    "year": 1921,
+    "section": "Chapter II, §14 The Relative Value of Knight and Bishop, Example 29",
+    "examples": "29",
+    "url": "https://archive.org/details/chessfundamental00capa"
+  },
+  "startFen": "k7/8/1K1NN3/8/8/8/8/8 w - - 0 1",
+  "steps": [
+    {
+      "id": "alone",
+      "title": "Two knights cannot mate",
+      "source": "Before turning our attention to this matter it is well to state now that two Knights alone cannot mate, but, under certain conditions of course, they can do so if the opponent has one or more Pawns.",
+      "narration": [
+        {
+          "say": "The black king is cornered. Yet two knights alone cannot give mate.",
+          "highlights": [
+            "a8"
+          ]
+        },
+        {
+          "say": "They can only stalemate the king."
+        }
+      ]
+    },
+    {
+      "id": "pawn",
+      "title": "With a black pawn",
+      "fen": "k7/8/1K1N4/7p/7N/8/8/8 w - - 0 1",
+      "source": "White with the two Knights can only stalemate the King, unless Black has a Pawn which can be moved.",
+      "narration": [
+        {
+          "say": "Now Black has a pawn, and White wins. The pawn gives Black moves, so no stalemate.",
+          "highlights": [
+            "h5"
+          ]
+        },
+        {
+          "say": "Knight to g6. The pawn advances.",
+          "moves": [
+            "Ng6",
+            "h4"
+          ]
+        },
+        {
+          "say": "White must not take the pawn: that would be a draw again."
+        },
+        {
+          "say": "Knight to e5, h3. Knight to c6, h2.",
+          "moves": [
+            "Ne5",
+            "h3",
+            "Nc6",
+            "h2"
+          ]
+        },
+        {
+          "say": "Knight to b5, and Black queens.",
+          "moves": [
+            "Nb5",
+            "h1=Q"
+          ]
+        }
+      ],
+      "exercise": {
+        "feedback": {
+          "*": "One of the knights gives mate."
+        },
+        "prompt": "White to move and give checkmate in one.",
+        "accept": [
+          "Nc7#"
+        ],
+        "wrong": "One of the knights gives mate.",
+        "hint": "The knight on b5 jumps to c7.",
+        "hintSquares": [
+          "c7"
+        ],
+        "success": "Checkmate. The pawn had to move, and that made the mate possible.",
+        "reply": null
+      }
+    }
+  ]
+}

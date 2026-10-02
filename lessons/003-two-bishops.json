@@ -1,0 +1,323 @@
+{
+  "id": "003-two-bishops",
+  "title": "Mate with Two Bishops",
+  "subtitle": "Two Bishops and King against King",
+  "source": {
+    "work": "Chess Fundamentals",
+    "author": "José Raúl Capablanca",
+    "year": 1921,
+    "section": "Chapter I, §1 Some Simple Mates, Example 3",
+    "examples": "3",
+    "url": "https://archive.org/details/chessfundamental00capa"
+  },
+  "startFen": "7k/8/8/8/8/8/8/2B1KB2 w - - 0 1",
+  "steps": [
+    {
+      "id": "intro",
+      "title": "Two bishops against a lone king",
+      "narration": [
+        {
+          "say": "Now White has two bishops and a king. The black king is in the corner, on h8.",
+          "highlights": [
+            "c1",
+            "f1",
+            "h8"
+          ]
+        },
+        {
+          "say": "One bishop moves on light squares, the other on dark squares. Together they can cover every colour.",
+          "highlights": [
+            "c1",
+            "f1"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "fence",
+      "title": "Build a fence of diagonals",
+      "source": "Since the Black King is in the corner, White can play 1 B - Q 3, K - Kt 2; 2 B - K Kt 5, K - B 2; 3 B - B 5, and already the Black King is confined to a few squares.",
+      "narration": [
+        {
+          "say": "Bishop to d3. Black comes out to g7.",
+          "moves": [
+            "Bd3",
+            "Kg7"
+          ],
+          "arrows": [
+            {
+              "from": "f1",
+              "to": "d3",
+              "color": "primary"
+            }
+          ]
+        },
+        {
+          "say": "The other bishop to g5. Black goes to f7.",
+          "moves": [
+            "Bg5",
+            "Kf7"
+          ],
+          "arrows": [
+            {
+              "from": "c1",
+              "to": "g5",
+              "color": "primary"
+            }
+          ]
+        },
+        {
+          "say": "Bishop to f5. The two bishops, side by side, make a fence.",
+          "move": "Bf5",
+          "arrows": [
+            {
+              "from": "d3",
+              "to": "f5",
+              "color": "primary"
+            }
+          ]
+        },
+        {
+          "say": "Already the black king is confined to a few squares.",
+          "zone": {
+            "squares": [
+              "f7",
+              "e8",
+              "f8",
+              "g7",
+              "g8",
+              "h8"
+            ],
+            "color": "warning"
+          }
+        },
+        {
+          "say": "Black steps back to g7.",
+          "move": "Kg7",
+          "zone": {
+            "squares": [
+              "g7",
+              "f7",
+              "f8",
+              "g8",
+              "h8",
+              "e8"
+            ],
+            "color": "warning"
+          }
+        }
+      ]
+    },
+    {
+      "id": "king-march",
+      "title": "The king must reach the sixth rank",
+      "source": "In this ending the Black King must not only be driven to the edge of the board, but he must also be forced into a corner, and, before a mate can be given, the White King must be brought to the sixth rank and, at the same time, in one of the last two files.",
+      "narration": [
+        {
+          "say": "Here the black king must be driven not only to the edge, but into a corner."
+        },
+        {
+          "say": "And the white king must reach the sixth rank, on one of the last two files. h6 and g6 are the nearest squares.",
+          "highlights": [
+            "h6",
+            "g6"
+          ]
+        },
+        {
+          "say": "King to f2. Black to f7.",
+          "moves": [
+            "Kf2",
+            "Kf7"
+          ]
+        },
+        {
+          "say": "King to g3. Black to g7.",
+          "moves": [
+            "Kg3",
+            "Kg7"
+          ]
+        },
+        {
+          "say": "King to h4. Black to f7.",
+          "moves": [
+            "Kh4",
+            "Kf7"
+          ]
+        },
+        {
+          "say": "King to h5. Black to g7.",
+          "moves": [
+            "Kh5",
+            "Kg7"
+          ],
+          "highlights": [
+            "h5",
+            "h6"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "bishop-g6",
+      "title": "Your turn: take away f7",
+      "narration": [
+        {
+          "say": "The black king keeps stepping between f7 and g7. Find a bishop move that takes away f7, and pushes him back.",
+          "highlights": [
+            "f7"
+          ]
+        }
+      ],
+      "exercise": {
+        "prompt": "Move a bishop to control f7.",
+        "accept": [
+          "Bg6"
+        ],
+        "feedback": {
+          "Be6": "e6 also covers f7, but it lets the king slip out to h7. Capablanca prefers g6, which covers both.",
+          "*": "Look for a light-squared bishop move that attacks f7."
+        },
+        "hint": "The light-squared bishop can go to a square next to your king.",
+        "hintSquares": [
+          "g6"
+        ],
+        "success": "Right: 8. Bg6. It covers f7 and h7. Black must go back to g8.",
+        "reply": "Kg8"
+      }
+    },
+    {
+      "id": "mark-time",
+      "title": "Marking time",
+      "source": "White must now mark time and move one of the Bishops, so as to force the Black King to go back.",
+      "narration": [
+        {
+          "say": "King to h6: the sixth rank, as planned. Black goes to f8.",
+          "moves": [
+            "Kh6",
+            "Kf8"
+          ],
+          "highlights": [
+            "h6"
+          ]
+        },
+        {
+          "say": "Now White must mark time, moving a bishop to force the black king back."
+        },
+        {
+          "say": "Bishop to h5. Black returns to g8.",
+          "moves": [
+            "Bh5",
+            "Kg8"
+          ],
+          "arrows": [
+            {
+              "from": "g6",
+              "to": "h5",
+              "color": "primary"
+            }
+          ]
+        },
+        {
+          "say": "Bishop to e7. Black is pushed into the corner, h8.",
+          "moves": [
+            "Be7",
+            "Kh8"
+          ],
+          "arrows": [
+            {
+              "from": "g5",
+              "to": "e7",
+              "color": "primary"
+            }
+          ],
+          "highlights": [
+            "h8"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "prepare-check",
+      "title": "Your turn: give check",
+      "source": "Now the White Bishop must take up a position from which it can give check next move along the White diagonal, when the Black King moves back to Kt 1. 12 B - K Kt 4, K - Kt 1; 13 B - K 6 ch, K - R 1; 14 B - B 6 mate.",
+      "narration": [
+        {
+          "say": "The light bishop moves to g4, ready to give check on the light diagonal.",
+          "move": "Bg4",
+          "arrows": [
+            {
+              "from": "h5",
+              "to": "g4",
+              "color": "primary"
+            }
+          ]
+        },
+        {
+          "say": "Black goes back to g8.",
+          "move": "Kg8"
+        },
+        {
+          "say": "Now give check with that bishop."
+        }
+      ],
+      "exercise": {
+        "prompt": "Give check along the light diagonal.",
+        "accept": [
+          "Be6+"
+        ],
+        "feedback": {
+          "*": "The light-squared bishop can check the king on g8 from e6."
+        },
+        "hint": "The check comes on the a2 to g8 diagonal.",
+        "hintSquares": [
+          "e6"
+        ],
+        "success": "13. Be6, check. Black must go to h8.",
+        "reply": "Kh8"
+      }
+    },
+    {
+      "id": "mate",
+      "title": "Find the checkmate",
+      "source": "In all endings of this kind, care must be taken not to drift into a stale mate.",
+      "narration": [
+        {
+          "say": "One more bishop move gives mate. Careful: in these endings it is easy to stalemate by mistake."
+        }
+      ],
+      "exercise": {
+        "prompt": "White to move and give checkmate in one.",
+        "accept": [
+          "Bf6#"
+        ],
+        "feedback": {
+          "*": "Not mate. The dark-squared bishop should check along the long diagonal."
+        },
+        "hint": "The dark-squared bishop checks from f6.",
+        "hintSquares": [
+          "f6"
+        ],
+        "success": "Checkmate in fourteen moves. Capablanca says it should be done in under thirty, from any position.",
+        "reply": null
+      }
+    },
+    {
+      "id": "summary",
+      "title": "What we learned",
+      "narration": [
+        {
+          "say": "Two bishops side by side make a fence the king cannot cross."
+        },
+        {
+          "say": "The king must be driven to the edge, and then into a corner."
+        },
+        {
+          "say": "The white king comes to the sixth rank, on one of the last two files."
+        },
+        {
+          "say": "Use waiting bishop moves to push the king back, and always watch out for stalemate."
+        }
+      ]
+    }
+  ]
+}

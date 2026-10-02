@@ -1,0 +1,162 @@
+{
+  "id": "012-win-back-piece",
+  "title": "Winning the Piece Back",
+  "subtitle": "The same idea in a harder position",
+  "source": {
+    "work": "Chess Fundamentals",
+    "author": "José Raúl Capablanca",
+    "year": 1921,
+    "section": "Chapter I, §4 Some Winning Positions in the Middle-game, Example 12",
+    "examples": "12",
+    "url": "https://archive.org/details/chessfundamental00capa"
+  },
+  "startFen": "5rk1/1bq1bp1p/p1n3p1/1p6/3N4/1P1PR2Q/PBP3PP/7K w - - 0 1",
+  "steps": [
+    {
+      "id": "intro",
+      "title": "A piece behind",
+      "source": "White is a piece behind, and unless he can win it back quickly he will lose.",
+      "narration": [
+        {
+          "say": "White is a piece behind. Unless he wins it back quickly, he will lose."
+        },
+        {
+          "say": "Notice the same pattern as before: queen on h3, bishop on b2, black pawn on g6.",
+          "highlights": [
+            "h3",
+            "b2",
+            "g6"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "nxc6",
+      "title": "Your turn: start with a capture",
+      "narration": [
+        {
+          "say": "Your move. Start by taking something."
+        }
+      ],
+      "exercise": {
+        "prompt": "White to move. Take a black piece.",
+        "accept": [
+          "Nxc6"
+        ],
+        "feedback": {
+          "*": "The knight on d4 can take a black knight."
+        },
+        "hint": "The knight takes on c6.",
+        "hintSquares": [
+          "c6"
+        ],
+        "success": "1. Nxc6. Black does not take back: he plays Bg5, attacking the rook.",
+        "reply": "Bg5"
+      }
+    },
+    {
+      "id": "why-not",
+      "title": "Why Black cannot take",
+      "source": "He cannot take the Kt because White threatens mate by Q x P ch followed by R - R 3 ch.",
+      "narration": [
+        {
+          "say": "Why did Black not take the knight? Because of the idea from the last lesson."
+        },
+        {
+          "say": "Queen takes h7, check, then rook to h3, check, and mate.",
+          "arrows": [
+            {
+              "from": "h3",
+              "to": "h7",
+              "color": "danger"
+            },
+            {
+              "from": "e3",
+              "to": "h3",
+              "color": "danger"
+            }
+          ]
+        },
+        {
+          "say": "Now Black's bishop attacks the rook on e3. White has a strong reply.",
+          "arrows": [
+            {
+              "from": "g5",
+              "to": "e3",
+              "color": "warning"
+            }
+          ]
+        }
+      ],
+      "exercise": {
+        "prompt": "White to move. Use the knight with check.",
+        "accept": [
+          "Ne7+"
+        ],
+        "feedback": {
+          "*": "The knight gives check."
+        },
+        "hint": "The knight jumps to e7.",
+        "hintSquares": [
+          "e7"
+        ],
+        "success": "2. Ne7, check. Black takes with the queen.",
+        "reply": "Qxe7"
+      }
+    },
+    {
+      "id": "fork",
+      "title": "Your turn: the double attack",
+      "source": "3 R x Q, B x R; 4 Q - Q 7 and White wins one of the two Bishops.",
+      "narration": [
+        {
+          "say": "Rook takes the queen, bishop takes the rook.",
+          "moves": [
+            "Rxe7",
+            "Bxe7"
+          ]
+        },
+        {
+          "say": "Now one queen move attacks both black bishops.",
+          "highlights": [
+            "b7",
+            "e7"
+          ]
+        }
+      ],
+      "exercise": {
+        "prompt": "White to move. Attack both bishops at once.",
+        "accept": [
+          "Qd7"
+        ],
+        "feedback": {
+          "*": "Find a square from which the queen attacks b7 and e7."
+        },
+        "hint": "The queen goes to the seventh rank.",
+        "hintSquares": [
+          "d7"
+        ],
+        "success": "4. Qd7. White wins a bishop, and with queen and bishop against rook and bishop he should win easily.",
+        "reply": null
+      }
+    },
+    {
+      "id": "summary",
+      "title": "What we learned",
+      "source": "These two examples show the danger of advancing the K Kt P one square, after having Castled on that side.",
+      "narration": [
+        {
+          "say": "These two examples show a danger: after castling, advancing the knight's pawn one square weakens the king.",
+          "highlights": [
+            "g6",
+            "g7",
+            "h7"
+          ]
+        },
+        {
+          "say": "A threat of mate can be used to win material."
+        }
+      ]
+    }
+  ]
+}

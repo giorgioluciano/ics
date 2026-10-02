@@ -1,0 +1,197 @@
+{
+  "id": "028-opposition-wins",
+  "title": "The Value of the Opposition",
+  "subtitle": "Whoever has the move wins",
+  "source": {
+    "work": "Chess Fundamentals",
+    "author": "José Raúl Capablanca",
+    "year": 1921,
+    "section": "Chapter II, §13 The Opposition, Example 27",
+    "examples": "27",
+    "url": "https://archive.org/details/chessfundamental00capa"
+  },
+  "startFen": "4k3/8/8/1p5p/1P5P/8/8/4K3 w - - 0 1",
+  "steps": [
+    {
+      "id": "intro",
+      "title": "It only looks even",
+      "source": "Very little is left on the board, and the position, to a beginner, probably looks absolutely even. It is not the case, however. Whoever has the move wins.",
+      "narration": [
+        {
+          "say": "To a beginner this looks absolutely even. It is not: whoever has the move wins."
+        },
+        {
+          "say": "The kings face each other with six squares between them. Even: so the player to move has the opposition.",
+          "zone": {
+            "squares": [
+              "e2",
+              "e3",
+              "e4",
+              "e5",
+              "e6",
+              "e7"
+            ],
+            "color": "warning"
+          }
+        },
+        {
+          "say": "The proper way to begin is to move straight up."
+        }
+      ],
+      "exercise": {
+        "feedback": {
+          "*": "Straight up the e-file."
+        },
+        "prompt": "White to move. Go straight up.",
+        "accept": [
+          "Ke2"
+        ],
+        "wrong": "Straight up the e-file.",
+        "hint": "King to e2.",
+        "hintSquares": [
+          "e2"
+        ],
+        "success": "1. Ke2. Black does the same: Ke7.",
+        "reply": "Ke7"
+      }
+    },
+    {
+      "id": "keep",
+      "title": "Your turn: keep the opposition",
+      "source": "Mere counting will show that the former course will only lead to a draw, therefore White takes the latter course.",
+      "narration": [
+        {
+          "say": "King to e3, king to e6. King to e4, and Black steps aside to f6.",
+          "moves": [
+            "Ke3",
+            "Ke6",
+            "Ke4",
+            "Kf6"
+          ]
+        },
+        {
+          "say": "White can pass with Kd5, or stop the black king from passing. Counting shows that passing only draws."
+        }
+      ],
+      "exercise": {
+        "feedback": {
+          "Kd5": "Passing: Black passes too with Kg5, and counting shows it is only a draw.",
+          "*": "Stand in front of the black king again."
+        },
+        "prompt": "White to move. Keep the opposition.",
+        "accept": [
+          "Kf4"
+        ],
+        "hint": "The king goes to f4, face to face again.",
+        "hintSquares": [
+          "f4"
+        ],
+        "success": "4. Kf4. Black goes to g6. If Ke6, then Kg5 wins.",
+        "reply": "Kg6"
+      }
+    },
+    {
+      "id": "win",
+      "title": "Through on the other side",
+      "narration": [
+        {
+          "say": "Now White passes: king to e5. Black to g7.",
+          "moves": [
+            "Ke5",
+            "Kg7"
+          ]
+        },
+        {
+          "say": "Counting shows that White wins by taking the pawn on b5.",
+          "arrows": [
+            {
+              "from": "e5",
+              "to": "c5",
+              "color": "primary"
+            },
+            {
+              "from": "c5",
+              "to": "b5",
+              "color": "primary"
+            }
+          ],
+          "highlights": [
+            "b5"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "waiting",
+      "title": "A waiting move",
+      "fen": "4k3/8/8/1p5p/1P5P/8/8/4K3 w - - 0 1",
+      "source": "Therefore it is seen that in such cases when the opponent makes a so-called waiting move, you must advance, leaving a rank or file free between the Kings.",
+      "narration": [
+        {
+          "say": "Black has a harder defence. King to e2, and Black waits with Kd8.",
+          "moves": [
+            "Ke2",
+            "Kd8"
+          ]
+        },
+        {
+          "say": "Now Kd3 is met by Kd7, and Ke3 by Ke7: Black gets the opposition."
+        }
+      ],
+      "exercise": {
+        "feedback": {
+          "Kd3": "Black answers Kd7 and takes the opposition.",
+          "Ke3": "Black answers Ke7 and takes the opposition.",
+          "*": "There is only one other square forward."
+        },
+        "prompt": "White to move. Advance, leaving a file free between the kings.",
+        "accept": [
+          "Kf3"
+        ],
+        "hint": "The king goes to f3.",
+        "hintSquares": [
+          "f3"
+        ],
+        "success": "2. Kf3. Black returns to e7.",
+        "reply": "Ke7"
+      }
+    },
+    {
+      "id": "back",
+      "title": "Your turn: back to the first line",
+      "narration": [
+        {
+          "say": "Now advancing would be bad. Play the same kind of move Black just played."
+        }
+      ],
+      "exercise": {
+        "feedback": {
+          "*": "Put your king in front of the black king, on the same file."
+        },
+        "prompt": "White to move. Take the opposition.",
+        "accept": [
+          "Ke3"
+        ],
+        "wrong": "Put your king in front of the black king, on the same file.",
+        "hint": "King to e3.",
+        "hintSquares": [
+          "e3"
+        ],
+        "success": "3. Ke3. We are back in the first variation, and White wins.",
+        "reply": null
+      }
+    },
+    {
+      "id": "summary",
+      "title": "What we learned",
+      "narration": [
+        {
+          "say": "The opposition often decides the game."
+        },
+        {
+          "say": "Against a waiting move, advance, leaving a rank or file free between the kings."
+        }
+      ]
+    }
+  ]
+}

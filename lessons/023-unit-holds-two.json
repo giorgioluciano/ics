@@ -1,0 +1,137 @@
+{
+  "id": "023-unit-holds-two",
+  "title": "A Unit that Holds Two",
+  "subtitle": "A cardinal principle",
+  "source": {
+    "work": "Chess Fundamentals",
+    "author": "José Raúl Capablanca",
+    "year": 1921,
+    "section": "Chapter II, §9 A Cardinal Principle, Example 22",
+    "examples": "22",
+    "url": "https://archive.org/details/chessfundamental00capa"
+  },
+  "startFen": "8/p5p1/7p/6k1/8/7K/PP5P/8 w - - 0 1",
+  "steps": [
+    {
+      "id": "intro",
+      "title": "The free pawn",
+      "source": "In the position shown above, White can draw by playing P - Kt 4, according to the general rule that governs such cases, i.e., to advance the Pawn that is free from opposition.",
+      "narration": [
+        {
+          "say": "Two pawns against one on the queen side.",
+          "highlights": [
+            "a2",
+            "b2",
+            "a7"
+          ]
+        },
+        {
+          "say": "White draws with b4: the rule from Chapter One, push the pawn that has no pawn opposing it.",
+          "arrows": [
+            {
+              "from": "b2",
+              "to": "b4",
+              "color": "primary"
+            }
+          ]
+        },
+        {
+          "say": "But suppose White plays a4 instead.",
+          "move": "a4"
+        }
+      ],
+      "exercise": {
+        "feedback": {
+          "a6": "Close, but go further: with the pawn on a5, b4 can always be met by a capture.",
+          "*": "Use your a-pawn."
+        },
+        "prompt": "Black to move. Stop both white pawns with one.",
+        "accept": [
+          "a5"
+        ],
+        "hint": "The black a-pawn goes two squares.",
+        "hintSquares": [
+          "a5"
+        ],
+        "success": "1...a5. One black pawn now holds two white ones.",
+        "reply": "Kg2"
+      }
+    },
+    {
+      "id": "principle",
+      "title": "One of the cardinal principles",
+      "source": "Then Black can win by playing 1...P - Q R 4, applying one of the cardinal principles of the high strategy of chess: A unit that holds two. […] It constitutes one of the principal weapons in the hands of a master.",
+      "narration": [
+        {
+          "say": "A unit that holds two. It is one of the cardinal principles of chess strategy.",
+          "highlights": [
+            "a5",
+            "a4",
+            "b2"
+          ]
+        },
+        {
+          "say": "The white b-pawn can never pass freely. Now watch the main line."
+        },
+        {
+          "say": "The black king goes to f4. Best.",
+          "move": "Kf4"
+        },
+        {
+          "say": "Pawn to b4, and Black takes. Best.",
+          "moves": [
+            "b4",
+            "axb4"
+          ]
+        },
+        {
+          "say": "Both sides run: a5, b3; a6, b2; a7, b1 queen; a8 queen.",
+          "moves": [
+            "a5",
+            "b3",
+            "a6",
+            "b2",
+            "a7",
+            "b1=Q",
+            "a8=Q"
+          ]
+        }
+      ],
+      "exercise": {
+        "feedback": {
+          "*": "Look for a check that also attacks the queen on a8, on the same line."
+        },
+        "prompt": "Black to move. Both sides have a queen. Find the skewer.",
+        "accept": [
+          "Qe4+"
+        ],
+        "wrong": "Look for a check that also attacks the queen on a8, on the same line.",
+        "hint": "The queen checks from e4, on the long diagonal.",
+        "hintSquares": [
+          "e4"
+        ],
+        "success": "7...Qe4, check. The queens come off.",
+        "reply": "Qxe4"
+      }
+    },
+    {
+      "id": "result",
+      "title": "A classical ending",
+      "source": "This brings the game to a position which is won by Black, and which constitutes one of the classical endings of King and Pawns.",
+      "narration": [
+        {
+          "say": "The king takes back.",
+          "move": "Kxe4"
+        },
+        {
+          "say": "This king and pawn ending is won for Black. It is one of the classical endings, and it is the next lesson.",
+          "highlights": [
+            "g7",
+            "h6",
+            "h2"
+          ]
+        }
+      ]
+    }
+  ]
+}

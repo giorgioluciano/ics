@@ -1,0 +1,173 @@
+{
+  "id": "010-both-wings",
+  "title": "Pawns on Both Wings",
+  "subtitle": "Act where you are stronger",
+  "source": {
+    "work": "Chess Fundamentals",
+    "author": "José Raúl Capablanca",
+    "year": 1921,
+    "section": "Chapter I, §3 Pawn Endings, Example 10",
+    "examples": "10",
+    "url": "https://archive.org/details/chessfundamental00capa"
+  },
+  "startFen": "8/p6p/4k3/8/4K3/8/P5PP/8 w - - 0 1",
+  "steps": [
+    {
+      "id": "intro",
+      "title": "Act where you are stronger",
+      "source": "In these cases the general rule is to act immediately on the side where you have the superior forces.",
+      "narration": [
+        {
+          "say": "Now there are pawns on both sides of the board."
+        },
+        {
+          "say": "On the queen side, one pawn each.",
+          "highlights": [
+            "a2",
+            "a7"
+          ]
+        },
+        {
+          "say": "On the king side, White has two pawns against one. That is where White must act, immediately.",
+          "highlights": [
+            "g2",
+            "h2",
+            "h7"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "g4",
+      "title": "Your turn: the first push",
+      "source": "It is generally advisable to advance the Pawn that is free from opposition.",
+      "narration": [
+        {
+          "say": "Your move. Remember the rule about the free pawn."
+        }
+      ],
+      "exercise": {
+        "prompt": "White to move. Start the king-side advance.",
+        "accept": [
+          "g4"
+        ],
+        "feedback": {
+          "h4": "The h-pawn has a black pawn in front of it. Push the free one.",
+          "h3": "The h-pawn has a black pawn in front of it. Push the free one.",
+          "g3": "Right pawn, but take two steps: there is no time to waste.",
+          "*": "Act on the king side, where you are stronger."
+        },
+        "hint": "The g-pawn has no black pawn in front of it.",
+        "hintSquares": [
+          "g4"
+        ],
+        "success": "1. g4. Black advances on the other side: a5.",
+        "reply": "a5"
+      }
+    },
+    {
+      "id": "stop",
+      "title": "Stop the other pawn?",
+      "source": "In this case either way wins, but generally the advance should be stopped when the opposing King is far away.",
+      "narration": [
+        {
+          "say": "Should White stop the black pawn? Here either way wins."
+        },
+        {
+          "say": "But generally, stop the advance when the opposing king is far away. Your move."
+        }
+      ],
+      "exercise": {
+        "prompt": "White to move. Stop the black a-pawn.",
+        "accept": [
+          "a4"
+        ],
+        "feedback": {
+          "*": "Block the black pawn with your own a-pawn."
+        },
+        "hint": "Your a-pawn goes two squares.",
+        "hintSquares": [
+          "a4"
+        ],
+        "success": "2. a4. Black goes to f6.",
+        "reply": "Kf6"
+      }
+    },
+    {
+      "id": "plan",
+      "title": "The winning plan",
+      "source": "Now it is time to go to the other side with the King, win the Black Pawn and Queen the single Pawn. This is typical of all such endings.",
+      "narration": [
+        {
+          "say": "Pawn to h4. Black to e6.",
+          "moves": [
+            "h4",
+            "Ke6"
+          ]
+        },
+        {
+          "say": "Pawn to g5. Black to f7.",
+          "moves": [
+            "g5",
+            "Kf7"
+          ]
+        },
+        {
+          "say": "King to f5. Black to g7.",
+          "moves": [
+            "Kf5",
+            "Kg7"
+          ]
+        },
+        {
+          "say": "Pawn to h5. Black to f7.",
+          "moves": [
+            "h5",
+            "Kf7"
+          ],
+          "highlights": [
+            "g5",
+            "h5"
+          ]
+        },
+        {
+          "say": "King to e5. Now the two pawns defend each other, and the king is free.",
+          "move": "Ke5"
+        },
+        {
+          "say": "It goes to the other side, wins the pawn on a5, and queens the a-pawn.",
+          "arrows": [
+            {
+              "from": "e5",
+              "to": "b6",
+              "color": "primary"
+            },
+            {
+              "from": "b6",
+              "to": "a5",
+              "color": "primary"
+            }
+          ],
+          "highlights": [
+            "a5"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "summary",
+      "title": "What we learned",
+      "narration": [
+        {
+          "say": "With pawns on both wings, act immediately where you have more pawns."
+        },
+        {
+          "say": "Stop the enemy pawn when his king is far away."
+        },
+        {
+          "say": "Then use your king to win on the other side."
+        }
+      ]
+    }
+  ]
+}

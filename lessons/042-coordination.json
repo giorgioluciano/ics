@@ -1,0 +1,143 @@
+{
+  "id": "042-coordination",
+  "title": "Co-ordination of the Pieces",
+  "subtitle": "Winning back a pawn, and more",
+  "source": {
+    "work": "Chess Fundamentals",
+    "author": "José Raúl Capablanca",
+    "year": 1921,
+    "section": "Chapter III, §19 Winning by Indirect Attack, Example 48",
+    "examples": "48",
+    "url": "https://archive.org/details/chessfundamental00capa"
+  },
+  "startFen": "2r1r1k1/2p2pbp/2ppq1p1/8/2n1P3/2N2P2/PPPBQ1PP/1R3RK1 b - - 0 1",
+  "steps": [
+    {
+      "id": "intro",
+      "title": "A pawn is a lot",
+      "source": "The winning of a Pawn among good players of even strength often means the winning of the game. […] Black is a Pawn behind, and there is no violent direct attack against White's King. Black's pieces, however, are very well placed and free to act.",
+      "narration": [
+        {
+          "say": "Attacks are not only against the king. Among good players, winning a pawn often means winning the game."
+        },
+        {
+          "say": "Black is a pawn behind. No direct attack, but his pieces are very well placed and free to act.",
+          "highlights": [
+            "c4",
+            "g7",
+            "e6"
+          ]
+        },
+        {
+          "say": "Watch how they co-ordinate. First, the rook to the a-file.",
+          "move": "Ra8"
+        },
+        {
+          "say": "White plays a4. His best was b3, but then Black would win the a-pawn anyway.",
+          "move": "a4",
+          "highlights": [
+            "a4"
+          ]
+        }
+      ],
+      "exercise": {
+        "feedback": {
+          "*": "The knight on c4 takes a piece."
+        },
+        "prompt": "Black to move. Exchange the knight for the bishop.",
+        "accept": [
+          "Nxd2"
+        ],
+        "wrong": "The knight on c4 takes a piece.",
+        "hint": "Knight takes d2.",
+        "hintSquares": [
+          "d2"
+        ],
+        "success": "2...Nxd2. The queen takes back.",
+        "reply": "Qxd2"
+      }
+    },
+    {
+      "id": "pressure",
+      "title": "Increase the pressure",
+      "source": "Black could have regained the Pawn by playing B x Kt, but he sees that there is more to be had, and therefore increases the pressure against White's Queen side.",
+      "narration": [
+        {
+          "say": "Queen to c4. White's rook goes to d1.",
+          "moves": [
+            "Qc4",
+            "Rfd1"
+          ]
+        },
+        {
+          "say": "Black could win the pawn back now with Bxc3. But there is more to be had."
+        }
+      ],
+      "exercise": {
+        "feedback": {
+          "*": "The rook on e8 goes to the open b-file."
+        },
+        "prompt": "Black to move. Bring the other rook against the queen side.",
+        "accept": [
+          "Reb8"
+        ],
+        "wrong": "The rook on e8 goes to the open b-file.",
+        "hint": "Rook e8 to b8.",
+        "hintSquares": [
+          "b8"
+        ],
+        "success": "4...Reb8. Black threatens Rxb2, among other things.",
+        "reply": "Qe3"
+      }
+    },
+    {
+      "id": "threats",
+      "title": "Threat after threat",
+      "narration": [
+        {
+          "say": "Rook to b4, threatening Bd4 and winning the exchange. Queen to g5.",
+          "moves": [
+            "Rb4",
+            "Qg5"
+          ]
+        },
+        {
+          "say": "Bishop to d4, check. King to h1.",
+          "moves": [
+            "Bd4+",
+            "Kh1"
+          ]
+        },
+        {
+          "say": "And the other rook: a8 to b8. This threatens to win the knight.",
+          "move": "Rab8",
+          "arrows": [
+            {
+              "from": "b4",
+              "to": "b2",
+              "color": "danger"
+            }
+          ]
+        },
+        {
+          "say": "White must give up the exchange.",
+          "moves": [
+            "Rxd4",
+            "Qxd4"
+          ]
+        },
+        {
+          "say": "Rook to d1, queen back to c4. Black will recover his pawn, with the better game.",
+          "moves": [
+            "Rd1",
+            "Qc4"
+          ],
+          "highlights": [
+            "a4",
+            "b2"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,191 @@
+{
+  "id": "019-control-centre",
+  "title": "Control of the Centre",
+  "subtitle": "Pieces before pawns",
+  "source": {
+    "work": "Chess Fundamentals",
+    "author": "José Raúl Capablanca",
+    "year": 1921,
+    "section": "Chapter I, §7 Control of the Centre, Example 18",
+    "examples": "18",
+    "url": "https://archive.org/details/chessfundamental00capa"
+  },
+  "startFen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+  "steps": [
+    {
+      "id": "intro",
+      "title": "The four centre squares",
+      "source": "The four squares, K 4 and Q 4 on each side respectively, are the centre squares, and control of these squares is called control of the centre. The control of the centre is of great importance.",
+      "narration": [
+        {
+          "say": "These four squares are the centre.",
+          "zone": {
+            "squares": [
+              "d4",
+              "e4",
+              "d5",
+              "e5"
+            ],
+            "color": "primary"
+          }
+        },
+        {
+          "say": "No violent attack can succeed without controlling at least two of them.",
+          "zone": {
+            "squares": [
+              "d4",
+              "e4",
+              "d5",
+              "e5"
+            ],
+            "color": "primary"
+          }
+        }
+      ]
+    },
+    {
+      "id": "timid",
+      "title": "A timid move",
+      "source": "A timid move. Black assumes a defensive attitude at once. On principle the move is wrong. In the openings, whenever possible, pieces should be moved in preference to Pawns.",
+      "narration": [
+        {
+          "say": "Pawn to e4, pawn to e5. Knight to f3.",
+          "moves": [
+            "e4",
+            "e5",
+            "Nf3"
+          ]
+        },
+        {
+          "say": "Black plays d6. A timid move: in the opening, pieces should be moved in preference to pawns.",
+          "move": "d6"
+        }
+      ],
+      "exercise": {
+        "prompt": "White to move. Take the offensive in the centre.",
+        "accept": [
+          "d4"
+        ],
+        "feedback": {
+          "*": "Strike in the centre with a pawn."
+        },
+        "hint": "The queen's pawn goes two squares.",
+        "hintSquares": [
+          "d4"
+        ],
+        "success": "3. d4. White strives to control the centre. Black defends e5 with Nd7.",
+        "reply": "Nd7"
+      }
+    },
+    {
+      "id": "cramped",
+      "title": "A cramped position",
+      "source": "On principle the move is wrong, because it blocks the action of the Queen's Bishop, and instead of facilitating the action of Black's pieces, tends, on the contrary, to cramp them.",
+      "narration": [
+        {
+          "say": "The knight on d7 blocks Black's own bishop.",
+          "highlights": [
+            "d7",
+            "c8"
+          ]
+        },
+        {
+          "say": "Bishop to c4. White threatens knight to g5, attacking f7.",
+          "move": "Bc4",
+          "arrows": [
+            {
+              "from": "f3",
+              "to": "g5",
+              "color": "danger"
+            },
+            {
+              "from": "c4",
+              "to": "f7",
+              "color": "danger"
+            }
+          ]
+        },
+        {
+          "say": "Black must play h6, paying the penalty for his previous move.",
+          "move": "h6"
+        }
+      ]
+    },
+    {
+      "id": "deploy",
+      "title": "Deploy first, castle later",
+      "source": "It should be noticed that White does not Castle yet. The reason is that he wants to deploy his forces first.",
+      "narration": [
+        {
+          "say": "Knights out on both sides.",
+          "moves": [
+            "Nc3",
+            "Ngf6"
+          ]
+        },
+        {
+          "say": "Bishop to e3, bishop to e7.",
+          "moves": [
+            "Be3",
+            "Be7"
+          ]
+        },
+        {
+          "say": "Queen to e2. White does not castle yet: he wants to deploy his forces first.",
+          "move": "Qe2"
+        },
+        {
+          "say": "Black makes room for his queen with c6. Rook to d1, queen to c7.",
+          "moves": [
+            "c6",
+            "Rd1",
+            "Qc7"
+          ],
+          "highlights": [
+            "d1"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "castle",
+      "title": "Your turn: complete development",
+      "narration": [
+        {
+          "say": "One move completes White's development."
+        }
+      ],
+      "exercise": {
+        "prompt": "White to move. Complete your development.",
+        "accept": [
+          "O-O"
+        ],
+        "feedback": {
+          "*": "The king is still in the centre."
+        },
+        "hint": "Castle. Drag the king two squares to the right.",
+        "hintSquares": [
+          "g1"
+        ],
+        "success": "9. O-O. White's position is unassailable: no weak spots, and every piece ready for action.",
+        "reply": null
+      }
+    },
+    {
+      "id": "summary",
+      "title": "What we learned",
+      "source": "The student should carefully study this example. It will show him that it is sometimes convenient to delay Castling.",
+      "narration": [
+        {
+          "say": "Control of the centre ensures the initiative."
+        },
+        {
+          "say": "Move pieces in preference to pawns, and do not block your own pieces."
+        },
+        {
+          "say": "And sometimes it is convenient to delay castling."
+        }
+      ]
+    }
+  ]
+}

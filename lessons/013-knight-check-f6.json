@@ -1,0 +1,128 @@
+{
+  "id": "013-knight-check-f6",
+  "title": "The Knight Check on f6",
+  "subtitle": "Opening the king with a sacrifice",
+  "source": {
+    "work": "Chess Fundamentals",
+    "author": "José Raúl Capablanca",
+    "year": 1921,
+    "section": "Chapter I, §4 Some Winning Positions in the Middle-game, Example 13",
+    "examples": "13",
+    "url": "https://archive.org/details/chessfundamental00capa"
+  },
+  "startFen": "2q2rk1/1b3ppp/pp6/2p5/2P1N3/PP1Q4/1B3PPP/6K1 w - - 0 1",
+  "steps": [
+    {
+      "id": "intro",
+      "title": "Compensation, immediately",
+      "source": "Black has a R for a Kt and should therefore win, unless White is able to obtain some compensation immediately. White, in fact, mates in a few moves.",
+      "narration": [
+        {
+          "say": "Black is a rook for a knight ahead, and should win."
+        },
+        {
+          "say": "Unless White can do something right now. Look at the bishop on b2, aiming at the black king.",
+          "arrows": [
+            {
+              "from": "b2",
+              "to": "g7",
+              "color": "primary"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "nf6",
+      "title": "Your turn: the knight check",
+      "narration": [
+        {
+          "say": "Your move. Give check with the knight."
+        }
+      ],
+      "exercise": {
+        "prompt": "White to move. Give a knight check.",
+        "accept": [
+          "Nf6+"
+        ],
+        "feedback": {
+          "*": "The knight can give check from f6."
+        },
+        "hint": "The knight goes to f6.",
+        "hintSquares": [
+          "f6"
+        ],
+        "success": "1. Nf6, check. Black must take.",
+        "reply": "gxf6"
+      }
+    },
+    {
+      "id": "qg3",
+      "title": "Your turn: the open file",
+      "source": "Forced, otherwise Q x P mates.",
+      "narration": [
+        {
+          "say": "The capture was forced: otherwise queen takes h7 mates."
+        },
+        {
+          "say": "Now the g-file is open. Check the king.",
+          "highlights": [
+            "g7",
+            "g8"
+          ]
+        }
+      ],
+      "exercise": {
+        "prompt": "White to move. Check along the g-file.",
+        "accept": [
+          "Qg3+"
+        ],
+        "feedback": {
+          "*": "The queen can check on the g-file."
+        },
+        "hint": "The queen goes to g3.",
+        "hintSquares": [
+          "g3"
+        ],
+        "success": "2. Qg3, check. Black goes to h8.",
+        "reply": "Kh8"
+      }
+    },
+    {
+      "id": "mate",
+      "title": "Find the checkmate",
+      "narration": [
+        {
+          "say": "The bishop finishes it."
+        }
+      ],
+      "exercise": {
+        "prompt": "White to move and give checkmate in one.",
+        "accept": [
+          "Bxf6#"
+        ],
+        "feedback": {
+          "*": "The bishop on the long diagonal can take with check."
+        },
+        "hint": "The bishop takes on f6.",
+        "hintSquares": [
+          "f6"
+        ],
+        "success": "Checkmate. Queen on the g-file, bishop on the long diagonal.",
+        "reply": null
+      }
+    },
+    {
+      "id": "summary",
+      "title": "What we learned",
+      "narration": [
+        {
+          "say": "A knight check on f6 can tear open the king's position."
+        },
+        {
+          "say": "Then queen and bishop combine along the open file and the long diagonal."
+        }
+      ]
+    }
+  ]
+}

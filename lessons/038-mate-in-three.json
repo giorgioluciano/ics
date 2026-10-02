@@ -1,0 +1,107 @@
+{
+  "id": "038-mate-in-three",
+  "title": "The Stronger Threat",
+  "subtitle": "Mate in three",
+  "source": {
+    "work": "Chess Fundamentals",
+    "author": "José Raúl Capablanca",
+    "year": 1921,
+    "section": "Chapter III, §17 Attacking without the Aid of Knights, Example 44",
+    "examples": "44",
+    "url": "https://archive.org/details/chessfundamental00capa"
+  },
+  "startFen": "kr2r3/pRp3pp/Q1P5/5R2/Pp1q4/3pp2P/6PK/8 w - - 0 1",
+  "steps": [
+    {
+      "id": "intro",
+      "title": "What Black feared",
+      "source": "Black's last move was P - K 6, played with the object of stopping what he thought was White's threat, viz.: R - Q R 5, to which he would have answered Q - B 5 ch and drawn the game by perpetual check.",
+      "narration": [
+        {
+          "say": "Black's last move was e3. He feared Ra5, and planned to answer with Qf4 check and perpetual check.",
+          "arrows": [
+            {
+              "from": "f5",
+              "to": "a5",
+              "color": "muted"
+            },
+            {
+              "from": "d4",
+              "to": "f4",
+              "color": "danger"
+            }
+          ]
+        },
+        {
+          "say": "But White has a more forceful move, and mates in three."
+        }
+      ],
+      "exercise": {
+        "feedback": {
+          "*": "The rook on b7 takes a pawn with check."
+        },
+        "prompt": "White to move. Mate in three: start with a sacrifice.",
+        "accept": [
+          "Rxa7+"
+        ],
+        "wrong": "The rook on b7 takes a pawn with check.",
+        "hint": "Rook takes a7, check.",
+        "hintSquares": [
+          "a7"
+        ],
+        "success": "1. Rxa7, check! The queen must take.",
+        "reply": "Qxa7"
+      }
+    },
+    {
+      "id": "ra5",
+      "title": "Your turn: now Ra5",
+      "narration": [
+        {
+          "say": "Now the move Black feared comes with more force."
+        }
+      ],
+      "exercise": {
+        "feedback": {
+          "*": "The other rook goes to the a-file, behind your queen."
+        },
+        "prompt": "White to move. Line up against the black queen.",
+        "accept": [
+          "Ra5"
+        ],
+        "wrong": "The other rook goes to the a-file, behind your queen.",
+        "hint": "Rook to a5.",
+        "hintSquares": [
+          "a5"
+        ],
+        "success": "2. Ra5. Whatever Black does, White mates next move. Say Black plays Rb7.",
+        "reply": "Rb7"
+      }
+    },
+    {
+      "id": "mate",
+      "title": "Find the checkmate",
+      "narration": [
+        {
+          "say": "White mates."
+        }
+      ],
+      "exercise": {
+        "feedback": {
+          "*": "Capture the rook that just moved to b7."
+        },
+        "prompt": "White to move and give checkmate in one.",
+        "accept": [
+          "Qxb7#"
+        ],
+        "wrong": "Capture the rook that just moved to b7.",
+        "hint": "Take on b7.",
+        "hintSquares": [
+          "b7"
+        ],
+        "success": "Checkmate.",
+        "reply": null
+      }
+    }
+  ]
+}

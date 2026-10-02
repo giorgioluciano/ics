@@ -1,0 +1,159 @@
+{
+  "id": "020-early-bishop",
+  "title": "An Early Bishop Move",
+  "subtitle": "Knights before bishops",
+  "source": {
+    "work": "Chess Fundamentals",
+    "author": "José Raúl Capablanca",
+    "year": 1921,
+    "section": "Chapter I, §7 Control of the Centre, Example 19",
+    "examples": "19",
+    "url": "https://archive.org/details/chessfundamental00capa"
+  },
+  "startFen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+  "steps": [
+    {
+      "id": "bad",
+      "title": "A bad move",
+      "source": "A bad move, which violates one of the principles set down, according to which at least one Knight should be developed before the Bishops are brought out, and also because it exchanges a Bishop for a Knight, which in the opening is generally bad, unless there is some compensation.",
+      "narration": [
+        {
+          "say": "e4, e5. Knight to f3, pawn to d6. Pawn to d4.",
+          "moves": [
+            "e4",
+            "e5",
+            "Nf3",
+            "d6",
+            "d4"
+          ]
+        },
+        {
+          "say": "Black plays bishop to g4: a bad move. No knight is out yet.",
+          "move": "Bg4",
+          "highlights": [
+            "b8",
+            "g8"
+          ]
+        }
+      ],
+      "exercise": {
+        "prompt": "White to move. Open the centre.",
+        "accept": [
+          "dxe5"
+        ],
+        "feedback": {
+          "*": "Take a pawn in the centre."
+        },
+        "hint": "The d-pawn takes.",
+        "hintSquares": [
+          "e5"
+        ],
+        "success": "4. dxe5. If Black takes back with the pawn, he loses a pawn. So Bxf3.",
+        "reply": "Bxf3"
+      }
+    },
+    {
+      "id": "recapture",
+      "title": "Your turn: recapture",
+      "narration": [
+        {
+          "say": "Take back. Choose the capture that also develops a piece."
+        }
+      ],
+      "exercise": {
+        "prompt": "White to move. Recapture on f3.",
+        "accept": [
+          "Qxf3"
+        ],
+        "feedback": {
+          "gxf3": "That ruins your pawns. Recapture with a piece that gets developed.",
+          "*": "Take back on f3."
+        },
+        "hint": "The queen takes.",
+        "hintSquares": [
+          "f3"
+        ],
+        "success": "5. Qxf3. Black takes on e5.",
+        "reply": "dxe5"
+      }
+    },
+    {
+      "id": "pressure",
+      "title": "White is ahead in development",
+      "source": "Black, however, has no pieces out except his Queen, and White, with a Bishop and a Knight already developed, has a chance of obtaining an advantage quickly by playing Kt - Q 5 anyway.",
+      "narration": [
+        {
+          "say": "Bishop to c4, aiming at f7. Black defends with Qf6.",
+          "moves": [
+            "Bc4",
+            "Qf6"
+          ],
+          "arrows": [
+            {
+              "from": "c4",
+              "to": "f7",
+              "color": "danger"
+            }
+          ]
+        },
+        {
+          "say": "Queen to b3, double attack on b7 and f7. Black plays b6.",
+          "moves": [
+            "Qb3",
+            "b6"
+          ],
+          "arrows": [
+            {
+              "from": "b3",
+              "to": "b7",
+              "color": "danger"
+            },
+            {
+              "from": "b3",
+              "to": "f7",
+              "color": "danger"
+            }
+          ]
+        },
+        {
+          "say": "Knight to c3. Black plays c6, to prevent Nd5.",
+          "moves": [
+            "Nc3",
+            "c6"
+          ]
+        },
+        {
+          "say": "Black has only his queen out. White can already think about Nd5 anyway.",
+          "arrows": [
+            {
+              "from": "c3",
+              "to": "d5",
+              "color": "primary"
+            }
+          ],
+          "highlights": [
+            "b8",
+            "g8",
+            "f8"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "summary",
+      "title": "What we learned",
+      "source": "The student is warned against playing Pawns in preference to pieces at the beginning of the game, especially P - K R 3 and P - Q R 3, which are moves very commonly indulged in by beginners.",
+      "narration": [
+        {
+          "say": "Develop at least one knight before the bishops."
+        },
+        {
+          "say": "Do not exchange a bishop for a knight early without compensation."
+        },
+        {
+          "say": "And avoid pawn moves like h3 and a3 at the beginning, so common among beginners."
+        }
+      ]
+    }
+  ]
+}

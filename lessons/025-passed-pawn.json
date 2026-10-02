@@ -1,0 +1,130 @@
+{
+  "id": "025-passed-pawn",
+  "title": "Obtaining a Passed Pawn",
+  "subtitle": "The centre pawn breaks through",
+  "source": {
+    "work": "Chess Fundamentals",
+    "author": "José Raúl Capablanca",
+    "year": 1921,
+    "section": "Chapter II, §11 Obtaining a Passed Pawn, Example 24",
+    "examples": "24",
+    "url": "https://archive.org/details/chessfundamental00capa"
+  },
+  "startFen": "8/ppp4k/8/PPP5/8/8/8/7K w - - 0 1",
+  "steps": [
+    {
+      "id": "intro",
+      "title": "Three against three",
+      "source": "When three or more Pawns are opposed to each other in some such position, there is always a chance for one side or the other of obtaining a passed Pawn. In the following position the way of obtaining a passed Pawn is to advance the centre Pawn.",
+      "narration": [
+        {
+          "say": "Three pawns against three, with the kings far away.",
+          "highlights": [
+            "a5",
+            "b5",
+            "c5",
+            "a7",
+            "b7",
+            "c7"
+          ]
+        },
+        {
+          "say": "White can obtain a passed pawn by advancing the centre pawn. Your move."
+        }
+      ],
+      "exercise": {
+        "feedback": {
+          "*": "Push the pawn in the middle of the three."
+        },
+        "prompt": "White to move. Break through with the centre pawn.",
+        "accept": [
+          "b6"
+        ],
+        "wrong": "Push the pawn in the middle of the three.",
+        "hint": "The b-pawn goes forward.",
+        "hintSquares": [
+          "b6"
+        ],
+        "success": "1. b6. If cxb6, then a6 and the a-pawn is through. So Black plays axb6.",
+        "reply": "axb6"
+      }
+    },
+    {
+      "id": "second",
+      "title": "Your turn: the second sacrifice",
+      "narration": [
+        {
+          "say": "Sacrifice again."
+        }
+      ],
+      "exercise": {
+        "feedback": {
+          "a6": "Black simply takes: bxa6. First c6, to draw the black pawns away.",
+          "*": "The c-pawn goes forward."
+        },
+        "prompt": "White to move. Give up another pawn.",
+        "accept": [
+          "c6"
+        ],
+        "hint": "The c-pawn goes to c6.",
+        "hintSquares": [
+          "c6"
+        ],
+        "success": "2. c6. Black takes.",
+        "reply": "bxc6"
+      }
+    },
+    {
+      "id": "through",
+      "title": "Your turn: the passed pawn",
+      "narration": [
+        {
+          "say": "Now the a-pawn is free."
+        }
+      ],
+      "exercise": {
+        "feedback": {
+          "*": "Not the move Capablanca shows here. Try again."
+        },
+        "prompt": "White to move. Run.",
+        "accept": [
+          "a6"
+        ],
+        "hint": "The a-pawn goes to a6.",
+        "hintSquares": [
+          "a6"
+        ],
+        "success": "3. a6. This white pawn is nearer to queening than any black pawn. White wins.",
+        "reply": null
+      }
+    },
+    {
+      "id": "black",
+      "title": "If Black moves first",
+      "fen": "8/ppp4k/8/PPP5/8/8/8/7K b - - 0 1",
+      "source": "It would not be advisable to try to obtain a passed Pawn because the White Pawns would be nearer to Queen than the single Black Pawn. […] The game properly played would be a draw.",
+      "narration": [
+        {
+          "say": "If Black has the move, he should not try the same trick: the white pawns are nearer to queening."
+        },
+        {
+          "say": "Instead, Black plays b6, and the pawns are exchanged.",
+          "moves": [
+            "b6",
+            "cxb6",
+            "cxb6",
+            "axb6",
+            "axb6"
+          ]
+        },
+        {
+          "say": "Properly played, the game is a draw.",
+          "highlights": [
+            "b5",
+            "b6"
+          ]
+        }
+      ]
+    }
+  ]
+}

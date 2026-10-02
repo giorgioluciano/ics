@@ -1,0 +1,145 @@
+{
+  "id": "029-opposition-defence",
+  "title": "The Opposition in Defence",
+  "subtitle": "Drawing a pawn down",
+  "source": {
+    "work": "Chess Fundamentals",
+    "author": "José Raúl Capablanca",
+    "year": 1921,
+    "section": "Chapter II, §13 The Opposition, Example 28",
+    "examples": "28",
+    "url": "https://archive.org/details/chessfundamental00capa"
+  },
+  "startFen": "8/8/8/4p1p1/8/5P2/6K1/3k4 w - - 0 1",
+  "steps": [
+    {
+      "id": "intro",
+      "title": "A pawn down",
+      "source": "The following position is an excellent proof of the value of the opposition as a means of defence. White is a Pawn behind and apparently lost, yet he can manage to draw.",
+      "narration": [
+        {
+          "say": "White is a pawn behind, and apparently lost. Yet he can draw, with the opposition."
+        },
+        {
+          "say": "But not the close opposition: the pawns do not allow it. White takes the distant opposition."
+        }
+      ],
+      "exercise": {
+        "feedback": {
+          "Kf1": "Close opposition: Kd2, Kf2, Kd3, and your own pawn on f3 stops you keeping the lateral opposition.",
+          "*": "The king goes to the corner, on the same rank as the black king."
+        },
+        "prompt": "White to move. Take the distant opposition.",
+        "accept": [
+          "Kh1"
+        ],
+        "hint": "King to h1.",
+        "hintSquares": [
+          "h1"
+        ],
+        "success": "1. Kh1! Black tries Kd2.",
+        "reply": "Kd2"
+      }
+    },
+    {
+      "id": "keep",
+      "title": "Always keep the opposition",
+      "narration": [
+        {
+          "say": "King to h2, king to d3. King to h3!",
+          "moves": [
+            "Kh2",
+            "Kd3",
+            "Kh3"
+          ]
+        },
+        {
+          "say": "Black goes to e2, White to g2. King to e3, king to g3.",
+          "moves": [
+            "Ke2",
+            "Kg2",
+            "Ke3",
+            "Kg3"
+          ]
+        },
+        {
+          "say": "Black tries d4, and the king attacks the pawn: g4.",
+          "moves": [
+            "Kd4",
+            "Kg4"
+          ],
+          "highlights": [
+            "g5"
+          ]
+        },
+        {
+          "say": "Black must return to e3, and White goes back to g3. He always keeps the opposition."
+        }
+      ]
+    },
+    {
+      "id": "push",
+      "title": "If Black pushes",
+      "fen": "8/8/8/4p1p1/8/5P2/6K1/3k4 w - - 0 1",
+      "narration": [
+        {
+          "say": "Back to the start. King to h1, and Black pushes g4.",
+          "moves": [
+            "Kh1",
+            "g4"
+          ]
+        },
+        {
+          "say": "White must not take: after fxg4, e4 wins."
+        }
+      ],
+      "exercise": {
+        "feedback": {
+          "fxg4": "Then e4, and the black pawn cannot be stopped.",
+          "*": "Bring the king back towards the centre."
+        },
+        "prompt": "White to move. Do not take.",
+        "accept": [
+          "Kg2"
+        ],
+        "hint": "King to g2.",
+        "hintSquares": [
+          "g2"
+        ],
+        "success": "2. Kg2. Black goes to d2.",
+        "reply": "Kd2"
+      }
+    },
+    {
+      "id": "draw",
+      "title": "Both sides queen",
+      "narration": [
+        {
+          "say": "Now White takes, and Black pushes e4.",
+          "moves": [
+            "fxg4",
+            "e4"
+          ]
+        },
+        {
+          "say": "Mere counting shows that both sides queen: a draw.",
+          "arrows": [
+            {
+              "from": "g4",
+              "to": "g8",
+              "color": "primary"
+            },
+            {
+              "from": "e4",
+              "to": "e1",
+              "color": "danger"
+            }
+          ]
+        },
+        {
+          "say": "In nearly all king and pawn endings, the opposition is of paramount importance."
+        }
+      ]
+    }
+  ]
+}
