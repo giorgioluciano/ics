@@ -1,0 +1,335 @@
+{
+  "id": "074-game-07-capablanca-burn",
+  "title": "Game 7: Capablanca–Burn",
+  "subtitle": "A small material advantage becomes a technical win",
+  "source": {
+    "work": "Chess Fundamentals",
+    "author": "José Raúl Capablanca",
+    "year": 1921,
+    "section": "Part II, Illustrative Games, Game 7",
+    "examples": "Game 7",
+    "url": "https://archive.org/details/chessfundamental00capa"
+  },
+  "startFen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+  "steps": [
+    {
+      "id": "intro",
+      "title": "Read the whole game",
+      "narration": [
+        {
+          "say": "A small material advantage becomes a technical win We follow the main line from the book; variations are not played."
+        }
+      ]
+    },
+    {
+      "id": "phase-1",
+      "title": "Phase 1",
+      "narration": [
+        {
+          "say": "Capablanca has White against Burn at San Sebastian in 1911. White chooses a solid Ruy Lopez setup.",
+          "moves": [
+            "e4",
+            "e5",
+            "Nf3",
+            "Nc6",
+            "Bb5",
+            "a6",
+            "Ba4",
+            "Nf6"
+          ]
+        },
+        {
+          "say": "Capablanca has White against Burn at San Sebastian in 1911. White chooses a solid Ruy Lopez setup.",
+          "moves": [
+            "d3"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "phase-2",
+      "title": "Phase 2",
+      "narration": [
+        {
+          "say": "White supports the centre. Black develops the bishop.",
+          "moves": [
+            "d6",
+            "c3",
+            "Be7"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "phase-3",
+      "title": "Phase 3",
+      "narration": [
+        {
+          "say": "The knight travels through f1. Black challenges the centre and develops the bishop to c5.",
+          "moves": [
+            "Nbd2",
+            "O-O",
+            "Nf1",
+            "b5",
+            "Bc2",
+            "d5",
+            "Qe2",
+            "dxe4"
+          ]
+        },
+        {
+          "say": "The knight travels through f1. Black challenges the centre and develops the bishop to c5.",
+          "moves": [
+            "dxe4",
+            "Bc5"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "phase-4",
+      "title": "Phase 4",
+      "narration": [
+        {
+          "say": "White develops the bishop with pressure. Black responds with bishop to e6.",
+          "moves": [
+            "Bg5",
+            "Be6"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "phase-5",
+      "title": "Phase 5",
+      "narration": [
+        {
+          "say": "White brings the knight to e3 and completes castling.",
+          "moves": [
+            "Ne3",
+            "Re8",
+            "O-O",
+            "Qe7"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "phase-6",
+      "title": "Position 6",
+      "narration": [
+        {
+          "say": "White establishes a knight on d5. The exchange leaves an advanced central pawn."
+        }
+      ],
+      "exercise": {
+        "prompt": "White to move. Establish the knight on d5.",
+        "accept": [
+          "Nd5"
+        ],
+        "feedback": {
+          "*": "Knight from e3 to d5."
+        },
+        "hint": "Knight from e3 to d5.",
+        "hintSquares": [
+          "d5"
+        ],
+        "success": "Correct. Nd5",
+        "reply": "Bxd5"
+      }
+    },
+    {
+      "id": "continue-6",
+      "title": "Continue the game",
+      "narration": [
+        {
+          "say": "The game continues with the recorded moves.",
+          "moves": [
+            "exd5",
+            "Nb8"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "phase-7",
+      "title": "Phase 7",
+      "narration": [
+        {
+          "say": "White challenges the queenside with a4. Black advances b4.",
+          "moves": [
+            "a4",
+            "b4"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "phase-8",
+      "title": "Phase 8",
+      "narration": [
+        {
+          "say": "White exchanges pawns and a bishop, then wins h7 with check.",
+          "moves": [
+            "cxb4",
+            "Bxb4",
+            "Bxf6",
+            "Qxf6",
+            "Qe4",
+            "Bd6",
+            "Qxh7+",
+            "Kf8"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "phase-9",
+      "title": "Position 9",
+      "narration": [
+        {
+          "say": "White brings the knight to h4. Black offers a queen exchange."
+        }
+      ],
+      "exercise": {
+        "prompt": "White to move. Bring the knight to h4.",
+        "accept": [
+          "Nh4"
+        ],
+        "feedback": {
+          "*": "Knight from f3 to h4."
+        },
+        "hint": "Knight from f3 to h4.",
+        "hintSquares": [
+          "h4"
+        ],
+        "success": "Correct. Nh4",
+        "reply": "Qh6"
+      }
+    },
+    {
+      "id": "phase-10",
+      "title": "Phase 10",
+      "narration": [
+        {
+          "say": "White exchanges queens and keeps the knight active. The rook then occupies the d-file.",
+          "moves": [
+            "Qxh6",
+            "gxh6",
+            "Nf5",
+            "h5",
+            "Bd1",
+            "Nd7",
+            "Bxh5",
+            "Nf6"
+          ]
+        },
+        {
+          "say": "White exchanges queens and keeps the knight active. The rook then occupies the d-file.",
+          "moves": [
+            "Be2",
+            "Nxd5",
+            "Rfd1",
+            "Nf4",
+            "Bc4",
+            "Red8",
+            "h4",
+            "a5"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "phase-11",
+      "title": "Phase 11",
+      "narration": [
+        {
+          "say": "White exchanges the bishop for the knight, leaving Black with isolated pawns to defend.",
+          "moves": [
+            "g3",
+            "Ne6",
+            "Bxe6",
+            "fxe6",
+            "Ne3",
+            "Rdb8",
+            "Nc4",
+            "Ke7"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "phase-12",
+      "title": "Phase 12",
+      "narration": [
+        {
+          "say": "White brings the other rook to c1. Black must keep defending.",
+          "moves": [
+            "Rac1",
+            "Ra7"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "phase-13",
+      "title": "Phase 13",
+      "narration": [
+        {
+          "say": "White’s king, rook and pawns improve together.",
+          "moves": [
+            "Re1",
+            "Kf6",
+            "Re4",
+            "Rb4",
+            "g4",
+            "Ra6"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "phase-14",
+      "title": "Phase 14",
+      "narration": [
+        {
+          "say": "White transfers a rook to the third rank and advances the kingside pawns. Black gives up the bishop, but the pawn advance continues. Black resigns.",
+          "moves": [
+            "Rc3",
+            "Bc5",
+            "Rf3+",
+            "Kg7",
+            "b3",
+            "Bd4",
+            "Kg2",
+            "Ra8"
+          ]
+        },
+        {
+          "say": "White transfers a rook to the third rank and advances the kingside pawns. Black gives up the bishop, but the pawn advance continues. Black resigns.",
+          "moves": [
+            "g5",
+            "Ra6",
+            "h5",
+            "Rxc4",
+            "bxc4",
+            "Rc6",
+            "g6"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "summary",
+      "title": "The lesson of the game",
+      "narration": [
+        {
+          "say": "The game ends at the resignation recorded in the book. No additional continuation is invented."
+        },
+        {
+          "say": "Review the connection between pawn structure, piece activity and the ending before judging an exchange."
+        }
+      ]
+    }
+  ]
+}

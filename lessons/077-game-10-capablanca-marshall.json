@@ -1,0 +1,332 @@
+{
+  "id": "077-game-10-capablanca-marshall",
+  "title": "Game 10: Capablanca–Marshall",
+  "subtitle": "A pawn advantage must survive the transition into a rook ending",
+  "source": {
+    "work": "Chess Fundamentals",
+    "author": "José Raúl Capablanca",
+    "year": 1921,
+    "section": "Part II, Illustrative Games, Game 10",
+    "examples": "Game 10",
+    "url": "https://archive.org/details/chessfundamental00capa"
+  },
+  "startFen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+  "steps": [
+    {
+      "id": "opening",
+      "title": "A Petroff with an active bishop",
+      "narration": [
+        {
+          "say": "Capablanca has White against Marshall at St. Petersburg in 1914. The opening is a Petroff Defence.",
+          "moves": [
+            "e4",
+            "e5",
+            "Nf3",
+            "Nf6",
+            "Nxe5",
+            "d6",
+            "Nf3",
+            "Nxe4",
+            "Qe2",
+            "Qe7",
+            "d3",
+            "Nf6",
+            "Bg5",
+            "Be6"
+          ]
+        },
+        {
+          "say": "White develops, exchanges on f6 and gains space with d4.",
+          "moves": [
+            "Nc3",
+            "h6",
+            "Bxf6",
+            "Qxf6",
+            "d4",
+            "Be7",
+            "Qb5+",
+            "Nd7",
+            "Bd3"
+          ]
+        },
+        {
+          "say": "Black advances g5. White plays h3, and Black castles.",
+          "moves": [
+            "g5",
+            "h3",
+            "O-O"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "pawn",
+      "title": "Win material without losing coordination",
+      "narration": [
+        {
+          "say": "White takes the pawn on b7, then retreats the queen.",
+          "moves": [
+            "Qxb7",
+            "Rab8",
+            "Qe4",
+            "Qg7",
+            "b3",
+            "c5"
+          ]
+        },
+        {
+          "say": "White castles. Black exchanges in the centre."
+        }
+      ],
+      "exercise": {
+        "prompt": "White to move. Complete king safety by castling.",
+        "accept": [
+          "O-O"
+        ],
+        "feedback": {
+          "*": "Castle on the kingside."
+        },
+        "hint": "Castle on the kingside.",
+        "hintSquares": [
+          "-O"
+        ],
+        "success": "Correct. O-O",
+        "reply": "cxd4"
+      }
+    },
+    {
+      "id": "outpost",
+      "title": "Use the central square",
+      "narration": [
+        {
+          "say": "The knight occupies d5. Black retreats the bishop.",
+          "moves": [
+            "Nd5",
+            "Bd8"
+          ]
+        },
+        {
+          "say": "White brings the bishop to c4. Black centralises the knight, and the queens are exchanged.",
+          "moves": [
+            "Bc4",
+            "Nc5",
+            "Qxd4",
+            "Qxd4"
+          ]
+        },
+        {
+          "say": "White recaptures with the knight. Further exchanges leave White with bishop against knight.",
+          "moves": [
+            "Nxd4",
+            "Bxd5",
+            "Bxd5",
+            "Bf6",
+            "Rad1",
+            "Bxd4",
+            "Rxd4",
+            "Kg7"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ending",
+      "title": "Activate the rook and support the centre",
+      "narration": [
+        {
+          "say": "White centralises the bishop and rook.",
+          "moves": [
+            "Bc4",
+            "Rb6",
+            "Re1",
+            "Kf6"
+          ]
+        },
+        {
+          "say": "White advances f4 and exchanges on g5, then gives a rook check.",
+          "moves": [
+            "f4",
+            "Ne6",
+            "fxg5+",
+            "hxg5",
+            "Rf1+",
+            "Ke7"
+          ]
+        },
+        {
+          "say": "The rook stays active while White advances the h-pawn.",
+          "moves": [
+            "Rg4",
+            "Rg8",
+            "Rf5",
+            "Rc6",
+            "h4",
+            "Rgc8",
+            "hxg5",
+            "Rc5"
+          ]
+        },
+        {
+          "say": "White exchanges bishop for knight and one pair of rooks.",
+          "moves": [
+            "Bxe6",
+            "fxe6",
+            "Rxc5",
+            "Rxc5"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "passed",
+      "title": "The passed g-pawn gains time",
+      "narration": [
+        {
+          "say": "White advances g6. Black moves the king to f8.",
+          "moves": [
+            "g6",
+            "Kf8"
+          ]
+        },
+        {
+          "say": "White activates the rook and creates queenside space.",
+          "moves": [
+            "Rc4",
+            "Ra5",
+            "a4",
+            "Kg7",
+            "Rc6",
+            "Rd5",
+            "Rc7+",
+            "Kxg6"
+          ]
+        },
+        {
+          "say": "Black has taken the g-pawn, but White’s rook wins a7.",
+          "moves": [
+            "Rxa7",
+            "Rd1+",
+            "Kh2",
+            "d5"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "queenside",
+      "title": "Build another passed pawn",
+      "narration": [
+        {
+          "say": "White advances a5 and supports the queenside.",
+          "moves": [
+            "a5",
+            "Rc1",
+            "Rc7",
+            "Ra1",
+            "b4",
+            "Ra4",
+            "c3",
+            "d4"
+          ]
+        },
+        {
+          "say": "White exchanges on c3 and keeps the a-pawn advancing.",
+          "moves": [
+            "Rc6",
+            "dxc3",
+            "Rxc3",
+            "Rxb4",
+            "Ra3",
+            "Rb7",
+            "a6",
+            "Ra7"
+          ]
+        },
+        {
+          "say": "The rook comes to a5. Black improves the king, and White creates kingside counterplay.",
+          "moves": [
+            "Ra5",
+            "Kf6",
+            "g4",
+            "Ke7",
+            "Kg3",
+            "Kd6"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "king",
+      "title": "The king supports both threats",
+      "narration": [
+        {
+          "say": "White advances the king while keeping the passed a-pawn protected.",
+          "moves": [
+            "Kf4",
+            "Kc7",
+            "Ke5",
+            "Kd7",
+            "g5",
+            "Ke7",
+            "g6",
+            "Kf8"
+          ]
+        },
+        {
+          "say": "White captures e6. Black moves the king to e8.",
+          "moves": [
+            "Kxe6",
+            "Ke8"
+          ]
+        }
+      ],
+      "exercise": {
+        "prompt": "White to move. Advance the g-pawn and force Black’s rook to respond.",
+        "accept": [
+          "g7"
+        ],
+        "feedback": {
+          "*": "Pawn from g6 to g7."
+        },
+        "hint": "Pawn from g6 to g7.",
+        "hintSquares": [
+          "g7"
+        ],
+        "success": "Correct. g7",
+        "reply": "Rxg7"
+      }
+    },
+    {
+      "id": "finish",
+      "title": "The distant pawn decides",
+      "narration": [
+        {
+          "say": "White advances the a-pawn to the seventh rank. Black checks, but White’s king steps to f5.",
+          "moves": [
+            "a7",
+            "Rg6+",
+            "Kf5"
+          ]
+        },
+        {
+          "say": "Black resigns. The book records that the conversion took longer than necessary because White missed stronger continuations."
+        }
+      ]
+    },
+    {
+      "id": "summary",
+      "title": "Convert with activity, not impatience",
+      "narration": [
+        {
+          "say": "White’s early pawn gain mattered because the pieces remained coordinated through the exchanges."
+        },
+        {
+          "say": "The rook ending required active rook play, king centralisation and threats on both wings."
+        },
+        {
+          "say": "The final passed pawn decided the game, but a material advantage was never a substitute for accurate play."
+        }
+      ]
+    }
+  ]
+}

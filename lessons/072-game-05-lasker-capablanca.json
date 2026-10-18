@@ -1,0 +1,266 @@
+{
+  "id": "072-game-05-lasker-capablanca",
+  "title": "Game 5: Lasker–Capablanca",
+  "subtitle": "A supported knight becomes the centre of the strategy",
+  "source": {
+    "work": "Chess Fundamentals",
+    "author": "José Raúl Capablanca",
+    "year": 1921,
+    "section": "Part II, Illustrative Games, Game 5",
+    "examples": "Game 5",
+    "url": "https://archive.org/details/chessfundamental00capa"
+  },
+  "startFen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+  "steps": [
+    {
+      "id": "opening",
+      "title": "The Exchange Ruy Lopez",
+      "narration": [
+        {
+          "say": "Lasker has White against Capablanca at St. Petersburg in 1914. White exchanges the bishop for the knight.",
+          "moves": [
+            "e4",
+            "e5",
+            "Nf3",
+            "Nc6",
+            "Bb5",
+            "a6",
+            "Bxc6"
+          ]
+        },
+        {
+          "say": "The central exchanges bring an early queen trade. Black develops the bishop.",
+          "moves": [
+            "dxc6",
+            "d4",
+            "exd4",
+            "Qxd4",
+            "Qxd4",
+            "Nxd4",
+            "Bd6"
+          ]
+        },
+        {
+          "say": "Both sides develop and castle. White advances f4.",
+          "moves": [
+            "Nc3",
+            "Ne7",
+            "O-O",
+            "O-O",
+            "f4",
+            "Re8"
+          ]
+        },
+        {
+          "say": "The knight retreats to b3. Black supports the centre with f6.",
+          "moves": [
+            "Nb3",
+            "f6"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "space",
+      "title": "Space and the cost of a bishop exchange",
+      "narration": [
+        {
+          "say": "White advances f5 and develops the bishop. Black develops the other bishop to b7.",
+          "moves": [
+            "f5",
+            "b6",
+            "Bf4",
+            "Bb7"
+          ]
+        },
+        {
+          "say": "Capablanca criticises his bishop move. White exchanges on d6 and centralises the knight.",
+          "moves": [
+            "Bxd6",
+            "cxd6",
+            "Nd4",
+            "Rad8"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "outpost",
+      "title": "Occupy the supported square",
+      "narration": [
+        {
+          "say": "The pawn on f5 supports e6. White can place a knight deep in Black’s position."
+        }
+      ],
+      "exercise": {
+        "prompt": "White to move. Establish the knight on e6.",
+        "accept": [
+          "Ne6"
+        ],
+        "feedback": {
+          "*": "Knight from d4 to e6."
+        },
+        "hint": "Knight from d4 to e6.",
+        "hintSquares": [
+          "e6"
+        ],
+        "success": "Correct. Ne6",
+        "reply": "Rd7"
+      }
+    },
+    {
+      "id": "rooks",
+      "title": "Make the defenders work",
+      "narration": [
+        {
+          "say": "White brings the rook to d1. Black retreats the knight, and White doubles rooks against d6.",
+          "moves": [
+            "Rad1",
+            "Nc8",
+            "Rf2",
+            "b5",
+            "Rfd2",
+            "Rde7"
+          ]
+        },
+        {
+          "say": "White fixes the queenside and brings the king into play.",
+          "moves": [
+            "b4",
+            "Kf7",
+            "a3",
+            "Ba8",
+            "Kf2",
+            "Ra7"
+          ]
+        },
+        {
+          "say": "White gains kingside space while keeping pressure on d6.",
+          "moves": [
+            "g4",
+            "h6",
+            "Rd3",
+            "a5",
+            "h4",
+            "axb4",
+            "axb4",
+            "Rae7"
+          ]
+        },
+        {
+          "say": "The kings approach the critical area.",
+          "moves": [
+            "Kf3",
+            "Rg8",
+            "Kf4",
+            "g6"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "change-file",
+      "title": "Switch the rooks to the kingside",
+      "narration": [
+        {
+          "say": "White moves the rook across. Black checks with the g-pawn.",
+          "moves": [
+            "Rg3",
+            "g5+",
+            "Kf3",
+            "Nb6"
+          ]
+        },
+        {
+          "say": "The pawn exchange opens the h-file. White brings one rook there, then doubles.",
+          "moves": [
+            "hxg5",
+            "hxg5",
+            "Rh3",
+            "Rd7",
+            "Kg3",
+            "Ke8",
+            "Rdh1",
+            "Bb7"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "break",
+      "title": "Open the centre at the right moment",
+      "narration": [
+        {
+          "say": "The knight on e6 remains strongly supported. White now opens another route for the pieces."
+        }
+      ],
+      "exercise": {
+        "prompt": "White to move. Challenge the pawn on d6.",
+        "accept": [
+          "e5"
+        ],
+        "feedback": {
+          "*": "Pawn from e4 to e5."
+        },
+        "hint": "Pawn from e4 to e5.",
+        "hintSquares": [
+          "e5"
+        ],
+        "success": "Correct. e5",
+        "reply": "dxe5"
+      }
+    },
+    {
+      "id": "finish",
+      "title": "The knights cooperate",
+      "narration": [
+        {
+          "say": "The second knight centralises while the first jumps to c5.",
+          "moves": [
+            "Ne4",
+            "Nd5",
+            "N6c5",
+            "Bc8"
+          ]
+        },
+        {
+          "say": "White takes the rook on d7 and invades the seventh rank.",
+          "moves": [
+            "Nxd7",
+            "Bxd7",
+            "Rh7",
+            "Rf8"
+          ]
+        },
+        {
+          "say": "The other rook changes wings and checks from a8.",
+          "moves": [
+            "Ra1",
+            "Kd8",
+            "Ra8+",
+            "Bc8",
+            "Nc5"
+          ]
+        },
+        {
+          "say": "Black resigns. The active rooks and knight have overwhelmed the defence."
+        }
+      ]
+    },
+    {
+      "id": "summary",
+      "title": "An outpost is part of a whole plan",
+      "narration": [
+        {
+          "say": "The knight on e6 restricted Black and gave White time to improve rooks, pawns and king."
+        },
+        {
+          "say": "White attacked the centre and then switched to the h-file. The second knight joined at the decisive moment."
+        },
+        {
+          "say": "Do not judge an outpost only by its square. Ask how the rest of your pieces can exploit the opponent’s restrictions."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,91 @@
+{
+  "id": "044-the-initiative",
+  "title": "The Initiative",
+  "subtitle": "Keep the move, or exchange it for a lasting advantage",
+  "source": {
+    "work": "Chess Fundamentals",
+    "author": "José Raúl Capablanca",
+    "year": 1921,
+    "section": "Chapter IV, §20 The Initiative",
+    "examples": null,
+    "url": "https://archive.org/details/chessfundamental00capa"
+  },
+  "startFen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+  "steps": [
+    {
+      "id": "first-move",
+      "title": "The first move is an initial advantage",
+      "narration": [
+        {
+          "say": "Both sides begin with the same material and the same arrangement of pieces. White has the first move."
+        },
+        {
+          "say": "Capablanca describes this initial opportunity to act first as the initiative. Other things being equal, it is an advantage."
+        }
+      ]
+    },
+    {
+      "id": "development",
+      "title": "Develop while creating pressure",
+      "narration": [
+        {
+          "say": "Develop your pieces as quickly as possible, but do not treat development as a task disconnected from your opponent."
+        },
+        {
+          "say": "Capablanca asks White to hinder the opponent’s development by applying pressure wherever possible. Development and pressure should support each other."
+        }
+      ]
+    },
+    {
+      "id": "centre",
+      "title": "Central control supports the initiative",
+      "narration": [
+        {
+          "say": "First seek control of the centre. It helps your pieces act and makes it easier to keep the opponent responding."
+        },
+        {
+          "say": "If central control is unavailable, seek another positional advantage that allows you to maintain pressure."
+        }
+      ]
+    },
+    {
+      "id": "exchange",
+      "title": "Do not surrender the initiative for nothing",
+      "narration": [
+        {
+          "say": "Keep the initiative as long as possible. Give it up only when you obtain something in exchange: a material or positional advantage."
+        },
+        {
+          "say": "A material gain must leave you able to withstand the opponent’s counterplay. Winning material is not enough if the resulting position cannot be defended."
+        }
+      ]
+    },
+    {
+      "id": "recover",
+      "title": "Survive the counterplay and act again",
+      "narration": [
+        {
+          "say": "After a favourable material gain, the opponent may temporarily take over the initiative."
+        },
+        {
+          "say": "Capablanca’s plan is to withstand that pressure and then use the extra material to resume active play. The exchange of advantages must be judged over the whole sequence."
+        }
+      ]
+    },
+    {
+      "id": "plans",
+      "title": "Three directions after development",
+      "narration": [
+        {
+          "say": "Once the pieces are developed, Capablanca distinguishes three possible directions."
+        },
+        {
+          "say": "You may attack the king directly; improve a position that is already favourable; or gain material while temporarily conceding the initiative."
+        },
+        {
+          "say": "This section is conceptual. The starting board is a reference only: the book supplies no move sequence or numbered example for this section."
+        }
+      ]
+    }
+  ]
+}

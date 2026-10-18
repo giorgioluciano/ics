@@ -1,0 +1,266 @@
+{
+  "id": "081-game-14-marshall-capablanca",
+  "title": "Game 14: Marshall–Capablanca",
+  "subtitle": "Active rooks and a passed h-pawn dominate the ending",
+  "source": {
+    "work": "Chess Fundamentals",
+    "author": "José Raúl Capablanca",
+    "year": 1921,
+    "section": "Part II, Illustrative Games, Game 14",
+    "examples": "Game 14",
+    "url": "https://archive.org/details/chessfundamental00capa"
+  },
+  "startFen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+  "steps": [
+    {
+      "id": "opening",
+      "title": "A queen’s bishop developed without weakness",
+      "narration": [
+        {
+          "say": "Marshall has White against Capablanca at New York in 1918. Black chooses a solid Queen’s Gambit Declined setup.",
+          "moves": [
+            "d4",
+            "d5",
+            "Nf3",
+            "Nf6",
+            "c4",
+            "e6",
+            "Nc3",
+            "Nbd7",
+            "Bg5",
+            "Be7",
+            "e3",
+            "O-O",
+            "Rc1",
+            "c6"
+          ]
+        },
+        {
+          "say": "Black exchanges central pieces and prepares the bishop’s development on b7.",
+          "moves": [
+            "Qc2",
+            "dxc4",
+            "Bxc4",
+            "Nd5",
+            "Bxe7",
+            "Qxe7",
+            "O-O",
+            "Nxc3",
+            "Qxc3",
+            "b6"
+          ]
+        },
+        {
+          "say": "White gains central space. Both sides put rooks on central files.",
+          "moves": [
+            "e4",
+            "Bb7",
+            "Rfe1",
+            "Rfd8"
+          ]
+        }
+      ]
+    },
+    {
+	  "id": "central",
+	  "title": "Meet the pawn advance with piece activity",
+	  "narration": [
+		{
+		  "say": "White advances d5. Black responds by centralising the knight.",
+		  "moves": [
+			"d5"
+		  ]
+		}
+	  ],
+	  "exercise": {
+		"prompt": "Black to move. Centralise the knight on c5.",
+		"accept": [
+		  "Nc5"
+		],
+		"feedback": {
+		  "*": "Knight from d7 to c5."
+		},
+		"hint": "Knight from d7 to c5.",
+		"hintSquares": [
+		  "c5"
+		],
+		"success": "Correct. Nc5",
+		"reply": "dxe6"
+	  }
+	},
+    {
+      "id": "queen",
+      "title": "An active queen meets the threats",
+      "narration": [
+        {
+          "say": "Black recaptures with the knight. White exchanges the bishop, and Black recaptures with the queen.",
+          "moves": [
+            "Nxe6",
+            "Bxe6",
+            "Qxe6",
+            "Nd4",
+            "Qe5"
+          ]
+        },
+        {
+          "say": "The queens are exchanged. Black immediately invades the second rank.",
+          "moves": [
+            "Nxc6",
+            "Qxc3",
+            "Rxc3",
+            "Rd2",
+            "Rb1",
+            "Re8"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "pawn-structure",
+      "title": "Create a target and a passed pawn",
+      "narration": [
+        {
+          "say": "White advances e5. Black challenges with g5.",
+          "moves": [
+            "e5",
+            "g5",
+            "h4",
+            "gxh4",
+            "Re1"
+          ]
+        },
+        {
+          "say": "Black can lift the rook to e6, keeping the initiative."
+        }
+      ],
+      "exercise": {
+        "prompt": "Black to move. Bring the rook from e8 to e6.",
+        "accept": [
+          "Re6"
+        ],
+        "feedback": {
+          "*": "Rook from e8 to e6."
+        },
+        "hint": "Rook from e8 to e6.",
+        "hintSquares": [
+          "e6"
+        ],
+        "success": "Correct. Re6"
+      }
+    },
+    {
+      "id": "transfer",
+      "title": "The rook changes wings",
+      "narration": [
+        {
+          "say": "White brings the rook to c1. Black improves the king and fixes the queenside pawns.",
+          "moves": [
+            "Rec1",
+            "Kg7",
+            "b4",
+            "b5",
+            "a3"
+          ]
+        },
+        {
+          "say": "Black transfers the rook to g6. The other rook takes a2.",
+          "moves": [
+            "Rg6",
+            "Kf1",
+            "Ra2",
+            "Kg1"
+          ]
+        }
+      ],
+      "exercise": {
+        "prompt": "Black to move. Advance the passed h-pawn.",
+        "accept": [
+          "h3"
+        ],
+        "feedback": {
+          "*": "Pawn from h4 to h3."
+        },
+        "hint": "Pawn from h4 to h3.",
+        "hintSquares": [
+          "h3"
+        ],
+        "success": "Correct. h3",
+        "reply": "g3"
+      }
+    },
+    {
+      "id": "defence",
+      "title": "White’s knight remains tied down",
+      "narration": [
+        {
+          "say": "Black secures the queenside with a6. White advances e6, but Black captures it.",
+          "moves": [
+            "a6",
+            "e6",
+            "Rxe6"
+          ]
+        },
+        {
+          "say": "White tries to gain space. Black brings the rook to h6.",
+          "moves": [
+            "g4",
+            "Rh6",
+            "f3"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "finish",
+      "title": "Rooks, king and pawn work together",
+      "narration": [
+        {
+          "say": "Black repositions the rook, then doubles on the second rank.",
+          "moves": [
+            "Rd6",
+            "Ne7",
+            "Rdd2"
+          ]
+        },
+        {
+          "say": "The knight checks, but Black’s king advances toward the white pawns.",
+          "moves": [
+            "Nf5+",
+            "Kf6",
+            "Nh4",
+            "Kg5",
+            "Nf5",
+            "Rg2+"
+          ]
+        },
+        {
+          "say": "White retreats the king. Black advances h2 and captures f4 after the check.",
+          "moves": [
+            "Kf1",
+            "h2",
+            "f4+",
+            "Kxf4"
+          ]
+        },
+        {
+          "say": "White resigns. The active rooks and passed pawn dominate the position."
+        }
+      ]
+    },
+    {
+      "id": "summary",
+      "title": "The final game brings the principles together",
+      "narration": [
+        {
+          "say": "Black developed the queen’s bishop, responded to the centre with active pieces, and kept the rooks mobile."
+        },
+        {
+          "say": "After the queens were exchanged, the passed h-pawn restricted White and supported the rook invasion."
+        },
+        {
+          "say": "The king joined the attack. Development, initiative, pawn structure and endgame activity formed one continuous plan."
+        }
+      ]
+    }
+  ]
+}

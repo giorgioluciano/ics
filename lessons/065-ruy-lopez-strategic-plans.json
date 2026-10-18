@@ -1,0 +1,247 @@
+{
+  "id": "065-ruy-lopez-strategic-plans",
+  "title": "Some Possible Developments from a Ruy Lopez",
+  "subtitle": "Imagine the structures that exchanges can produce",
+  "source": {
+    "work": "Chess Fundamentals",
+    "author": "José Raúl Capablanca",
+    "year": 1921,
+    "section": "Chapter VI, §32 Some Possible Developments from a Ruy Lopez, Example 65",
+    "examples": "65",
+    "url": "https://archive.org/details/chessfundamental00capa"
+  },
+  "startFen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+  "steps": [
+    {
+      "id": "opening",
+      "title": "An opening that creates strategic possibilities",
+      "narration": [
+        {
+          "say": "We begin with the opening moves Capablanca associates with Janowski–Lasker, Paris 1912.",
+          "moves": [
+            "e4",
+            "e5",
+            "Nf3",
+            "Nc6",
+            "Bb5",
+            "a6",
+            "Ba4",
+            "Nf6",
+            "O-O",
+            "Nxe4"
+          ]
+        },
+        {
+          "say": "White challenges the centre. Black gains queenside space.",
+          "moves": [
+            "d4",
+            "b5",
+            "Bb3",
+            "d5",
+            "dxe5",
+            "Be6"
+          ]
+        },
+        {
+          "say": "Both sides finish developing. White supports the centre and contests the e-file.",
+          "moves": [
+            "c3",
+            "Be7",
+            "Re1",
+            "O-O",
+            "Nbd2",
+            "Nc5",
+            "Bc2",
+            "Bg4"
+          ]
+        },
+        {
+          "say": "The knights manoeuvre, and White brings the queen to d3.",
+          "moves": [
+            "Nb3",
+            "Ne6",
+            "Qd3",
+            "g6"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "transition",
+      "title": "A hypothetical position, not a continuous game",
+      "narration": [
+        {
+          "say": "Capablanca now asks us to imagine exchanges of the minor pieces. He does not give the intervening moves. The next step therefore loads a separate illustrative position."
+        }
+      ]
+    },
+    {
+      "id": "target",
+      "title": "A backward pawn becomes a target",
+      "narration": [
+        {
+          "say": "The minor pieces have disappeared. Black’s c-pawn is backward, and White has active major pieces.",
+          "highlights": [
+            "c7",
+            "e5",
+            "c1",
+            "e1"
+          ]
+        },
+        {
+          "say": "White brings the rook to c5. Black supports the position with c6.",
+          "moves": [
+            "Rc5",
+            "c6"
+          ]
+        },
+        {
+          "say": "The queen and second rook join the pressure.",
+          "moves": [
+            "Qa3",
+            "Re6",
+            "Rec1",
+            "Rc8",
+            "Qb4",
+            "Qb7",
+            "Qa3"
+          ]
+        },
+        {
+          "say": "Black’s pieces are occupied defending the queenside. White can prepare play elsewhere."
+        }
+      ],
+      "fen": "r3r1k1/2pq1p1p/p5p1/1p1pP3/3P4/3Q4/PP3PPP/2R1R1K1 w - - 0 1"
+    },
+    {
+      "id": "second-transition",
+      "title": "Visualise another stage of the plan",
+      "narration": [
+        {
+          "say": "The book next supplies another diagram after further pawn advances. Again, the connecting moves are not given. We load the diagram rather than inventing them."
+        }
+      ]
+    },
+    {
+      "id": "break",
+      "title": "Open a file on the other wing",
+      "narration": [
+        {
+          "say": "White has advanced the kingside pawns while maintaining queenside pressure. The pawn on e5 remains the strategic pivot.",
+          "highlights": [
+            "e5",
+            "f4",
+            "g4",
+            "c5"
+          ]
+        }
+      ],
+      "fen": "2r3k1/1q5p/p1p1r1p1/1pRpPp2/3P1PP1/Q6P/PP6/2R4K w - - 0 1",
+      "exercise": {
+        "prompt": "White to move. Exchange the g-pawn to open the kingside.",
+        "accept": [
+          "gxf5"
+        ],
+        "feedback": {
+          "*": "Pawn from g4 takes f5."
+        },
+        "hint": "Pawn from g4 takes f5.",
+        "hintSquares": [
+          "f5"
+        ],
+        "success": "Correct. gxf5",
+        "reply": "gxf5"
+      }
+    },
+    {
+      "id": "transfer",
+      "title": "Move the rooks to the new battle",
+      "narration": [
+        {
+          "say": "White brings the queen to f3. Black returns the queen to d7.",
+          "moves": [
+            "Qf3",
+            "Qd7"
+          ]
+        },
+        {
+          "say": "The advanced rook returns to c2. Black shifts the rook to g6.",
+          "moves": [
+            "R5c2",
+            "Rg6"
+          ]
+        },
+        {
+          "say": "White brings a rook to g2. Black moves the king to h8.",
+          "moves": [
+            "Rg2",
+            "Kh8"
+          ]
+        },
+        {
+          "say": "The remaining c-rook joins on g1. Black answers by bringing the c-rook to g8.",
+          "moves": [
+            "Rcg1",
+            "Rcg8"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "exchanges",
+      "title": "Keep the central advantage through simplification",
+      "narration": [
+        {
+          "say": "Queen to h5. Both pairs of rooks are exchanged on g2.",
+          "moves": [
+            "Qh5",
+            "Rxg2",
+            "Rxg2",
+            "Rxg2",
+            "Kxg2"
+          ]
+        },
+        {
+          "say": "Black checks. White brings the king to h2, and the queens are exchanged.",
+          "moves": [
+            "Qg7+",
+            "Kh2",
+            "Qg6",
+            "Qxg6",
+            "hxg6"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "pawn-ending",
+      "title": "The pawn skeleton explains the plan",
+      "narration": [
+        {
+          "say": "Capablanca finishes the illustrative line with b4 and assesses the pawn ending as winning for White.",
+          "moves": [
+            "b4"
+          ]
+        },
+        {
+          "say": "The lesson does not add a forced continuation beyond the book. White’s advanced e-pawn and the king’s freedom of movement are central to the assessment."
+        }
+      ]
+    },
+    {
+      "id": "summary",
+      "title": "Think beyond the current pieces",
+      "narration": [
+        {
+          "say": "The opening leads to possible structures, not one compulsory future. Capablanca deliberately supplies diagrams without all the connecting moves."
+        },
+        {
+          "say": "Identify a weakness, tie down the defenders, and use your greater freedom to change the point of attack."
+        },
+        {
+          "say": "When exchanging pieces, ask whether the resulting pawn structure preserves the advantage."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,148 @@
+{
+  "id": "058-danger-of-safety",
+  "title": "The Danger of a Safe Position",
+  "subtitle": "Three careless moves turn an advantage into defeat",
+  "source": {
+    "work": "Chess Fundamentals",
+    "author": "José Raúl Capablanca",
+    "year": 1921,
+    "section": "Chapter V, §27 The Danger of a Safe Position, Example 58",
+    "examples": "58",
+    "url": "https://archive.org/details/chessfundamental00capa"
+  },
+  "startFen": "2R5/p4p1k/5p1p/6r1/5K2/4P3/Pr4PP/7R w - - 0 26",
+  "steps": [
+    {
+      "id": "intro",
+      "title": "A king that is not as safe as it looks",
+      "narration": [
+        {
+          "say": "Marshall has White against Kupchick at Havana in 1913. Black has active rooks, but must still watch the safety of the king."
+        },
+        {
+          "say": "White advances g4. Black takes a2. Capablanca calls this the first mistake: checking with the rook was preferable.",
+          "moves": [
+            "g4",
+            "Rxa2"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "second-mistake",
+      "title": "Make room for the king",
+      "narration": [
+        {
+          "say": "White brings the rook to d1. Black checks from a4. Capablanca criticises the check: the pawn break f5 would have made room for the king.",
+          "moves": [
+            "Rd1",
+            "Ra4+"
+          ]
+        },
+        {
+          "say": "White blocks with rook to d4. Black moves the a-rook to a5, the third mistake.",
+          "moves": [
+            "Rd4",
+            "Raa5"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "invasion",
+      "title": "The decisive rook entry",
+      "narration": [
+        {
+          "say": "Both white rooks can invade the eighth rank. Bring the rook on d4 forward."
+        }
+      ],
+      "exercise": {
+        "prompt": "White to move. Bring the d4-rook to d8.",
+        "accept": [
+          "Rdd8"
+        ],
+        "feedback": {
+          "*": "Both rooks can reach d8. Use the rook on d4."
+        },
+        "hint": "Both rooks can reach d8. Use the rook on d4.",
+        "hintSquares": [
+          "d8"
+        ],
+        "success": "Correct. Rdd8",
+        "reply": "Rg7"
+      }
+    },
+    {
+      "id": "pawn-joins",
+      "title": "A pawn helps tighten the net",
+      "narration": [
+        {
+          "say": "White advances h4. Black responds h5.",
+          "moves": [
+            "h4",
+            "h5"
+          ]
+        }
+      ],
+      "exercise": {
+        "prompt": "White to move. Check on the h-file.",
+        "accept": [
+          "Rh8+"
+        ],
+        "feedback": {
+          "*": "Move the rook from d8 to h8."
+        },
+        "hint": "Move the rook from d8 to h8.",
+        "hintSquares": [
+          "h8"
+        ],
+        "success": "Correct. Rh8+"
+      }
+    },
+    {
+      "id": "resignation",
+      "title": "The game ends before the mating line",
+      "narration": [
+        {
+          "say": "Black resigned here. The next step shows the continuation explained in the book, not additional moves from the game."
+        }
+      ]
+    },
+    {
+      "id": "demonstration",
+      "title": "Why Black resigned",
+      "narration": [
+        {
+          "say": "If the king goes to g6, White exchanges on h5.",
+          "moves": [
+            "Kg6",
+            "gxh5+",
+            "Rxh5",
+            "Rxh5",
+            "Kxh5"
+          ]
+        },
+        {
+          "say": "The remaining rook checks, then the pawn delivers mate.",
+          "moves": [
+            "Rh8+",
+            "Kg6",
+            "h5#"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "summary",
+      "title": "An advantage does not remove danger",
+      "narration": [
+        {
+          "say": "Black made three careless moves because the position appeared safe. White combined rook activity and pawn support against the king."
+        },
+        {
+          "say": "Before collecting a pawn or giving a routine check, ask whether the opponent has a forcing threat."
+        }
+      ]
+    }
+  ]
+}

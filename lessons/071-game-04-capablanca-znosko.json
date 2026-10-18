@@ -1,0 +1,257 @@
+{
+  "id": "071-game-04-capablanca-znosko",
+  "title": "Game 4: Capablanca–Znosko-Borovski",
+  "subtitle": "Do not reject a sound plan in search of a grand combination",
+  "source": {
+    "work": "Chess Fundamentals",
+    "author": "José Raúl Capablanca",
+    "year": 1921,
+    "section": "Part II, Illustrative Games, Game 4",
+    "examples": "Game 4",
+    "url": "https://archive.org/details/chessfundamental00capa"
+  },
+  "startFen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+  "steps": [
+    {
+      "id": "opening",
+      "title": "The McCutcheon counterattack",
+      "narration": [
+        {
+          "say": "Capablanca has White at St. Petersburg in 1913. Black chooses the McCutcheon Variation of the French Defence.",
+          "moves": [
+            "d4",
+            "e6",
+            "e4",
+            "d5",
+            "Nc3",
+            "Nf6",
+            "Bg5",
+            "Bb4"
+          ]
+        },
+        {
+          "say": "White exchanges in the centre and disrupts Black’s kingside. Black damages White’s queenside in return.",
+          "moves": [
+            "exd5",
+            "Qxd5",
+            "Bxf6",
+            "gxf6",
+            "Nf3",
+            "Bxc3+",
+            "bxc3",
+            "b6"
+          ]
+        },
+        {
+          "say": "White develops and advances c4. Instead of castling toward Black’s intended attack, White castles queenside.",
+          "moves": [
+            "Be2",
+            "Bb7",
+            "Qd2",
+            "Nd7",
+            "c4",
+            "Qf5",
+            "O-O-O"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "rooks",
+      "title": "Gain activity with a rook lift",
+      "narration": [
+        {
+          "say": "Black also castles queenside. Both sides bring major pieces into action.",
+          "moves": [
+            "O-O-O",
+            "Qe3",
+            "Rhg8",
+            "g3",
+            "Qa5",
+            "Rd3",
+            "Kb8",
+            "Rhd1",
+            "Qf5"
+          ]
+        }
+      ],
+      "exercise": {
+        "prompt": "White to move. Attack the queen on f5 with the knight.",
+        "accept": [
+          "Nh4"
+        ],
+        "feedback": {
+          "*": "Knight from f3 to h4."
+        },
+        "hint": "Knight from f3 to h4.",
+        "hintSquares": [
+          "h4"
+        ],
+        "success": "Correct. Nh4",
+        "reply": "Qg5"
+      }
+    },
+    {
+      "id": "bishop",
+      "title": "Remove a valuable defender",
+      "narration": [
+        {
+          "say": "White gains time with f4, drives the queen away and attacks Black’s bishop.",
+          "moves": [
+            "f4",
+            "Qg7",
+            "Bf3",
+            "Rge8",
+            "Bxb7",
+            "Kxb7"
+          ]
+        },
+        {
+          "say": "White advances c5. Black fixes the pawn with c6.",
+          "moves": [
+            "c5",
+            "c6",
+            "Nf3",
+            "Qf8"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "impatience",
+      "title": "A good position still needs a patient plan",
+      "narration": [
+        {
+          "say": "Capablanca plays Nd2, rejecting a rook manoeuvre because it seemed too slow. He criticises this decision in his notes.",
+          "moves": [
+            "Nd2",
+            "bxc5",
+            "Nc4"
+          ]
+        },
+        {
+          "say": "Black brings the knight to b6. White checks and advances the central pawn.",
+          "moves": [
+            "Nb6",
+            "Na5+",
+            "Ka8",
+            "dxc5",
+            "Nd5",
+            "Qd4",
+            "Rc8"
+          ]
+        },
+        {
+          "say": "White plays c4, hoping for a grand combination. Capablanca later prefers a knight manoeuvre.",
+          "moves": [
+            "c4"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "counterplay",
+      "title": "Black finds active defence",
+      "narration": [
+        {
+          "say": "Black breaks in the centre. White retreats the queen, and both sides create advanced pawns.",
+          "moves": [
+            "e5",
+            "Qg1",
+            "e4",
+            "cxd5",
+            "exd3",
+            "d6",
+            "Re2",
+            "d7"
+          ]
+        },
+        {
+          "say": "Black can invade the second rank with check."
+        }
+      ],
+      "exercise": {
+        "prompt": "Black to move. Invade c2 with check.",
+        "accept": [
+          "Rc2+"
+        ],
+        "feedback": {
+          "*": "Rook from e2 to c2."
+        },
+        "hint": "Rook from e2 to c2.",
+        "hintSquares": [
+          "c2"
+        ],
+        "success": "Correct. Rc2+",
+        "reply": "Kb1"
+      }
+    },
+    {
+      "id": "danger",
+      "title": "The advanced pawn does not guarantee victory",
+      "narration": [
+        {
+          "say": "Black checks with the other rook and brings the queen to e7.",
+          "moves": [
+            "Rb8+",
+            "Nb3",
+            "Qe7"
+          ]
+        },
+        {
+          "say": "White captures the pawn on d3. Capablanca believes he missed a final chance to improve here.",
+          "moves": [
+            "Rxd3",
+            "Re2"
+          ]
+        },
+        {
+          "say": "White manoeuvres the queen, but Black’s pieces remain active.",
+          "moves": [
+            "Qd4",
+            "Rd8",
+            "Qa4",
+            "Qe4",
+            "Qa6",
+            "Kb8"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "finish",
+      "title": "The counterattack reaches the king",
+      "narration": [
+        {
+          "say": "White moves the king to c1. Black takes the advanced pawn, then invades the first rank with check.",
+          "moves": [
+            "Kc1",
+            "Rxd7",
+            "Nd4",
+            "Re1+",
+            "Kd2",
+            "Rxd4"
+          ]
+        },
+        {
+          "say": "White resigns. We stop at the final move of the game rather than adding the mating analysis from the editorial footnote."
+        }
+      ]
+    },
+    {
+      "id": "summary",
+      "title": "Do not demand brilliance from every position",
+      "narration": [
+        {
+          "say": "White gained a strong position through active development and purposeful exchanges."
+        },
+        {
+          "say": "Capablanca then rejected patient play because he wanted a quicker, grander combination."
+        },
+        {
+          "say": "Black defended actively and turned the tables. A far-advanced pawn is not enough if the enemy’s pieces attack your king."
+        }
+      ]
+    }
+  ]
+}

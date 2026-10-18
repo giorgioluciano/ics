@@ -1,7 +1,8 @@
 // build-book.mjs — refresh the lesson index in book.json from the lesson files.
 //   node tools/build-book.mjs
+import { fileURLToPath } from 'node:url';
 import { readFileSync, writeFileSync, existsSync } from 'node:fs';
-const root = new URL('../', import.meta.url).pathname;
+const root = fileURLToPath(new URL('../', import.meta.url));
 const book = JSON.parse(readFileSync(root + 'book.json'));
 book.lessons = {};
 for (const c of book.chapters) for (const s of c.sections) for (const id of s.lessons) {

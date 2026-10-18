@@ -1,0 +1,146 @@
+{
+  "id": "064-pawn-centre-plans",
+  "title": "Plans from the Pawn Centre",
+  "subtitle": "Attack the king or challenge the centre",
+  "source": {
+    "work": "Chess Fundamentals",
+    "author": "José Raúl Capablanca",
+    "year": 1921,
+    "section": "Chapter VI, §31 Some Salient Points About Pawns, Example 64",
+    "examples": "64",
+    "url": "https://archive.org/details/chessfundamental00capa"
+  },
+  "startFen": "7k/ppp2ppp/4p3/3pP3/3P4/8/PPP2PPP/7K w - - 0 1",
+  "steps": [
+    {
+      "id": "intro",
+      "title": "Read the pawn structure",
+      "narration": [
+        {
+          "say": "This is a pawn-structure diagram, not a complete game. The original omits both kings. Kings on h1 and h8 are technical placeholders for the app.",
+          "highlights": [
+            "h1",
+            "h8"
+          ]
+        },
+        {
+          "say": "White has pawns on d4 and e5. Black has pawns on d5 and e6. This structure commonly arises in the French Defence.",
+          "highlights": [
+            "d4",
+            "e5",
+            "d5",
+            "e6"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "space",
+      "title": "White has more space",
+      "narration": [
+        {
+          "say": "The advanced pawn on e5 gains space and controls d6 and f6.",
+          "arrows": [
+            {
+              "from": "e5",
+              "to": "d6",
+              "color": "primary"
+            },
+            {
+              "from": "e5",
+              "to": "f6",
+              "color": "primary"
+            }
+          ]
+        },
+        {
+          "say": "Capablanca describes White’s central pawns as attacking, and Black’s as defensive. These descriptions concern plans, not a forced result."
+        }
+      ]
+    },
+    {
+      "id": "white-plan",
+      "title": "The kingside pawn advance",
+      "narration": [
+        {
+          "say": "In a complete position with developed pieces, White often prepares f4 and f5 to attack the kingside.",
+          "arrows": [
+            {
+              "from": "f2",
+              "to": "f4",
+              "color": "primary"
+            },
+            {
+              "from": "f4",
+              "to": "f5",
+              "color": "danger"
+            }
+          ]
+        },
+        {
+          "say": "These arrows show a plan, not a supplied move sequence. No moves are played in this diagram lesson."
+        }
+      ]
+    },
+    {
+      "id": "black-plan",
+      "title": "Challenge the foundation",
+      "narration": [
+        {
+          "say": "Black’s counterplay is the pawn break c5, attacking the base of White’s centre on d4.",
+          "arrows": [
+            {
+              "from": "c7",
+              "to": "c5",
+              "color": "primary"
+            },
+            {
+              "from": "c5",
+              "to": "d4",
+              "color": "danger"
+            }
+          ]
+        },
+        {
+          "say": "White may support d4 with c3. Black then concentrates pieces against the centre instead of passively defending the king.",
+          "arrows": [
+            {
+              "from": "c2",
+              "to": "c3",
+              "color": "primary"
+            },
+            {
+              "from": "c3",
+              "to": "d4",
+              "color": "primary"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "consequences",
+      "title": "Pawn advances commit you to a structure",
+      "narration": [
+        {
+          "say": "Advancing a central pawn changes the squares it controls and the lines available to the pieces. Consider the resulting structure before making the advance."
+        },
+        {
+          "say": "Capablanca also discusses passed pawns: their power depends on support, blockade, and how many pieces remain. Being passed is not by itself a guarantee of strength."
+        }
+      ]
+    },
+    {
+      "id": "summary",
+      "title": "Connect the wings to the centre",
+      "narration": [
+        {
+          "say": "White’s kingside attack and Black’s central counterplay are connected. Weakening the centre can undermine the attack."
+        },
+        {
+          "say": "Study the pawn skeleton first, then decide where the pieces belong. The placeholder kings are not part of the original diagram."
+        }
+      ]
+    }
+  ]
+}

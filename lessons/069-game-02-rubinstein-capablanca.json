@@ -1,0 +1,285 @@
+{
+  "id": "069-game-02-rubinstein-capablanca",
+  "title": "Game 2: Rubinstein–Capablanca",
+  "subtitle": "A quiet king move makes the combination work",
+  "source": {
+    "work": "Chess Fundamentals",
+    "author": "José Raúl Capablanca",
+    "year": 1921,
+    "section": "Part II, Illustrative Games, Game 2: Queen’s Gambit Declined",
+    "examples": "Game 2",
+    "url": "https://archive.org/details/chessfundamental00capa"
+  },
+  "startFen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+  "steps": [
+    {
+      "id": "opening",
+      "title": "A setup aimed at the isolated pawn",
+      "narration": [
+        {
+          "say": "Rubinstein has White against Capablanca at San Sebastian in 1911. White’s development aims at Black’s isolated d-pawn.",
+          "moves": [
+            "d4",
+            "d5",
+            "Nf3",
+            "c5",
+            "c4",
+            "e6",
+            "cxd5",
+            "exd5",
+            "Nc3",
+            "Nc6",
+            "g3",
+            "Be6"
+          ]
+        },
+        {
+          "say": "White fianchettoes the bishop and castles. Black brings the rook out before completing development.",
+          "moves": [
+            "Bg2",
+            "Be7",
+            "O-O",
+            "Rc8"
+          ]
+        },
+        {
+          "say": "White exchanges on c5 and challenges the bishop with a knight.",
+          "moves": [
+            "dxc5",
+            "Bxc5",
+            "Ng5",
+            "Nf6"
+          ]
+        },
+        {
+          "say": "White exchanges the knight for the bishop, then develops pressure against the centre.",
+          "moves": [
+            "Nxe6",
+            "fxe6",
+            "Bh3",
+            "Qe7",
+            "Bg5",
+            "O-O"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "combination",
+      "title": "A tactical attack on the isolated pawn",
+      "narration": [
+        {
+          "say": "White exchanges on f6. Black recaptures with the queen.",
+          "moves": [
+            "Bxf6",
+            "Qxf6"
+          ]
+        }
+      ],
+      "exercise": {
+        "prompt": "White to move. Capture the central pawn with the knight.",
+        "accept": [
+          "Nxd5"
+        ],
+        "feedback": {
+          "*": "Knight from c3 takes d5."
+        },
+        "hint": "Knight from c3 takes d5.",
+        "hintSquares": [
+          "d5"
+        ],
+        "success": "Correct. Nxd5",
+        "reply": "Qh6"
+      }
+    },
+    {
+      "id": "quiet-king",
+      "title": "The move Capablanca had not considered",
+      "narration": [
+        {
+          "say": "Black’s queen attacks the bishop on h3. Instead of retreating the bishop, White can protect it with the king."
+        }
+      ],
+      "exercise": {
+        "prompt": "White to move. Protect the bishop with a quiet king move.",
+        "accept": [
+          "Kg2"
+        ],
+        "feedback": {
+          "*": "King from g1 to g2."
+        },
+        "hint": "King from g1 to g2.",
+        "hintSquares": [
+          "g2"
+        ],
+        "success": "Correct. Kg2",
+        "reply": "Rcd8"
+      }
+    },
+    {
+      "id": "queen",
+      "title": "Keep the threats coordinated",
+      "narration": [
+        {
+          "say": "White can now bring the queen to c1, attacking the bishop on c5."
+        }
+      ],
+      "exercise": {
+        "prompt": "White to move. Bring the queen to c1.",
+        "accept": [
+          "Qc1"
+        ],
+        "feedback": {
+          "*": "Queen from d1 to c1."
+        },
+        "hint": "Queen from d1 to c1.",
+        "hintSquares": [
+          "c1"
+        ],
+        "success": "Correct. Qc1",
+        "reply": "exd5"
+      }
+    },
+    {
+      "id": "simplify",
+      "title": "Recover material and exchange queens",
+      "narration": [
+        {
+          "say": "White takes the bishop on c5. Black attacks with the queen, but White steers toward an ending.",
+          "moves": [
+            "Qxc5",
+            "Qd2",
+            "Qb5",
+            "Nd4",
+            "Qd3",
+            "Qxd3",
+            "exd3",
+            "Rfe8"
+          ]
+        },
+        {
+          "say": "White plays bishop to g4. Capablanca criticises this choice because it gives Black defensive chances.",
+          "moves": [
+            "Bg4"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "rook-ending",
+      "title": "Activity keeps the game difficult",
+      "narration": [
+        {
+          "say": "Black brings the rook to d6. One pair of rooks is exchanged.",
+          "moves": [
+            "Rd6",
+            "Rfe1",
+            "Rxe1",
+            "Rxe1",
+            "Rb6"
+          ]
+        },
+        {
+          "say": "White takes the d-pawn, and the bishop and rook give checks.",
+          "moves": [
+            "Re5",
+            "Rxb2",
+            "Rxd5",
+            "Nc6",
+            "Be6+",
+            "Kf8",
+            "Rf5+",
+            "Ke8",
+            "Bf7+",
+            "Kd7",
+            "Bc4"
+          ]
+        },
+        {
+          "say": "Black plays a6. Capablanca criticises the loss of time.",
+          "moves": [
+            "a6"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "race",
+      "title": "Passed pawns and active rooks",
+      "narration": [
+        {
+          "say": "White’s rook wins kingside pawns while Black advances on the other wing.",
+          "moves": [
+            "Rf7+",
+            "Kd6",
+            "Rxg7",
+            "b5",
+            "Bg8",
+            "a5",
+            "Rxh7",
+            "a4",
+            "h4",
+            "b4"
+          ]
+        },
+        {
+          "say": "White gives checks and moves the bishop to d5. Black pushes b3.",
+          "moves": [
+            "Rh6+",
+            "Kc5",
+            "Rh5+",
+            "Kb6",
+            "Bd5",
+            "b3"
+          ]
+        },
+        {
+          "say": "Capablanca says Black missed a better defensive chance here. White captures on b3, and Black advances a3.",
+          "moves": [
+            "axb3",
+            "a3"
+          ]
+        },
+        {
+          "say": "White takes the knight. Black recaptures the pawn, then advances a2.",
+          "moves": [
+            "Bxc6",
+            "Rxb3",
+            "Bd5",
+            "a2"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "finish",
+      "title": "The rook reaches h6 with check",
+      "narration": [
+        {
+          "say": "White finishes with another rook check. Black resigns.",
+          "moves": [
+            "Rh6+"
+          ]
+        },
+        {
+          "say": "We end at the book’s final move. The preceding pawn race shows why a material advantage still requires care."
+        }
+      ]
+    },
+    {
+      "id": "summary",
+      "title": "Calculate quiet moves as well as forcing ones",
+      "narration": [
+        {
+          "say": "The central combination depended on king to g2: a quiet move that protected the bishop without abandoning the attack."
+        },
+        {
+          "say": "The ending was not flawless. Both players missed chances, and active defence made the conversion difficult."
+        },
+        {
+          "say": "A brilliant middle-game idea is only part of the job. You must still understand the ending it produces."
+        }
+      ]
+    }
+  ]
+}

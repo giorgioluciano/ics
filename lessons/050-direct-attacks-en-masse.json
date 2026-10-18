@@ -1,0 +1,317 @@
+
+{
+  "id": "050-direct-attacks-en-masse",
+  "title": "Direct Attacks en Masse",
+  "subtitle": "Every piece joins the attack",
+  "source": {
+    "work": "Chess Fundamentals",
+    "author": "José Raúl Capablanca",
+    "year": 1921,
+    "section": "Chapter IV, §21 Direct Attacks En Masse, Example 50",
+    "examples": "50",
+    "url": "https://archive.org/details/chessfundamental00capa"
+  },
+  "startFen": "r1bq1rk1/pp2nppp/4p3/2n5/8/2NBPN2/PP3PPP/R2Q1RK1 w - - 0 12",
+  "steps": [
+    {
+      "id": "intro",
+      "title": "Enough force to attack",
+      "source": "In the first case the attack must be carried on with sufficient force to guarantee its success. Under no consideration must a direct attack against the King be carried on outrance unless there is absolute certainty in one's own mind that it will succeed, since failure in such cases means disaster.",
+      "narration": [
+        {
+          "say": "White has a quiet advantage and could simply improve the position. But the black king has defenders nearby and a vulnerable shelter.",
+          "highlights": [
+            "g8",
+            "h7",
+            "f7",
+            "g7"
+          ]
+        },
+        {
+          "say": "This attack is not a queen raid. The bishop can open the shelter, the knight can check from g5, and the queen and rooks are ready to join.",
+          "arrows": [
+            {
+              "from": "c3",
+              "to": "h8",
+              "color": "danger"
+            },
+            {
+              "from": "f3",
+              "to": "g5",
+              "color": "primary"
+            },
+            {
+              "from": "d1",
+              "to": "g4",
+              "color": "primary"
+            },
+            {
+              "from": "a1",
+              "to": "d1",
+              "color": "muted"
+            },
+            {
+              "from": "f1",
+              "to": "e1",
+              "color": "muted"
+            }
+          ]
+        },
+        {
+          "say": "White to move. Find the sacrifice that tears open the king's cover."
+        }
+      ],
+      "exercise": {
+        "feedback": {
+          "Bc2": "That keeps White better, as Capablanca notes. But the position offers a direct attack now.",
+          "Ng5": "The knight belongs on g5, but only after the h-pawn shield has been opened.",
+          "*": "Look at the bishop on c3 and the pawn directly in front of the black king."
+        },
+        "prompt": "White to move. Open the black king's shelter.",
+        "accept": [
+          "Bxh7+"
+        ],
+        "hint": "The bishop on c3 can capture the pawn on h7 with check.",
+        "hintSquares": [
+          "h7"
+        ],
+        "success": "12. Bxh7+! The king is dragged out of its shelter.",
+        "reply": "Kxh7"
+      }
+    },
+    {
+      "id": "knight-enters",
+      "title": "Keep the king exposed",
+      "narration": [
+        {
+          "say": "Black accepts the bishop. Now White must keep the king exposed; retreating or collecting material would throw away the initiative.",
+          "highlights": [
+            "h7",
+            "g5",
+            "g6"
+          ]
+        },
+        {
+          "say": "The knight has a forcing check from g5. It drives the king toward the open centre and prepares the queen's attack.",
+          "arrows": [
+            {
+              "from": "f3",
+              "to": "g5",
+              "color": "danger"
+            },
+            {
+              "from": "g5",
+              "to": "h7",
+              "color": "warning"
+            },
+            {
+              "from": "g5",
+              "to": "f7",
+              "color": "warning"
+            }
+          ]
+        }
+      ],
+      "exercise": {
+        "feedback": {
+          "Qd3+": "The queen can come in later, but first the knight must force the king away from safety.",
+          "Ne5+": "The active knight check is from g5, where it attacks h7 and f7 as well.",
+          "*": "Use the knight on f3 to check the exposed king."
+        },
+        "prompt": "White to move. Continue the attack with check.",
+        "accept": [
+          "Ng5+"
+        ],
+        "hint": "Knight to g5.",
+        "hintSquares": [
+          "g5"
+        ],
+        "success": "13. Ng5+! The king has to move again.",
+        "reply": "Kg6"
+      }
+    },
+    {
+	  "id": "queen-pressure",
+	  "title": "The best defence still suffers",
+	  "source": "14...f5! E5 would have been immediately fatal.",
+	  "narration": [
+		{
+		  "say": "The queen now enters on g4. Black answers with f5, attacking the queen and blocking its diagonal toward e6.",
+		  "move": "Qg4",
+		  "arrows": [
+			{
+			  "from": "d1",
+			  "to": "g4",
+			  "color": "primary"
+			},
+			{
+			  "from": "g4",
+			  "to": "e6",
+			  "color": "warning"
+			}
+		  ]
+		},
+		{
+		  "say": "Capablanca gives f5 as Black's toughest defence. The alternative e5 allows a decisive attack beginning with Ne6 and f4.",
+		  "move": "f5",
+		  "highlights": [
+			"f5",
+			"e6"
+		  ]
+		},
+		{
+		  "say": "Queen to g3. Black moves the king to h6. Queen to h4, check.",
+		  "moves": [
+			"Qg3",
+			"Kh6",
+			"Qh4+"
+		  ],
+		  "arrows": [
+			{
+			  "from": "h4",
+			  "to": "h6",
+			  "color": "danger"
+			}
+		  ]
+		},
+		{
+		  "say": "The king returns to g6. White keeps it exposed with another queen check.",
+		  "move": "Kg6",
+		  "highlights": [
+			"g6",
+			"h7"
+		  ]
+		},
+		{
+		  "say": "Queen to h7, check. King to f6. Now White must bring more forces into the attack.",
+		  "moves": [
+			"Qh7+",
+			"Kf6"
+		  ],
+		  "highlights": [
+			"h7",
+			"f6"
+		  ]
+		}
+	  ]
+	},
+
+  {
+      "id": "open-centre",
+      "title": "The last forces enter",
+      "source": "The student should note that in the examples given the attack is carried out with every available piece, and that often it is the coming into action of the last available piece that finally overthrows the enemy.",
+      "narration": [
+        {
+          "say": "The attack has driven the king into the open. Now White does not chase it with the queen alone: White opens the centre.",
+          "arrows": [
+            {
+              "from": "e3",
+              "to": "e4",
+              "color": "danger"
+            },
+            {
+              "from": "a1",
+              "to": "d1",
+              "color": "primary"
+            },
+            {
+              "from": "f1",
+              "to": "e1",
+              "color": "primary"
+            }
+          ]
+        }
+      ],
+      "exercise": {
+        "feedback": {
+         
+          "Rad1": "The rook will come to d1 soon, but first White must break open the centre.",
+          "*": "Advance the central pawn. It opens lines against the exposed king."
+        },
+        "prompt": "White to move. Bring the centre into the attack.",
+        "accept": [
+          "e4"
+        ],
+        "hint": "Advance the e-pawn one square.",
+        "hintSquares": [
+          "e4"
+        ],
+        "success": "18. e4! The last available forces are invited into the attack.",
+        "reply": "Ng6"
+      }
+    },
+    {
+      "id": "finish",
+      "title": "Attack with all the pieces",
+      "narration": [
+        {
+          "say": "White opens the f-file, develops the rook with tempo, and keeps the black king under pressure.",
+          "moves": [
+            "exf5",
+            "exf5",
+            "Rad1",
+            "Nd3",
+            "Qh3",
+            "Ndf4",
+            "Qg3",
+            "Qc7",
+            "Rfe1"
+          ],
+          "arrows": [
+            {
+              "from": "a1",
+              "to": "d1",
+              "color": "primary"
+            },
+            {
+              "from": "f1",
+              "to": "e1",
+              "color": "primary"
+            },
+            {
+              "from": "g3",
+              "to": "c7",
+              "color": "warning"
+            }
+          ]
+        },
+        {
+          "say": "Black's knight move to e2 loses at once. But Capablanca's point is stronger: Black could not really save the position.",
+          "moves": [
+            "Ne2",
+            "Rxe2",
+            "Qxg3",
+            "Nh7+",
+            "Kf7",
+            "hxg3",
+            "Rh8",
+            "Ng5+",
+            "Kf6",
+            "f4"
+          ],
+          "highlights": [
+            "f4",
+            "g5",
+            "f6"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "summary",
+      "title": "Direct attacks need full force",
+      "source": "Direct and violent attacks against the King must be carried en masse, with full force, to ensure their success. The opposition must be overcome at all cost; the attack cannot be broken off, since in all such cases that means defeat.",
+      "narration": [
+        {
+          "say": "The bishop opened the king's shelter. The knight forced the king forward. The queen kept checking and threatening."
+        },
+        {
+          "say": "Then the centre opened and both rooks joined the action. That is an attack en masse."
+        },
+        {
+          "say": "Do not sacrifice near the king because it looks brilliant. Do it when you can bring every available piece into the attack."
+        }
+      ]
+    }
+  ]
+}

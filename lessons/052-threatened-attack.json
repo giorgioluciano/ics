@@ -1,0 +1,275 @@
+{
+  "id": "052-threatened-attack",
+  "title": "The Force of the Threatened Attack",
+  "subtitle": "Turn a threat against the king into lasting pressure",
+  "source": {
+    "work": "Chess Fundamentals",
+    "author": "José Raúl Capablanca",
+    "year": 1921,
+    "section": "Chapter IV, §22 The Force of the Threatened Attack, Example 52",
+    "examples": "52",
+    "url": "https://archive.org/details/chessfundamental00capa"
+  },
+  "startFen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+  "steps": [
+    {
+      "id": "opening",
+      "title": "A central outpost",
+      "source": "Played at the Havana International Masters Tournament, 1913. French Defence. White J. R. Capablanca. Black R. Blanco.",
+      "narration": [
+        {
+          "say": "Capablanca plays White against Blanco. The game begins with the French Defence.",
+          "moves": ["e4", "e6", "d4", "d5"]
+        },
+        {
+          "say": "White develops a knight. Black exchanges in the centre, and White recaptures.",
+          "moves": ["Nc3", "dxe4", "Nxe4", "Nd7"]
+        },
+        {
+          "say": "Both sides develop another knight. White exchanges on f6.",
+          "moves": ["Nf3", "Ngf6", "Nxf6+", "Nxf6"]
+        },
+        {
+          "say": "Knight to e5. Capablanca wants to discourage Black's usual bishop development through b7.",
+          "move": "Ne5",
+          "highlights": ["e5"],
+          "arrows": [
+            { "from": "e5", "to": "c6", "color": "primary" }
+          ]
+        },
+        {
+          "say": "This moves the same knight again before development is complete. Capablanca acknowledges the exception and explains its purpose."
+        }
+      ]
+    },
+    {
+      "id": "lost-tempi",
+      "title": "White develops while Black retreats",
+      "narration": [
+        {
+          "say": "Black develops the bishop to d6. White brings the queen to f3, and Black plays c6.",
+          "moves": ["Bd6", "Qf3", "c6"]
+        },
+        {
+          "say": "Capablanca criticises c6: Black missed the more active central challenge c5.",
+          "highlights": ["c6", "c5"]
+        },
+        {
+          "say": "White supports the centre with c3. Black castles, and White develops the bishop to g5.",
+          "moves": ["c3", "O-O", "Bg5"],
+          "arrows": [
+            { "from": "g5", "to": "f6", "color": "primary" }
+          ]
+        },
+        {
+          "say": "Black retreats the bishop to e7. White develops the other bishop to d3, and Black retreats the knight to e8.",
+          "moves": ["Be7", "Bd3", "Ne8"]
+        },
+        {
+          "say": "White's pieces are ready to threaten the king. Black has spent time retreating instead of finding active play.",
+          "highlights": ["g5", "d3", "e5", "g8"]
+        }
+      ]
+    },
+    {
+      "id": "create-weakness",
+      "title": "Make Black change the pawn shelter",
+      "narration": [
+        {
+          "say": "The bishop on d3 points toward h7. Bring the queen to the h-file to increase the pressure.",
+          "arrows": [
+            { "from": "d3", "to": "h7", "color": "danger" }
+          ]
+        }
+      ],
+      "exercise": {
+        "prompt": "Follow Capablanca's plan: move the queen to h3.",
+        "accept": ["Qh3"],
+        "feedback": {
+          "*": "The queen can move from f3 to h3. It joins the pressure against the king's shelter."
+        },
+        "hint": "Queen to h3.",
+        "hintSquares": ["h3"],
+        "success": "12. Qh3. Black answers with f5, stopping the direct attack but creating a weakness.",
+        "reply": "f5"
+      }
+    },
+    {
+      "id": "new-target",
+      "title": "The threat has earned something lasting",
+      "source": "White has no longer an attack, but has compelled Black to create a marked weakness. Now White's whole plan will be to exploit this weakness—the weak e Pawn.",
+      "narration": [
+        {
+          "say": "The pawn on f5 blocks the bishop's diagonal. White must change plans rather than insist on the old attack.",
+          "highlights": ["f5", "e6"],
+          "arrows": [
+            { "from": "d3", "to": "f5", "color": "muted" }
+          ]
+        },
+        {
+          "say": "Black's e6-pawn is the new target. White exchanges bishops and castles.",
+          "moves": ["Bxe7", "Qxe7", "O-O", "Rf6"]
+        },
+        {
+          "say": "The rook from f1 comes to e1. Black brings the knight to d6.",
+          "moves": ["Rfe1", "Nd6"],
+          "arrows": [
+            { "from": "e1", "to": "e6", "color": "primary" }
+          ]
+        },
+        {
+          "say": "Rook to e2. Black develops the bishop to d7, and White doubles rooks on the e-file.",
+          "moves": ["Re2", "Bd7", "Rae1"],
+          "highlights": ["e1", "e2", "e6"]
+        },
+        {
+          "say": "Black puts the other rook on e8. White advances c4, and Black brings the knight to f7.",
+          "moves": ["Re8", "c4", "Nf7"]
+        }
+      ]
+    },
+    {
+      "id": "central-break",
+      "title": "Find a new way to increase the pressure",
+      "narration": [
+        {
+          "say": "Black has assembled defenders around e6. White now opens the centre with the d-pawn.",
+          "highlights": ["d4", "d5", "e6"]
+        }
+      ],
+      "exercise": {
+        "prompt": "White to move. Advance the d-pawn to break open the centre.",
+        "accept": ["d5"],
+        "feedback": {
+          "*": "Push the pawn from d4 to d5. White opens new lines while Black's pieces are occupied with defence."
+        },
+        "hint": "Pawn to d5.",
+        "hintSquares": ["d5"],
+        "success": "19. d5! Black exchanges the knight on e5.",
+        "reply": "Nxe5"
+      }
+    },
+    {
+      "id": "keep-pressure",
+      "title": "Do not release the defenders",
+      "narration": [
+        {
+          "say": "The rook takes the knight on e5. Black plays g6, and White brings the queen to h4.",
+          "moves": ["Rxe5", "g6", "Qh4"]
+        },
+        {
+          "say": "Black moves the king to g7. Queen to d4 increases the pressure, and Black challenges the centre with c5.",
+          "moves": ["Kg7", "Qd4", "c5"]
+        },
+        {
+          "say": "Queen to c3. Black plays b6. White takes on e6, and the bishop retreats to c8.",
+          "moves": ["Qc3", "b6", "dxe6", "Bc8"],
+          "highlights": ["e6", "c8"]
+        },
+        {
+          "say": "White's pieces have freedom to manoeuvre. Black's pieces are occupied with the central defence."
+        }
+      ]
+    },
+    {
+      "id": "bishop-manoeuvre",
+      "title": "The bishop finds a stronger diagonal",
+      "source": "25.Be2! The deciding and timely manoeuvre. All the Black pieces are useless after this Bishop reaches Bd5.",
+      "narration": [
+        {
+          "say": "The bishop on d3 can become much stronger on d5. Start the route through e2 and f3.",
+          "arrows": [
+            { "from": "d3", "to": "e2", "color": "primary" },
+            { "from": "e2", "to": "f3", "color": "primary" },
+            { "from": "f3", "to": "d5", "color": "primary" }
+          ]
+        }
+      ],
+      "exercise": {
+        "prompt": "Begin the bishop manoeuvre: move it to e2.",
+        "accept": ["Be2"],
+        "feedback": {
+          "*": "Retreat the bishop from d3 to e2. The retreat prepares a stronger post on d5."
+        },
+        "hint": "Bishop to e2.",
+        "hintSquares": ["e2"],
+        "success": "25. Be2! A retreat with an attacking purpose.",
+        "reply": "Bxe6"
+      }
+    },
+    {
+      "id": "bishop-arrives",
+      "title": "Tie down the defence",
+      "narration": [
+        {
+          "say": "Bishop to f3. Black moves the king to f7, and the bishop arrives on d5.",
+          "moves": ["Bf3", "Kf7", "Bd5"],
+          "arrows": [
+            { "from": "d5", "to": "e6", "color": "danger" },
+            { "from": "d5", "to": "f7", "color": "warning" }
+          ]
+        },
+        {
+          "say": "Black moves the queen to d6. White brings the queen to e3, and Black shifts a rook to e7.",
+          "moves": ["Qd6", "Qe3", "Re7"]
+        },
+        {
+          "say": "White has reached the position Capablanca wanted. Black's pieces are tied to defence, while White can prepare another threat."
+        }
+      ]
+    },
+    {
+      "id": "second-threat",
+      "title": "Bring the h-pawn into the plan",
+      "narration": [
+        {
+          "say": "Queen to h6. Black returns the king to g8.",
+          "moves": ["Qh6", "Kg8"],
+          "highlights": ["h6", "g8"]
+        },
+        {
+          "say": "White advances the h-pawn to h4. Black plays a6, and White pushes on to h5.",
+          "moves": ["h4", "a6", "h5"],
+          "arrows": [
+            { "from": "h5", "to": "g6", "color": "danger" }
+          ]
+        },
+        {
+          "say": "Black plays f4. White exchanges on g6, disrupting the pawn shelter.",
+          "moves": ["f4", "hxg6", "hxg6"],
+          "highlights": ["g6", "e6"]
+        }
+      ]
+    },
+    {
+      "id": "finish",
+      "title": "Convert the pressure",
+      "narration": [
+        {
+          "say": "The rook takes the bishop on e6. Black resigns.",
+          "move": "Rxe6",
+          "highlights": ["e6", "d5", "h6"]
+        },
+        {
+          "say": "The direct attack did not need to succeed immediately. Its threat forced a weakness, and White kept improving the pressure until the defence collapsed."
+        }
+      ]
+    },
+    {
+      "id": "summary",
+      "title": "A threat can be stronger than its execution",
+      "source": "For, holding the threat in hand, forces the opponent to provide against its execution and to keep material in readiness to meet it.",
+      "narration": [
+        {
+          "say": "First, threaten the king. When Black weakens e6 to defend, change the target."
+        },
+        {
+          "say": "Double rooks, open the centre, and improve the bishop. Keep your pieces free while your opponent's pieces remain tied down."
+        },
+        {
+          "say": "Finally, create another threat against the king. The defender must answer threats in more than one place."
+        }
+      ]
+    }
+  ]
+}

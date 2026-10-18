@@ -1,0 +1,294 @@
+{
+  "id": "054-cutting-off-pieces",
+  "title": "Cutting off Pieces from the Scene of Action",
+  "subtitle": "An equal material count can hide an extra active piece",
+  "source": {
+    "work": "Chess Fundamentals",
+    "author": "José Raúl Capablanca",
+    "year": 1921,
+    "section": "Chapter IV, §24 Cutting off Pieces from the Scene of Action, Example 54",
+    "examples": "54",
+    "url": "https://archive.org/details/chessfundamental00capa"
+  },
+  "startFen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+  "steps": [
+    {
+      "id": "opening",
+      "title": "A solid opening",
+      "source": "Played at the Hastings Victory Tournament, 1919. Four Knights. White W. Winter. Black J. R. Capablanca.",
+      "narration": [
+        {
+          "say": "Winter plays White against Capablanca. Both sides develop their knights.",
+          "moves": ["e4", "e5", "Nf3", "Nc6", "Nc3", "Nf6"]
+        },
+        {
+          "say": "The bishops come to b5 and b4. Both sides castle.",
+          "moves": ["Bb5", "Bb4", "O-O", "O-O"]
+        },
+        {
+          "say": "White exchanges the bishop for the knight. Black recaptures with the d-pawn, opening the bishop's diagonal.",
+          "moves": ["Bxc6", "dxc6"],
+          "highlights": ["c6", "c8"]
+        },
+        {
+          "say": "White supports the centre with d3. Black brings the bishop to d6.",
+          "moves": ["d3", "Bd6"]
+        },
+        {
+          "say": "Capablanca considers this opening solid for White. The problem will come from the plan White chooses next."
+        }
+      ]
+    },
+    {
+      "id": "tempting-outpost",
+      "title": "A natural move with a hidden drawback",
+      "narration": [
+        {
+          "say": "White pins the knight with bishop to g5. Capablanca criticises this choice as inconsistent with White's intended setup.",
+          "move": "Bg5",
+          "arrows": [
+            {
+              "from": "g5",
+              "to": "f6",
+              "color": "primary"
+            },
+            {
+              "from": "f6",
+              "to": "d8",
+              "color": "muted"
+            }
+          ]
+        },
+        {
+          "say": "Black plays h6. The bishop retreats to h4.",
+          "moves": ["h6", "Bh4"],
+          "highlights": ["h4"]
+        },
+        {
+          "say": "Black advances c5, controlling d4. The knight on c3 now has a tempting central square on d5.",
+          "move": "c5",
+          "arrows": [
+            {
+              "from": "c5",
+              "to": "d4",
+              "color": "primary"
+            },
+            {
+              "from": "c3",
+              "to": "d5",
+              "color": "warning"
+            }
+          ]
+        },
+        {
+          "say": "White plays knight to d5. Capablanca identifies this as the move that falls into the trap.",
+          "move": "Nd5",
+          "highlights": ["d5", "h4", "f6"]
+        }
+      ]
+    },
+    {
+      "id": "break-the-pin",
+      "title": "Drive the bishop away",
+      "narration": [
+        {
+          "say": "Black can now challenge the bishop and break the pin. Look for a kingside pawn advance.",
+          "highlights": ["g7", "h4", "f6"]
+        }
+      ],
+      "exercise": {
+        "prompt": "Black to move. Attack the bishop and break the pin.",
+        "accept": ["g5"],
+        "feedback": {
+          "*": "Advance the g-pawn two squares. From g5 it attacks the bishop on h4."
+        },
+        "hint": "Pawn from g7 to g5.",
+        "hintSquares": ["g5"],
+        "success": "10...g5! The bishop is attacked, and White must resolve the central tension.",
+        "reply": "Nxf6+"
+      }
+    },
+    {
+      "id": "simplify-with-purpose",
+      "title": "The exchanges favour Black",
+      "narration": [
+        {
+          "say": "Black recaptures the knight with the queen. White retreats the bishop to g3.",
+          "moves": ["Qxf6", "Bg3"],
+          "highlights": ["g3", "f2", "e4"]
+        },
+        {
+          "say": "Black develops the remaining bishop to g4, pinning the knight to the queen.",
+          "move": "Bg4",
+          "arrows": [
+            {
+              "from": "g4",
+              "to": "f3",
+              "color": "danger"
+            },
+            {
+              "from": "f3",
+              "to": "d1",
+              "color": "muted"
+            }
+          ]
+        },
+        {
+          "say": "White plays h3. Black exchanges bishop for knight, and the queens are exchanged as well.",
+          "moves": ["h3", "Bxf3", "Qxf3", "Qxf3", "gxf3"]
+        },
+        {
+          "say": "Material is equal, but the white bishop is hemmed in. Its routes through f4 and h4 are controlled by Black's pawns.",
+          "highlights": ["g3", "f2", "f3", "e4", "g5", "e5"]
+        }
+      ]
+    },
+    {
+      "id": "fix-the-bishop",
+      "title": "Keep the prison intact",
+      "source": "A simple examination will show that White is minus a Bishop for all practical purposes. He can only free it by sacrificing one Pawn, and possibly not even then.",
+      "narration": [
+        {
+          "say": "Black does not need a direct attack against the king. First, strengthen the pawn formation that keeps the bishop out of play."
+        }
+      ],
+      "exercise": {
+        "prompt": "Black to move. Support e5 with the f-pawn.",
+        "accept": ["f6"],
+        "feedback": {
+          "*": "Move the pawn from f7 to f6. It supports e5 and helps keep the position closed around the white bishop."
+        },
+        "hint": "Pawn to f6.",
+        "hintSquares": ["f6"],
+        "success": "15...f6. Black keeps the bishop restricted and prepares to play on the queenside.",
+        "reply": "Kg2"
+      }
+    },
+    {
+      "id": "change-the-wing",
+      "title": "Fight where the bishop cannot help",
+      "source": "Black now devotes all his energy to the Queen's side, and, having practically a Bishop more, the result cannot be in doubt.",
+      "narration": [
+        {
+          "say": "Black advances a5. White replies a4, and Black activates the king.",
+          "moves": ["a5", "a4", "Kf7"],
+          "highlights": ["a4", "a5", "f7"]
+        },
+        {
+          "say": "White brings the rook to h1. Black centralises the king on e6.",
+          "moves": ["Rh1", "Ke6"]
+        },
+        {
+          "say": "White advances h4. Black brings the rook from f8 to b8, preparing queenside play.",
+          "moves": ["h4", "Rfb8"],
+          "arrows": [
+            {
+              "from": "b8",
+              "to": "b5",
+              "color": "primary"
+            }
+          ]
+        },
+        {
+          "say": "White exchanges on g5. Black recaptures with the h-pawn.",
+          "moves": ["hxg5", "hxg5"],
+          "highlights": ["g5", "g3", "f3"]
+        },
+        {
+          "say": "Opening the h-file has not freed the bishop. Black can continue concentrating on the other wing."
+        }
+      ]
+    },
+    {
+      "id": "prepare-the-break",
+      "title": "Build the queenside advance",
+      "narration": [
+        {
+          "say": "White plays b3. Black advances the rear c-pawn to c6, supporting a future b5.",
+          "moves": ["b3", "c6"],
+          "arrows": [
+            {
+              "from": "c6",
+              "to": "b5",
+              "color": "primary"
+            }
+          ]
+        },
+        {
+          "say": "White brings the rook to a2. Black advances b5.",
+          "moves": ["Ra2", "b5"],
+          "highlights": ["a5", "b5", "c5", "c6"]
+        },
+        {
+          "say": "White doubles rooks on the a-file. Black now opens another line with a pawn break.",
+          "move": "Rha1"
+        }
+      ],
+      "exercise": {
+        "prompt": "Black to move. Advance the c5-pawn to attack b3 and d3.",
+        "accept": ["c4"],
+        "feedback": {
+          "*": "Push the pawn from c5 to c4. It attacks both b3 and d3."
+        },
+        "hint": "Pawn to c4.",
+        "hintSquares": ["c4"],
+        "success": "23...c4! The queenside pressure becomes concrete.",
+        "reply": "axb5"
+      }
+    },
+    {
+      "id": "rook-entry",
+      "title": "Convert activity into pawns",
+      "narration": [
+        {
+          "say": "Black captures on b3 with the c-pawn. White recaptures, and Black's rook takes the pawn on b5.",
+          "moves": ["cxb3", "cxb3", "Rxb5"],
+          "highlights": ["b5"]
+        },
+        {
+          "say": "White brings the rook to a4. Black takes the pawn on b3.",
+          "moves": ["Ra4", "Rxb3"],
+          "highlights": ["b3", "g3"]
+        },
+        {
+          "say": "Black's rook has entered and won pawns. The white bishop is still far from the scene of action."
+        }
+      ]
+    },
+    {
+      "id": "finish",
+      "title": "The active rook wins another pawn",
+      "narration": [
+        {
+          "say": "White advances d4. Black returns the rook to b5.",
+          "moves": ["d4", "Rb5"]
+        },
+        {
+          "say": "White brings the rook to c4. Black moves the rook to b4, offering a rook exchange.",
+          "moves": ["Rc4", "Rb4"]
+        },
+        {
+          "say": "White instead takes the pawn on c6. Black captures d4, and White resigns.",
+          "moves": ["Rxc6", "Rxd4"],
+          "highlights": ["c6", "d4", "g3"]
+        }
+      ]
+    },
+    {
+      "id": "summary",
+      "title": "Count the pieces that can actually fight",
+      "source": "Often a Bishop or a Knight is completely put out of action. In such cases we might say that from that moment the game is won, because for all practical purposes there will be one more piece on one side than on the other.",
+      "narration": [
+        {
+          "say": "Black did not win by trapping and capturing the bishop. Black won by keeping it irrelevant."
+        },
+        {
+          "say": "The exchanges left White with an inactive bishop. Black then used the king, rooks and pawns on the queenside."
+        },
+        {
+          "say": "Material counts tell only part of the story. Ask which pieces can reach the area where the game will be decided."
+        }
+      ]
+    }
+  ]
+}

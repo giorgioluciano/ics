@@ -1,0 +1,289 @@
+{
+  "id": "070-game-03-janowski-capablanca",
+  "title": "Game 3: Janowski–Capablanca",
+  "subtitle": "A missed defensive plan leads to a lost pawn ending",
+  "source": {
+    "work": "Chess Fundamentals",
+    "author": "José Raúl Capablanca",
+    "year": 1921,
+    "section": "Part II, Illustrative Games, Game 3",
+    "examples": "Game 3",
+    "url": "https://archive.org/details/chessfundamental00capa"
+  },
+  "startFen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+  "steps": [
+    {
+      "id": "opening",
+      "title": "A flexible but slow defence",
+      "narration": [
+        {
+          "say": "Janowski has White against Capablanca at Havana in 1913. Black chooses an irregular development scheme.",
+          "moves": [
+            "d4",
+            "Nf6",
+            "Nf3",
+            "d6",
+            "Bg5",
+            "Nbd7",
+            "e3",
+            "e5",
+            "Nc3",
+            "c6",
+            "Bd3",
+            "Be7"
+          ]
+        },
+        {
+          "say": "White castles and develops the rook while Black manoeuvres.",
+          "moves": [
+            "Qe2",
+            "Qa5",
+            "O-O",
+            "Nf8",
+            "Rfd1",
+            "Bg4"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "development",
+      "title": "Avoid letting fear dictate development",
+      "narration": [
+        {
+          "say": "White challenges the bishop and exchanges in the centre.",
+          "moves": [
+            "h3",
+            "Bh5",
+            "dxe5",
+            "dxe5",
+            "Ne4"
+          ]
+        },
+        {
+          "say": "Black exchanges on e4 instead of castling. Capablanca calls this a serious mistake.",
+          "moves": [
+            "Nxe4",
+            "Bxe7",
+            "Kxe7",
+            "Bxe4",
+            "Bg6"
+          ]
+        },
+        {
+          "say": "White activates the queen and advances b4. Further exchanges leave Black’s king defending the centre.",
+          "moves": [
+            "Qc4",
+            "Ne6",
+            "b4",
+            "Qc7",
+            "Bxg6",
+            "hxg6",
+            "Qe4",
+            "Kf6"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "rooks",
+      "title": "A plan that exchanges can neutralise",
+      "narration": [
+        {
+          "say": "White doubles rooks on the d-file. Black advances g5, but does not follow the defensive plan consistently.",
+          "moves": [
+            "Rd3",
+            "Rad8",
+            "Rad1",
+            "g5",
+            "c4",
+            "Rxd3",
+            "Rxd3",
+            "Rd8"
+          ]
+        },
+        {
+          "say": "The last pair of rooks is exchanged. Black recaptures with the knight.",
+          "moves": [
+            "Rxd8",
+            "Nxd8"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "break",
+      "title": "Exploit the weakened pawn formation",
+      "narration": [
+        {
+          "say": "White can now challenge the kingside pawns."
+        }
+      ],
+      "exercise": {
+        "prompt": "White to move. Challenge Black’s pawn on g5.",
+        "accept": [
+          "h4"
+        ],
+        "feedback": {
+          "*": "Advance the h-pawn from h3 to h4."
+        },
+        "hint": "Advance the h-pawn from h3 to h4.",
+        "hintSquares": [
+          "h4"
+        ],
+        "success": "Correct. h4",
+        "reply": "gxh4"
+      }
+    },
+    {
+      "id": "queen",
+      "title": "Win a pawn with active queen play",
+      "narration": [
+        {
+          "say": "White recaptures with check and keeps the black king exposed.",
+          "moves": [
+            "Qxh4+",
+            "Ke6",
+            "Qg4+",
+            "Kf6",
+            "Qg5+",
+            "Ke6",
+            "Qxg7"
+          ]
+        },
+        {
+          "say": "Black brings the queen to d6. White advances c5, and Black centralises the queen.",
+          "moves": [
+            "Qd6",
+            "c5",
+            "Qd5"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "central",
+      "title": "A central advance gains time",
+      "narration": [
+        {
+          "say": "White can attack the queen with the e-pawn."
+        }
+      ],
+      "exercise": {
+        "prompt": "White to move. Attack the queen on d5 with a pawn advance.",
+        "accept": [
+          "e4"
+        ],
+        "feedback": {
+          "*": "Pawn from e3 to e4."
+        },
+        "hint": "Pawn from e3 to e4.",
+        "hintSquares": [
+          "e4"
+        ],
+        "success": "Correct. e4",
+        "reply": "Qd1+"
+      }
+    },
+    {
+      "id": "simplify",
+      "title": "Choose a favourable ending",
+      "narration": [
+        {
+          "say": "White answers the check and offers a queen exchange.",
+          "moves": [
+            "Kh2",
+            "f6",
+            "Qg4+",
+            "Ke7",
+            "Nxe5",
+            "Qxg4",
+            "Nxg4"
+          ]
+        },
+        {
+          "say": "Black develops the knight. White exchanges central pawns and recaptures with the knight.",
+          "moves": [
+            "Ne6",
+            "e5",
+            "fxe5",
+            "Nxe5",
+            "Nd4"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "passed",
+      "title": "Create two dangerous passed pawns",
+      "narration": [
+        {
+          "say": "White advances the kingside majority while Black seeks queenside counterplay.",
+          "moves": [
+            "g4",
+            "Ke6",
+            "f4",
+            "a5",
+            "bxa5",
+            "Kd5",
+            "g5",
+            "Kxc5",
+            "g6",
+            "Nf5"
+          ]
+        },
+        {
+          "say": "The king supports the pawns. White exchanges the remaining knights while Black takes queenside pawns.",
+          "moves": [
+            "Kh3",
+            "Kd5",
+            "Kg4",
+            "Ng7",
+            "Kg5",
+            "c5",
+            "Nd7",
+            "c4",
+            "Nb6+",
+            "Kd4",
+            "Nxc4",
+            "Kxc4"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "finish",
+      "title": "The pawn advance cannot be stopped",
+      "narration": [
+        {
+          "say": "White advances f5 and f6. Black gives a knight check, but the king steps to h6.",
+          "moves": [
+            "f5",
+            "Kd5",
+            "f6",
+            "Ne6+",
+            "Kh6"
+          ]
+        },
+        {
+          "say": "Black resigns. The two advanced passed pawns decide the ending."
+        }
+      ]
+    },
+    {
+      "id": "summary",
+      "title": "Carry out the plan you chose",
+      "narration": [
+        {
+          "say": "Capablanca repeatedly identifies g6 as an important defensive idea that he failed to carry out."
+        },
+        {
+          "say": "White converted the resulting pawn weakness through queen activity, favourable exchanges and supported passed pawns."
+        },
+        {
+          "say": "The opening, middle-game and ending are connected: a choice in one phase can determine the next."
+        }
+      ]
+    }
+  ]
+}

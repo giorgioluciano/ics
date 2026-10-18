@@ -1,0 +1,342 @@
+{
+  "id": "061-two-rooks-passed-pawn",
+  "title": "Two Rooks: Create a Passed Pawn",
+  "subtitle": "Fix one wing, then break through on the other",
+  "source": {
+    "work": "Chess Fundamentals",
+    "author": "José Raúl Capablanca",
+    "year": 1921,
+    "section": "Chapter V, §29 A Difficult Ending: Two Rooks and Pawns, Example 61",
+    "examples": "61",
+    "url": "https://archive.org/details/chessfundamental00capa"
+  },
+  "startFen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+  "steps": [
+    {
+      "id": "opening",
+      "title": "Reach the book’s ending",
+      "narration": [
+        {
+          "say": "We follow the game from the initial position. Opening phase 1.",
+          "moves": [
+            "e4",
+            "e5",
+            "Nf3",
+            "Nc6",
+            "Nc3",
+            "Nf6",
+            "Bb5",
+            "a6",
+            "Bxc6",
+            "dxc6",
+            "O-O",
+            "Bg4"
+          ]
+        },
+        {
+          "say": "We follow the game from the initial position. Opening phase 2.",
+          "moves": [
+            "h3",
+            "Bh5",
+            "Qe2",
+            "Bd6",
+            "d3",
+            "Qe7",
+            "Nd1",
+            "O-O-O",
+            "Ne3",
+            "Bg6",
+            "Nh4",
+            "Rhg8"
+          ]
+        },
+        {
+          "say": "We follow the game from the initial position. Opening phase 3.",
+          "moves": [
+            "Nef5",
+            "Qe6",
+            "f4",
+            "Bxf5",
+            "Nxf5",
+            "exf4",
+            "Bxf4",
+            "Bc5+",
+            "Be3",
+            "Bf8",
+            "Qf2",
+            "Rd7"
+          ]
+        },
+        {
+          "say": "We follow the game from the initial position. Opening phase 4.",
+          "moves": [
+            "Bc5",
+            "Bxc5",
+            "Qxc5",
+            "Kb8",
+            "Rf2",
+            "Ne8",
+            "Raf1",
+            "f6",
+            "b3",
+            "Nd6",
+            "Rf4",
+            "Nxf5"
+          ]
+        },
+        {
+          "say": "We follow the game from the initial position. Opening phase 5.",
+          "moves": [
+            "Qxf5",
+            "Qxf5",
+            "Rxf5",
+            "Re8"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "plan",
+      "title": "A plan based on the pawn structure",
+      "narration": [
+        {
+          "say": "Black has doubled c-pawns. White plans to restrain the queenside, activate the king, and create a passed pawn."
+        },
+        {
+          "say": "White begins with g4, preparing a later g5. Black advances b6.",
+          "moves": [
+            "g4",
+            "b6"
+          ]
+        }
+      ],
+      "exercise": {
+        "prompt": "White to move. Restrain Black’s queenside advance.",
+        "accept": [
+          "b4"
+        ],
+        "feedback": {
+          "*": "Advance the b-pawn to b4, controlling c5."
+        },
+        "hint": "Advance the b-pawn to b4, controlling c5.",
+        "hintSquares": [
+          "b4"
+        ],
+        "success": "Correct. b4",
+        "reply": "Kb7"
+      }
+    },
+    {
+      "id": "fix",
+      "title": "Stop the second queenside plan",
+      "narration": [
+        {
+          "say": "White activates the king. Black plays b5, seeking counterplay.",
+          "moves": [
+            "Kf2",
+            "b5"
+          ]
+        }
+      ],
+      "exercise": {
+        "prompt": "White to move. Challenge Black’s queenside formation.",
+        "accept": [
+          "a4"
+        ],
+        "feedback": {
+          "*": "Advance the a-pawn to a4."
+        },
+        "hint": "Advance the a-pawn to a4.",
+        "hintSquares": [
+          "a4"
+        ],
+        "success": "Correct. a4",
+        "reply": "Rd4"
+      }
+    },
+    {
+      "id": "centralise",
+      "title": "Finish the first part of the plan",
+      "narration": [
+        {
+          "say": "White supports the queenside and brings the king to e3.",
+          "moves": [
+            "Rb1",
+            "Re5",
+            "Ke3",
+            "Rd7"
+          ]
+        },
+        {
+          "say": "The a-pawn advances again. Black’s queenside pawns are now restricted.",
+          "moves": [
+            "a5",
+            "Re6"
+          ]
+        },
+        {
+          "say": "White returns the rook from b1 to f1. Black doubles on the e-file.",
+          "moves": [
+            "Rbf1",
+            "Rde7"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "break",
+      "title": "Remove the pawn blocking the e-pawn",
+      "narration": [
+        {
+          "say": "White now changes wings. The g-pawn can challenge Black’s pawn on f6."
+        }
+      ],
+      "exercise": {
+        "prompt": "White to move. Begin the kingside breakthrough.",
+        "accept": [
+          "g5"
+        ],
+        "feedback": {
+          "*": "Advance the pawn from g4 to g5."
+        },
+        "hint": "Advance the pawn from g4 to g5.",
+        "hintSquares": [
+          "g5"
+        ],
+        "success": "Correct. g5",
+        "reply": "fxg5"
+      }
+    },
+    {
+      "id": "passed",
+      "title": "The strategic gain becomes visible",
+      "narration": [
+        {
+          "say": "The rook recaptures on g5. The e-pawn is now passed.",
+          "moves": [
+            "Rxg5"
+          ]
+        },
+        {
+          "say": "Black shifts a rook to h6. White keeps the rook active, and Black returns to e6.",
+          "moves": [
+            "Rh6",
+            "Rg3",
+            "Rhe6"
+          ]
+        },
+        {
+          "say": "White advances h4. Black plays g6, and the rook returns to g5.",
+          "moves": [
+            "h4",
+            "g6",
+            "Rg5",
+            "h6"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "support",
+      "title": "Support the passed pawn with the king",
+      "narration": [
+        {
+          "say": "White makes room with the rook, then advances d4.",
+          "moves": [
+            "Rg4",
+            "Rg7",
+            "d4",
+            "Kb8"
+          ]
+        },
+        {
+          "say": "The other rook checks from f8. Black returns to b7.",
+          "moves": [
+            "Rf8+",
+            "Kb7"
+          ]
+        },
+        {
+          "say": "White advances the passed e-pawn. Black tries g5, and White centralises the king.",
+          "moves": [
+            "e5",
+            "g5",
+            "Ke4",
+            "Ree7"
+          ]
+        },
+        {
+          "say": "The h-pawns exchange. White keeps both rooks active.",
+          "moves": [
+            "hxg5",
+            "hxg5",
+            "Rf5",
+            "Kc8",
+            "Rgxg5",
+            "Rh7"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "exchange",
+      "title": "Simplify without losing the plan",
+      "narration": [
+        {
+          "say": "White exchanges one pair of rooks on h7.",
+          "moves": [
+            "Rh5",
+            "Kd7",
+            "Rxh7",
+            "Rxh7"
+          ]
+        },
+        {
+          "say": "The remaining rook moves to f8. Black checks the king twice.",
+          "moves": [
+            "Rf8",
+            "Rh4+",
+            "Kd3",
+            "Rh3+",
+            "Kd2"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "finish",
+      "title": "Connected central pawns decide",
+      "narration": [
+        {
+          "say": "Black tries the pawn break c5. White takes it, and Black brings the rook to a3.",
+          "moves": [
+            "c5",
+            "bxc5",
+            "Ra3"
+          ]
+        },
+        {
+          "say": "White advances d5. Black resigns.",
+          "moves": [
+            "d5"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "summary",
+      "title": "Keep freedom while restricting the opponent",
+      "narration": [
+        {
+          "say": "White first fixed the queenside, then created a passed e-pawn, and finally supported the central advance with the king."
+        },
+        {
+          "say": "The rooks retained freedom of manoeuvre while Black’s rooks had to defend weaknesses."
+        },
+        {
+          "say": "The winning moves followed a general plan that could be carried out with the pieces available."
+        }
+      ]
+    }
+  ]
+}

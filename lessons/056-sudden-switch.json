@@ -1,0 +1,151 @@
+{
+  "id": "056-sudden-switch",
+  "title": "The Sudden Attack from a Different Side",
+  "subtitle": "Tie down the rooks, then change wings",
+  "source": {
+    "work": "Chess Fundamentals",
+    "author": "José Raúl Capablanca",
+    "year": 1921,
+    "section": "Chapter V, §26 The Sudden Attack from a Different Side, Example 56",
+    "examples": "56",
+    "url": "https://archive.org/details/chessfundamental00capa"
+  },
+  "startFen": "6k1/p4p1p/1p4p1/3r4/2r5/P1P4P/2R2PP1/2R1K3 b - - 0 1",
+  "steps": [
+    {
+      "id": "intro",
+      "title": "Freedom against obligation",
+      "narration": [
+        {
+          "say": "Black has the more mobile rooks. White must protect the isolated pawns on a3 and c3.",
+          "highlights": [
+            "a3",
+            "c3",
+            "c4",
+            "d5"
+          ]
+        }
+      ],
+      "exercise": {
+        "prompt": "Black to move. Check along the fourth rank.",
+        "accept": [
+          "Re4+"
+        ],
+        "feedback": {
+          "*": "Move the rook from c4 to e4."
+        },
+        "hint": "Move the rook from c4 to e4.",
+        "hintSquares": [
+          "e4"
+        ],
+        "success": "1...Re4+! White blocks with a rook.",
+        "reply": "Re2"
+      }
+    },
+    {
+      "id": "fix",
+      "title": "Fix the queenside",
+      "narration": [
+        {
+          "say": "Rook to a4. White defends a3 with rook to a2.",
+          "moves": [
+            "Ra4",
+            "Ra2"
+          ]
+        },
+        {
+          "say": "Black advances h5, preparing h4 and fixing another target.",
+          "move": "h5"
+        },
+        {
+          "say": "White moves the rook to d1. Black doubles pressure on the a-file.",
+          "moves": [
+            "Rd1",
+            "Rda5"
+          ]
+        },
+        {
+          "say": "White returns the rook to a1. Black advances h4.",
+          "moves": [
+            "Rda1",
+            "h4"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "switch",
+      "title": "Change wings",
+      "narration": [
+        {
+          "say": "White brings the king toward the queenside pawns. Black improves the king.",
+          "moves": [
+            "Kd2",
+            "Kg7",
+            "Kc2"
+          ]
+        },
+        {
+          "say": "White hopes to free the rooks by defending the pawns with the king. Black changes the point of attack."
+        }
+      ],
+      "exercise": {
+        "prompt": "Black to move. Transfer the rook on a5 to the kingside.",
+        "accept": [
+          "Rg5"
+        ],
+        "feedback": {
+          "*": "Rook from a5 to g5."
+        },
+        "hint": "Rook from a5 to g5.",
+        "hintSquares": [
+          "g5"
+        ],
+        "success": "7...Rg5! The attack shifts to the kingside.",
+        "reply": "Rg1"
+      }
+    },
+    {
+      "id": "penetrate",
+      "title": "Exploit the misplaced defence",
+      "narration": [
+        {
+          "say": "White has played Rg1. Capablanca calls this a serious mistake. Black moves the rook to f4.",
+          "move": "Rf4"
+        },
+        {
+          "say": "White brings the king to d3. Black can penetrate with check.",
+          "move": "Kd3"
+        }
+      ],
+      "exercise": {
+        "prompt": "Black to move. Invade the third rank with check.",
+        "accept": [
+          "Rf3+"
+        ],
+        "feedback": {
+          "*": "Rook from f4 to f3."
+        },
+        "hint": "Rook from f4 to f3.",
+        "hintSquares": [
+          "f3"
+        ],
+        "success": "9...Rf3+! White moves the king to e2.",
+        "reply": "Ke2"
+      }
+    },
+    {
+      "id": "summary",
+      "title": "Do not invent the final moves",
+      "narration": [
+        {
+          "say": "The book ends this line here and says Black won a few moves later. We stop at the same position."
+        },
+        {
+          "say": "The principle is greater mobility: tie the opposing rooks to pawns, then move your attack to the other wing."
+        }
+      ],
+      "source": "Black, therefore, makes a plan to shift the attack to the King’s side at the proper time, in order to obtain some advantage from the greater mobility of his Rooks."
+    }
+  ]
+}

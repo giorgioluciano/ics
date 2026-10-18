@@ -1,0 +1,136 @@
+{
+  "id": "063-pawn-structure-and-holes",
+  "title": "Pawn Structure and Holes",
+  "subtitle": "Backward pawns create targets; holes create outposts",
+  "source": {
+    "work": "Chess Fundamentals",
+    "author": "José Raúl Capablanca",
+    "year": 1921,
+    "section": "Chapter VI, §31 Some Salient Points About Pawns, unnumbered diagram conventionally associated with Example 63",
+    "examples": "63",
+    "url": "https://archive.org/details/chessfundamental00capa"
+  },
+  "startFen": "7k/2p2p1p/p3p1p1/1p1pP3/1P1P4/1P6/P4PPP/7K w - - 0 1",
+  "steps": [
+    {
+      "id": "intro",
+      "title": "A diagram of pawn structure",
+      "narration": [
+        {
+          "say": "This diagram studies pawns only. The original omits both kings. Here they are placed on h1 and h8 solely so the rules engine can load the position.",
+          "highlights": [
+            "h1",
+            "h8"
+          ]
+        },
+        {
+          "say": "Do not analyse this as a complete endgame. We are studying targets and squares, not calculating a result."
+        }
+      ]
+    },
+    {
+      "id": "backward",
+      "title": "The backward c-pawn",
+      "narration": [
+        {
+          "say": "Black’s pawn on c7 is backward. White’s pawn on d4 controls its advance to c5.",
+          "highlights": [
+            "c7",
+            "d4",
+            "c5"
+          ],
+          "arrows": [
+            {
+              "from": "d4",
+              "to": "c5",
+              "color": "danger"
+            }
+          ]
+        },
+        {
+          "say": "There are no white pawns on the c-file. In a position with rooks, White could concentrate pressure along that file.",
+          "zone": {
+            "squares": [
+              "c1",
+              "c2",
+              "c3",
+              "c4",
+              "c5",
+              "c6",
+              "c7",
+              "c8"
+            ],
+            "color": "primary"
+          }
+        }
+      ]
+    },
+    {
+      "id": "queenside-hole",
+      "title": "A protected outpost",
+      "narration": [
+        {
+          "say": "The square c5 is supported by the pawns on b4 and d4.",
+          "highlights": [
+            "c5"
+          ],
+          "arrows": [
+            {
+              "from": "b4",
+              "to": "c5",
+              "color": "primary"
+            },
+            {
+              "from": "d4",
+              "to": "c5",
+              "color": "primary"
+            }
+          ]
+        },
+        {
+          "say": "Black has no b-pawn or d-pawn that can attack a white piece established on c5. Removing that piece would require a piece exchange rather than a pawn attack."
+        }
+      ]
+    },
+    {
+      "id": "kingside-hole",
+      "title": "Another hole on f6",
+      "narration": [
+        {
+          "say": "White’s pawn on e5 supports f6. Black’s e-pawn and g-pawn are already on the sixth rank and cannot drive a piece away from f6.",
+          "highlights": [
+            "e5",
+            "e6",
+            "f6",
+            "g6"
+          ],
+          "arrows": [
+            {
+              "from": "e5",
+              "to": "f6",
+              "color": "primary"
+            }
+          ]
+        },
+        {
+          "say": "This is a hole in the pawn cover: a square that opposing pieces may occupy without being challenged by those pawns."
+        }
+      ]
+    },
+    {
+      "id": "summary",
+      "title": "Read the pawn skeleton before choosing a plan",
+      "narration": [
+        {
+          "say": "A backward pawn provides a target. A hole provides a potential outpost."
+        },
+        {
+          "say": "In a complete position, piece placement determines how those weaknesses can be exploited. The pawn diagram alone does not establish a forced win."
+        },
+        {
+          "say": "There are no move exercises in this lesson: adding a tactical solution would invent information absent from the source."
+        }
+      ]
+    }
+  ]
+}

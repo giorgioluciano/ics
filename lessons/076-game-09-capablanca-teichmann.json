@@ -1,0 +1,242 @@
+{
+  "id": "076-game-09-capablanca-teichmann",
+  "title": "Game 9: Capablanca–Teichmann",
+  "subtitle": "Coordinate the knights and convert structural weaknesses",
+  "source": {
+    "work": "Chess Fundamentals",
+    "author": "José Raúl Capablanca",
+    "year": 1921,
+    "section": "Part II, Illustrative Games, Game 9",
+    "examples": "Game 9",
+    "url": "https://archive.org/details/chessfundamental00capa"
+  },
+  "startFen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+  "steps": [
+    {
+      "id": "opening",
+      "title": "The isolated central pawn",
+      "narration": [
+        {
+          "say": "Capablanca has White against Teichmann at Berlin in 1913.",
+          "moves": [
+            "d4",
+            "d5",
+            "Nf3",
+            "Nf6",
+            "c4",
+            "e6",
+            "Bg5",
+            "Be7",
+            "Nc3",
+            "Nbd7",
+            "e3",
+            "O-O",
+            "Rc1",
+            "b6"
+          ]
+        },
+        {
+          "say": "White exchanges in the centre and develops the bishop to b5.",
+          "moves": [
+            "cxd5",
+            "exd5",
+            "Bb5",
+            "Bb7",
+            "O-O",
+            "a6",
+            "Ba4",
+            "Rc8"
+          ]
+        },
+        {
+          "say": "Black challenges with c5. White exchanges again, leaving Black with an isolated d-pawn.",
+          "moves": [
+            "Qe2",
+            "c5",
+            "dxc5",
+            "Nxc5",
+            "Rfd1",
+            "Nxa4"
+          ]
+        },
+        {
+          "say": "White recaptures, and one pair of rooks is exchanged.",
+          "moves": [
+            "Nxa4",
+            "b5",
+            "Rxc8",
+            "Qxc8",
+            "Nc3",
+            "Qc4"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "knights",
+      "title": "Keep a knight near the central blockade",
+      "narration": [
+        {
+          "say": "White occupies d4. Black exchanges queens, and White recaptures with the c3-knight.",
+          "moves": [
+            "Nd4",
+            "Qxe2",
+            "Ncxe2",
+            "Rc8"
+          ]
+        },
+        {
+          "say": "The knights work together: one occupies d4 while the other remains ready to support the central squares."
+        }
+      ],
+      "exercise": {
+        "prompt": "White to move. Move the knight from d4 to f5.",
+        "accept": [
+          "Nf5"
+        ],
+        "feedback": {
+          "*": "Knight from d4 to f5."
+        },
+        "hint": "Knight from d4 to f5.",
+        "hintSquares": [
+          "f5"
+        ],
+        "success": "Correct. Nf5",
+        "reply": "Kf8"
+      }
+    },
+    {
+      "id": "restriction",
+      "title": "The defenders have limited choices",
+      "narration": [
+        {
+          "say": "White exchanges the bishop on e7 and returns the other knight to d4.",
+          "moves": [
+            "Nxe7",
+            "Kxe7",
+            "Nd4",
+            "g6"
+          ]
+        },
+        {
+          "say": "White stabilises the centre with f3. Black plays h6.",
+          "moves": [
+            "f3",
+            "h6"
+          ]
+        },
+        {
+          "say": "White takes h6 and advances the h-pawn. Black seeks exchanges.",
+          "moves": [
+            "Bxh6",
+            "Nd7",
+            "h4",
+            "Nc5",
+            "Bf4",
+            "Ne6"
+          ]
+        },
+        {
+          "say": "The knights are exchanged. White moves the rook to d2, and Black brings the rook to h8.",
+          "moves": [
+            "Nxe6",
+            "Kxe6",
+            "Rd2",
+            "Rh8"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "rook-exchange",
+      "title": "Choose the right simplification",
+      "narration": [
+        {
+          "say": "White brings the rook to c2 and offers a rook exchange. Capablanca presents this as a strong continuation."
+        }
+      ],
+      "exercise": {
+        "prompt": "White to move. Offer the rook exchange on the c-file.",
+        "accept": [
+          "Rc2"
+        ],
+        "feedback": {
+          "*": "Rook from d2 to c2."
+        },
+        "hint": "Rook from d2 to c2.",
+        "hintSquares": [
+          "c2"
+        ],
+        "success": "Correct. Rc2",
+        "reply": "Rc8"
+      }
+    },
+    {
+      "id": "bishops",
+      "title": "Opposite-coloured bishops do not guarantee a draw",
+      "narration": [
+        {
+          "say": "White exchanges rooks. Both bishops remain, on opposite colours.",
+          "moves": [
+            "Rxc8",
+            "Bxc8"
+          ]
+        },
+        {
+          "say": "White activates the king. Black advances d4, and White exchanges the central pawn.",
+          "moves": [
+            "Kf2",
+            "d4",
+            "exd4",
+            "Kd5"
+          ]
+        },
+        {
+          "say": "The kings manoeuvre while White keeps the bishop active.",
+          "moves": [
+            "Ke3",
+            "Be6",
+            "Kd3",
+            "Kc6",
+            "a3",
+            "Bc4+",
+            "Ke3",
+            "Be6",
+            "Bh6"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "finish",
+      "title": "A bishop move prepares king entry",
+      "narration": [
+        {
+          "say": "Black returns the king to d5. White puts the bishop on g7.",
+          "moves": [
+            "Kd5",
+            "Bg7"
+          ]
+        },
+        {
+          "say": "Black resigns. The active king and supported pawns make the opposite-coloured bishop ending favourable to White."
+        }
+      ]
+    },
+    {
+      "id": "summary",
+      "title": "Simplify with the resulting position in mind",
+      "narration": [
+        {
+          "say": "White’s knights maintained central control before favourable exchanges."
+        },
+        {
+          "say": "The rook exchange left an ending where White could activate the king and improve the bishop."
+        },
+        {
+          "say": "Opposite-coloured bishops can help the defence, but they do not erase pawn weaknesses or king activity."
+        }
+      ]
+    }
+  ]
+}

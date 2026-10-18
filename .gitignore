@@ -1,0 +1,13 @@
+.aider*
+
+# Backup e log locali
+*.bak
+validation-log.txt
+
+# Copia locale del validatore
+/tools/check-lessons (2).mjs
+
+# Configurazioni locali e segreti
+.env
+.env.*
+!.env.example

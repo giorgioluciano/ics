@@ -1,0 +1,276 @@
+{
+  "id": "060-two-rooks-active-defence",
+  "title": "Two Rooks: Active Defence",
+  "subtitle": "Waiting without a plan allows the opponent to take over",
+  "source": {
+    "work": "Chess Fundamentals",
+    "author": "José Raúl Capablanca",
+    "year": 1921,
+    "section": "Chapter V, §29 A Difficult Ending: Two Rooks and Pawns, Example 60",
+    "examples": "60",
+    "url": "https://archive.org/details/chessfundamental00capa"
+  },
+  "startFen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+  "steps": [
+    {
+      "id": "opening",
+      "title": "Reach the book’s ending",
+      "narration": [
+        {
+          "say": "We follow the game from the initial position. Opening phase 1.",
+          "moves": [
+            "d4",
+            "d5",
+            "Nf3",
+            "Nf6",
+            "Bf4",
+            "e6",
+            "e3",
+            "c5",
+            "c3",
+            "Nc6",
+            "Bd3",
+            "Bd6"
+          ]
+        },
+        {
+          "say": "We follow the game from the initial position. Opening phase 2.",
+          "moves": [
+            "Bxd6",
+            "Qxd6",
+            "Nbd2",
+            "e5",
+            "dxe5",
+            "Nxe5",
+            "Nxe5",
+            "Qxe5",
+            "Bb5+",
+            "Bd7",
+            "Qa4",
+            "Qc7"
+          ]
+        },
+        {
+          "say": "We follow the game from the initial position. Opening phase 3.",
+          "moves": [
+            "O-O-O",
+            "O-O",
+            "Bxd7",
+            "Nxd7",
+            "Nf3",
+            "Qc6",
+            "Qxc6",
+            "bxc6",
+            "Nd2",
+            "Ne5",
+            "Kc2",
+            "c4"
+          ]
+        },
+        {
+          "say": "We follow the game from the initial position. Opening phase 4.",
+          "moves": [
+            "Rhf1",
+            "f5",
+            "Nf3",
+            "Nxf3",
+            "gxf3"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "initiative",
+      "title": "A waiting move gives White a plan",
+      "narration": [
+        {
+          "say": "Capablanca has White against Kreymborg in 1910. Black chooses a waiting policy instead of active counterplay.",
+          "moves": [
+            "Rae8"
+          ]
+        },
+        {
+          "say": "White lifts the rook to d4, restraining f4 and preparing b3. Black moves the rook to f6.",
+          "moves": [
+            "Rd4",
+            "Rf6"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "targets",
+      "title": "Create queenside targets",
+      "narration": [
+        {
+          "say": "White opens the queenside and brings the king forward.",
+          "moves": [
+            "b3",
+            "cxb3+",
+            "axb3",
+            "Kf7",
+            "Kd3",
+            "Re7"
+          ]
+        },
+        {
+          "say": "The rook moves to a1. Black centralises the king, but overlooks the growing pressure on the queenside.",
+          "moves": [
+            "Ra1",
+            "Ke6"
+          ]
+        },
+        {
+          "say": "White invades a6. Black defends with the rook.",
+          "moves": [
+            "Ra6",
+            "Rc7"
+          ]
+        },
+        {
+          "say": "White doubles rooks on the a-file. Black finally starts counterplay with g5.",
+          "moves": [
+            "Rda4",
+            "g5"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "answer",
+      "title": "Meet the counterplay actively",
+      "narration": [
+        {
+          "say": "White does not immediately collect the a-pawn. First, challenge the kingside pawn advance."
+        }
+      ],
+      "exercise": {
+        "prompt": "White to move. Challenge the pawn on g5.",
+        "accept": [
+          "h4"
+        ],
+        "feedback": {
+          "*": "Advance the h-pawn from h2 to h4."
+        },
+        "hint": "Advance the h-pawn from h2 to h4.",
+        "hintSquares": [
+          "h4"
+        ],
+        "success": "Correct. h4",
+        "reply": "g4"
+      }
+    },
+    {
+      "id": "king",
+      "title": "Keep the king safe and active",
+      "narration": [
+        {
+          "say": "White retreats the king, then recaptures on f3 after the pawn exchange.",
+          "moves": [
+            "Ke2",
+            "gxf3+",
+            "Kxf3",
+            "Rff7"
+          ]
+        },
+        {
+          "say": "White plays Ke2. Capablanca criticises this move, preferring an immediate queenside advance.",
+          "moves": [
+            "Ke2",
+            "Kd6",
+            "b4",
+            "Rb7"
+          ]
+        },
+        {
+          "say": "White pushes h5. Capablanca also criticises this choice; Black then misses a defensive chance by answering h6.",
+          "moves": [
+            "h5",
+            "h6"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "restore",
+      "title": "Restore the central advance",
+      "narration": [
+        {
+          "say": "White advances f4. Black shifts the rook, and the white king approaches the centre.",
+          "moves": [
+            "f4",
+            "Rg7",
+            "Kd3",
+            "Rge7",
+            "Ra1",
+            "Rg7"
+          ]
+        },
+        {
+          "say": "White reaches d4 with the king. Black invades g2, and White rearranges the rooks.",
+          "moves": [
+            "Kd4",
+            "Rg2",
+            "R6a2",
+            "Rbg7"
+          ]
+        },
+        {
+          "say": "The king retreats to d3. One pair of rooks is exchanged.",
+          "moves": [
+            "Kd3",
+            "Rxa2",
+            "Rxa2",
+            "Re7"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "finish",
+      "title": "Freedom of manoeuvre wins",
+      "narration": [
+        {
+          "say": "The remaining white rook keeps moving while Black defends.",
+          "moves": [
+            "Rg2",
+            "Re6",
+            "Rg7",
+            "Re7",
+            "Rg8",
+            "c5"
+          ]
+        },
+        {
+          "say": "White checks, exchanges on c5, and wins the a-pawn.",
+          "moves": [
+            "Rg6+",
+            "Re6",
+            "bxc5+",
+            "Kd7",
+            "Rg7+",
+            "Kc6",
+            "Rxa7",
+            "Kxc5",
+            "Rf7"
+          ]
+        },
+        {
+          "say": "Black resigns. The rook activity and central pawns have decided the ending."
+        }
+      ]
+    },
+    {
+      "id": "summary",
+      "title": "Defend with a purpose",
+      "narration": [
+        {
+          "say": "A passive waiting policy allowed White to identify targets and double rooks against them."
+        },
+        {
+          "say": "The game also contains inaccuracies. A coherent plan helps, but every concrete position still needs calculation."
+        }
+      ]
+    }
+  ]
+}

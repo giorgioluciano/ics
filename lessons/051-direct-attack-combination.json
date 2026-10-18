@@ -1,0 +1,187 @@
+{
+  "id": "051-direct-attack-combination",
+  "title": "Every Piece Joins the Attack",
+  "subtitle": "A king hunt ends with a quiet pawn move",
+  "source": {
+    "work": "Chess Fundamentals",
+    "author": "José Raúl Capablanca",
+    "year": 1921,
+    "section": "Chapter IV, §21 Direct Attacks En Masse, Example 51",
+    "examples": "51",
+    "url": "https://archive.org/details/chessfundamental00capa"
+  },
+  "startFen": "r1bq1k1r/b5pp/1nRN4/4p3/1P2P1n1/5NB1/P4PPP/3Q1RK1 w - - 0 21",
+  "steps": [
+    {
+      "id": "intro",
+      "title": "Beauty is not a necessity",
+      "source": "In the above position the simple move Ne5 would win, but White looks for complications and their beauties.",
+      "narration": [
+        {
+          "say": "White has active pieces and an exposed black king. Capablanca says the simple knight move to e5 would win.",
+          "highlights": ["d6", "f3", "e5", "f8"]
+        },
+        {
+          "say": "But White chooses a spectacular combination. We will follow it without pretending that complications are always the best practical choice."
+        },
+        {
+          "say": "Bishop to h4. The bishop attacks the queen along the diagonal to d8.",
+          "move": "Bh4",
+          "arrows": [
+            { "from": "h4", "to": "d8", "color": "danger" }
+          ]
+        },
+        {
+          "say": "Black moves the queen to d7.",
+          "move": "Qd7",
+          "highlights": ["d7"]
+        }
+      ]
+    },
+    {
+      "id": "give-the-rook",
+      "title": "The attack matters more than the rook",
+      "narration": [
+        {
+          "say": "The knight takes the bishop on c8. Black takes the rook on c6 with the queen.",
+          "moves": ["Nxc8", "Qxc6"],
+          "highlights": ["c8", "c6"]
+        },
+        {
+          "say": "White has allowed the rook to fall. In return, the queen enters on d8 with check.",
+          "move": "Qd8+",
+          "arrows": [
+            { "from": "d8", "to": "f8", "color": "danger" }
+          ]
+        },
+        {
+          "say": "Black blocks the check with the queen on e8.",
+          "move": "Qe8",
+          "highlights": ["e8", "f8"]
+        }
+      ]
+    },
+    {
+      "id": "bishop-enters",
+      "title": "Do not exchange away the attack",
+      "narration": [
+        {
+          "say": "White could exchange queens, but the combination continues by bringing the bishop closer to the king.",
+          "highlights": ["h4", "e7", "f8"]
+        }
+      ],
+      "exercise": {
+        "prompt": "Follow the combination: bring the bishop to e7.",
+        "accept": ["Be7+"],
+        "feedback": {
+          "*": "Move the bishop from h4 to e7. From there it checks the king on f8."
+        },
+        "hint": "Bishop to e7, check.",
+        "hintSquares": ["e7"],
+        "success": "24. Be7+! The bishop joins the queen in the attack.",
+        "reply": "Kf7"
+      }
+    },
+    {
+      "id": "knight-returns",
+      "title": "Bring the knight back with tempo",
+      "narration": [
+        {
+          "say": "The knight returns from c8 to d6 with check. It also attacks the queen on e8.",
+          "move": "Nd6+",
+          "arrows": [
+            { "from": "d6", "to": "f7", "color": "danger" },
+            { "from": "d6", "to": "e8", "color": "warning" }
+          ]
+        },
+        {
+          "say": "Black's king moves to g6. Before taking the queen, White can bring another piece into the hunt.",
+          "move": "Kg6",
+          "highlights": ["g6", "f3"]
+        }
+      ],
+      "exercise": {
+        "prompt": "White to move. Bring the other knight into the attack with check.",
+        "accept": ["Nh4+"],
+        "feedback": {
+          "*": "Use the knight on f3. From h4 it checks the king on g6."
+        },
+        "hint": "Knight from f3 to h4.",
+        "hintSquares": ["h4"],
+        "success": "26. Nh4+! Both knights now participate.",
+        "reply": "Kh5"
+      }
+    },
+    {
+      "id": "queens-disappear",
+      "title": "The king hunt survives the exchanges",
+      "narration": [
+        {
+          "say": "Now the knight takes the queen on e8. Black's rook takes White's queen on d8.",
+          "moves": ["Nxe8", "Rxd8"],
+          "highlights": ["e8", "d8"]
+        },
+        {
+          "say": "Both queens have disappeared, but the king hunt continues. Knight takes g7, check.",
+          "move": "Nxg7+",
+          "arrows": [
+            { "from": "g7", "to": "h5", "color": "danger" }
+          ]
+        },
+        {
+          "say": "The king goes to h6. The same knight moves to f5 with check, driving the king back to h5.",
+          "moves": ["Kh6", "Ngf5+", "Kh5"],
+          "highlights": ["f5", "h4", "h5"]
+        }
+      ]
+    },
+    {
+      "id": "quiet-climax",
+      "title": "The final attacker is a pawn",
+      "source": "The climax of the combination started with 21.Bh4. White is still threatening mate, and the best way to avoid it is for Black to give back all the material he has gained and to remain three Pawns behind.",
+      "narration": [
+        {
+          "say": "The knights cover escape squares around the king. The bishop on e7 controls g5 and h4.",
+          "arrows": [
+            { "from": "f5", "to": "g7", "color": "primary" },
+            { "from": "f5", "to": "h6", "color": "primary" },
+            { "from": "h4", "to": "g6", "color": "primary" },
+            { "from": "e7", "to": "g5", "color": "primary" }
+          ]
+        },
+        {
+          "say": "Now the decisive move is not a check. White prepares a pawn advance with mate."
+        }
+      ],
+      "exercise": {
+        "prompt": "White to move. Prepare g4 mate with a quiet pawn move.",
+        "accept": ["h3"],
+        "feedback": {
+          "*": "Advance the h-pawn one square. It will protect g4 when the g-pawn advances."
+        },
+        "hint": "Pawn from h2 to h3.",
+        "hintSquares": ["h3"],
+        "success": "30. h3! The threat is g4 mate: the pawn on h3 will protect g4."
+      }
+    },
+    {
+      "id": "summary",
+      "title": "Full force, not isolated brilliance",
+      "source": "The student should note that in the examples given the attack is carried out with every available piece, and that often, as in some of the variations pointed out, it is the coming into action of the last available piece that finally overthrows the enemy.",
+      "narration": [
+        {
+          "say": "The queen opened the route, the bishop joined, and both knights drove the king into a net."
+        },
+        {
+          "say": "Even after both queens disappeared, the attack continued. Finally, a quiet pawn move created the mating threat."
+        },
+        {
+          "say": "Capablanca says Black must return the extra material and emerge three pawns behind to avoid the mate."
+        },
+        {
+          "say": "Remember both lessons: an attack needs coordinated forces, and a simple win is preferable to unnecessary complications."
+        }
+      ]
+    }
+  ]
+}

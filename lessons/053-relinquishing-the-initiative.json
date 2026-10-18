@@ -1,0 +1,352 @@
+{
+  "id": "053-relinquishing-the-initiative",
+  "title": "Relinquishing the Initiative",
+  "subtitle": "Win material, weather the storm, then strike back",
+  "source": {
+    "work": "Chess Fundamentals",
+    "author": "José Raúl Capablanca",
+    "year": 1921,
+    "section": "Chapter IV, §23 Relinquishing the Initiative, Example 53",
+    "examples": "53",
+    "url": "https://archive.org/details/chessfundamental00capa"
+  },
+  "startFen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+  "steps": [
+    {
+      "id": "opening",
+      "title": "An exchange offer takes shape",
+      "source": "From the Havana International Masters Tournament, 1913. Ruy Lopez. White J. R. Capablanca. Black D. Janowski.",
+      "narration": [
+        {
+          "say": "Capablanca plays White against Janowski. The opening is a Ruy Lopez.",
+          "moves": ["e4", "e5", "Nf3", "Nc6", "Bb5", "Nf6"]
+        },
+        {
+          "say": "White castles. Black supports the centre with d6, and White exchanges the bishop for the knight.",
+          "moves": ["O-O", "d6", "Bxc6", "bxc6"]
+        },
+        {
+          "say": "White challenges the centre and develops the other knight.",
+          "moves": ["d4", "Be7", "Nc3", "Nd7"]
+        },
+        {
+          "say": "After the central exchange, White develops the queen and brings the rook to d1.",
+          "moves": ["dxe5", "dxe5", "Qe2", "O-O", "Rd1", "Bd6"]
+        },
+        {
+          "say": "Bishop to g5. Black moves the queen to e8. White plays knight to h4, and Black advances g6.",
+          "moves": ["Bg5", "Qe8", "Nh4", "g6"]
+        },
+        {
+          "say": "The advance of the g-pawn allows the bishop to reach h6. Black offers material in return for time and attacking chances.",
+          "highlights": ["g6", "h6", "f8"],
+          "arrows": [
+            {
+              "from": "g5",
+              "to": "h6",
+              "color": "primary"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "prepare-the-capture",
+      "title": "Accept the challenge",
+      "source": "Black offers the exchange in order to gain time and to obtain an attack.",
+      "narration": [
+        {
+          "say": "White brings the bishop to h6, attacking the rook on f8.",
+          "move": "Bh6",
+          "arrows": [
+            {
+              "from": "h6",
+              "to": "f8",
+              "color": "danger"
+            }
+          ]
+        },
+        {
+          "say": "Black moves the knight to c5. White protects the second rank with the rook, and Black brings a rook to b8.",
+          "moves": ["Nc5", "Rd2", "Rb8"]
+        },
+        {
+          "say": "White retreats the knight to d1. Black's rook comes to b4, provoking the advance of the c-pawn.",
+          "moves": ["Nd1", "Rb4"],
+          "arrows": [
+            {
+              "from": "b4",
+              "to": "e4",
+              "color": "warning"
+            }
+          ]
+        },
+        {
+          "say": "White plays c4. Black brings the knight to e6, preparing to occupy d4.",
+          "moves": ["c4", "Ne6"],
+          "highlights": ["c4", "d4", "e6"]
+        }
+      ],
+      "exercise": {
+        "prompt": "White to move. Take the rook that Black has offered.",
+        "accept": ["Bxf8"],
+        "feedback": {
+          "*": "The bishop on h6 attacks the rook on f8. Capture it, then prepare to defend."
+        },
+        "hint": "Bishop takes f8.",
+        "hintSquares": ["f8"],
+        "success": "17. Bxf8. White wins the exchange, but Black will have the initiative.",
+        "reply": "Qxf8"
+      }
+    },
+    {
+      "id": "black-builds",
+      "title": "Material is not the same as safety",
+      "narration": [
+        {
+          "say": "The knight comes to e3. Black occupies the central outpost on d4.",
+          "moves": ["Ne3", "Nd4"],
+          "highlights": ["d4"]
+        },
+        {
+          "say": "White withdraws the queen to d1. Black plays c5, supporting the knight.",
+          "moves": ["Qd1", "c5"],
+          "arrows": [
+            {
+              "from": "c5",
+              "to": "d4",
+              "color": "primary"
+            }
+          ]
+        },
+        {
+          "say": "White plays b3. Black returns the rook to b8, making room for the bishop.",
+          "moves": ["b3", "Rb8"]
+        },
+        {
+          "say": "Knight to f3. Black advances f5, and the exchange of pawns opens attacking lines.",
+          "moves": ["Nf3", "f5", "exf5", "gxf5"],
+          "highlights": ["f5", "d4", "g8"]
+        },
+        {
+          "say": "Black's attack is approaching its full force. White must defend coherently, not try to spend the extra material immediately."
+        }
+      ]
+    },
+    {
+      "id": "weather-the-storm",
+      "title": "Prepare the counter-action",
+      "source": "In reality Black's attack is reaching its maximum force. Very soon it will reach the apex, and then White, who is well prepared, will begin his counter action.",
+      "narration": [
+        {
+          "say": "White retreats the knight to f1. Black advances f4.",
+          "moves": ["Nf1", "f4"]
+        },
+        {
+          "say": "White exchanges the central knight. Black recaptures with the c-pawn.",
+          "moves": ["Nxd4", "cxd4"],
+          "highlights": ["d4"]
+        },
+        {
+          "say": "Queen to h5. Black develops the bishop to b7.",
+          "moves": ["Qh5", "Bb7"]
+        },
+        {
+          "say": "The rook comes from a1 to e1. Black advances c5, strengthening the centre.",
+          "moves": ["Re1", "c5"]
+        },
+        {
+          "say": "White plays f3. This stabilises the position and helps prepare a central exchange.",
+          "move": "f3",
+          "highlights": ["f3", "e4"]
+        },
+        {
+          "say": "Black brings the rook to e8. White doubles rooks on the e-file, and Black lifts the rook to e6.",
+          "moves": ["Re8", "Rde2", "Re6"],
+          "highlights": ["e1", "e2", "e5", "e6"]
+        }
+      ]
+    },
+    {
+      "id": "return-the-exchange",
+      "title": "Give material back to end the attack",
+      "source": "Now the Black Rook enters into the game, but White is prepared. It is now time to give back the exchange.",
+      "narration": [
+        {
+          "say": "White does not have to keep the extra exchange forever. Returning it now can remove an attacker and win a central pawn.",
+          "arrows": [
+            {
+              "from": "e2",
+              "to": "e5",
+              "color": "danger"
+            },
+            {
+              "from": "d6",
+              "to": "e5",
+              "color": "warning"
+            }
+          ]
+        }
+      ],
+      "exercise": {
+        "prompt": "White to move. Return the exchange by taking the pawn on e5.",
+        "accept": ["Rxe5"],
+        "feedback": {
+          "*": "The rook on e2 can take e5. After the bishop recaptures, the other rook will take the bishop."
+        },
+        "hint": "Rook from e2 takes e5.",
+        "hintSquares": ["e5"],
+        "success": "29. Rxe5! White gives back material to break up the attack.",
+        "reply": "Bxe5"
+      }
+    },
+    {
+      "id": "simplify",
+      "title": "Trade the danger for a favourable ending",
+      "narration": [
+        {
+          "say": "The other rook takes the bishop on e5. Black brings the rook to h6.",
+          "moves": ["Rxe5", "Rh6"]
+        },
+        {
+          "say": "White offers the queen exchange with check. Black accepts, and the rook recaptures.",
+          "moves": ["Qe8+", "Qxe8", "Rxe8+"],
+          "highlights": ["e8"]
+        },
+        {
+          "say": "Black moves the king to f7. White returns the rook to e5, and Black shifts the rook to c6.",
+          "moves": ["Kf7", "Re5", "Rc6"]
+        },
+        {
+          "say": "The queens are gone. White has emerged a pawn ahead, but the ending still requires accurate play."
+        }
+      ]
+    },
+    {
+      "id": "ending-resistance",
+      "title": "The opponent still has resources",
+      "narration": [
+        {
+          "say": "White plays knight to d2. Capablanca notes that rook to f5 might have been better.",
+          "move": "Nd2"
+        },
+        {
+          "say": "Both sides improve their pieces. The rook attacks d4 and the knight centralises.",
+          "moves": ["Kf6", "Rd5", "Re6", "Ne4+", "Ke7"]
+        },
+        {
+          "say": "White takes the pawn on c5. Black finds a strong resource: d3.",
+          "moves": ["Rxc5", "d3"],
+          "highlights": ["c5", "d3"]
+        },
+        {
+          "say": "White brings the king to f2. Black exchanges the bishop for the knight, then captures the pawn on e4.",
+          "moves": ["Kf2", "Bxe4", "fxe4", "Rxe4"]
+        },
+        {
+          "say": "White returns the rook to d5. Black brings the rook to e3.",
+          "moves": ["Rd5", "Re3"],
+          "highlights": ["d3", "e3"]
+        },
+        {
+          "say": "This rook ending is not an automatic win. White must deal with Black's advanced pawn and find an active plan."
+        }
+      ]
+    },
+    {
+      "id": "ending-break",
+      "title": "An active move before the adjournment",
+      "source": "The ending is very difficult to win. At this point White had to make the last move before the game was adjourned.",
+      "narration": [
+        {
+          "say": "Capablanca chooses a queenside pawn advance. It creates a new point of contact while the rook remains active.",
+          "highlights": ["b2", "b4", "c5", "d3"]
+        }
+      ],
+      "exercise": {
+        "prompt": "Follow Capablanca's ending plan: advance the b-pawn to b4.",
+        "accept": ["b4"],
+        "feedback": {
+          "*": "The b-pawn can advance two squares. White creates queenside play instead of waiting passively."
+        },
+        "hint": "Pawn from b2 to b4.",
+        "hintSquares": ["b4"],
+        "success": "41. b4! White keeps the ending active.",
+        "reply": "Re4"
+      }
+    },
+    {
+      "id": "active-rook",
+      "title": "Remove the passed pawn and attack",
+      "narration": [
+        {
+          "say": "White captures the advanced pawn on d3. Black takes the pawn on c4.",
+          "moves": ["Rxd3", "Rxc4"]
+        },
+        {
+          "say": "The rook swings to h3. Black takes b4, and White captures h7.",
+          "moves": ["Rh3", "Rxb4", "Rxh7"],
+          "arrows": [
+            {
+              "from": "h7",
+              "to": "a7",
+              "color": "primary"
+            }
+          ]
+        },
+        {
+          "say": "Black brings the king to f6. White takes a7, and Black advances the king to f5.",
+          "moves": ["Kf6", "Rxa7", "Kf5"]
+        },
+        {
+          "say": "White activates the king on f3. Black's rook comes to b2.",
+          "moves": ["Kf3", "Rb2"],
+          "highlights": ["f3", "f5"]
+        }
+      ]
+    },
+    {
+      "id": "finish",
+      "title": "Drive the king back",
+      "narration": [
+        {
+          "say": "Rook to a5, check. Black's king retreats to f6.",
+          "moves": ["Ra5+", "Kf6"]
+        },
+        {
+          "say": "White brings the rook to a4. Black moves the king to g5, and White captures the pawn on f4 with check.",
+          "moves": ["Ra4", "Kg5", "Rxf4+"],
+          "highlights": ["f4", "g5"]
+        },
+        {
+          "say": "Black takes a2. White advances h4 with check, driving the king to h5.",
+          "moves": ["Rxa2", "h4+", "Kh5"]
+        },
+        {
+          "say": "Rook to f5, check. The king retreats to h6, and White advances g4. Black resigns.",
+          "moves": ["Rf5+", "Kh6", "g4"],
+          "highlights": ["f5", "g4", "h4", "h6"]
+        }
+      ]
+    },
+    {
+      "id": "summary",
+      "title": "Material, defence, counter-action",
+      "source": "Once the material advantage is obtained, submit to the opponent's attack for a while, and once it has been repulsed act quickly with all your forces and win on material.",
+      "narration": [
+        {
+          "say": "Winning material may mean giving your opponent the initiative. That is acceptable only if you can withstand the attack."
+        },
+        {
+          "say": "White defended with a plan, then returned the exchange to remove attackers and simplify."
+        },
+        {
+          "say": "The ending still demanded care. Active rook play and the arrival of the king finally converted the advantage."
+        },
+        {
+          "say": "Do not cling to extra material when returning some of it can give you a safer and more favourable position."
+        }
+      ]
+    }
+  ]
+}

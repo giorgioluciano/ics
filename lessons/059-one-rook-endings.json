@@ -1,0 +1,179 @@
+{
+  "id": "059-one-rook-endings",
+  "title": "Endings with One Rook and Pawns",
+  "subtitle": "An advanced pawn is not always a winning pawn",
+  "source": {
+    "work": "Chess Fundamentals",
+    "author": "José Raúl Capablanca",
+    "year": 1921,
+    "section": "Chapter V, §28 Endings with One Rook and Pawns, Example 59",
+    "examples": "59",
+    "url": "https://archive.org/details/chessfundamental00capa"
+  },
+  "startFen": "8/7R/8/2k2P2/1p6/3r4/5PKP/8 w - - 0 1",
+  "steps": [
+    {
+      "id": "intro",
+      "title": "Rook activity before pawn speed",
+      "narration": [
+        {
+          "say": "This ending comes from Marshall against Rosenthal, in the Manhattan Chess Club championship of 1909–1910."
+        },
+        {
+          "say": "Capablanca gives rook to c7, check, as the winning move. Marshall instead advances the pawn and gives Black a drawing chance.",
+          "moves": [
+            "f6"
+          ]
+        }
+      ],
+      "exercise": {
+        "prompt": "Black to move. Find the drawing defence on the sixth rank.",
+        "accept": [
+          "Rd6"
+        ],
+        "feedback": {
+          "*": "Rook from d3 to d6."
+        },
+        "hint": "Rook from d3 to d6.",
+        "hintSquares": [
+          "d6"
+        ],
+        "success": "Correct. Rd6"
+      }
+    },
+    {
+      "id": "first-defence",
+      "title": "Stop promotion from behind",
+      "narration": [
+        {
+          "say": "White pushes f7. Black must place the rook behind the pawn.",
+          "moves": [
+            "f7"
+          ]
+        }
+      ],
+      "exercise": {
+        "prompt": "Black to move. Prevent promotion.",
+        "accept": [
+          "Rd8"
+        ],
+        "feedback": {
+          "*": "Rook to d8. The rook controls f8."
+        },
+        "hint": "Rook to d8. The rook controls f8.",
+        "hintSquares": [
+          "d8"
+        ],
+        "success": "Correct. Rd8",
+        "reply": "Rh5+"
+      }
+    },
+    {
+      "id": "counterplay",
+      "title": "The other passed pawn matters",
+      "narration": [
+        {
+          "say": "Black brings the king to c4. Capablanca explains that the b-pawn gives enough counterplay to draw.",
+          "moves": [
+            "Kc4"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "checking-branch",
+      "title": "Variation: checks are not enough",
+      "narration": [
+        {
+          "say": "Reset to the initial position. This time Black tries checks instead of the rook defence on d8.",
+          "moves": [
+            "f6",
+            "Rd6",
+            "f7",
+            "Rg6+",
+            "Kf3",
+            "Rf6+",
+            "Ke3",
+            "Re6+"
+          ]
+        },
+        {
+          "say": "The white king approaches and the rook gains a useful tempo.",
+          "moves": [
+            "Kd3",
+            "Rf6",
+            "Rh5+",
+            "Kb6",
+            "Rh6"
+          ]
+        },
+        {
+          "say": "White has improved the king and rook. The book contrasts this with the drawing defence Rd8."
+        }
+      ],
+      "fen": "8/7R/8/2k2P2/1p6/3r4/5PKP/8 w - - 0 1"
+    },
+    {
+      "id": "rook-manoeuvre",
+      "title": "Variation: make room for the king",
+      "narration": [
+        {
+          "say": "Reset again. After f7, Black instead plays rook to f6.",
+          "moves": [
+            "f6",
+            "Rd6",
+            "f7",
+            "Rf6"
+          ]
+        }
+      ],
+      "fen": "8/7R/8/2k2P2/1p6/3r4/5PKP/8 w - - 0 1",
+      "exercise": {
+        "prompt": "White to move. Clear the h-file and keep the rook active.",
+        "accept": [
+          "Rg7"
+        ],
+        "feedback": {
+          "*": "Rook from h7 to g7."
+        },
+        "hint": "Rook from h7 to g7.",
+        "hintSquares": [
+          "g7"
+        ],
+        "success": "Correct. Rg7",
+        "reply": "Kc4"
+      }
+    },
+    {
+      "id": "support",
+      "title": "Use the h-pawn",
+      "narration": [
+        {
+          "say": "White advances h4. Black advances the b-pawn, but White gains time with rook checks.",
+          "moves": [
+            "h4",
+            "b3",
+            "Rg4+",
+            "Kc3",
+            "Rg3+"
+          ]
+        },
+        {
+          "say": "Capablanca explains that White can now attack the b-pawn or bring the rook to f3, reaching a favourable ending."
+        }
+      ]
+    },
+    {
+      "id": "summary",
+      "title": "Compare the defences",
+      "narration": [
+        {
+          "say": "After f6 and f7, Black needs accurate rook placement. Routine checks can help the opposing king advance."
+        },
+        {
+          "say": "We have kept the variations separate by resetting the board. Each branch illustrates a different defensive choice."
+        }
+      ]
+    }
+  ]
+}

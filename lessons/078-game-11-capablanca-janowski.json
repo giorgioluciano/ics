@@ -1,0 +1,233 @@
+{
+  "id": "078-game-11-capablanca-janowski",
+  "title": "Game 11: Capablanca–Janowski",
+  "subtitle": "Open lines against a queenside king",
+  "source": {
+    "work": "Chess Fundamentals",
+    "author": "José Raúl Capablanca",
+    "year": 1921,
+    "section": "Part II, Illustrative Games, Game 11",
+    "examples": "Game 11",
+    "url": "https://archive.org/details/chessfundamental00capa"
+  },
+  "startFen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+  "steps": [
+    {
+      "id": "opening",
+      "title": "An Exchange Ruy Lopez with opposite-side castling",
+      "narration": [
+        {
+          "say": "Capablanca has White against Janowski at St. Petersburg in 1914. White exchanges on c6 and develops the other knight.",
+          "moves": [
+            "e4",
+            "e5",
+            "Nf3",
+            "Nc6",
+            "Bb5",
+            "a6",
+            "Bxc6",
+            "dxc6",
+            "Nc3",
+            "Bc5"
+          ]
+        },
+        {
+          "say": "White supports the centre and develops the bishop. Black exchanges it, opening the f-file.",
+          "moves": [
+            "d3",
+            "Bg4",
+            "Be3",
+            "Bxe3",
+            "fxe3",
+            "Qe7"
+          ]
+        },
+        {
+          "say": "White castles kingside. Black castles queenside.",
+          "moves": [
+            "O-O",
+            "O-O-O",
+            "Qe1",
+            "Nh6"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "advance",
+      "title": "Attack the wing where the king stands",
+      "narration": [
+        {
+          "say": "White prepares queenside pawn advances while Black manoeuvres the knight.",
+          "moves": [
+            "Rb1",
+            "f6",
+            "b4",
+            "Nf7",
+            "a4",
+            "Bxf3"
+          ]
+        },
+        {
+          "say": "White recaptures with the rook. Black plays b6.",
+          "moves": [
+            "Rxf3",
+            "b6"
+          ]
+        },
+        {
+          "say": "White opens the queenside and establishes the knight on d5.",
+          "moves": [
+            "b5",
+            "cxb5",
+            "axb5",
+            "a5",
+            "Nd5",
+            "Qc5",
+            "c4"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "coordination",
+      "title": "Bring the queen and rooks together",
+      "narration": [
+        {
+          "say": "Black’s knight manoeuvres. White repositions the rook and queen.",
+          "moves": [
+            "Ng5",
+            "Rf2",
+            "Ne6",
+            "Qc3",
+            "Rd7",
+            "Rd1",
+            "Kb7"
+          ]
+        },
+        {
+          "say": "White can now challenge the centre and open more lines."
+        }
+      ],
+      "exercise": {
+        "prompt": "White to move. Advance the d-pawn to open the centre.",
+        "accept": [
+          "d4"
+        ],
+        "feedback": {
+          "*": "Pawn from d3 to d4."
+        },
+        "hint": "Pawn from d3 to d4.",
+        "hintSquares": [
+          "d4"
+        ],
+        "success": "Correct. d4",
+        "reply": "Qd6"
+      }
+    },
+    {
+      "id": "breakthrough",
+      "title": "Pawn breaks make the attack concrete",
+      "narration": [
+        {
+          "say": "White prepares pressure on the c-file. Black exchanges in the centre and moves the knight to f4.",
+          "moves": [
+            "Rc2",
+            "exd4",
+            "exd4",
+            "Nf4"
+          ]
+        }
+      ],
+      "exercise": {
+        "prompt": "White to move. Attack the queen on d6 with a pawn advance.",
+        "accept": [
+          "c5"
+        ],
+        "feedback": {
+          "*": "Pawn from c4 to c5."
+        },
+        "hint": "Pawn from c4 to c5.",
+        "hintSquares": [
+          "c5"
+        ],
+        "success": "Correct. c5",
+        "reply": "Nxd5"
+      }
+    },
+    {
+      "id": "passed",
+      "title": "The pawns penetrate",
+      "narration": [
+        {
+          "say": "White recaptures the knight with the e-pawn. Black captures d5 with the queen.",
+          "moves": [
+            "exd5",
+            "Qxd5"
+          ]
+        },
+        {
+          "say": "The c-pawn advances with check, then takes the rook on d7.",
+          "moves": [
+            "c6+",
+            "Kb8",
+            "cxd7",
+            "Qxd7"
+          ]
+        },
+        {
+          "say": "White advances the d-pawn. Black brings the rook to e8.",
+          "moves": [
+            "d5",
+            "Re8"
+          ]
+        }
+      ],
+      "exercise": {
+        "prompt": "White to move. Advance the passed pawn again.",
+        "accept": [
+          "d6"
+        ],
+        "feedback": {
+          "*": "Pawn from d5 to d6."
+        },
+        "hint": "Pawn from d5 to d6.",
+        "hintSquares": [
+          "d6"
+        ],
+        "success": "Correct. d6",
+        "reply": "cxd6"
+      }
+    },
+    {
+      "id": "finish",
+      "title": "The queen reaches c6",
+      "narration": [
+        {
+          "say": "White brings the queen to c6. Black resigns.",
+          "moves": [
+            "Qc6"
+          ]
+        },
+        {
+          "say": "The game ends at the final move recorded in the book. No extra moves are added."
+        }
+      ]
+    },
+    {
+      "id": "summary",
+      "title": "Pawn advances need piece support",
+      "narration": [
+        {
+          "say": "White did not attack with pawns alone. The rooks and queen were repositioned before the central breakthrough."
+        },
+        {
+          "say": "The c-pawn won a rook, and the d-pawn opened the final route for the queen."
+        },
+        {
+          "say": "Opposite-side castling can make pawn advances urgent, but coordination still determines whether they succeed."
+        }
+      ]
+    }
+  ]
+}

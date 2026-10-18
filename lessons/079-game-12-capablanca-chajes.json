@@ -1,0 +1,284 @@
+{
+  "id": "079-game-12-capablanca-chajes",
+  "title": "Game 12: Capablanca–Chajes",
+  "subtitle": "The king becomes an attacking piece while queens remain",
+  "source": {
+    "work": "Chess Fundamentals",
+    "author": "José Raúl Capablanca",
+    "year": 1921,
+    "section": "Part II, Illustrative Games, Game 12",
+    "examples": "Game 12",
+    "url": "https://archive.org/details/chessfundamental00capa"
+  },
+  "startFen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+  "steps": [
+    {
+      "id": "opening",
+      "title": "Natural development in the French",
+      "narration": [
+        {
+          "say": "Capablanca has White against Chajes at New York in 1918. White develops the bishop to d3.",
+          "moves": [
+            "e4",
+            "e6",
+            "d4",
+            "d5",
+            "Nc3",
+            "Nf6",
+            "Bd3",
+            "dxe4"
+          ]
+        },
+        {
+          "say": "White recaptures and exchanges knights on f6.",
+          "moves": [
+            "Nxe4",
+            "Nbd7",
+            "Nxf6+",
+            "Nxf6",
+            "Nf3",
+            "Be7",
+            "Qe2"
+          ]
+        },
+        {
+          "say": "Black castles. White pins the knight, then exchanges it.",
+          "moves": [
+            "O-O",
+            "Bg5",
+            "h6",
+            "Bxf6",
+            "Bxf6",
+            "Qe4",
+            "g6"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "weakness",
+      "title": "Challenge the weakened kingside",
+      "narration": [
+        {
+          "say": "Black has advanced g6. White can begin a pawn demonstration on the h-file."
+        }
+      ],
+      "exercise": {
+        "prompt": "White to move. Start the kingside pawn advance.",
+        "accept": [
+          "h4"
+        ],
+        "feedback": {
+          "*": "Pawn from h2 to h4."
+        },
+        "hint": "Pawn from h2 to h4.",
+        "hintSquares": [
+          "h4"
+        ],
+        "success": "Correct. h4",
+        "reply": "e5"
+      }
+    },
+    {
+      "id": "material",
+      "title": "A pawn gain and an active rook",
+      "narration": [
+        {
+          "say": "White captures e5. Black develops the bishop with tempo, and White retreats the queen.",
+          "moves": [
+            "dxe5",
+            "Bf5",
+            "Qf4",
+            "Bxd3"
+          ]
+        },
+        {
+          "say": "White castles queenside and recaptures the bishop with the rook.",
+          "moves": [
+            "O-O-O",
+            "Bg7",
+            "Rxd3",
+            "Qe7",
+            "Qc4"
+          ]
+        },
+        {
+          "say": "Both sides develop their remaining rooks.",
+          "moves": [
+            "Rad8",
+            "Rhd1",
+            "Rxd3",
+            "Rxd3",
+            "Re8",
+            "c3",
+            "c6",
+            "Re3"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "fix",
+      "title": "Fix the queenside before changing wings",
+      "narration": [
+        {
+          "say": "Black advances c5. White activates the king and gains queenside space.",
+          "moves": [
+            "c5",
+            "Kc2",
+            "b6",
+            "a4"
+          ]
+        },
+        {
+          "say": "The queens manoeuvre while White keeps the rook active.",
+          "moves": [
+            "Qd7",
+            "Rd3",
+            "Qc8",
+            "Qe4",
+            "Qe6",
+            "Rd5",
+            "Kf8",
+            "c4",
+            "Kg8"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "prepare",
+      "title": "A protected route for the king",
+      "narration": [
+        {
+          "say": "White supports the queenside and begins king manoeuvres.",
+          "moves": [
+            "b3",
+            "Kf8",
+            "Kd3",
+            "Kg8",
+            "Rd6",
+            "Qc8",
+            "Rd5",
+            "Qe6"
+          ]
+        },
+        {
+          "say": "White advances g4, while the queens continue manoeuvring.",
+          "moves": [
+            "g4",
+            "Kf8",
+            "Qf4",
+            "Kg8",
+            "Qe4",
+            "Kf8"
+          ]
+        },
+        {
+          "say": "The king travels to g3. It will protect squares the black queen might use for counterplay.",
+          "moves": [
+            "Ke2",
+            "Kg8",
+            "Kf1",
+            "Kf8",
+            "Kg2",
+            "Kg8",
+            "Kg3",
+            "Kf8"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "break",
+      "title": "Open the kingside with king support",
+      "narration": [
+        {
+          "say": "The king is now ready to support the attack. White advances the h-pawn."
+        }
+      ],
+      "exercise": {
+        "prompt": "White to move. Break open the kingside pawn formation.",
+        "accept": [
+          "h5"
+        ],
+        "feedback": {
+          "*": "Pawn from h4 to h5."
+        },
+        "hint": "Pawn from h4 to h5.",
+        "hintSquares": [
+          "h5"
+        ],
+        "success": "Correct. h5",
+        "reply": "gxh5"
+      }
+    },
+    {
+      "id": "invasion",
+      "title": "A rook on the seventh rank",
+      "narration": [
+        {
+          "say": "White recaptures with the g-pawn. The queen comes to f5.",
+          "moves": [
+            "gxh5",
+            "Qe7",
+            "Qf5",
+            "Kg8"
+          ]
+        },
+        {
+          "say": "White’s rook can invade the seventh rank."
+        }
+      ],
+      "exercise": {
+        "prompt": "White to move. Bring the rook to d7.",
+        "accept": [
+          "Rd7"
+        ],
+        "feedback": {
+          "*": "Rook from d5 to d7."
+        },
+        "hint": "Rook from d5 to d7.",
+        "hintSquares": [
+          "d7"
+        ],
+        "success": "Correct. Rd7",
+        "reply": "Bxe5+"
+      }
+    },
+    {
+      "id": "finish",
+      "title": "The king remains an active fighter",
+      "narration": [
+        {
+          "say": "White answers the check by advancing the king. The knight captures the bishop.",
+          "moves": [
+            "Kg4",
+            "Qf6",
+            "Nxe5",
+            "Qg7+",
+            "Kf4"
+          ]
+        },
+        {
+          "say": "Black resigns. White’s king has become an attacking piece even though the queens are still on the board."
+        }
+      ]
+    },
+    {
+      "id": "summary",
+      "title": "King activity is a concrete decision",
+      "narration": [
+        {
+          "say": "White first fixed the queenside and secured the squares needed for the king’s route."
+        },
+        {
+          "say": "The king’s arrival supported the pawn break and the rook invasion."
+        },
+        {
+          "say": "This is not permission to expose your king carelessly. The route was prepared and the opponent’s counterplay had to be considered."
+        }
+      ]
+    }
+  ]
+}

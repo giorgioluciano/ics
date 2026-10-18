@@ -1,0 +1,331 @@
+{
+  "id": "073-game-06-chajes-capablanca",
+  "title": "Game 6: Chajes–Capablanca",
+  "subtitle": "Active defence turns a dangerous position into a win",
+  "source": {
+    "work": "Chess Fundamentals",
+    "author": "José Raúl Capablanca",
+    "year": 1921,
+    "section": "Part II, Illustrative Games, Game 6",
+    "examples": "Game 6",
+    "url": "https://archive.org/details/chessfundamental00capa"
+  },
+  "startFen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+  "steps": [
+    {
+      "id": "opening",
+      "title": "A sharp French Defence",
+      "narration": [
+        {
+          "say": "Chajes has White against Capablanca in the Rice Memorial Tournament of 1916. Black chooses the McCutcheon Variation.",
+          "moves": [
+            "e4",
+            "e6",
+            "d4",
+            "d5",
+            "Nc3",
+            "Nf6",
+            "Bg5",
+            "Bb4"
+          ]
+        },
+        {
+          "say": "White advances e5. Black exchanges on c3 and centralises the knight.",
+          "moves": [
+            "e5",
+            "h6",
+            "Bd2",
+            "Bxc3",
+            "bxc3",
+            "Ne4",
+            "Qg4",
+            "Kf8"
+          ]
+        },
+        {
+          "say": "White retreats the bishop. Black attacks the centre.",
+          "moves": [
+            "Bc1",
+            "c5",
+            "Bd3",
+            "Qa5",
+            "Ne2",
+            "cxd4",
+            "O-O",
+            "dxc3",
+            "Bxe4",
+            "dxe4",
+            "Qxe4",
+            "Nc6"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "blockade",
+      "title": "Black establishes a central knight",
+      "narration": [
+        {
+          "say": "White brings the rook to d1. Both sides improve their pieces.",
+          "moves": [
+            "Rd1",
+            "g6",
+            "f4",
+            "Kg7",
+            "Be3",
+            "Ne7",
+            "Bf2",
+            "Nd5"
+          ]
+        },
+        {
+          "say": "Capablanca presents the knight on d5 as a key restriction on White’s attack."
+        },
+        {
+          "say": "White lifts a rook toward the kingside. Black completes development and brings the queen to b4.",
+          "moves": [
+            "Rd3",
+            "Bd7",
+            "Nd4",
+            "Rac8",
+            "Rg3",
+            "Kh7",
+            "h4",
+            "Rhg8",
+            "h5",
+            "Qb4",
+            "Rh3",
+            "f5"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "en-passant",
+      "title": "A pawn capture opens the attack",
+      "narration": [
+        {
+          "say": "White captures en passant on f6. Black recaptures, and the h-pawn exchange opens more lines.",
+          "moves": [
+            "exf6",
+            "Nxf6",
+            "hxg6+",
+            "Rxg6"
+          ]
+        }
+      ],
+      "exercise": {
+        "prompt": "White to move. Sacrifice the rook on h6 with check.",
+        "accept": [
+          "Rxh6+"
+        ],
+        "feedback": {
+          "*": "Rook from h3 takes h6."
+        },
+        "hint": "Rook from h3 takes h6.",
+        "hintSquares": [
+          "h6"
+        ],
+        "success": "Correct. Rxh6+",
+        "reply": "Kxh6"
+      }
+    },
+    {
+      "id": "queen-won",
+      "title": "A knight check wins the queen",
+      "narration": [
+        {
+          "say": "White checks with the knight. The e-pawn captures it, opening the queen’s route to b4.",
+          "moves": [
+            "Nf5+",
+            "exf5",
+            "Qxb4"
+          ]
+        },
+        {
+          "say": "Black has given up the queen but keeps active pieces and attacking chances.",
+          "moves": [
+            "Rcg8",
+            "g3",
+            "Bc6",
+            "Rd1",
+            "Kh5"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "turning-point",
+      "title": "White’s rook arrives in time",
+      "narration": [
+        {
+          "say": "White invades with the rook. Capablanca criticises his defensive choices in this phase.",
+          "moves": [
+            "Rd6",
+            "Be4",
+            "Qxc3",
+            "Nd5"
+          ]
+        },
+        {
+          "say": "White exchanges a rook for the attacking rook on g6. The black king recaptures.",
+          "moves": [
+            "Rxg6",
+            "Kxg6"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "coordination",
+      "title": "Queen and bishop take over",
+      "narration": [
+        {
+          "say": "White centralises the queen and begins improving the bishop.",
+          "moves": [
+            "Qe5",
+            "Kf7",
+            "c4",
+            "Re8",
+            "Qb2",
+            "Nf6",
+            "Bd4",
+            "Rh8"
+          ]
+        },
+        {
+          "say": "Black gives rook checks, but White keeps the queen active.",
+          "moves": [
+            "Qb5",
+            "Rh1+",
+            "Kf2",
+            "a6",
+            "Qb6",
+            "Rh2+",
+            "Ke1",
+            "Nd7",
+            "Qd6",
+            "Bc6"
+          ]
+        },
+        {
+          "say": "White opens lines with a pawn advance, then creates a dangerous passed pawn.",
+          "moves": [
+            "g4",
+            "fxg4",
+            "f5",
+            "Rh1+",
+            "Kd2",
+            "Ke8",
+            "f6",
+            "Rh7",
+            "Qe6+",
+            "Kf8",
+            "Be3",
+            "Rf7",
+            "Bh6+",
+            "Kg8"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "avoid-risk",
+      "title": "Do not rush to collect material",
+      "narration": [
+        {
+          "say": "White keeps the attacking bishop active instead of immediately taking the pawn on g4."
+        }
+      ],
+      "exercise": {
+        "prompt": "White to move. Place the bishop on g7.",
+        "accept": [
+          "Bg7"
+        ],
+        "feedback": {
+          "*": "Bishop from h6 to g7."
+        },
+        "hint": "Bishop from h6 to g7.",
+        "hintSquares": [
+          "g7"
+        ],
+        "success": "Correct. Bg7",
+        "reply": "g3"
+      }
+    },
+    {
+      "id": "promotion-threat",
+      "title": "Meet the advanced pawn with coordinated defence",
+      "narration": [
+        {
+          "say": "Black pushes toward promotion. White activates the king and queen.",
+          "moves": [
+            "Ke2",
+            "g2",
+            "Kf2",
+            "Nf8",
+            "Qg4",
+            "Nd7",
+            "Kg1",
+            "a5",
+            "a4",
+            "Bxa4"
+          ]
+        },
+        {
+          "say": "White brings the queen to h3. A series of exchanges removes the passed pawn and Black’s rook.",
+          "moves": [
+            "Qh3",
+            "Rxf6",
+            "Bxf6",
+            "Nxf6",
+            "Qxg2+",
+            "Kf8",
+            "Qxb7",
+            "Be8"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "finish",
+      "title": "The queen and king finish the job",
+      "narration": [
+        {
+          "say": "White takes the remaining queenside pawn and brings the king forward.",
+          "moves": [
+            "Qb6",
+            "Ke7",
+            "Qxa5",
+            "Nd7",
+            "Kf2",
+            "Bf7",
+            "Ke3",
+            "Kd6",
+            "Kd4",
+            "Kc6",
+            "Qf5"
+          ]
+        },
+        {
+          "say": "Black resigns. The game ends at the final move recorded in the book."
+        }
+      ]
+    },
+    {
+      "id": "summary",
+      "title": "Activity matters after a material imbalance",
+      "narration": [
+        {
+          "say": "White’s combination won the queen, but Black’s active pieces made the position far from trivial."
+        },
+        {
+          "say": "Chajes coordinated queen, bishop and king, avoided unnecessary risk and dealt with the promotion threat."
+        },
+        {
+          "say": "Capablanca records several chances he missed. The lesson is to evaluate concrete activity, not just count material."
+        }
+      ]
+    }
+  ]
+}

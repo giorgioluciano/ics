@@ -1,0 +1,272 @@
+{
+  "id": "080-game-13-morrison-capablanca",
+  "title": "Game 13: Morrison–Capablanca",
+  "subtitle": "Restrict a bishop, then attack with every piece",
+  "source": {
+    "work": "Chess Fundamentals",
+    "author": "José Raúl Capablanca",
+    "year": 1921,
+    "section": "Part II, Illustrative Games, Game 13",
+    "examples": "Game 13",
+    "url": "https://archive.org/details/chessfundamental00capa"
+  },
+  "startFen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+  "steps": [
+    {
+      "id": "opening",
+      "title": "A strong bishop on the long diagonal",
+      "narration": [
+        {
+          "say": "Morrison has White against Capablanca at New York in 1918. Black prepares a kingside fianchetto in the Ruy Lopez.",
+          "moves": [
+            "e4",
+            "e5",
+            "Nf3",
+            "Nc6",
+            "Bb5",
+            "d6",
+            "Nc3",
+            "Bd7",
+            "d4",
+            "exd4",
+            "Nxd4",
+            "g6"
+          ]
+        },
+        {
+          "say": "White pins the knight. Black develops the bishop to g7 and castles.",
+          "moves": [
+            "Nf3",
+            "Bg7",
+            "Bg5",
+            "Nf6",
+            "Qd2",
+            "h6",
+            "Bh4",
+            "O-O"
+          ]
+        },
+        {
+          "say": "White castles on the opposite wing and places both rooks in the centre.",
+          "moves": [
+            "O-O-O",
+            "Re8",
+            "Rhe1"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "restrict",
+      "title": "Challenge the bishop before it can attack",
+      "narration": [
+        {
+          "say": "Black can drive the bishop away and gain kingside space."
+        }
+      ],
+      "exercise": {
+        "prompt": "Black to move. Attack the bishop on h4.",
+        "accept": [
+          "g5"
+        ],
+        "feedback": {
+          "*": "Pawn from g6 to g5."
+        },
+        "hint": "Pawn from g6 to g5.",
+        "hintSquares": [
+          "g5"
+        ],
+        "success": "Correct. g5",
+        "reply": "Bg3"
+      }
+    },
+    {
+      "id": "centre",
+      "title": "Keep the centre under control",
+      "narration": [
+        {
+          "say": "Black unblocks the bishop on g7 by moving the knight to h5.",
+          "moves": [
+            "Nh5",
+            "Nd5",
+            "a6",
+            "Bd3",
+            "Be6",
+            "c3"
+          ]
+        }
+      ],
+      "exercise": {
+        "prompt": "Black to move. Prepare to restrict the bishop on g3.",
+        "accept": [
+          "f5"
+        ],
+        "feedback": {
+          "*": "Pawn from f7 to f5."
+        },
+        "hint": "Pawn from f7 to f5.",
+        "hintSquares": [
+          "f5"
+        ],
+        "success": "Correct. f5",
+        "reply": "h4"
+      }
+    },
+    {
+      "id": "bishop-prison",
+      "title": "The bishop loses useful squares",
+      "narration": [
+        {
+          "say": "Black pushes f4, restricting the bishop on g3. White tries to open lines, but Black keeps the pawn structure intact.",
+          "moves": [
+            "f4",
+            "hxg5",
+            "hxg5"
+          ]
+        },
+        {
+          "say": "White brings a rook to h1. Black improves the bishop, then exchanges central knights.",
+          "moves": [
+            "Rh1",
+            "Bf7",
+            "Kb1",
+            "Ne5",
+            "Nxe5",
+            "Rxe5"
+          ]
+        },
+        {
+          "say": "The white bishop retreats to h2. Black challenges the remaining knight.",
+          "moves": [
+            "Bh2",
+            "Nf6",
+            "g3"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "exchange",
+      "title": "Open the centre and simplify",
+      "narration": [
+        {
+          "say": "Black takes e4. White exchanges the bishop for the knight and captures f4.",
+          "moves": [
+            "Nxe4",
+            "Bxe4",
+            "Rxe4",
+            "gxf4",
+            "c6",
+            "Ne3"
+          ]
+        },
+        {
+          "say": "Black activates the queen. The queens are exchanged, but the attack continues.",
+          "moves": [
+            "Qa5",
+            "c4",
+            "Qxd2",
+            "Rxd2",
+            "gxf4",
+            "Ng4",
+            "Bg6"
+          ]
+        }
+      ]
+    },
+    {
+	  "id": "last-rook",
+	  "title": "Bring the last available piece into action",
+	  "narration": [
+		{
+		  "say": "White retreats the king to a1. Black’s remaining rook can now join the attack.",
+		  "moves": [
+			"Ka1"
+		  ]
+		}
+	  ],
+	  "exercise": {
+		"prompt": "Black to move. Bring the rook from a8 to e8.",
+		"accept": [
+		  "Rae8"
+		],
+		"feedback": {
+		  "*": "Rook from a8 to e8."
+		},
+		"hint": "Rook from a8 to e8.",
+		"hintSquares": [
+		  "e8"
+		],
+		"success": "Correct. Rae8",
+		"reply": "a3"
+	  }
+	},
+    {
+      "id": "invasion",
+      "title": "The rooks invade",
+      "narration": [
+        {
+          "say": "Black checks on the first rank and exchanges one pair of rooks.",
+          "moves": [
+            "Re1+",
+            "Rxe1",
+            "Rxe1+",
+            "Ka2",
+            "Bf7"
+          ]
+        },
+        {
+          "say": "White’s king advances, but Black opens the centre with d5.",
+          "moves": [
+            "Kb3",
+            "d5",
+            "Bxf4",
+            "dxc4+",
+            "Kb4",
+            "c3"
+          ]
+        },
+        {
+          "say": "Black’s rook gives checks and wins material.",
+          "moves": [
+            "bxc3",
+            "Re4+",
+            "c4",
+            "Rxc4+",
+            "Ka5",
+            "Rxf4",
+            "Rd8+",
+            "Kh7"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "source-limit",
+      "title": "Stop before an ambiguous final transcription",
+      "narration": [
+        {
+          "say": "The supplied TeX next prints d7, although White has just moved a rook to d8. The expected rook notation is missing. This lesson stops after Kh7 rather than playing an unverified final move."
+        },
+        {
+          "say": "The book records Black’s win. The decisive theme is the coordinated activity of both rooks and the bishops."
+        }
+      ]
+    },
+    {
+      "id": "summary",
+      "title": "A restricted piece changes the practical balance",
+      "narration": [
+        {
+          "say": "Black used pawn advances to restrict White’s bishop, while retaining control of the centre."
+        },
+        {
+          "say": "The attack survived the queen exchange because Black’s other pieces were active."
+        },
+        {
+          "say": "The arrival of the last rook turned the positional advantage into a direct attack."
+        }
+      ]
+    }
+  ]
+}

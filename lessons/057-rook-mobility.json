@@ -1,0 +1,322 @@
+{
+  "id": "057-rook-mobility",
+  "title": "Rook Mobility and Persistent Pressure",
+  "subtitle": "An active rook, an invading king, and a passed pawn",
+  "source": {
+    "work": "Chess Fundamentals",
+    "author": "José Raúl Capablanca",
+    "year": 1921,
+    "section": "Chapter V, §26 The Sudden Attack from a Different Side, Example 57",
+    "examples": "57",
+    "url": "https://archive.org/details/chessfundamental00capa"
+  },
+  "startFen": "2r2rk1/p1pp1p1p/2p2p2/8/8/2PP1P2/PP3P1P/R3R1K1 w - - 0 1",
+  "steps": [
+    {
+      "id": "intro",
+      "title": "Use the open file",
+      "narration": [
+        {
+          "say": "Capablanca plays White against Kupchick at Havana in 1913. White has the open e-file and the move."
+        }
+      ],
+      "exercise": {
+        "prompt": "White to move. Lift the rook to the fourth rank.",
+        "accept": [
+          "Re4"
+        ],
+        "feedback": {
+          "*": "Rook from e1 to e4."
+        },
+        "hint": "Rook from e1 to e4.",
+        "hintSquares": [
+          "e4"
+        ],
+        "success": "1.Re4. The rook can now change wings.",
+        "reply": "Rfe8"
+      }
+    },
+    {
+      "id": "double",
+      "title": "Coordinate the rooks and king",
+      "narration": [
+        {
+          "say": "White doubles rooks. Black contests the e-file.",
+          "moves": [
+            "Rae1",
+            "Re6",
+            "R1e3",
+            "Rce8"
+          ]
+        },
+		{
+		  "say": "Both kings approach the centre.",
+		  "moves": [
+			"Kf1",
+			"Kf8",
+			"Ke2",
+			"Ke7"
+		  ]
+		},
+        {
+          "say": "White shifts the advanced rook to a4. Black defends a7 with the rook.",
+          "moves": [
+            "Ra4",
+            "Ra8"
+          ]
+        }
+      ],
+      "exercise": {
+        "prompt": "White to move. Put the rook on a5 to restrict Black’s pawns.",
+        "accept": [
+          "Ra5"
+        ],
+        "feedback": {
+          "*": "Rook from a4 to a5."
+        },
+        "hint": "Rook from a4 to a5.",
+        "hintSquares": [
+          "a5"
+        ],
+        "success": "7.Ra5! Black responds in the centre.",
+        "reply": "d5"
+      }
+    },
+    {
+      "id": "fix-centre",
+      "title": "Fix the central pawns",
+      "narration": [
+        {
+          "say": "White challenges d5. The king approaches, but White pushes it back with check.",
+          "moves": [
+            "c4",
+            "Kd6",
+            "c5+",
+            "Kd7"
+          ]
+        },
+        {
+          "say": "White supports c5 with d4. Black advances f5.",
+          "moves": [
+            "d4",
+            "f5"
+          ]
+        },
+        {
+          "say": "White exchanges one pair of rooks.",
+          "moves": [
+            "Rxe6",
+            "fxe6"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "imperfect",
+      "title": "A good plan does not excuse inaccuracies",
+      "narration": [
+        {
+          "say": "White plays f4 and then king to d2. Capablanca criticises both moves and suggests more active rook play.",
+          "moves": [
+            "f4",
+            "Kc8",
+            "Kd2",
+            "Kb7"
+          ]
+        },
+        {
+          "say": "Black also misses a defensive chance. White transfers the rook from a5 to the kingside.",
+          "moves": [
+            "Ra3",
+            "Rg8",
+            "Rh3",
+            "Rg7",
+            "Ke2",
+            "Ka6",
+            "Rh6",
+            "Re7",
+            "Kd3",
+            "Kb7"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "king-invasion",
+      "title": "The king becomes an attacker",
+      "narration": [
+        {
+          "say": "White advances a4 and keeps the rook active.",
+          "moves": [
+            "a4",
+            "Kc8",
+            "Rh5",
+            "Kd7",
+            "Rg5",
+            "Rf7"
+          ]
+        },
+        {
+          "say": "The king heads toward the queenside pawns.",
+          "moves": [
+            "Kc3",
+            "Kc8",
+            "Kb4",
+            "Rf6",
+            "Ka5",
+            "Kb7"
+          ]
+        },
+        {
+          "say": "White advances the h-pawn. Black must defend on both sides.",
+          "moves": [
+            "h4",
+            "a6",
+            "h5",
+            "Rh6",
+            "b4",
+            "Rf6"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "lost-chances",
+      "title": "Do not relax in a superior position",
+      "narration": [
+        {
+          "say": "White plays b5. Capablanca criticises this move: rook to g7 was preferable.",
+          "moves": [
+            "b5",
+            "axb5",
+            "axb5",
+            "Rf8"
+          ]
+        },
+        {
+          "say": "White finally brings the rook to g7. Black checks and exchanges queenside pawns.",
+          "moves": [
+            "Rg7",
+            "Ra8+",
+            "Kb4",
+            "cxb5",
+            "Kxb5",
+            "Ra2"
+          ]
+        },
+        {
+          "say": "White advances c6 with check and captures h7.",
+          "moves": [
+            "c6+",
+            "Kb8",
+            "Rxh7",
+            "Rb2+",
+            "Ka5",
+            "Ra2+",
+            "Kb4",
+            "Rxf2"
+          ]
+        },
+        {
+          "say": "Capablanca says Black missed a further drawing chance with repeated rook checks. The game continues with rook to e7.",
+          "moves": [
+            "Re7",
+            "Rxf4"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "passed-pawn",
+      "title": "Push the distant passed pawn",
+      "narration": [
+        {
+          "say": "White’s h-pawn is ready to run. Black has just captured the pawn on f4."
+        }
+      ],
+      "exercise": {
+        "prompt": "White to move. Advance the passed h-pawn.",
+        "accept": [
+          "h6"
+        ],
+        "feedback": {
+          "*": "Pawn from h5 to h6."
+        },
+        "hint": "Pawn from h5 to h6.",
+        "hintSquares": [
+          "h6"
+        ],
+        "success": "38.h6! Black takes d4 with check.",
+        "reply": "Rxd4+"
+      }
+    },
+    {
+      "id": "checks",
+      "title": "Walk through the checks",
+      "narration": [
+        {
+          "say": "The white king advances while the h-pawn reaches the seventh rank.",
+          "moves": [
+            "Kb5",
+            "Rd1",
+            "h7",
+            "Rb1+"
+          ]
+        },
+        {
+          "say": "Black gives checks, but the king keeps finding a route forward.",
+          "moves": [
+            "Kc5",
+            "Rc1+",
+            "Kd4",
+            "Rd1+",
+            "Ke5",
+            "Re1+",
+            "Kf6",
+            "Rh1"
+          ]
+        },
+        {
+          "say": "White gives a rook check before promoting.",
+          "moves": [
+            "Re8+",
+            "Ka7"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "promotion",
+      "title": "Promotion wins the rook exchange",
+      "narration": [
+        {
+          "say": "White promotes. Black must give up the rook to remove the new queen.",
+          "moves": [
+            "h8=Q",
+            "Rxh8",
+            "Rxh8"
+          ]
+        },
+        {
+          "say": "White has emerged with a rook against pawns. This lesson stops here, after the decisive promotion sequence."
+        }
+      ]
+    },
+    {
+      "id": "summary",
+      "title": "Keep attention until the end",
+      "narration": [
+        {
+          "say": "The opening advantage was small: an open file, the move, and greater freedom for the rooks."
+        },
+        {
+          "say": "Rook transfers and king activity created threats on both wings. The distant h-pawn finally forced the decisive exchange."
+        },
+        {
+          "say": "Capablanca also records mistakes by both players. A superior position is not permission to stop calculating."
+        }
+      ],
+      "source": "Even with a good position, a player, no matter how strong, cannot afford to relax his attention even for one move."
+    }
+  ]
+}

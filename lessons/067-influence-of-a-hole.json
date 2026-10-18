@@ -1,0 +1,285 @@
+{
+  "id": "067-influence-of-a-hole",
+  "title": "The Influence of a Hole",
+  "subtitle": "Strong knight outposts justify a material investment",
+  "source": {
+    "work": "Chess Fundamentals",
+    "author": "José Raúl Capablanca",
+    "year": 1921,
+    "section": "Chapter VI, §33 The Influence of a Hole, Example 67",
+    "examples": "67",
+    "url": "https://archive.org/details/chessfundamental00capa"
+  },
+  "startFen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+  "steps": [
+    {
+      "id": "opening",
+      "title": "A development scheme with drawbacks",
+      "narration": [
+        {
+          "say": "Janowski has White against Kupchick at Havana in 1913. The opening is a Queen’s Gambit Declined.",
+          "moves": [
+            "d4",
+            "d5",
+            "c4",
+            "e6",
+            "Nc3",
+            "Nf6",
+            "Bg5",
+            "Be7",
+            "e3",
+            "Nbd7"
+          ]
+        },
+        {
+          "say": "Black exchanges on c4, then moves the knight to b6. Capablanca criticises this knight placement.",
+          "moves": [
+            "Bd3",
+            "dxc4",
+            "Bxc4",
+            "Nb6"
+          ]
+        },
+        {
+          "say": "White retreats the bishop. Black brings the other knight to d5, and the bishops are exchanged.",
+          "moves": [
+            "Bd3",
+            "Nfd5",
+            "Bxe7",
+            "Qxe7"
+          ]
+        },
+        {
+          "say": "Both sides castle. White occupies the c-file, and Black plays c6, restricting the bishop on d7.",
+          "moves": [
+            "Nf3",
+            "O-O",
+            "O-O",
+            "Bd7",
+            "Rc1",
+            "c6"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "hole",
+      "title": "A pawn advance creates an outpost",
+      "narration": [
+        {
+          "say": "White brings the knight to e4. Black advances f5, creating a hole on e5.",
+          "moves": [
+            "Ne4",
+            "f5"
+          ]
+        },
+        {
+          "say": "The first knight goes to c5. Black retreats the bishop to e8.",
+          "moves": [
+            "Nc5",
+            "Be8"
+          ]
+        }
+      ],
+      "exercise": {
+        "prompt": "White to move. Occupy the hole on e5 with the f3-knight.",
+        "accept": [
+          "Ne5"
+        ],
+        "feedback": {
+          "*": "Knight from f3 to e5."
+        },
+        "hint": "Knight from f3 to e5.",
+        "hintSquares": [
+          "e5"
+        ],
+        "success": "Correct. Ne5",
+        "reply": "Rb8"
+      }
+    },
+    {
+      "id": "prepare",
+      "title": "Convert the outposts into pressure",
+      "narration": [
+        {
+          "say": "White centralises the rook and queen. Black lifts the rook toward the kingside.",
+          "moves": [
+            "Re1",
+            "Rf6",
+            "Qf3",
+            "Rh6",
+            "Qg3",
+            "Rc8"
+          ]
+        },
+        {
+          "say": "White secures the position before opening the centre.",
+          "moves": [
+            "f3",
+            "Rc7",
+            "a3",
+            "Kh8",
+            "h3",
+            "g5"
+          ]
+        },
+        {
+          "say": "White challenges the centre with e4. Black pushes f4, and the queen retreats to f2.",
+          "moves": [
+            "e4",
+            "f4",
+            "Qf2",
+            "Ne3"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sacrifice",
+      "title": "Keep the dominant minor pieces",
+      "narration": [
+        {
+          "say": "Black’s knight has entered e3. White can exchange a rook for the knight and then recover the capturing pawn."
+        }
+      ],
+      "exercise": {
+        "prompt": "White to move. Sacrifice the rook for the knight on e3.",
+        "accept": [
+          "Rxe3"
+        ],
+        "feedback": {
+          "*": "Rook from e1 takes e3."
+        },
+        "hint": "Rook from e1 takes e3.",
+        "hintSquares": [
+          "e3"
+        ],
+        "success": "Correct. Rxe3",
+        "reply": "fxe3"
+      }
+    },
+    {
+      "id": "recover",
+      "title": "Recover the pawn and improve the pieces",
+      "narration": [
+        {
+          "say": "White recaptures with the queen. Black retreats the remaining knight to c8.",
+          "moves": [
+            "Qxe3",
+            "Nc8"
+          ]
+        },
+        {
+          "say": "The e5-knight goes to g4. Black’s rook retreats, and White advances e5.",
+          "moves": [
+            "Ng4",
+            "Rg6",
+            "e5",
+            "Rg7"
+          ]
+        },
+        {
+          "say": "The bishop joins from c4. Black moves the bishop to f7.",
+          "moves": [
+            "Bc4",
+            "Bf7"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "outpost",
+      "title": "A knight deep in the position",
+      "narration": [
+        {
+          "say": "White can put the knight on f6, supported by the e5-pawn.",
+          "arrows": [
+            {
+              "from": "e5",
+              "to": "f6",
+              "color": "primary"
+            }
+          ]
+        }
+      ],
+      "exercise": {
+        "prompt": "White to move. Establish the knight on f6.",
+        "accept": [
+          "Nf6"
+        ],
+        "feedback": {
+          "*": "Knight from g4 to f6."
+        },
+        "hint": "Knight from g4 to f6.",
+        "hintSquares": [
+          "f6"
+        ],
+        "success": "Correct. Nf6",
+        "reply": "Nb6"
+      }
+    },
+    {
+      "id": "tighten",
+      "title": "Improve the other knight",
+      "narration": [
+        {
+          "say": "The knight on c5 centralises to e4. Black plays h6.",
+          "moves": [
+            "Nce4",
+            "h6"
+          ]
+        },
+        {
+          "say": "White advances h4. Black moves the knight to d5, and the queen comes to d2.",
+          "moves": [
+            "h4",
+            "Nd5",
+            "Qd2",
+            "Rg6"
+          ]
+        },
+        {
+          "say": "White takes on g5. Black brings the queen to f8.",
+          "moves": [
+            "hxg5",
+            "Qf8"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "finish",
+      "title": "Pawn support completes the attack",
+      "narration": [
+        {
+          "say": "White advances f4 and g4. The final exchange leaves White’s attacking formation intact.",
+          "moves": [
+            "f4",
+            "Ne7",
+            "g4",
+            "hxg5",
+            "fxg5"
+          ]
+        },
+        {
+          "say": "Black resigns. White’s knights dominate the position, and the pawns support the attack."
+        }
+      ]
+    },
+    {
+      "id": "summary",
+      "title": "A hole matters when you can occupy it",
+      "narration": [
+        {
+          "say": "Black’s f-pawn advance created e5 as a lasting knight outpost. White also established a strong knight on c5."
+        },
+        {
+          "say": "White invested material to preserve the positional advantages and keep the attack coordinated."
+        },
+        {
+          "say": "A weak square is not just an empty square. It becomes important when a supported piece can occupy it and influence the whole position."
+        }
+      ]
+    }
+  ]
+}

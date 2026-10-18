@@ -186,32 +186,45 @@
         {
           "number": "20",
           "title": "The Initiative",
-          "lessons": []
+          "lessons": [
+            "044-the-initiative"
+          ]
         },
         {
           "number": "21",
           "title": "Direct Attacks en Masse",
-          "lessons": []
+          "lessons": [
+            "050-direct-attacks-en-masse",
+            "051-direct-attack-combination"
+          ]
         },
         {
           "number": "22",
           "title": "The Force of the Threatened Attack",
-          "lessons": []
+          "lessons": [
+            "052-threatened-attack"
+          ]
         },
         {
           "number": "23",
           "title": "Relinquishing the Initiative",
-          "lessons": []
+          "lessons": [
+            "053-relinquishing-the-initiative"
+          ]
         },
         {
           "number": "24",
           "title": "Cutting off Pieces from the Scene of Action",
-          "lessons": []
+          "lessons": [
+            "054-cutting-off-pieces"
+          ]
         },
         {
           "number": "25",
           "title": "A Player's Motives Criticised in a Specimen Game",
-          "lessons": []
+          "lessons": [
+            "055-motives-and-plans"
+          ]
         }
       ]
     },
@@ -222,27 +235,39 @@
         {
           "number": "26",
           "title": "The Sudden Attack from a Different Side",
-          "lessons": []
+          "lessons": [
+            "056-sudden-switch",
+            "057-rook-mobility"
+          ]
         },
         {
           "number": "27",
           "title": "The Danger of a Safe Position",
-          "lessons": []
+          "lessons": [
+            "058-danger-of-safety"
+          ]
         },
         {
           "number": "28",
           "title": "Endings with One Rook and Pawns",
-          "lessons": []
+          "lessons": [
+            "059-one-rook-endings"
+          ]
         },
         {
           "number": "29",
           "title": "A Difficult Ending: Two Rooks and Pawns",
-          "lessons": []
+          "lessons": [
+            "060-two-rooks-active-defence",
+            "061-two-rooks-passed-pawn"
+          ]
         },
         {
           "number": "30",
           "title": "Rook, Bishop and Pawns v. Rook, Knight and Pawns",
-          "lessons": []
+          "lessons": [
+            "062-rook-bishop-versus-knight"
+          ]
         }
       ]
     },
@@ -253,17 +278,25 @@
         {
           "number": "31",
           "title": "Some Salient Points about Pawns",
-          "lessons": []
+          "lessons": [
+            "063-pawn-structure-and-holes",
+            "064-pawn-centre-plans"
+          ]
         },
         {
           "number": "32",
           "title": "Some Possible Developments from a Ruy Lopez",
-          "lessons": []
+          "lessons": [
+            "065-ruy-lopez-strategic-plans",
+            "066-central-pawn-and-mobility"
+          ]
         },
         {
           "number": "33",
           "title": "The Influence of a \"Hole\"",
-          "lessons": []
+          "lessons": [
+            "067-influence-of-a-hole"
+          ]
         }
       ]
     },
@@ -274,72 +307,100 @@
         {
           "number": "G1",
           "title": "Queen's Gambit Declined — Marshall v. Capablanca, match 1909",
-          "lessons": []
+          "lessons": [
+            "068-game-01-marshall-capablanca"
+          ]
         },
         {
           "number": "G2",
           "title": "Queen's Gambit Declined — Rubinstein v. Capablanca, San Sebastián 1911",
-          "lessons": []
+          "lessons": [
+            "069-game-02-rubinstein-capablanca"
+          ]
         },
         {
           "number": "G3",
           "title": "Irregular Defence — Janowski v. Capablanca, Havana 1913",
-          "lessons": []
+          "lessons": [
+            "070-game-03-janowski-capablanca"
+          ]
         },
         {
           "number": "G4",
           "title": "French Defence — Capablanca v. Snosko-Borovsky, St Petersburg 1913",
-          "lessons": []
+          "lessons": [
+            "071-game-04-capablanca-znosko"
+          ]
         },
         {
           "number": "G5",
           "title": "Ruy Lopez — Lasker v. Capablanca, St Petersburg 1914",
-          "lessons": []
+          "lessons": [
+            "072-game-05-lasker-capablanca"
+          ]
         },
         {
           "number": "G6",
           "title": "French Defence — Chajes v. Capablanca, New York 1916",
-          "lessons": []
+          "lessons": [
+            "073-game-06-chajes-capablanca"
+          ]
         },
         {
           "number": "G7",
           "title": "Ruy Lopez — Capablanca v. Burn, San Sebastián 1911",
-          "lessons": []
+          "lessons": [
+            "074-game-07-capablanca-burn"
+          ]
         },
         {
           "number": "G8",
           "title": "Centre Game — Mieses v. Capablanca, Berlin 1913",
-          "lessons": []
+          "lessons": [
+            "075-game-08-mieses-capablanca"
+          ]
         },
         {
           "number": "G9",
           "title": "Queen's Gambit Declined — Capablanca v. Teichmann, Berlin 1913",
-          "lessons": []
+          "lessons": [
+            "076-game-09-capablanca-teichmann"
+          ]
         },
         {
           "number": "G10",
           "title": "Petroff Defence — Capablanca v. Marshall, St Petersburg 1914",
-          "lessons": []
+          "lessons": [
+            "077-game-10-capablanca-marshall"
+          ]
         },
         {
           "number": "G11",
           "title": "Ruy Lopez — Capablanca v. Janowski, St Petersburg 1914",
-          "lessons": []
+          "lessons": [
+            "078-game-11-capablanca-janowski"
+          ]
         },
         {
           "number": "G12",
           "title": "French Defence — Capablanca v. Chajes, New York 1918",
-          "lessons": []
+          "lessons": [
+            "079-game-12-capablanca-chajes"
+          ]
         },
         {
           "number": "G13",
           "title": "Ruy Lopez — Morrison v. Capablanca, New York 1918",
-          "lessons": []
+          "lessons": [
+            "080-game-13-morrison-capablanca"
+          ]
         },
         {
           "number": "G14",
           "title": "Queen's Gambit Declined — Marshall v. Capablanca, New York 1918",
-          "lessons": []
+          "lessons": [
+            "081-game-14-marshall-capablanca"
+          ]
         }
       ]
     }
@@ -602,6 +663,204 @@
       "subtitle": "A move that upsets everything",
       "steps": 4,
       "examples": "49"
+    },
+    "044-the-initiative": {
+      "title": "The Initiative",
+      "subtitle": "Keep the move, or exchange it for a lasting advantage",
+      "steps": 6,
+      "examples": null
+    },
+    "050-direct-attacks-en-masse": {
+      "title": "Direct Attacks en Masse",
+      "subtitle": "Every piece joins the attack",
+      "steps": 6,
+      "examples": "50"
+    },
+    "051-direct-attack-combination": {
+      "title": "Every Piece Joins the Attack",
+      "subtitle": "A king hunt ends with a quiet pawn move",
+      "steps": 7,
+      "examples": "51"
+    },
+    "052-threatened-attack": {
+      "title": "The Force of the Threatened Attack",
+      "subtitle": "Turn a threat against the king into lasting pressure",
+      "steps": 11,
+      "examples": "52"
+    },
+    "053-relinquishing-the-initiative": {
+      "title": "Relinquishing the Initiative",
+      "subtitle": "Win material, weather the storm, then strike back",
+      "steps": 11,
+      "examples": "53"
+    },
+    "054-cutting-off-pieces": {
+      "title": "Cutting off Pieces from the Scene of Action",
+      "subtitle": "An equal material count can hide an extra active piece",
+      "steps": 10,
+      "examples": "54"
+    },
+    "055-motives-and-plans": {
+      "title": "A Player's Motives Criticised in a Specimen Game",
+      "subtitle": "A plan must fit the position and involve all the pieces",
+      "steps": 10,
+      "examples": "55"
+    },
+    "056-sudden-switch": {
+      "title": "The Sudden Attack from a Different Side",
+      "subtitle": "Tie down the rooks, then change wings",
+      "steps": 5,
+      "examples": "56"
+    },
+    "057-rook-mobility": {
+      "title": "Rook Mobility and Persistent Pressure",
+      "subtitle": "An active rook, an invading king, and a passed pawn",
+      "steps": 10,
+      "examples": "57"
+    },
+    "058-danger-of-safety": {
+      "title": "The Danger of a Safe Position",
+      "subtitle": "Three careless moves turn an advantage into defeat",
+      "steps": 7,
+      "examples": "58"
+    },
+    "059-one-rook-endings": {
+      "title": "Endings with One Rook and Pawns",
+      "subtitle": "An advanced pawn is not always a winning pawn",
+      "steps": 7,
+      "examples": "59"
+    },
+    "060-two-rooks-active-defence": {
+      "title": "Two Rooks: Active Defence",
+      "subtitle": "Waiting without a plan allows the opponent to take over",
+      "steps": 8,
+      "examples": "60"
+    },
+    "061-two-rooks-passed-pawn": {
+      "title": "Two Rooks: Create a Passed Pawn",
+      "subtitle": "Fix one wing, then break through on the other",
+      "steps": 10,
+      "examples": "61"
+    },
+    "062-rook-bishop-versus-knight": {
+      "title": "Rook and Bishop against Rook and Knight",
+      "subtitle": "Keep your pieces free while restricting the opponent",
+      "steps": 8,
+      "examples": "62"
+    },
+    "063-pawn-structure-and-holes": {
+      "title": "Pawn Structure and Holes",
+      "subtitle": "Backward pawns create targets; holes create outposts",
+      "steps": 5,
+      "examples": "63"
+    },
+    "064-pawn-centre-plans": {
+      "title": "Plans from the Pawn Centre",
+      "subtitle": "Attack the king or challenge the centre",
+      "steps": 6,
+      "examples": "64"
+    },
+    "065-ruy-lopez-strategic-plans": {
+      "title": "Some Possible Developments from a Ruy Lopez",
+      "subtitle": "Imagine the structures that exchanges can produce",
+      "steps": 9,
+      "examples": "65"
+    },
+    "066-central-pawn-and-mobility": {
+      "title": "The Central Pawn and Freedom of Manoeuvre",
+      "subtitle": "A supplementary diagram from the Ruy Lopez discussion",
+      "steps": 5,
+      "examples": "65"
+    },
+    "067-influence-of-a-hole": {
+      "title": "The Influence of a Hole",
+      "subtitle": "Strong knight outposts justify a material investment",
+      "steps": 9,
+      "examples": "67"
+    },
+    "068-game-01-marshall-capablanca": {
+      "title": "Game 1: Marshall–Capablanca",
+      "subtitle": "A delayed bishop and a missed tactical threat",
+      "steps": 6,
+      "examples": "Game 1"
+    },
+    "069-game-02-rubinstein-capablanca": {
+      "title": "Game 2: Rubinstein–Capablanca",
+      "subtitle": "A quiet king move makes the combination work",
+      "steps": 9,
+      "examples": "Game 2"
+    },
+    "070-game-03-janowski-capablanca": {
+      "title": "Game 3: Janowski–Capablanca",
+      "subtitle": "A missed defensive plan leads to a lost pawn ending",
+      "steps": 10,
+      "examples": "Game 3"
+    },
+    "071-game-04-capablanca-znosko": {
+      "title": "Game 4: Capablanca–Znosko-Borovski",
+      "subtitle": "Do not reject a sound plan in search of a grand combination",
+      "steps": 8,
+      "examples": "Game 4"
+    },
+    "072-game-05-lasker-capablanca": {
+      "title": "Game 5: Lasker–Capablanca",
+      "subtitle": "A supported knight becomes the centre of the strategy",
+      "steps": 8,
+      "examples": "Game 5"
+    },
+    "073-game-06-chajes-capablanca": {
+      "title": "Game 6: Chajes–Capablanca",
+      "subtitle": "Active defence turns a dangerous position into a win",
+      "steps": 10,
+      "examples": "Game 6"
+    },
+    "074-game-07-capablanca-burn": {
+      "title": "Game 7: Capablanca–Burn",
+      "subtitle": "A small material advantage becomes a technical win",
+      "steps": 17,
+      "examples": "Game 7"
+    },
+    "075-game-08-mieses-capablanca": {
+      "title": "Game 8: Mieses–Capablanca",
+      "subtitle": "The exchange advantage is not enough without a coherent plan",
+      "steps": 24,
+      "examples": "Game 8"
+    },
+    "076-game-09-capablanca-teichmann": {
+      "title": "Game 9: Capablanca–Teichmann",
+      "subtitle": "Coordinate the knights and convert structural weaknesses",
+      "steps": 7,
+      "examples": "Game 9"
+    },
+    "077-game-10-capablanca-marshall": {
+      "title": "Game 10: Capablanca–Marshall",
+      "subtitle": "A pawn advantage must survive the transition into a rook ending",
+      "steps": 9,
+      "examples": "Game 10"
+    },
+    "078-game-11-capablanca-janowski": {
+      "title": "Game 11: Capablanca–Janowski",
+      "subtitle": "Open lines against a queenside king",
+      "steps": 7,
+      "examples": "Game 11"
+    },
+    "079-game-12-capablanca-chajes": {
+      "title": "Game 12: Capablanca–Chajes",
+      "subtitle": "The king becomes an attacking piece while queens remain",
+      "steps": 9,
+      "examples": "Game 12"
+    },
+    "080-game-13-morrison-capablanca": {
+      "title": "Game 13: Morrison–Capablanca",
+      "subtitle": "Restrict a bishop, then attack with every piece",
+      "steps": 9,
+      "examples": "Game 13"
+    },
+    "081-game-14-marshall-capablanca": {
+      "title": "Game 14: Marshall–Capablanca",
+      "subtitle": "Active rooks and a passed h-pawn dominate the ending",
+      "steps": 8,
+      "examples": "Game 14"
     }
   }
 }

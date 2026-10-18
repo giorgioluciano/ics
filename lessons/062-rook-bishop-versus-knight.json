@@ -1,0 +1,293 @@
+{
+  "id": "062-rook-bishop-versus-knight",
+  "title": "Rook and Bishop against Rook and Knight",
+  "subtitle": "Keep your pieces free while restricting the opponent",
+  "source": {
+    "work": "Chess Fundamentals",
+    "author": "José Raúl Capablanca",
+    "year": 1921,
+    "section": "Chapter V, §30 Rook, Bishop and Pawns v. Rook, Knight and Pawns, Example 62",
+    "examples": "62",
+    "url": "https://archive.org/details/chessfundamental00capa"
+  },
+  "startFen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+  "steps": [
+    {
+      "id": "opening",
+      "title": "Reach the ending",
+      "narration": [
+        {
+          "say": "We follow the first game of the Lasker–Marshall championship match of 1907. Opening phase 1.",
+          "moves": [
+            "e4",
+            "e5",
+            "Nf3",
+            "Nc6",
+            "Bb5",
+            "Nf6",
+            "d4",
+            "exd4",
+            "O-O",
+            "Be7",
+            "e5",
+            "Ne4"
+          ]
+        },
+        {
+          "say": "We follow the first game of the Lasker–Marshall championship match of 1907. Opening phase 2.",
+          "moves": [
+            "Nxd4",
+            "O-O",
+            "Nf5",
+            "d5",
+            "Bxc6",
+            "bxc6",
+            "Nxe7+",
+            "Qxe7",
+            "Re1",
+            "Qh4",
+            "Be3",
+            "f6"
+          ]
+        },
+        {
+          "say": "We follow the first game of the Lasker–Marshall championship match of 1907. Opening phase 3.",
+          "moves": [
+            "f3",
+            "fxe5",
+            "fxe4",
+            "d4",
+            "g3",
+            "Qf6",
+            "Bxd4",
+            "exd4",
+            "Rf1",
+            "Qxf1+",
+            "Qxf1",
+            "Rxf1+"
+          ]
+        },
+        {
+          "say": "We follow the first game of the Lasker–Marshall championship match of 1907. Opening phase 4.",
+          "moves": [
+            "Kxf1"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "initiative",
+      "title": "Black has the more active pieces",
+      "narration": [
+        {
+          "say": "White’s rook and knight are still on their original squares. Black can exploit that delay."
+        },
+        {
+          "say": "The rook attacks b2 and provokes a pawn move.",
+          "moves": [
+            "Rb8",
+            "b3"
+          ]
+        },
+        {
+          "say": "Now the rook can change wings."
+        }
+      ],
+      "exercise": {
+        "prompt": "Black to move. Lift the rook to the fifth rank.",
+        "accept": [
+          "Rb5"
+        ],
+        "feedback": {
+          "*": "Rook from b8 to b5."
+        },
+        "hint": "Rook from b8 to b5.",
+        "hintSquares": [
+          "b5"
+        ],
+        "success": "Correct. Rb5",
+        "reply": "c4"
+      }
+    },
+    {
+      "id": "restrict",
+      "title": "Force White to defend",
+      "narration": [
+        {
+          "say": "Black attacks the kingside pawns. White brings the king back, and Black advances c5.",
+          "moves": [
+            "Rh5",
+            "Kg1",
+            "c5"
+          ]
+        },
+        {
+          "say": "White develops the knight, but its own pawns limit its routes. Black activates the king.",
+          "moves": [
+            "Nd2",
+            "Kf7"
+          ]
+        },
+        {
+          "say": "White checks with the rook. Black goes where the king wanted to go anyway.",
+          "moves": [
+            "Rf1+",
+            "Ke7"
+          ]
+        },
+        {
+          "say": "White plays a3. Black prepares another transfer.",
+          "moves": [
+            "a3",
+            "Rh6",
+            "h4",
+            "Ra6",
+            "Ra1"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "bishop",
+      "title": "Fix the kingside",
+      "narration": [
+        {
+          "say": "The bishop can restrict the knight and support the kingside blockade."
+        }
+      ],
+      "exercise": {
+        "prompt": "Black to move. Develop the bishop to g4.",
+        "accept": [
+          "Bg4"
+        ],
+        "feedback": {
+          "*": "Bishop from c8 to g4."
+        },
+        "hint": "Bishop from c8 to g4.",
+        "hintSquares": [
+          "g4"
+        ],
+        "success": "Correct. Bg4",
+        "reply": "Kf2"
+      }
+    },
+    {
+      "id": "king",
+      "title": "The king enters",
+      "narration": [
+        {
+          "say": "Black centralises the king while White advances a4.",
+          "moves": [
+            "Ke6",
+            "a4",
+            "Ke5"
+          ]
+        },
+        {
+          "say": "White retreats the king. Black’s rook changes wings again.",
+          "moves": [
+            "Kg2",
+            "Rf6",
+            "Re1"
+          ]
+        },
+        {
+          "say": "Black advances the passed pawn and invades with the king.",
+          "moves": [
+            "d3",
+            "Rf1",
+            "Kd4"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "simplify",
+      "title": "Exchange rooks without releasing the pressure",
+      "narration": [
+        {
+          "say": "White exchanges rooks. Black recaptures and retains the active king and bishop.",
+          "moves": [
+            "Rxf6",
+            "gxf6",
+            "Kf2",
+            "c6"
+          ]
+        },
+        {
+          "say": "Black uses pawn moves to make White move the knight or king.",
+          "moves": [
+            "a5",
+            "a6",
+            "Nb1",
+            "Kxe4"
+          ]
+        },
+        {
+          "say": "The bishop and king penetrate further.",
+          "moves": [
+            "Ke1",
+            "Be2",
+            "Nd2+",
+            "Ke3",
+            "Nb1",
+            "f5",
+            "Nd2",
+            "h5",
+            "Nb1",
+            "Kf3",
+            "Nc3",
+            "Kxg3"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "passed",
+      "title": "Create threats the knight cannot meet",
+      "narration": [
+        {
+          "say": "White attacks queenside pawns, but Black advances f4 and f3.",
+          "moves": [
+            "Na4",
+            "f4",
+            "Nxc5",
+            "f3",
+            "Ne4+",
+            "Kf4"
+          ]
+        },
+        {
+          "say": "Black creates another passed pawn on the queenside.",
+          "moves": [
+            "Nd6",
+            "c5",
+            "b4",
+            "cxb4",
+            "c5",
+            "b3",
+            "Nc4",
+            "Kg3",
+            "Ne3",
+            "b2"
+          ]
+        },
+        {
+          "say": "White resigns. The knight cannot cope with Black’s widely separated threats."
+        }
+      ]
+    },
+    {
+      "id": "summary",
+      "title": "Activity determines the value of the pieces",
+      "narration": [
+        {
+          "say": "Black kept the rook mobile, made White defend pawns, and activated the king."
+        },
+        {
+          "say": "After the rook exchange, the bishop and king kept restricting the knight. Passed pawns then decided the game."
+        }
+      ]
+    }
+  ]
+}

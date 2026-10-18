@@ -1,0 +1,192 @@
+{
+  "id": "068-game-01-marshall-capablanca",
+  "title": "Game 1: Marshall–Capablanca",
+  "subtitle": "A delayed bishop and a missed tactical threat",
+  "source": {
+    "work": "Chess Fundamentals",
+    "author": "José Raúl Capablanca",
+    "year": 1921,
+    "section": "Part II, Illustrative Games, Game 1: Queen’s Gambit Declined",
+    "examples": "Game 1",
+    "url": "https://archive.org/details/chessfundamental00capa"
+  },
+  "startFen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+  "steps": [
+    {
+      "id": "opening",
+      "title": "Development and repeated knight moves",
+      "narration": [
+        {
+          "say": "Marshall has White. Capablanca annotates his own loss and explains the shortcomings of his opening choices.",
+          "moves": [
+            "d4",
+            "d5",
+            "c4",
+            "e6",
+            "Nc3",
+            "Nf6",
+            "Bg5",
+            "Be7",
+            "e3",
+            "Ne4"
+          ]
+        },
+        {
+          "say": "White exchanges bishops and develops the other bishop.",
+          "moves": [
+            "Bxe7",
+            "Qxe7",
+            "Bd3"
+          ]
+        },
+        {
+          "say": "Black exchanges knights, but still has difficulty developing the bishop on c8.",
+          "moves": [
+            "Nxc3",
+            "bxc3",
+            "Nd7",
+            "Nf3",
+            "O-O"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "structure",
+      "title": "Create targets on the queenside",
+      "narration": [
+        {
+          "say": "White exchanges in the centre and brings the queen to b3. Black develops the knight.",
+          "moves": [
+            "cxd5",
+            "exd5",
+            "Qb3",
+            "Nf6"
+          ]
+        },
+        {
+          "say": "White advances a4. Black challenges with c5, and the queen comes to a3.",
+          "moves": [
+            "a4",
+            "c5",
+            "Qa3"
+          ]
+        },
+        {
+          "say": "Black plays b6. Capablanca criticises this move because it allows White to advance a5.",
+          "moves": [
+            "b6",
+            "a5",
+            "Bb7"
+          ]
+        },
+        {
+          "say": "White castles. Black moves the queen to c7, and White brings the rook to b1.",
+          "moves": [
+            "O-O",
+            "Qc7",
+            "Rfb1",
+            "Nd7"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "missed-threat",
+      "title": "Find the bishop move Capablanca overlooked",
+      "narration": [
+        {
+          "say": "Capablanca says he did not see White’s threat. The bishop can attack the knight while gaining time against the queen."
+        }
+      ],
+      "exercise": {
+        "prompt": "White to move. Find the strong bishop move to f5.",
+        "accept": [
+          "Bf5"
+        ],
+        "feedback": {
+          "*": "Bishop from d3 to f5, attacking the knight on d7."
+        },
+        "hint": "Bishop from d3 to f5, attacking the knight on d7.",
+        "hintSquares": [
+          "f5"
+        ],
+        "success": "Correct. Bf5",
+        "reply": "Rfc8"
+      }
+    },
+    {
+      "id": "pressure",
+      "title": "The advanced a-pawn restricts Black",
+      "narration": [
+        {
+          "say": "White takes the knight. Black recaptures with the queen.",
+          "moves": [
+            "Bxd7",
+            "Qxd7"
+          ]
+        },
+        {
+          "say": "White advances a6. Black retreats the bishop, and the central exchange wins a pawn.",
+          "moves": [
+            "a6",
+            "Bc6",
+            "dxc5",
+            "bxc5",
+            "Qxc5",
+            "Rab8"
+          ]
+        },
+        {
+          "say": "One pair of rooks is exchanged. White centralises the knight and supports it with f4.",
+          "moves": [
+            "Rxb8",
+            "Rxb8",
+            "Ne5",
+            "Qf5",
+            "f4",
+            "Rb6"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "finish",
+      "title": "A queen sacrifice ends the game",
+      "narration": [
+        {
+          "say": "Black’s rook has reached b6. White can finish with a forcing queen sacrifice."
+        }
+      ],
+      "exercise": {
+        "prompt": "White to move. Capture the rook on b6.",
+        "accept": [
+          "Qxb6"
+        ],
+        "feedback": {
+          "*": "Queen from c5 takes b6."
+        },
+        "hint": "Queen from c5 takes b6.",
+        "hintSquares": [
+          "b6"
+        ],
+        "success": "Correct. Qxb6"
+      }
+    },
+    {
+      "id": "summary",
+      "title": "The game ends at resignation",
+      "narration": [
+        {
+          "say": "Capablanca resigned after queen takes b6. We stop where the book stops; no additional moves are played."
+        },
+        {
+          "say": "White combined the advanced a-pawn, active queen, and central knight. Black’s delayed development made the tactical threats harder to meet."
+        },
+        {
+          "say": "The author analyses his own mistakes rather than hiding them. That is a useful model for reviewing your games."
+        }
+      ]
+    }
+  ]
+}

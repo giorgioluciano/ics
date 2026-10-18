@@ -1,0 +1,293 @@
+{
+  "id": "055-motives-and-plans",
+  "title": "A Player's Motives Criticised in a Specimen Game",
+  "subtitle": "A plan must fit the position and involve all the pieces",
+  "source": {
+    "work": "Chess Fundamentals",
+    "author": "José Raúl Capablanca",
+    "year": 1921,
+    "section": "Chapter IV, §25 A Player's Motives Criticised in a Specimen Game, Example 55",
+    "examples": "55",
+    "url": "https://archive.org/details/chessfundamental00capa"
+  },
+  "startFen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+  "steps": [
+    {
+      "id": "opening",
+      "title": "Development with a purpose",
+      "narration": [
+        {
+          "say": "Alexander plays White against Sir George Thomas. We will examine not just the moves, but the plans behind them.",
+          "moves": ["d4", "d5", "Nf3", "Nf6", "c4", "e6"]
+        },
+        {
+          "say": "Both sides develop. Black chooses a setup with the knight on d7 and the queen on a5.",
+          "moves": ["Nc3", "Nbd7", "Bg5", "c6", "e3", "Qa5"]
+        },
+        {
+          "say": "White exchanges bishop for knight. Black brings the other knight to e4.",
+          "moves": ["Bxf6", "Nxf6", "a3", "Ne4"]
+        },
+        {
+          "say": "White moves the queen to b3. Black develops the bishop to e7.",
+          "moves": ["Qb3", "Be7"]
+        },
+        {
+          "say": "Capablanca criticises the bishop's square: d6 would have been a more purposeful post.",
+          "highlights": ["e7", "d6"]
+        }
+      ]
+    },
+    {
+      "id": "central-choices",
+      "title": "The pawn advance changes the plan",
+      "narration": [
+        {
+          "say": "White develops the bishop to d3. Black exchanges the knight on c3 and then the central pawn.",
+          "moves": ["Bd3", "Nxc3", "bxc3", "dxc4", "Bxc4"]
+        },
+        {
+          "say": "Black brings the bishop to f6. Both sides castle.",
+          "moves": ["Bf6", "O-O", "O-O"]
+        },
+        {
+          "say": "White advances e4, and Black answers e5.",
+          "moves": ["e4", "e5"]
+        },
+        {
+          "say": "White plays d5. This limits the bishop on c4 and gives Black time to develop the bishop on c8.",
+          "move": "d5",
+          "highlights": ["d5", "c4", "c8"]
+        },
+        {
+          "say": "Black moves the queen to c7. White retreats the bishop to d3, and Black begins developing the queenside.",
+          "moves": ["Qc7", "Bd3", "b6", "c4", "Bb7"]
+        }
+      ]
+    },
+    {
+      "id": "search-for-a-plan",
+      "title": "Activity without a clear objective",
+      "narration": [
+        {
+          "say": "White brings the rook from f1 to c1. Black redirects the bishop through e7 to c5.",
+          "moves": ["Rfc1", "Be7", "Rc2", "Bc5"],
+          "highlights": ["c5", "c2"]
+        },
+        {
+          "say": "Queen to b2. Black plays f6.",
+          "moves": ["Qb2", "f6"]
+        },
+        {
+          "say": "Capablanca criticises this phase of Black's play for lacking a strong, well-defined plan. Having good pieces is not enough: they need a common objective."
+        },
+        {
+          "say": "White moves the rook to b1. Black centralises a rook, while the bishop moves to a6.",
+          "moves": ["Rb1", "Rad8", "a4", "Ba6"]
+        },
+        {
+          "say": "White returns the rook to d1. Black doubles on the central files.",
+          "moves": ["Rd1", "Rfe8"]
+        },
+        {
+          "say": "The queen goes to b3. Black lifts the rook to d6.",
+          "moves": ["Qb3", "Rd6"]
+        },
+        {
+          "say": "White moves the knight to h4. Black plays g6, and White retreats the bishop to e2.",
+          "moves": ["Nh4", "g6", "Be2"]
+        }
+      ]
+    },
+    {
+      "id": "isolated-advance",
+      "title": "A strong-looking move can obstruct your own pieces",
+      "narration": [
+        {
+          "say": "Black exchanges on d5. White recaptures with the e-pawn.",
+          "moves": ["cxd5", "exd5"]
+        },
+        {
+          "say": "Black advances e4. White plays g3.",
+          "moves": ["e4", "g3"]
+        },
+        {
+          "say": "Black pushes on to e3. The pawn looks dangerous, but Capablanca criticises the advance because it blocks the bishop on c5.",
+          "move": "e3",
+          "arrows": [
+            {
+              "from": "c5",
+              "to": "e3",
+              "color": "muted"
+            }
+          ],
+          "highlights": ["e3"]
+        },
+        {
+          "say": "A pawn advance needs coordinated support. An isolated threat can make the opponent's position safer instead of breaking it."
+        },
+        {
+          "say": "White advances f4. Black reroutes the other bishop to f5.",
+          "moves": ["f4", "Bc8", "Nf3", "Bf5"]
+        }
+      ]
+    },
+    {
+      "id": "mass-the-pieces",
+      "title": "Prepare the final attack",
+      "narration": [
+        {
+          "say": "White puts the rook on b2. Black brings the rook to e4.",
+          "moves": ["Rb2", "Re4"],
+          "highlights": ["e4", "e3", "f5"]
+        },
+        {
+          "say": "White moves the king to g2. Black brings the queen to c8, and White retreats the knight to g1.",
+          "moves": ["Kg2", "Qc8", "Ng1"]
+        },
+        {
+          "say": "Black advances g5. The pawn exchange opens more lines.",
+          "moves": ["g5", "fxg5", "fxg5"]
+        },
+        {
+          "say": "White brings the rook to f1. Black advances g4.",
+          "moves": ["Rf1", "g4"],
+          "highlights": ["g4", "g3", "g2"]
+        },
+        {
+          "say": "White retreats the bishop to d3. Black shifts the rook from d6 to f6.",
+          "moves": ["Bd3", "Rf6"]
+        },
+        {
+          "say": "The knight goes to e2. Black brings the queen to f8, supporting the attack.",
+          "moves": ["Ne2", "Qf8"]
+        },
+        {
+          "say": "White withdraws the rook from b2 to b1. Black brings the queen to h6, and White moves the queen to c2.",
+          "moves": ["Rbb1", "Qh6", "Qc2"]
+        }
+      ]
+    },
+    {
+      "id": "queen-enters",
+      "title": "Pressure against the king",
+      "narration": [
+        {
+          "say": "Black's queen can penetrate to h3. Follow Thomas's attacking plan."
+        }
+      ],
+      "exercise": {
+        "prompt": "Black to move. Bring the queen to h3.",
+        "accept": ["Qh3+"],
+        "feedback": {
+          "*": "Queen to h3 checks the king on g2 and brings the attack closer."
+        },
+        "hint": "Queen to h3, check.",
+        "hintSquares": ["h3"],
+        "success": "39...Qh3+! White moves the king to h1.",
+        "reply": "Kh1"
+      }
+    },
+    {
+      "id": "deflect-the-queen",
+      "title": "A rook sacrifice with a purpose",
+      "source": "Black therefore tries to get the Queen away from the defence. A very beautiful move, and the best way to carry on the attack.",
+      "narration": [
+        {
+          "say": "The white queen helps defend the position. Black offers a rook to draw it away.",
+          "arrows": [
+            {
+              "from": "e4",
+              "to": "c4",
+              "color": "danger"
+            },
+            {
+              "from": "c2",
+              "to": "c4",
+              "color": "warning"
+            }
+          ]
+        }
+      ],
+      "exercise": {
+        "prompt": "Black to move. Sacrifice the rook by taking the pawn on c4.",
+        "accept": ["Rxc4"],
+        "feedback": {
+          "*": "The rook on e4 can capture c4. The sacrifice tempts White's queen away from its defensive duties."
+        },
+        "hint": "Rook from e4 takes c4.",
+        "hintSquares": ["c4"],
+        "success": "40...Rxc4! White accepts with the queen.",
+        "reply": "Qxc4"
+      }
+    },
+    {
+      "id": "remove-the-defender",
+      "title": "The bishop strikes",
+      "narration": [
+        {
+          "say": "Black takes the bishop on d3. White captures the rook on f6, and Black takes the queen on c4.",
+          "moves": ["Bxd3", "Rxf6", "Bxc4"],
+          "highlights": ["d3", "f6", "c4"]
+        },
+        {
+          "say": "White moves the knight to f4. The queen on h3 is attacked by the pawn on g3, but Black has a more urgent threat.",
+          "move": "Nf4",
+          "highlights": ["h3", "g3", "e3"]
+        }
+      ],
+      "exercise": {
+        "prompt": "Black to move. Advance the passed pawn with a threat of promotion.",
+        "accept": ["e2"],
+        "feedback": {
+          "*": "Push the pawn from e3 to e2. White must answer the promotion threat instead of taking the queen."
+        },
+        "hint": "Pawn to e2.",
+        "hintSquares": ["e2"],
+        "success": "43...e2! White has no time to capture the queen.",
+        "reply": "Rg1"
+      }
+    },
+    {
+      "id": "finish",
+      "title": "The attack reaches the back rank",
+      "narration": [
+        {
+          "say": "Queen to f1. The queen is supported by the pawn on e2, and Black threatens promotion with checkmate. White resigns.",
+          "move": "Qf1",
+          "highlights": ["f1", "e2", "g1", "h1"],
+          "arrows": [
+            {
+              "from": "e2",
+              "to": "f1",
+              "color": "primary"
+            },
+            {
+              "from": "e2",
+              "to": "e1",
+              "color": "danger"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "summary",
+      "title": "Judge the plan, not just the move",
+      "narration": [
+        {
+          "say": "Capablanca criticises both players when their moves lack a clear strategic purpose."
+        },
+        {
+          "say": "The advance to e3 was premature because it obstructed a bishop. Later, coordinated support made that same pawn decisive."
+        },
+        {
+          "say": "The final attack combined queen pressure, a rook sacrifice, bishop captures and a promotion threat."
+        },
+        {
+          "say": "A move is not strong merely because it creates a threat. It must fit a plan that your available pieces can carry out."
+        }
+      ]
+    }
+  ]
+}

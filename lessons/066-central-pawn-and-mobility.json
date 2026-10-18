@@ -1,0 +1,112 @@
+{
+  "id": "066-central-pawn-and-mobility",
+  "title": "The Central Pawn and Freedom of Manoeuvre",
+  "subtitle": "A supplementary diagram from the Ruy Lopez discussion",
+  "source": {
+    "work": "Chess Fundamentals",
+    "author": "José Raúl Capablanca",
+    "year": 1921,
+    "section": "Chapter VI, §32 Some Possible Developments from a Ruy Lopez, supplementary final diagram under Example 65",
+    "examples": "65",
+    "url": "https://archive.org/details/chessfundamental00capa"
+  },
+  "startFen": "3r3k/2q4p/p1p1r1p1/1pRpPp2/1P1P1PP1/2R3KP/P7/2Q5 b - - 1 1",
+  "steps": [
+    {
+      "id": "intro",
+      "title": "A separate illustrative position",
+      "narration": [
+        {
+          "say": "This lesson continues the strategic discussion in Example 65. The supplied TeX does not contain a separate Example 66 heading."
+        },
+        {
+          "say": "Capablanca gives this diagram without the moves leading to it. Black is to move. The white king has joined the attack.",
+          "highlights": [
+            "g3",
+            "e5",
+            "c5",
+            "c3"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "pivot",
+      "title": "The e5-pawn anchors the plan",
+      "narration": [
+        {
+          "say": "The advanced e-pawn controls d6 and f6. Its potential advance after exchanges is the pivot of White’s plan.",
+          "arrows": [
+            {
+              "from": "e5",
+              "to": "d6",
+              "color": "primary"
+            },
+            {
+              "from": "e5",
+              "to": "f6",
+              "color": "primary"
+            }
+          ]
+        },
+        {
+          "say": "White’s major pieces have room to manoeuvre. Black must watch the pressure along the c-file and the kingside pawn structure."
+        }
+      ]
+    },
+    {
+      "id": "defence",
+      "title": "A rook move meets the immediate pressure",
+      "narration": [
+        {
+          "say": "In the book’s analysis, Black must bring the rook to f8."
+        }
+      ],
+      "exercise": {
+        "prompt": "Follow the book: move Black’s rook from d8 to f8.",
+        "accept": [
+          "Rf8"
+        ],
+        "feedback": {
+          "*": "The rook on d8 moves to f8."
+        },
+        "hint": "The rook on d8 moves to f8.",
+        "hintSquares": [
+          "f8"
+        ],
+        "success": "Correct. Rf8",
+        "reply": "Qc2"
+      }
+    },
+    {
+      "id": "next-plan",
+      "title": "The king is part of the attack",
+      "narration": [
+        {
+          "say": "White has moved the queen to c2. Capablanca’s next idea is to bring the king to f3 and increase the pressure on the pawn formation.",
+          "highlights": [
+            "g3",
+            "f3",
+            "f4",
+            "f5"
+          ]
+        },
+        {
+          "say": "The book does not specify Black’s intervening reply. We therefore explain the plan without inventing another move sequence."
+        }
+      ]
+    },
+    {
+      "id": "summary",
+      "title": "Visualise positions, not invented continuations",
+      "narration": [
+        {
+          "say": "The diagram is an exercise in strategic imagination. Ask what the exchanges would leave behind and which pieces have freedom to act."
+        },
+        {
+          "say": "White’s central pawn, active king and mobile major pieces belong to one coherent plan."
+        }
+      ]
+    }
+  ]
+}
